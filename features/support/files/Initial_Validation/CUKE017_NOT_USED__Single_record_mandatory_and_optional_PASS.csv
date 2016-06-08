@@ -1,0 +1,2 @@
+EA_ID,Rtn_Type,Mon_Point,Mon_Date,Parameter,Value,Unit,Ref_Period,Mon_Period,Txt_Value,Site_Name,Comments,Meth_Stand,RD_Code
+BJ7786IV,EPR/IED Air (point source) emissions return,Monitor point 1,2015-08-05,"1,1,2,2-Tetrachloroethane",100,ug,Continuous,Annual,m > AOD,Landfill Site BJ7786IV,Comments,BS EN 12260,R1
