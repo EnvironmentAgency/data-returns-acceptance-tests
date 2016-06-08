@@ -20,11 +20,13 @@ The project has no direct dependencies but requires **Chimp** to be installed fi
 
 ## Installation
 
-Assuming **Chimp** is installed you then need to just clone the project from GitHub
+Assuming **Chimp** is installed you'll first need to clone the project from GitHub
 
 ```bash
 git clone https://github.com/EnvironmentAgency/quke.git
 ```
+
+Next you'll need to create a `chimp.js` file in the root of the project folder. Use [example.chimp.js](example.chimp.js) for reference.
 
 ## Execution
 
@@ -36,19 +38,19 @@ chimp
 
 ### Run a specific feature
 
-If you just want to run one feature use
+If you want to run a single feature use
 
 ```bash
 chimp features/error_messages_DR_reference.feature
 ```
 
-If you its just a single scenario you want to see then its
+If its just a single scenario you want to see then use
 
 ```bash
 chimp features/error_messages_DR_reference.feature:14
 ```
 
-The `:14` relating the the line number that the **scenario** starts from in the `.feature` file.
+The `:14` relates to the line number that the **scenario** starts from in the `.feature` file.
 
 
 ## Contributing to this project
