@@ -12,10 +12,6 @@ module.exports = function() {
     browser.chooseFile("#file-select-button", `features/support/files/Initial_Validation/${filename}`);
   });
 
-  this.Given(/^I choose file (.*)$/, function(filename) {
-    browser.chooseFile("#file-select-button", `features/support/files/File_Validation/${filename}`);
-  });
-
   this.Then(/^I choose file "([^"]*)"$/, function(filename) {
     browser.chooseFile("#file-select-button", `features/support/files/Initial_Validation/${filename}`);
   });

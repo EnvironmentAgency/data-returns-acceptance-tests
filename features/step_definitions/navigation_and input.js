@@ -6,19 +6,11 @@ module.exports = function() {
 
   //------------- Page check navigation -----------------------
 
-  this.Then(/^I see the "([^"]*)" page$/, function(heading) {
-    expect(browser.getText('h1')).toEqual(heading);
-  });
-
   this.Then(/^I see the page "([^"]*)"$/, function(heading) {
     return expect(browser.getText('#T-/file/confirm-47')).toEqual(heading);
   });
 
   this.Then(/^I am on the "([^"]*)" page$/, function(heading) {
-    expect(browser.getText('h1')).toEqual(heading);
-  });
-
-  this.Then(/^I am on "([^"]*)" page$/, function(heading) {
     expect(browser.getText('h1')).toEqual(heading);
   });
 
@@ -31,15 +23,6 @@ module.exports = function() {
     return expect(browser.getText('.heading-xlarge')).toEqual(heading);
   });
 
-  //----- Multiple file submission --------------
-  this.Then(/^I am on the "([^"]*)" page$/, function(emailheading) {
-    expect(browser.getText('h1')).toEqual(emailheading);
-  });
-
-  this.Then(/^I am on the "([^"]*)" page$/, function(emailheading) {
-    expect(browser.getText('h1')).toEqual(emailheading);
-  });
-
   //----------------------Button press -------------
 
   this.Then(/^I select "([^"]*)" button$/, function(button) {
@@ -48,10 +31,6 @@ module.exports = function() {
 
   this.Then(/^I click "([^"]*)"$/, function(heading) {
     return browser.click('#check-for-errors-btn');
-  });
-
-  this.Then(/^I click the "([^"]*)" button$/, function() {
-    return browser.click('.button');
   });
 
   this.Then(/^I click "([^"]*)" button$/, function(button) {

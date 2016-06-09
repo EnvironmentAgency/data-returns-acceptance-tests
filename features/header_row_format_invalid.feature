@@ -5,7 +5,7 @@ Feature: Check file invalid header formats
 
   Background:
     Given I am on the Data Returns page
-    And I see the "Send landfill data returns" page
+    And I am on the "Send landfill data returns" page
     Then I select "Start now" button
 
   #------------------ Invalid Header Formats --------------------------
