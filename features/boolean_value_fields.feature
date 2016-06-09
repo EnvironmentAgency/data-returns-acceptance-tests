@@ -5,9 +5,9 @@ Feature: Submit files where data comprises of Boolean values
   Background:
     Given I am on the Data Returns page
     And I am on the "Send landfill data returns" page
-    Then I select "Start now" button
+    Then I start my submission
 
-  @watch
+  
   Scenario Outline: Submit a valid file where the Text Value field holds a Boolean value
     And I choose boolean file <Filename> to upload
     When I click "Check for errors"
@@ -30,7 +30,7 @@ Feature: Submit files where data comprises of Boolean values
       | CUKE7013_OPT_Text_Value_Boolean_1_PASS.csv |
       | CUKE7014_OPT_Text_Value_Boolean_0_PASS.csv |
 
-  @watch
+  
   Scenario Outline: Check that the correct error message is displayed for non Boolean data
     And I choose boolean file <Filename> to upload
     When I click "Check for errors"

@@ -5,10 +5,10 @@ Feature: Check acceptance of files where Optional data fields do not contain dat
   Background:
     Given I am on the Data Returns page
     And I am on the "Send landfill data returns" page
-    Then I select "Start now" button
+    Then I start my submission
 
   #------------------ Optional Fields ----------------------------------
-  @watch
+  
   Scenario Outline: For OPTIONAL fields check that the correct error message is displayed
     where data for submitted records is Incorrect
     Given I choose file <Filename>

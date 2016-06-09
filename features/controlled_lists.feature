@@ -5,9 +5,9 @@ Feature: Submit files which contain all Controlled list values
   Background:
     Given I am on the Data Returns page
     And I am on the "Send landfill data returns" page
-    Then I select "Start now" button
+    Then I start my submission
 
-  @watch
+  
   Scenario Outline: Submit file comprising all Controlled Lists values
     And I choose Controlled List file <Filename> to upload
     When I click "Check for errors"
@@ -25,7 +25,7 @@ Feature: Submit files which contain all Controlled list values
 
   #|CAS.csv|
   #|RD Code.csv|
-  @watch
+  
   Scenario Outline: Submit file comprising invalid Controlled List value
     And I choose Controlled List file <Filename> to upload
     When I click "Check for errors"
