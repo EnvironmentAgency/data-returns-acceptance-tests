@@ -4,7 +4,7 @@ Feature: Check that the correct error message is displayed
 
   Background:
     Given I am on the Data Returns page
-    And I see the "Send landfill data returns" page
+    And I am on the "Send landfill data returns" page
     Then I select "Start now" button
 
   #------------------ Check error DR error message displayed --------------------

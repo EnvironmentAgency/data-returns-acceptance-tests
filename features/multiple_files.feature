@@ -6,19 +6,19 @@ Feature: Submit multiple files
   @watch
   Scenario: Proceed to file selection page
     Given I am on the Data Returns page
-    And I see the "Send landfill data returns" page
+    And I am on the "Send landfill data returns" page
     Then I select "Start now" button
     #file 1
     And I choose file "CUKE000_SUCCESS_NO_ERRORS.csv"
     When I click "Check for errors"
     Then I see the page "Confirm your file"
-    And I click the "Confirm and check file" button
+    And I click on the "Confirm and check file" button
     And I input an email address
     Then I click "Send authentication email" button
     Then I am on the "Enter your code" page
     Then I enter the confirmation code
     And I click on the "Continue" button
-    Then I am on "Send your file" page
+    Then I am on the "Send your file" page
     And I select "Accept and send file" button
     Then I am on the last page "File sent"
     Then I click the link "send another data returns file"
@@ -28,8 +28,8 @@ Feature: Submit multiple files
     And I choose multiple file <file>
     When I click "Check for errors"
     Then I see the page "Confirm your file"
-    And I click the "Confirm and check file" button
-    Then I am on "Send your file" page
+    And I click on the "Confirm and check file" button
+    Then I am on the "Send your file" page
     And I select "Accept and send file" button
     Then I am on the last page "File sent"
     Then I click the link "send another data returns file"
@@ -60,7 +60,7 @@ Feature: Submit multiple files
     And I choose file "CUKE000_SUCCESS_NO_ERRORS.csv"
     When I click "Check for errors"
     Then I see the page "Confirm your file"
-    And I click the "Confirm and check file" button
+    And I click on the "Confirm and check file" button
     Then I am on the "Confirm your email address" page
     And I enter an invalid email address
     Then I click "Send email" button
@@ -73,6 +73,6 @@ Feature: Submit multiple files
     Then I am on the "Enter your code" page
     Then I enter the confirmation code
     And I click on the "Continue" button
-    Then I am on "Send your file" page
+    Then I am on the "Send your file" page
     And I select "Accept and send file" button
     Then I am on the last page "File sent"

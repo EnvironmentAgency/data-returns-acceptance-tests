@@ -5,7 +5,7 @@ Feature: Check help links on the Start page
   @watch
   Scenario: Check the Start page links
     Given I am on the Data Returns page
-    And I see the "Send landfill data returns" page
+    And I am on the "Send landfill data returns" page
     And I see "landfill emissions" link 1
     Then I click on link one "landfill emissions"
     Then I return to Data Returns

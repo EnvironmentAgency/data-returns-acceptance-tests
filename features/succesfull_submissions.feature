@@ -4,7 +4,7 @@ Feature: Submit files where all data passes validation
 
   Background:
     Given I am on the Data Returns page
-    And I see the "Send landfill data returns" page
+    And I am on the "Send landfill data returns" page
     Then I select "Start now" button
 
   @watch
@@ -12,13 +12,13 @@ Feature: Submit files where all data passes validation
     And I choose successfull file <Filename> to upload
     When I click "Check for errors"
     Then I see the page "Confirm your file"
-    And I click the "Confirm and check file" button
+    And I click on the "Confirm and check file" button
     And I input an email address
     Then I click "Send authentication email" button
     Then I am on the "Enter your code" page
     Then I enter the confirmation code
     And I click on the "Continue" button
-    Then I am on "Send your file" page
+    Then I am on the "Send your file" page
     And I select "Accept and send file" button
     Then I am on the last page "File sent"
 
