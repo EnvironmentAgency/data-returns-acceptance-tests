@@ -7,7 +7,6 @@ Feature: Submit files which contain all Controlled list values
     And I am on the "Send landfill data returns" page
     Then I start my submission
 
-  
   Scenario Outline: Submit file comprising all Controlled Lists values
     And I choose Controlled List file <Filename> to upload
     When I click "Check for errors"
@@ -23,9 +22,6 @@ Feature: Submit files which contain all Controlled list values
       | CUKE028_ALL_METHOD_STANDARDS_PASS.csv |
       | CUKE030_ALL_TEXT_VALUES_QUALIFIERS_PASS.csv |
 
-  #|CAS.csv|
-  #|RD Code.csv|
-  
   Scenario Outline: Submit file comprising invalid Controlled List value
     And I choose Controlled List file <Filename> to upload
     When I click "Check for errors"
@@ -40,5 +36,3 @@ Feature: Submit files which contain all Controlled list values
       | CUKE027_ALL_MONITORING_PERIODS_plus_invalid_FAIL.csv | Incorrect |
       | CUKE029_ALL_METHOD_STANDARDS_plus_invalid_FAIL.csv | Incorrect |
       | CUKE031_ALL_TEXT_VALUES_QUALIFIERS_plus_invalid_FAIL.csv | Incorrect |
-    #|CAS.csv|
-    #|RD Code.csv|

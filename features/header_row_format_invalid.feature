@@ -9,7 +9,7 @@ Feature: Check file invalid header formats
     Then I start my submission
 
   #------------------ Invalid Header Formats --------------------------
-  
+
   Scenario Outline: Check for missing header name only
     And I choose header file <Filename> to upload
     When I click "Check for errors"
@@ -26,7 +26,6 @@ Feature: Check file invalid header formats
       | CUKE5014_Missing_Value_Header.csv |
       | CUKE5016_Missing_Unit_Header.csv |
 
-  
   Scenario Outline: Check for missing header name and associated comma
     And I choose header file <Filename> to upload
     When I click "Check for errors"
@@ -42,7 +41,6 @@ Feature: Check file invalid header formats
       | CUKE5015_Missing_Value_Header_and_comma.csv |
       | CUKE5017_Missing_Unit_Header_and_comma.csv |
 
-  
   Scenario Outline: Check for non-specification header name
     And I choose header file <Filename> to upload
     When I click "Check for errors"
