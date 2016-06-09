@@ -25,8 +25,12 @@ module.exports = function() {
 
   //----------------------Button press -------------
 
-  this.Then(/^I select "([^"]*)" button$/, function(button) {
+  this.Then(/^I start my submission$/, function() {
     return browser.click('.button-get-started');
+  });
+
+  this.Then(/^I select "([^"]*)" button$/, function(button) {
+    return browser.click('.button');
   });
 
   this.Then(/^I click "([^"]*)"$/, function(heading) {

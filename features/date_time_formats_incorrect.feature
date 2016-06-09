@@ -6,10 +6,10 @@ Feature: Check that Dates and/or Dates and Times NOT in UK and ISO formats are r
   Background:
     Given I am on the Data Returns page
     And I am on the "Send landfill data returns" page
-    Then I select "Start now" button
+    Then I start my submission
 
   #------------------ Date and/or Time format Incorrect --------------------------
-  @watch
+  
   Scenario Outline: Date/Time - Correct error message displayed where format is incorrect
     Given I choose date file <Filename>
     And I click "Check for errors"

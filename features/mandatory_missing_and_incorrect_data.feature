@@ -5,10 +5,10 @@ Feature: Check file contents for Missing and incorrect mandatory data
   Background:
     Given I am on the Data Returns page
     And I am on the "Send landfill data returns" page
-    Then I select "Start now" button
+    Then I start my submission
 
   #------------------ Mandatory Fields --------------------------
-  @watch
+  
   Scenario Outline: For MANDATORY fields check that the correct error message is displayed
     for records where data is Missing and incorrect
     Given I choose file <Filename>

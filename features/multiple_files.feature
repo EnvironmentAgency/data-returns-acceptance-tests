@@ -3,11 +3,11 @@ Feature: Submit multiple files
   file (Max 10) without having to obtain further
   authorisation codes
 
-  @watch
+  
   Scenario: Proceed to file selection page
     Given I am on the Data Returns page
     And I am on the "Send landfill data returns" page
-    Then I select "Start now" button
+    Then I start my submission
     #file 1
     And I choose file "CUKE000_SUCCESS_NO_ERRORS.csv"
     When I click "Check for errors"
@@ -23,7 +23,7 @@ Feature: Submit multiple files
     Then I am on the last page "File sent"
     Then I click the link "send another data returns file"
 
-  @watch
+  
   Scenario Outline: Submit a valid file
     And I choose multiple file <file>
     When I click "Check for errors"
@@ -55,7 +55,7 @@ Feature: Submit multiple files
       #file 10
       | CUKE006_LARGE_FILE_MAX_21M_16907_records_PASS.csv |
 
-  @watch
+  
   Scenario: Enter an invalid format email address
     And I choose file "CUKE000_SUCCESS_NO_ERRORS.csv"
     When I click "Check for errors"
@@ -66,7 +66,7 @@ Feature: Submit multiple files
     Then I click "Send email" button
     And an invalid email error message is shown
 
-  @watch
+  
   Scenario: Re-enter the correct email address used previously
     And I input an email address
     Then I click "Send authentication email" button

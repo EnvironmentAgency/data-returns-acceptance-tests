@@ -2,7 +2,7 @@ Feature: Check help links on the Start page
   Information about the service is provided through links
   on the Start page
 
-  @watch
+  
   Scenario: Check the Start page links
     Given I am on the Data Returns page
     And I am on the "Send landfill data returns" page

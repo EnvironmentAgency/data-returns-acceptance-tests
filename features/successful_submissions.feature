@@ -5,9 +5,9 @@ Feature: Submit files where all data passes validation
   Background:
     Given I am on the Data Returns page
     And I am on the "Send landfill data returns" page
-    Then I select "Start now" button
+    Then I start my submission
 
-  @watch
+  @focus
   Scenario Outline: Submit a valid file
     And I choose successfull file <Filename> to upload
     When I click "Check for errors"

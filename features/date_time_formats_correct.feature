@@ -5,10 +5,10 @@ Feature: Check that Dates and/or Dates and Times in UK and ISO formats are accep
   Background:
     Given I am on the Data Returns page
     And I am on the "Send landfill data returns" page
-    Then I select "Start now" button
+    Then I start my submission
 
   #------------------ Date and/or Date and Time format - Correct --------------------------
-  @watch
+  
   Scenario Outline: Valid Date and/or Date and Time formats are accepted
     As a user I want to submit files with data containing
     dates in either UK or ISO format, and where exists containing a time
