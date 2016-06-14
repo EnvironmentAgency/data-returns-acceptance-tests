@@ -2,7 +2,8 @@ Feature: Submit multiple files
   As a user I want to be able to submit more than one
   file (Max 10) without having to obtain further
   authorisation codes
-
+  
+@watch
   Scenario: Proceed to file selection page
     Given I am on the Data Returns page
     And I am on the "Send landfill data returns" page
