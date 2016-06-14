@@ -2,14 +2,14 @@ Feature: Submit multiple files
   As a user I want to be able to submit more than one
   file (Max 10) without having to obtain further
   authorisation codes
-  
+
 @watch
   Scenario: Proceed to file selection page
     Given I am on the Data Returns page
     And I am on the "Send landfill data returns" page
     Then I start my submission
     #file 1
-    Given I choose multiple file "CUKE000_SUCCESS_NO_ERRORS.csv"
+    Given I choose multiple files "CUKE000_SUCCESS_NO_ERRORS.csv"
     When I click "Check for errors"
     Then I see the page "Confirm your file"
     And I click on the "Confirm and check file" button

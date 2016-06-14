@@ -16,7 +16,11 @@ module.exports = function() {
     //browser.chooseFile("#file-select-button", `features/support/files/File_Validation/${filename}`);
   //});
 
-  this.Given(/^I choose multiple file (.*)$/, function(filename) {
+  //this.Given(/^I choose multiple file (.*)$/, function(filename) {
+    //browser.chooseFile("#file-select-button", `features/support/files/Initial_Validation/${filename}`);
+  //});
+
+  this.Given(/^I choose multiple files "([^"]*)"$/, function (filename) {
     browser.chooseFile("#file-select-button", `features/support/files/Initial_Validation/${filename}`);
   });
 
