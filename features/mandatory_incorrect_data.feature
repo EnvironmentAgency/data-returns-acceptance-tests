@@ -8,7 +8,8 @@ Feature: Check file contents for incorrect MANDATORY data
     Then I start my submission
 
   #------------------ Mandatory Fields --------------------------
-  
+
+@watch
   Scenario Outline: For MANDATORY fields check that the correct error message is displayed
     for records where data is Incorrect
     Given I choose file <Filename>
