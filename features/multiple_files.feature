@@ -8,7 +8,7 @@ Feature: Submit multiple files
     And I am on the "Send landfill data returns" page
     Then I start my submission
     #file 1
-    And I choose file "CUKE000_SUCCESS_NO_ERRORS.csv"
+    Given I choose file "CUKE000_SUCCESS_NO_ERRORS.csv"
     When I click "Check for errors"
     Then I see the page "Confirm your file"
     And I click on the "Confirm and check file" button
