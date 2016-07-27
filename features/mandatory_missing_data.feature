@@ -8,7 +8,7 @@ Feature: Check file contents for missing mandatory data
     Then I start my submission
 
   #------------------ Mandatory Fields --------------------------
-  
+
   Scenario Outline: For MANDATORY fields check that the correct error message is displayed
     for records where data is Missing
     Given I choose file <Filename>
@@ -18,7 +18,7 @@ Feature: Check file contents for missing mandatory data
     Then I click "See details of which rows to correct" link
 
     Examples:
-      | Filename | DRref | Header | Error | DRef | DetError |
+      | Filename | DRref | Header | Error | DRef |
       | CUKE2001_EA_ID_Missing_Error.csv | DR9000 | EA_ID | Missing | Missing |
       | CUKE2002_Return_Type_Missing_Error.csv | DR9010 | Rtn_Type | Missing | Missing |
       | CUKE2003_Monitoring_Point_Missing_Error.csv | DR9060 | Mon_Point | Missing | Missing |
