@@ -8,7 +8,7 @@ Feature: Check acceptance of files where Optional data fields do not contain dat
     Then I start my submission
 
   #------------------ Optional Fields ----------------------------------
-  
+
   Scenario Outline: For OPTIONAL fields check that the correct error message is displayed
     where data for submitted records is Incorrect
     Given I choose file <Filename>
@@ -16,7 +16,7 @@ Feature: Check acceptance of files where Optional data fields do not contain dat
     Then I see the page "Confirm your file"
 
     Examples:
-      | Filename | DRef |
+      | Filename | 
       | CUKE4001_OPT_Ref_Period_Null_PASS.csv |
       | CUKE4006_OPT_Mon_Period_NULL_PASS.csv |
       | CUKE4009_OPT__Smpl_Ref_NULL_PASS.csv |
