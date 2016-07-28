@@ -47,7 +47,7 @@ module.exports = function() {
 
   //--------- Submit more files (last page)-------------
 
-  this.Then(/^I click the link "([^"]*)"$/, function() {
+  this.Then(/^I click the link "([^"]*)"$/, function(link) {
     return browser.click('#T-/file/sent-58');
   });
 

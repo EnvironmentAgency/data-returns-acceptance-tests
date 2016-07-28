@@ -40,7 +40,7 @@ module.exports = function() {
     browser.chooseFile("#file-select-button", `features/support/files/Boolean_values/${filename}`);
   });
 
-  this.Given(/^I choose file (.*)$/, function (filename) {
+  this.Given(/^I choose file (.*)$/, function(filename) {
     browser.chooseFile("#file-select-button", `features/support/files/File_Validation/${filename}`);
   });
 
