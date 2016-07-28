@@ -54,7 +54,7 @@ module.exports = function() {
   //------------------ Input email and code --------------------
 
   this.Then('I input an email address', function() {
-    return browser.setValue('.form-control', "hkjtest2@gmail.com");
+    return browser.setValue('.form-control', "tim.stone.ea@gmail.com");
   });
 
   this.Then('I enter an invalid email address', function() {
