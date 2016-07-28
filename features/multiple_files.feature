@@ -38,21 +38,21 @@ Feature: Submit multiple files
       #file 2
       | CUKE003_Multiple_Permit_Formats_Single Rtn_Type_PASS.csv |
       #file 3
-      | CUKE009_Multi_Permits_AA_GZ_PASS.csv |
-      #file 4
-      | CUKE010_Multi_Permits_HA_ZZ_PASS.csv |
+      # | CUKE009_Multi_Permits_AA_GZ_PASS.csv |
+      # #file 4
+      # | CUKE010_Multi_Permits_HA_ZZ_PASS.csv |
       #file 5
-      | CUKE011_Multi_Permits_10_69_PASS.csv |
-      #file 6
-      | CUKE012_Multi_Permits_70_PASS.csv |
-      #file 7
-      | CUKE013_Multi_Permit_Formats_All_PASS.csv |
-      #file 8
-      | CUKE014_ALL_Fields_Multi_Return_Types_and_Permit_Formats_PASS.csv |
-      #file 9
-      | CUKE015_Mandatory_only_Multi_Return_Types_and_Permit_Formats_PASS.csv |
-      #file 10
-      | CUKE006_LARGE_FILE_MAX_21M_16907_records_PASS.csv |
+      # | CUKE011_Multi_Permits_10_69_PASS.csv |
+      # #file 6
+      # | CUKE012_Multi_Permits_70_PASS.csv |
+      # #file 7
+      # | CUKE013_Multi_Permit_Formats_All_PASS.csv |
+      # #file 8
+      # | CUKE014_ALL_Fields_Multi_Return_Types_and_Permit_Formats_PASS.csv |
+      # #file 9
+      # | CUKE015_Mandatory_only_Multi_Return_Types_and_Permit_Formats_PASS.csv |
+      # #file 10
+      # | CUKE006_LARGE_FILE_MAX_21M_16907_records_PASS.csv |
 
   Scenario: Enter an invalid format email address
     And I choose file "CUKE000_SUCCESS_NO_ERRORS.csv"
