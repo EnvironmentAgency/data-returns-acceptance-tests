@@ -57,6 +57,10 @@ module.exports = function() {
     return browser.setValue('.form-control', "tim.stone.ea@gmail.com");
   });
 
+  this.Then('I input another email address', function() {
+    return browser.setValue('.form-control', "tim.stone.ea+test@gmail.com");
+  });
+
   this.Then('I enter an invalid email address', function() {
     return browser.setValue('.form-control', "xxxxyz.xyz");
   });
