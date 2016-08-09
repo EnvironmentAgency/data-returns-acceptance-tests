@@ -1,5 +1,8 @@
 module.exports = function() {
 
+  var fileUploadStatus = ".file-ready";
+
+
   this.Given(/^I am on the Data Returns page$/, function() {
     return this.browser.url('/start');
   });
@@ -22,6 +25,15 @@ module.exports = function() {
   this.Then(/^I see the page header "([^"]*)"$/, function(heading) {
     return expect(browser.getText('.heading-xlarge')).toEqual(heading);
   });
+
+  this.Then(/^I see the message "([^"]*)"$/, function (message) {
+    
+    browser.waitUntil(function () {
+      return browser.getText(fileUploadStatus) === 'Ready to send'
+    }, 5000, 'expected file to be uploaded and checked within 5s');
+
+  });
+ 
 
   //----------------------Button press -------------
 
