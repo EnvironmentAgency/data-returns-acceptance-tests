@@ -27,9 +27,9 @@ module.exports = function() {
   });
 
   this.Then(/^I see the message "([^"]*)"$/, function (message) {
-    
+    console.log(browser.getText(".file-ready")) 
     browser.waitUntil(function () {
-      return browser.getText(fileUploadStatus) === 'Ready to send'
+      return browser.getText(".file-ready") === 'Ready to send'
     }, 5000, 'expected file to be uploaded and checked within 5s');
 
   });
