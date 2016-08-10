@@ -3,14 +3,15 @@ Feature: Submit files which contain all Controlled list values
   is not held on the Controlled list for that item
 
   Background:
-    Given I am on the Data Returns page
+    Given I am on the start page
     And I am on the "Send landfill data returns" page
     Then I start my submission
 
   Scenario Outline: Submit file comprising all Controlled Lists values
-    And I choose Controlled List file <Filename> to upload
-    When I click "Check for errors"
-    Then I see the page "Confirm your file"
+    Given I choose initial file <Filename> to upload
+    Then I expect the file status for <Filename> to be "READY TO SEND"
+    When I finish uploading files and continue
+    Then I see the page header "Confirm your files"
 
     Examples:
       | Filename |
@@ -23,9 +24,10 @@ Feature: Submit files which contain all Controlled list values
       | CUKE030_ALL_TEXT_VALUES_QUALIFIERS_PASS.csv |
 
   Scenario Outline: Submit file comprising invalid Controlled List value
-    And I choose Controlled List file <Filename> to upload
-    When I click "Check for errors"
-    And Error column shows as <Error>
+    Given I choose initial file <Filename> to upload
+    Then I expect the file status for <Filename> to be "MULTIPLE VALIDATION ERRORS"
+    Then I finish uploading files and continue
+    Then I am unable to continue
 
     Examples:
       | Filename | Error |

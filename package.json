@@ -1,0 +1,15 @@
+{
+  "name": "data-returns-acceptance-tests",
+  "description": "Acceptance tests for the data returns web service",
+  "version": "1.0.0",
+  "private": true,
+  "engines": {
+    "node": "4.4.7"
+  },
+  "dependencies": {
+    "chimp": "^0.39.3"
+  },
+  "scripts": {
+    "test": "node node_modules/chimp/dist/bin/chimp.js"
+  }
+}

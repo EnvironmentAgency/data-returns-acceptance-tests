@@ -3,7 +3,7 @@ Feature: Check that Dates and/or Dates and Times in UK and ISO formats are accep
   and/or Dates and Times formats to be accepted
 
   Background:
-    Given I am on the Data Returns page
+    Given I am on the start page
     And I am on the "Send landfill data returns" page
     Then I start my submission
 
@@ -13,9 +13,10 @@ Feature: Check that Dates and/or Dates and Times in UK and ISO formats are accep
     As a user I want to submit files with data containing
     dates in either UK or ISO format, and where exists containing a time
     element separated from the date by either a T or space separator
-    Given I choose date file <Filename>
-    And I click "Check for errors"
-    Then I see the page "Confirm your file"
+    Given I choose date file <Filename> to upload
+    Then I expect the file status for <Filename> to be "READY TO SEND"
+    When I finish uploading files and continue
+    Then I see the page header "Confirm your files"
 
     Examples:
       | Filename |

@@ -3,7 +3,7 @@ Feature: Check file contents for incorrect Optional data
   is Incorrect and its location within the submitted file
 
   Background:
-    Given I am on the Data Returns page
+    Given I am on the start page
     And I am on the "Send landfill data returns" page
     Then I start my submission
 
@@ -11,11 +11,14 @@ Feature: Check file contents for incorrect Optional data
   
   Scenario Outline: For OPTIONAL fields check that the correct error message is displayed
     where data for submitted records is Incorrect
-    Given I choose file <Filename>
-    And I click "Check for errors"
-    And Column field shows <Header>
-    And Error column shows as <Error>
-    Then I click "See details of which rows to correct" link
+    Given I choose validation test file <Filename> to upload
+    Then I expect the file status for <Filename> to be "MULTIPLE VALIDATION ERRORS"
+    When I open the file details for <Filename>
+    Then Validation information contains error for <DRref>
+    And I expect the column heading for error <DRref> to be "<Header>"
+    And I expect the error type for error <DRref> to be "<Error>"
+    Then I open row correction details for error <DRref>
+    Then I expect the row correction details for error <DRref> to be shown
 
     Examples:
       | Filename | DRref | Header | Error |
@@ -29,14 +32,14 @@ Feature: Check file contents for incorrect Optional data
       | CUKE4013_OPT_Text_Value_Non_Controlled_List_FAIL.csv | DR9080 | Txt_Value | Incorrect |
       | CUKE4014_OPT_Text_Value_256_Characters_FAIL.csv | DR9080 | Txt_Value | Incorrect |
       #-------------
-      | CUKE4016_OPT_Text_Value_Boolean_y_FAIL.csv | DR0980 | Txt_Value | Incorrect |
-      | CUKE4017_OPT_Text_Value_Boolean_Y_FAIL.csv | DR0980 | Txt_Value | Incorrect |
-      | CUKE4018_OPT_Text_Value_Boolean_n_FAIL.csv | DR0980 | Txt_Value | Incorrect |
-      | CUKE4019_OPT_Text_Value_Boolean_N_FAIL.csv | DR0980 | Txt_Value | Incorrect |
-      | CUKE4020_OPT_Text_Value_Boolean_t_FAIL.csv | DR0980 | Txt_Value | Incorrect |
-      | CUKE4021_OPT_Text_Value_Boolean_T_FAIL.csv | DR0980 | Txt_Value | Incorrect |
-      | CUKE4022_OPT_Text_Value_Boolean_f_FAIL.csv | DR0980 | Txt_Value | Incorrect |
-      | CUKE4023_OPT_Text_Value_Boolean_F_FAIL.csv | DR0980 | Txt_Value | Incorrect |
+      | CUKE4016_OPT_Text_Value_Boolean_y_FAIL.csv | DR9080 | Txt_Value | Incorrect |
+      | CUKE4017_OPT_Text_Value_Boolean_Y_FAIL.csv | DR9080 | Txt_Value | Incorrect |
+      | CUKE4018_OPT_Text_Value_Boolean_n_FAIL.csv | DR9080 | Txt_Value | Incorrect |
+      | CUKE4019_OPT_Text_Value_Boolean_N_FAIL.csv | DR9080 | Txt_Value | Incorrect |
+      | CUKE4020_OPT_Text_Value_Boolean_t_FAIL.csv | DR9080 | Txt_Value | Incorrect |
+      | CUKE4021_OPT_Text_Value_Boolean_T_FAIL.csv | DR9080 | Txt_Value | Incorrect |
+      | CUKE4022_OPT_Text_Value_Boolean_f_FAIL.csv | DR9080 | Txt_Value | Incorrect |
+      | CUKE4023_OPT_Text_Value_Boolean_F_FAIL.csv | DR9080 | Txt_Value | Incorrect |
       #-----------------
       | CUKE4024_OPT_Site_Name_Special_Characters_FAIL.csv | DR9110 | Site_Name | Incorrect |
       | CUKE4025_OPT_Site_Name_256_Characters_FAIL.csv | DR9110 | Site_Name | Incorrect |
@@ -46,5 +49,5 @@ Feature: Check file contents for incorrect Optional data
       | CUKE4031_OPT_Meth_Stand_31_characters_FAIL.csv | DR9100 | Meth_Stand | Incorrect |
       #-----------------
       | CUKE4034_OPT_CiC_256_Characters_FAIL.csv | DR9150 | CiC | Incorrect |
-      | CUKE4038_OPT_CAS_256_Characters_FAIL.csv | Dr9160 | CAS | Incorrect |
+      | CUKE4038_OPT_CAS_256_Characters_FAIL.csv | DR9160 | CAS | Incorrect |
       | CUKE4041_OPT_RD_Code_256_Characters_FAIL.csv | DR9170 | RD_Code | Incorrect |

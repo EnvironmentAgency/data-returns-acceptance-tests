@@ -3,17 +3,17 @@ Feature: Check acceptance of files where Optional data fields do not contain dat
   do not contain a value for optional data
 
   Background:
-    Given I am on the Data Returns page
+    Given I am on the start page
     And I am on the "Send landfill data returns" page
     Then I start my submission
 
   #------------------ Optional Fields ----------------------------------
 
-  Scenario Outline: For OPTIONAL fields check that the correct error message is displayed
-    where data for submitted records is Incorrect
-    Given I choose file <Filename>
-    And I click "Check for errors"
-    Then I see the page "Confirm your file"
+  Scenario Outline: For OPTIONAL fields check that the correct error message is displayed where data for submitted records is Incorrect
+    Given I choose validation test file <Filename> to upload
+    Then I expect the file status for <Filename> to be "READY TO SEND"
+    When I finish uploading files and continue
+    Then I see the page header "Confirm your files"
 
     Examples:
       | Filename | 

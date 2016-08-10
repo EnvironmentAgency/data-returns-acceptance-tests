@@ -3,7 +3,7 @@ Feature: Check file acceptable header formats
   comprise of different header row structures
 
   Background:
-    Given I am on the Data Returns page
+    Given I am on the start page
     And I am on the "Send landfill data returns" page
     Then I start my submission
 
@@ -11,8 +11,9 @@ Feature: Check file acceptable header formats
   
   Scenario Outline: Submit files with accepted header structures
     And I choose header file <Filename> to upload
-    When I click "Check for errors"
-    Then I see the page "Confirm your file"
+    Then I expect the file status for <Filename> to be "READY TO SEND"
+    When I finish uploading files and continue
+    Then I see the page header "Confirm your files"
 
     Examples:
       | Filename |

@@ -3,19 +3,21 @@ Feature: Check file contents for missing mandatory data
   is Missing and its location within the file
 
   Background:
-    Given I am on the Data Returns page
+    Given I am on the start page
     And I am on the "Send landfill data returns" page
     Then I start my submission
 
   #------------------ Mandatory Fields --------------------------
 
-  Scenario Outline: For MANDATORY fields check that the correct error message is displayed
-    for records where data is Missing
-    Given I choose file <Filename>
-    And I click "Check for errors"
-    And Column field shows <Header>
-    And Error column shows as <Error>
-    Then I click "See details of which rows to correct" link
+  Scenario Outline: For MANDATORY fields check that the correct error message is displayed for records where data is Missing
+    Given I choose validation test file <Filename> to upload
+    Then I expect the file status for <Filename> to be "MULTIPLE VALIDATION ERRORS"
+    When I open the file details for <Filename>
+    Then Validation information contains error for <DRref>
+    And I expect the column heading for error <DRref> to be "<Header>"
+    And I expect the error type for error <DRref> to be "<Error>"
+    Then I open row correction details for error <DRref>
+    Then I expect the row correction details for error <DRref> to be shown
 
     Examples:
       | Filename | DRref | Header | Error | DRef |

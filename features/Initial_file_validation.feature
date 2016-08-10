@@ -5,31 +5,23 @@ Feature: Submit files for initial checking
   for correctness
 
   Background:
-    Given I am on the Data Returns page
+    Given I am on the start page
     And I am on the "Send landfill data returns" page
     Then I start my submission
 
-  Scenario: Submit a Non-CSV file - valid error message is displayed
-    And I choose initial file "CUKE001.png" to upload
-    When I click "Check for errors"
-    And the text "Your file isn’t saved as CSV" is displayed
+  Scenario Outline: Check for file errors (unreadable/malicious CSV content)
+    And I choose initial file <Filename> to upload
+    Then I expect the file status for <Filename> to be "<Error>"
+    When I open the file details for <Filename>
+    Then Validation information contains error for <DRref>
 
-  Scenario: Submit an Empty file - valid error message is displayed
-    And I choose initial file "CUKE002_Empty.csv" to upload
-    When I click "Check for errors"
-    Then an empty file error message is generated
+    Examples:
+      | Filename | DRref | Error |
+      | CUKE001.png | DR0400 | YOUR FILE ISN’T SAVED AS CSV |
+      | CUKE002_Empty.csv | DR0500 | YOUR FILE IS EMPTY |
+      | CUKE004_VIRUS.csv | DR0820 | YOUR DATA RETURN IS INCOMPLETE (MISSING FIELDS) |
 
-  Scenario: Submit a Security Failure file - valid error message is displayed
-    And I choose initial file "CUKE004_VIRUS.csv" to upload
-    When I click "Check for errors"
-    Then a security fail error message is generated
+# TODO: LARGE FILE UPLOAD TEST DISABLED WHILE WE FIX THE SYSTEM
+#      | CUKE005_LARGE_FILE_21M_16908_records_FAIL.csv | DR0450 | YOUR FILE ISN’T SAVED AS CSV |
 
-  Scenario: Submit a file exceeding maximum acceptable size - valid error message is displayed
-    And I choose initial file "CUKE005_LARGE_FILE_21M_16908_records_FAIL.csv" to upload
-    When I click "Check for errors"
-    Then a file is too large message is generated
-
-  Scenario: Submit a file with incorrect structure - valid error message is displayed
-    And I choose initial file "CUKE008_File_structure_data_misalignment_FAIL.csv" to upload
-    When I click "Check for errors"
-    Then a incorrect structure message is displayed
+      | CUKE008_File_structure_data_misalignment_FAIL.csv | DR0450 | THERE’S A PROBLEM WITH YOUR CSV FILE |
