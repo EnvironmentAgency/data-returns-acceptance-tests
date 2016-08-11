@@ -1,5 +1,5 @@
 Feature: Check that Dates and/or Dates and Times in UK and ISO formats are accepted
-  As an user I want records containing ISO and/or UK Dates
+  As a user I want records containing ISO and/or UK Dates
   and/or Dates and Times formats to be accepted
 
   Background:
