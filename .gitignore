@@ -8,7 +8,6 @@
 /tags
 
 # Ignore local Chimp configuration files
-chimp.js
 .idea/
 chimp
 node_modules/
