@@ -12,6 +12,6 @@ module.exports = {
 // browser.url('/customer'). If your url parameter starts with "/", the base
 // url gets prepended.
   webdriverio: {
-	baseUrl: "http://localhost:3000"
+	baseUrl: "https://dr-dev.envage.co.uk"
   }
 };

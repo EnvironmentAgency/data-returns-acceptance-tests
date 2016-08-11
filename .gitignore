@@ -9,5 +9,5 @@
 
 # Ignore local Chimp configuration files
 .idea/
-chimp
+chimp.js
 node_modules/
