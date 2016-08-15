@@ -64,12 +64,13 @@ module.exports = function() {
   //------------------ Input email and code --------------------
 
   this.Then('I input an email address', function() {
-    return browser.setValue('.form-control', "tim.stone.ea@gmail.com");
+    var randomnumber = Math.floor(Math.random() * (1 - 1000 + 1)) + minimum;
+    return browser.setValue('.form-control', "tim.stone.ea+" + randomnumber + "@gmail.com");
   });
 
-  this.Then('I input another email address', function() {
-    return browser.setValue('.form-control', "tim.stone.ea+test@gmail.com");
-  });
+  // this.Then('I input another email address', function() {
+  //   return browser.setValue('.form-control', "tim.stone.ea+test@gmail.com");
+  // });
 
   this.Then('I enter an invalid email address', function() {
     return browser.setValue('.form-control', "xxxxyz.xyz");
