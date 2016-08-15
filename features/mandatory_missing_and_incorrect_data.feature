@@ -20,11 +20,11 @@ Feature: Check file contents for Missing and incorrect mandatory data
     Then I expect the row correction details for error <DRref> to be shown
 
     Examples:
-      | Filename | DRref | Header | Error |
-      | CUKE3001_EA_ID_M_and_I_Error.csv | DR9000 | EA_ID | Missing and incorrect |
-      | CUKE3002_Return_Type_M_and_I_Error.csv | DR9010 | Rtn_Type | Missing and incorrect |
-      | CUKE3003_Monitoring_Point_M_and_I_Error.csv | DR9060 | Mon_Point | Missing and incorrect |
-      | CUKE3004_Monitoring_Date_M_and_I_Error.csv | DR9020 | Mon_Date | Missing and incorrect |
-      | CUKE3005_Parameter_M_and_I_Error.csv | DR9030 | Parameter | Missing and incorrect |
-      | CUKE3006_Value_M_and_I_Error.csv | DR9040 | Value | Missing and incorrect |
-      | CUKE3007_Unit_M_and_I_Error.csv | DR9050 | Unit | Missing and incorrect |
+      | Filename                                    | DRref  | Header   | Error                 |
+      | CUKE3001_EA_ID_M_and_I_Error.csv            | DR9000 | EA_ID    | Missing and incorrect |
+      | CUKE3002_Return_Type_M_and_I_Error.csv      | DR9010 | Rtn_Type | Missing and incorrect |
+      | CUKE3003_Monitoring_Point_M_and_I_Error.csv | DR9060 | Mon_Point| Missing and incorrect |
+      | CUKE3004_Monitoring_Date_M_and_I_Error.csv  | DR9020 | Mon_Date | Missing and incorrect |
+      | CUKE3005_Parameter_M_and_I_Error.csv        | DR9030 | Parameter| Missing and incorrect |
+      | CUKE3006_Value_M_and_I_Error.csv            | DR9040 | Value    | Missing and incorrect |
+      | CUKE3007_Unit_M_and_I_Error.csv             | DR9050 | Unit     | Missing and incorrect |
