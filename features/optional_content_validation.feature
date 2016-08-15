@@ -31,15 +31,7 @@ Feature: Check file contents for incorrect Optional data
       | CUKE4011_OPT_Smpl_By_256_Characters_FAIL.csv | DR9130 | Smpl_By | Incorrect |
       | CUKE4013_OPT_Text_Value_Non_Controlled_List_FAIL.csv | DR9080 | Txt_Value | Incorrect |
       | CUKE4014_OPT_Text_Value_256_Characters_FAIL.csv | DR9080 | Txt_Value | Incorrect |
-      #-------------
-      | CUKE4016_OPT_Text_Value_Boolean_y_FAIL.csv | DR9080 | Txt_Value | Incorrect |
-      | CUKE4017_OPT_Text_Value_Boolean_Y_FAIL.csv | DR9080 | Txt_Value | Incorrect |
-      | CUKE4018_OPT_Text_Value_Boolean_n_FAIL.csv | DR9080 | Txt_Value | Incorrect |
-      | CUKE4019_OPT_Text_Value_Boolean_N_FAIL.csv | DR9080 | Txt_Value | Incorrect |
-      | CUKE4020_OPT_Text_Value_Boolean_t_FAIL.csv | DR9080 | Txt_Value | Incorrect |
-      | CUKE4021_OPT_Text_Value_Boolean_T_FAIL.csv | DR9080 | Txt_Value | Incorrect |
-      | CUKE4022_OPT_Text_Value_Boolean_f_FAIL.csv | DR9080 | Txt_Value | Incorrect |
-      | CUKE4023_OPT_Text_Value_Boolean_F_FAIL.csv | DR9080 | Txt_Value | Incorrect |
+
       #-----------------
       | CUKE4024_OPT_Site_Name_Special_Characters_FAIL.csv | DR9110 | Site_Name | Incorrect |
       | CUKE4025_OPT_Site_Name_256_Characters_FAIL.csv | DR9110 | Site_Name | Incorrect |
