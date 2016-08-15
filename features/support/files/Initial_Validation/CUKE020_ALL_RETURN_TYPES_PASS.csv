@@ -1,15 +1,13 @@
-EA_ID,Rtn_Type,Mon_Point,Mon_Date,Parameter,Value,Unit,Ref_Period,Mon_Period,Smpl_Ref,Smpl_By,Txt_Value,Site_Name,Comments,Meth_Stand,CiC,CAS,RD_Code
-BU6000IL,EPR/IED Air (point source) emissions return,Monitor point 1,2015-08-05,"1-Chloro-4-nitrobenzene",100,ug,Continuous,Annual,Sample Reference,Sampled By,m > AOD,Landfill Emissions Site,Comments,BS EN 12260,TRUE,,R1
-BU6000IL,EPR/IED Air (ambient) monitoring return,Monitor point 1,2015-08-05,"1-Chloro-4-nitrobenzene",100,ug,Continuous,Annual,Sample Reference,Sampled By,m > AOD,Landfill Emissions Site,Comments,BS EN 12260,TRUE,,R1
-BU7090IZ,EPR/IED Leachate level return,Monitor point 2,2015-08-05,"1-Chloro-4-nitrobenzene",100,ug,Continuous,Annual,Sample Reference,Sampled By,m > AOD,Landfill Emissions Site,Comments,BS EN 12260,TRUE,,R1
-BU0605IR,EPR/IED Leachate quality return,Monitor point 3,2015-08-05,"1-Chloro-4-nitrobenzene",100,ug,Continuous,Annual,Sample Reference,Sampled By,m > AOD,Landfill Emissions Site,Comments,BS EN 12260,TRUE,,R1
-BU7103IC,EPR/IED Surface Water emissions return,Monitor point 4,2015-08-05,"1-Chloro-4-nitrobenzene",100,ug,Continuous,Annual,Sample Reference,Sampled By,m > AOD,Landfill Emissions Site,Comments,BS EN 12260,TRUE,,R1
-BK1244IA,EPR/IED Groundwater quality/level return,Monitor point 5,2015-08-05,"1-Chloro-4-nitrobenzene",100,ug,Continuous,Annual,Sample Reference,Sampled By,m > AOD,Landfill Emissions Site,Comments,BS EN 12260,TRUE,,R1
-CP3033LL,EPR/IED Landfill Gas surface emissions,Monitor point 6,2015-08-05,"1-Chloro-4-nitrobenzene",100,ug,Continuous,Annual,Sample Reference,Sampled By,m > AOD,Landfill Emissions Site,Comments,BS EN 12260,TRUE,,R1
-CP3735SM,EPR/IED Landfill Gas Perimeter,Monitor point 7,2015-08-05,"1-Chloro-4-nitrobenzene",100,ug,Continuous,Annual,Sample Reference,Sampled By,m > AOD,Landfill Emissions Site,Comments,BS EN 12260,TRUE,,R1
-DP3238SB,EPR/IED Landfill Gas in Waste,Monitor point 8,2015-08-05,"1-Chloro-4-nitrobenzene",100,ug,Continuous,Annual,Sample Reference,Sampled By,m > AOD,Landfill Emissions Site,Comments,BS EN 12260,TRUE,,R1
-DP3431PC,EPR/IED Landfill Gas infrastructure monitoring,Monitor point 9,2015-08-05,"1-Chloro-4-nitrobenzene",100,ug,Continuous,Annual,Sample Reference,Sampled By,m > AOD,Landfill Emissions Site,Comments,BS EN 12260,TRUE,,R1
-EP3136GK,EPR/IED Sewer emissions return,Monitor point 10,2015-08-05,"1-Chloro-4-nitrobenzene",100,ug,Continuous,Annual,Sample Reference,Sampled By,m > AOD,Landfill Emissions Site,Comments,BS EN 12260,TRUE,,R1
-EP3934LB,EPR/IED ETP or Tankering emissions return,Monitor point 11,2015-08-05,"1-Chloro-4-nitrobenzene",100,ug,Continuous,Annual,Sample Reference,Sampled By,m > AOD,Landfill Emissions Site,Comments,BS EN 12260,TRUE,,R1
-EP3135PE,EPR/IED Landfill Annual monitoring report,Monitor point 12,2015-08-05,"1-Chloro-4-nitrobenzene",100,ug,Continuous,Annual,Sample Reference,Sampled By,m > AOD,Landfill Emissions Site,Comments,BS EN 12260,TRUE,,R1
-FP3733BH,EPR/IED Leachate level return,Monitor point 13,2015-08-05,"1-Chloro-4-nitrobenzene",100,ug,Continuous,Annual,Sample Reference,Sampled By,m > AOD,Landfill Emissions Site,Comments,BS EN 12260,TRUE,,R1
+EA_ID,Rtn_Type,Mon_Point,Mon_Date,Parameter,Value,Unit
+BU6000IL,Landfill leachate monitoring,Monitor point 1,2015-08-05,1-Chloro-4-nitrobenzene,100,ug
+BU6000IL,Emissions to surface water,Monitor point 1,2015-08-05,1-Chloro-4-nitrobenzene,100,ug
+BU7090IZ,Emissions to groundwater,Monitor point 2,2015-08-05,1-Chloro-4-nitrobenzene,100,ug
+BU0605IR,Methane capped surfaces,Monitor point 3,2015-08-05,1-Chloro-4-nitrobenzene,100,ug
+BU7103IC,Landfill gas borehole,Monitor point 4,2015-08-05,1-Chloro-4-nitrobenzene,100,ug
+BK1244IA,Landfill gas engine,Monitor point 5,2015-08-05,1-Chloro-4-nitrobenzene,100,ug
+CP3033LL,Landfill gas flare,Monitor point 6,2015-08-05,1-Chloro-4-nitrobenzene,100,ug
+CP3735SM,Emissions to sewer,Monitor point 7,2015-08-05,1-Chloro-4-nitrobenzene,100,ug
+DP3238SB,Ambient air quality,Monitor point 8,2015-08-05,1-Chloro-4-nitrobenzene,100,ug
+DP3431PC,Air point source emissions,Monitor point 9,2015-08-05,1-Chloro-4-nitrobenzene,100,ug
+EP3136GK,Tankered emissions,Monitor point 10,2015-08-05,1-Chloro-4-nitrobenzene,100,ug
+EP3934LB,Landfill annual monitoring report,Monitor point 11,2015-08-05,1-Chloro-4-nitrobenzene,100,ug

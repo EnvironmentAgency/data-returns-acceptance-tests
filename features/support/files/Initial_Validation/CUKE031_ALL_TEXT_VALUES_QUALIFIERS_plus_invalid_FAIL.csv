@@ -1,10 +1,2 @@
-EA_ID,Rtn_Type,Mon_Point,Mon_Date,Parameter,Value,Unit
-BJ7786IV,EPR/IED Air (point source) emissions return,Monitor point 3,07/08/2015,(2-Methoxymethylethoxy)propanol,100,ug
-BJ7786IV,EPR/IED Air (point source) emissions return,Monitor point 4,08/08/2015,(2-Methoxymethylethoxy)propanol,101,ug
-BJ7786IV,EPR/IED Air (point source) emissions return,Monitor point 5,09/08/2015,(2-Methoxymethylethoxy)propanol,102,ug
-BJ7786IV,EPR/IED Air (point source) emissions return,Monitor point 6,10/08/2015,(2-Methoxymethylethoxy)propanol,103,ug
-BJ7786IV,EPR/IED Air (point source) emissions return,Monitor point 7,11/08/2015,(2-Methoxymethylethoxy)propanol,104,ug
-BJ7786IV,EPR/IED Air (point source) emissions return,Monitor point 8,12/08/2015,(2-Methoxymethylethoxy)propanol,105,ug
-BJ7786IV,EPR/IED Air (point source) emissions return,Monitor point 9,13/08/2015,(2-Methoxymethylethoxy)propanol,106,ug
-BJ7786IV,EPR/IED Air (point source) emissions return,Monitor point 10,14/08/2015,(2-Methoxymethylethoxy)propanol,107,ug
-BJ7786IV,EPR/IED Air (point source) emissions return,Monitor point 10,14/08/2015,(2-Methoxymethylethoxy)propanol,107,ug
+EA_ID,Rtn_Type,Mon_Point,Mon_Date,Parameter,Value,Unit,Qualifier
+BJ7786IV,Emissions to surface water,Monitor point 111,14/08/2116,(2-Methoxymethylethoxy)propanol,107,ug,Per tonne of undissolved solids sludge
