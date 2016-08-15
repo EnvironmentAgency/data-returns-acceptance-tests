@@ -16,10 +16,14 @@ function getUploadFileRemoveLinkSelector(filename) {
   return `${getUploadRowSelector(filename)}/div[@class='remove']//input[@type='submit']`;
 }
 
+function getRandomNumber(min, max) {
+    return Math.random() * (1000 - 1) + min;
+}
+
 module.exports = function() {
   //------------- Page check navigation -----------------------
   this.Given(/^I am on the start page$/, function() {
-    return this.browser.url('/start');
+    return this.browser.url('/start');s
   });
 
   this.Then(/^I am on the "([^"]*)" page$/, function(heading) {
@@ -64,8 +68,8 @@ module.exports = function() {
   //------------------ Input email and code --------------------
 
   this.Then('I input an email address', function() {
-    var randomnumber = Math.floor(Math.random() * (1 - 1000 + 1)) + minimum;
-    return browser.setValue('.form-control', "tim.stone.ea+" + randomnumber + "@gmail.com");
+  //   return browser.setValue('.form-control', "tim.stone.ea+" + getRandomNumber + "@gmail.com");
+    return browser.setValue('.form-control', "tim.stone.ea+test3@gmail.com");
   });
 
   // this.Then('I input another email address', function() {
