@@ -21,7 +21,6 @@ Feature: Check acceptance of files where Optional data fields do not contain dat
       | CUKE4006_OPT_Mon_Period_NULL_PASS.csv |
       | CUKE4009_OPT__Smpl_Ref_NULL_PASS.csv |
       | CUKE4012_OPT_Smpl_By_NULL_PASS.csv |
-      | CUKE4015_OPT_Text_Value_NULL_PASS.csv |
       | CUKE4026_OPT_Site_Name_NULL_PASS.csv |
       | CUKE4028_OPT_Comments_NULL_PASS.csv |
       | CUKE4032_OPT_Meth_Stand_NULL_PASS.csv |
