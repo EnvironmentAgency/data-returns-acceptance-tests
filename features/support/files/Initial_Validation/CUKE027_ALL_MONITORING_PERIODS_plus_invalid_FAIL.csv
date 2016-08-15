@@ -1,3 +1,0 @@
-EA_ID,Rtn_Type,Mon_Point,Mon_Date,Parameter,Value,Unit,Ref_Period,Return_Period,Smpl_Ref,Smpl_By,Txt_Value,Site_Name,Comments,Meth_Stand,CiC,CAS,RD_Code
-BJ7786IV,"Landfill leachate monitoring
-",Monitor point 19,23/08/2015,(2-Methoxymethylethoxy)propanol,116,ug,Spot sample,INVALID MON PERIOD,Sample Reference,Sampled By,m > AOD,Landfill Emissions Site,Comments,BS EN 12260,TRUE,,R1

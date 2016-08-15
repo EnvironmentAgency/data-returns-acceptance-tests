@@ -35,6 +35,6 @@ Feature: Submit files which contain all Controlled list values
       | CUKE021_ALL_RETURN_TYPES_plus_invalid_FAIL.csv | Incorrect |
       | CUKE023_ALL_UNITS_plus_invalid_FAIL.csv | Incorrect |
       | CUKE025_ALL_REFERENCE_PERIODS_plus_invalid_FAIL.csv | Incorrect |
-      | CUKE027_ALL_MONITORING_PERIODS_plus_invalid_FAIL.csv | Incorrect |
+      | CUKE027_ALL_RETURN_PERIODS_plus_invalid_FAIL.csv | Incorrect |
       | CUKE029_ALL_METHOD_STANDARDS_plus_invalid_FAIL.csv | Incorrect |
       | CUKE031_ALL_TEXT_VALUES_QUALIFIERS_plus_invalid_FAIL.csv | Incorrect |
