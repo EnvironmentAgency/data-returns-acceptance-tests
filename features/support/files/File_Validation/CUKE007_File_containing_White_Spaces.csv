@@ -1,17 +1,17 @@
 EA_ID,Rtn_Type,Mon_Point,Mon_Date,Parameter,Value,Unit
-BJ7786IV,EPR/IED Air (point source) emissions return,Monitor point 1,2015-08-05,"1,1,1,2-Tetrachloroethane",100,ug
-BJ7786IV,EPR/IED Air (point source) emissions return,Monitor point 1,2015-08-05,"1,1,1,2-Tetrachloroethane",100,ug
-BJ7786IV,EPR/IED Air (point source) emissions return,Monitor point 1,2015-08-05,"""1",1,1
-BJ7786IV,EPR/IED Air (point source) emissions return,Monitor point 1,2015-08-05,"1,1,1,2-Tetrachloroethane",100,ug
-BJ7786IV,EPR/IED Air (point source) emissions return,Monitor point 1,2015-08-05,"1,1,1,2-Tetrachloroethane",100,ug
-BJ7786IV,EPR/IED Air (point source) emissions return,Monitor point 1,2015-08-05,"""1",1,1
-BJ7786IV,EPR/IED Air (point source) emissions return,Monitor point 1,2015-08-05,"1,1,1,2-Tetrachloroethane",100,ug
-BJ7786IV,EPR/IED Air (point source) emissions return,Monitor point 1,2015-08-05,"""1",1,1
-BJ7786IV,EPR/IED Air (point source) emissions return,Monitor point 1,2015-08-05,""" 1",1,1
-BJ7786IV,EPR/IED Air (point source) emissions return,Monitor point 1,2015-08-05,""" 1",1,1
-BJ7786IV,EPR/IED Air (point source) emissions return,Monitor point 1,2015-08-05,"1,1,1,2-Tetrachloroethane",100, ug
-BJ7786IV,EPR/IED Air (point source) emissions return,Monitor point 1,2015-08-05,"1,1,1,2-Tetrachloroethane",100,ug 
-BJ7786IV,EPR/IED Air (point source) emissions return,Monitor point 1,2015-08-05,"1,1,1,2-Tetrachloroethane",100, ug 
-BJ7786IV,EPR/IED Air (point source) emissions return ,Monitor point 1,2015-08-05,"1,1,1,2-Tetrachloroethane",100,ug
-BJ7786IV, EPR/IED Air (point source) emissions return,Monitor point 1,2015-08-05,"1,1,1,2-Tetrachloroethane",100,ug
-BJ7786IV, EPR/IED Air (point source) emissions return ,Monitor point 1,2015-08-05,"1,1,1,2-Tetrachloroethane",100,ug
+BJ7786IV,Landfill leachate monitoring,Monitor point 1,2015-08-05,"1,1,1,2-Tetrachloroethane",100,ug
+BJ7786IV,Emissions to surface water,Monitor point 1,2015-08-05,"1,1,1,2-Tetrachloroethane",100,ug
+BJ7786IV,Emissions to groundwater,Monitor point 1,2015-08-05,"""1",1,1
+BJ7786IV,Methane capped surfaces,Monitor point 1,2015-08-05,"1,1,1,2-Tetrachloroethane",100,ug
+BJ7786IV,Landfill gas borehole,Monitor point 1,2015-08-05,"1,1,1,2-Tetrachloroethane",100,ug
+BJ7786IV,Landfill gas engine,Monitor point 1,2015-08-05,"""1",1,1
+BJ7786IV,Landfill gas flare,Monitor point 1,2015-08-05,"1,1,1,2-Tetrachloroethane",100,ug
+BJ7786IV,Emissions to sewer,Monitor point 1,2015-08-05,"""1",1,1
+BJ7786IV,Ambient air quality,Monitor point 1,2015-08-05,""" 1",1,1
+BJ7786IV,Air point source emissions,Monitor point 1,2015-08-05,""" 1",1,1
+BJ7786IV,Tankered emissions,Monitor point 1,2015-08-05,"1,1,1,2-Tetrachloroethane",100, ug
+BJ7786IV,Landfill annual monitoring report,Monitor point 1,2015-08-05,"1,1,1,2-Tetrachloroethane",100,ug 
+BJ7786IV,Landfill leachate monitoring,Monitor point 1,2015-08-05,"1,1,1,2-Tetrachloroethane",100, ug 
+BJ7786IV,Emissions to surface water,Monitor point 1,2015-08-05,"1,1,1,2-Tetrachloroethane",100,ug
+BJ7786IV,Emissions to groundwater,Monitor point 1,2015-08-05,"1,1,1,2-Tetrachloroethane",100,ug
+BJ7786IV,Methane capped surfaces,Monitor point 1,2015-08-05,"1,1,1,2-Tetrachloroethane",100,ug

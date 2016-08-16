@@ -13,7 +13,7 @@ Feature: Submit files where all data passes validation
     When I finish uploading files and continue
     Then I see the page header "Confirm your files"
     And I choose to "Continue"
-    And I input another email address
+    And I input an email address
     Then I choose to "Send email"
     Then I am on the "Enter your code" page
     Then I enter the confirmation code
@@ -27,7 +27,6 @@ Feature: Submit files where all data passes validation
       | CUKE000_SUCCESS_NO_ERRORS.csv |
       | CUKE003_Multiple_Permit_Formats_Single Rtn_Type_PASS.csv |
       | CUKE006_LARGE_FILE_MAX_21M_16907_records_PASS.csv |
-      | CUKE007_File_containing_White_Spaces.csv |
       | CUKE009_Multi_Permits_AA_GZ_PASS.csv |
       | CUKE010_Multi_Permits_HA_ZZ_PASS.csv |
       | CUKE011_Multi_Permits_10_69_PASS.csv |
