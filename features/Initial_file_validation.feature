@@ -16,12 +16,12 @@ Feature: Submit files for initial checking
     Then Validation information contains error for <DRref>
 
     Examples:
-      | Filename | DRref | Error |
-      | CUKE001.png | DR0400 | YOUR FILE ISN’T SAVED AS CSV |
-      | CUKE002_Empty.csv | DR0500 | YOUR FILE IS EMPTY |
-      | CUKE004_VIRUS.csv | DR0820 | YOUR DATA RETURN IS INCOMPLETE (MISSING FIELDS) |
+      | Filename                                          | DRref  | Error                                           |
+      | CUKE001.png                                       | DR0400 | YOUR FILE ISN’T SAVED AS CSV                    |
+      | CUKE002_Empty.csv                                 | DR0500 | YOUR FILE IS EMPTY                              |
+      | CUKE004_VIRUS.csv                                 | DR0820 | YOUR FILE IS UNSAFE                             |
 
 # TODO: LARGE FILE UPLOAD TEST DISABLED WHILE WE FIX THE SYSTEM
 #      | CUKE005_LARGE_FILE_21M_16908_records_FAIL.csv | DR0450 | YOUR FILE ISN’T SAVED AS CSV |
 
-      | CUKE008_File_structure_data_misalignment_FAIL.csv | DR0450 | THERE’S A PROBLEM WITH YOUR CSV FILE |
+      | CUKE008_File_structure_data_misalignment_FAIL.csv | DR0450 | THERE’S A PROBLEM WITH YOUR CSV FILE            |

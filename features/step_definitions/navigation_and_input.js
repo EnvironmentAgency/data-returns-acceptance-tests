@@ -16,10 +16,6 @@ function getUploadFileRemoveLinkSelector(filename) {
   return `${getUploadRowSelector(filename)}/div[@class='remove']//input[@type='submit']`;
 }
 
-function getRandomNumber(min, max) {
-    return Math.random() * (1000 - 1) + min;
-}
-
 module.exports = function() {
   //------------- Page check navigation -----------------------
   this.Given(/^I am on the start page$/, function() {
@@ -68,13 +64,9 @@ module.exports = function() {
   //------------------ Input email and code --------------------
 
   this.Then('I input an email address', function() {
-  //   return browser.setValue('.form-control', "tim.stone.ea+" + getRandomNumber + "@gmail.com");
-    return browser.setValue('.form-control', "tim.stone.ea+test3@gmail.com");
+    return browser.setValue('.form-control', 'tim.stone.ea+' +  Math.round(Math.random() * 1000) + '@gmail.com');
+    // return browser.setValue('.form-control', "tim.stone.ea+test@gmail.com");
   });
-
-  // this.Then('I input another email address', function() {
-  //   return browser.setValue('.form-control', "tim.stone.ea+test@gmail.com");
-  // });
 
   this.Then('I enter an invalid email address', function() {
     return browser.setValue('.form-control', "xxxxyz.xyz");
