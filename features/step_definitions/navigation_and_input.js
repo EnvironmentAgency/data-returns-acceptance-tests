@@ -19,15 +19,20 @@ function getUploadFileRemoveLinkSelector(filename) {
 module.exports = function() {
   //------------- Page check navigation -----------------------
   this.Given(/^I am on the start page$/, function() {
-    return this.browser.url('/start');s
+    return this.browser.url('/start');
   });
 
   this.Then(/^I am on the "([^"]*)" page$/, function(heading) {
     expect(browser.getText('h1')).toEqual(heading);
   });
 
-  this.Then(/^I see the page header "([^"]*)"$/, function(heading) {
-    return expect(browser.getText('//main//h1[1]')).toEqual(heading);
+  this.Then(/^I see the page header "([^"]*)"$/, function(expectedHeading) {
+    let heading = browser.getText('//main//h1');
+    // If there are multiple h1 elements - we're only interested in the first of them
+    if (Array.isArray(heading) && heading.length > 0) {
+      heading = heading[0];
+    }
+    return expect(heading).toEqual(expectedHeading);
   });
 
   //---------------------- Functions specific to the file upload table -------------

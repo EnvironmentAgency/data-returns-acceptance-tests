@@ -8,8 +8,7 @@ module.exports = function() {
   this.Then(/^Validation information contains error for DR(\d+)$/, checkForErrorCodeMaker);
 
   this.Then(/^I open row correction details for error DR(\d+)$/, function (errorCode) {
-    let rowCorrectionsLink = browser.element(`//a[contains(@href, 'id=DR${errorCode}')]`);
-    rowCorrectionsLink.click();
+    return browser.click(`//a[contains(@href, 'id=DR${errorCode}')]`);
   });
 
   this.Then(/^I expect the row correction details for error DR(\d+) to be shown$/, checkForErrorCodeMaker);

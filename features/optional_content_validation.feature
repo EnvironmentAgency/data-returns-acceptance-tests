@@ -18,7 +18,8 @@ Feature: Check file contents for incorrect Optional data
     And I expect the column heading for error <DRref> to be "<Header>"
     And I expect the error type for error <DRref> to be "<Error>"
     Then I open row correction details for error <DRref>
-    Then I expect the row correction details for error <DRref> to be shown
+    And I see the page header "Details of errors"
+    And I expect the row correction details for error <DRref> to be shown
 
     Examples:
       | Filename                                              | DRref  | Header     | Error     |

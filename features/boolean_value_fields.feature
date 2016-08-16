@@ -34,7 +34,8 @@ Feature: Submit files where data comprises of Boolean values
     When I open the file details for <Filename>
     Then Validation information contains error for <DRref>
     Then I open row correction details for error <DRref>
-    Then I expect the row correction details for error <DRref> to be shown
+    And I see the page header "Details of errors"
+    And I expect the row correction details for error <DRref> to be shown
 
     Examples:
       | Filename | DRref |
