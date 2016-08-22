@@ -12,19 +12,23 @@ Feature: Submit files where text value requires comments
     Then I expect the file status for <Filename> to be "READY TO SEND"
 
     Examples:
-      | Filename |
+      | Filename                                 |
       | CUKE7023_Text_Value_has_comment_PASS.csv |
+      | CUKE7023b_Text_Value_has_comment_PASS.csv|
 
 
   Scenario Outline: Check that the correct error message is displayed for missing comment
-    And I choose boolean file <Filename> to upload
-    Then I expect the file status for <Filename> to be "MULTIPLE VALIDATION ERRORS"
-    When I open the file details for <Filename>
-    Then Validation information contains error for <DRref>
-    Then I open row correction details for error <DRref>
-    And I see the page header "Details of errors"
-    And I expect the row correction details for error <DRref> to be shown
+    * I choose boolean file <Filename> to upload
+    * I expect the file status for <Filename> to be "MULTIPLE VALIDATION ERRORS"
+    * I open the file details for <Filename>
+    * I expect the column heading for error <DRref> to be "<Header>"
+    * I expect the error type for error <DRref> to be "<Error>"
+    * Validation information contains error for <DRref>
+    * I open row correction details for error <DRref>
+    * I see the page header "Details of errors"
+    * I expect the row correction details for error <DRref> to be shown
 
     Examples:
-      | Filename | DRref |
-      | CUKE7024_Text_Value_has_no_comment_FAIL.csv | DR9140 |
+      | Filename                                     | DRref   | Header   | Error     |
+      | CUKE7024_Text_Value_has_no_comment_FAIL.csv  | DR9140  | Comment  | Missing   |
+      | CUKE7024b_Text_Value_has_no_comment_FAIL.csv | DR9140  | Comment  | Missing   |
