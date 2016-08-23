@@ -26,18 +26,23 @@ Feature: Submit files which contain all Controlled list values
   Scenario Outline: Submit file comprising invalid Controlled List value
     Given I choose initial file <Filename> to upload
     Then I expect the file status for <Filename> to be "MULTIPLE VALIDATION ERRORS"
-    Then I finish uploading files and continue
-    Then I am unable to continue
+    When I open the file details for <Filename>
+    Then Validation information contains error for <DRref>
+    And I expect the column heading for error <DRref> to be "<Header>"
+    And I expect the error type for error <DRref> to be "<Error>"
+    Then I open row correction details for error <DRref>
+    And I see the page header "Details of errors"
+    And I expect the row correction details for error <DRref> to be shown
 
     Examples:
-      | Filename                                                      | Error     |
-      | CUKE019_ALL_PARAMETERS_plus_invalid_FAIL.csv                  | Incorrect |
-      | CUKE021_ALL_RETURN_TYPES_plus_invalid_FAIL.csv                | Incorrect |
-      | CUKE023_ALL_UNITS_plus_invalid_FAIL.csv                       | Incorrect |
-      | CUKE025_ALL_REFERENCE_PERIODS_plus_invalid_FAIL.csv           | Incorrect |
-      | CUKE027_ALL_RETURN_PERIODS_plus_invalid_FAIL.csv              | Incorrect |
-      | CUKE029_ALL_METHOD_STANDARDS_plus_invalid_FAIL.csv            | Incorrect |
-      | CUKE031_ALL_TEXT_VALUES_QUALIFIERS_plus_invalid_FAIL.csv      | Incorrect |
+      | Filename                                                      | DRref     | Header      | Error     |
+      | CUKE019_ALL_PARAMETERS_plus_invalid_FAIL.csv                  | DR9030    | Parameter   | Incorrect |
+      | CUKE021_ALL_RETURN_TYPES_plus_invalid_FAIL.csv                | DR9010    | Rtn_Type    | Incorrect |
+      | CUKE023_ALL_UNITS_plus_invalid_FAIL.csv                       | DR9050    | Unit        | Incorrect |
+      | CUKE025_ALL_REFERENCE_PERIODS_plus_invalid_FAIL.csv           | DR9090    | Ref_Period  | Incorrect |
+      | CUKE027_ALL_RETURN_PERIODS_plus_invalid_FAIL.csv              | DR9070    | Rtn_Period  | Incorrect |
+      | CUKE029_ALL_METHOD_STANDARDS_plus_invalid_FAIL.csv            | DR9100    | Meth_Stand  | Incorrect |
+      | CUKE031_ALL_TEXT_VALUES_QUALIFIERS_plus_invalid_FAIL.csv      | DR9180    | Qualifier   | Incorrect |
 
     Scenario Outline: Successfully submit files comprising all controlled Lists values with incorrect case (excluding units)
     Given I choose initial file <Filename> to upload
