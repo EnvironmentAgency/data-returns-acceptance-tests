@@ -13,15 +13,15 @@ Feature: Submit files for initial checking
     And I choose initial file <Filename> to upload
     Then I expect the file status for <Filename> to be "<Error>"
     When I open the file details for <Filename>
-    Then Validation information contains error for <DRref>
+    Then Invalid file information contains error for <DRref>
 
     Examples:
       | Filename                                          | DRref  | Error                                           |
-      | CUKE001.png                                       | DR0400 | YOUR FILE ISN’T SAVED AS CSV                    |
-      | CUKE002_Empty.csv                                 | DR0500 | YOUR FILE IS EMPTY                              |
-      | CUKE004_VIRUS.csv                                 | DR0600 | YOUR FILE IS UNSAFE                             |
-      | CUKE005_LARGE_FILE_21M_16908_records_FAIL.csv     | DR0550 | YOUR FILE IS TOO LARGE                          |
-      | CUKE008_File_structure_data_misalignment_FAIL.csv | DR0450 | THERE’S A PROBLEM WITH YOUR CSV FILE            |
+      | CUKE001.png                                       | DR400 | YOUR FILE ISN’T SAVED AS CSV                    |
+      | CUKE002_Empty.csv                                 | DR500 | YOUR FILE IS EMPTY                              |
+      | CUKE004_VIRUS.csv                                 | DR600 | YOUR FILE IS UNSAFE                             |
+      | CUKE005_LARGE_FILE_21M_16908_records_FAIL.csv     | DR550 | YOUR FILE IS TOO LARGE                          |
+      | CUKE008_File_structure_data_misalignment_FAIL.csv | DR450 | THERE’S A PROBLEM WITH YOUR CSV FILE            |
 
 
     
