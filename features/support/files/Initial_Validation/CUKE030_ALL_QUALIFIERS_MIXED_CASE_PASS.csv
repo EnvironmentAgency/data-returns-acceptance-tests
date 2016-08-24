@@ -1,0 +1,202 @@
+EA_ID,Rtn_Type,Mon_Point,Mon_Date,Parameter,Value,Unit,Qualifier
+BJ7786IV,Emissions to surface water,Monitor point 3,07/08/2015,(2-Methoxymethylethoxy)propanol,100,ug,% of total
+BJ7786IV,Emissions to surface water,Monitor point 4,08/08/2015,(2-Methoxymethylethoxy)propanol,101,ug,0.5X DILUTION
+BJ7786IV,Emissions to surface water,Monitor point 5,09/08/2015,(2-Methoxymethylethoxy)propanol,102,ug,10X DILUTION
+BJ7786IV,Emissions to surface water,Monitor point 6,10/08/2015,(2-Methoxymethylethoxy)propanol,103,ug,1X DILUTION
+BJ7786IV,Emissions to surface water,Monitor point 7,11/08/2015,(2-Methoxymethylethoxy)propanol,104,ug,25X DILUTION
+BJ7786IV,Emissions to surface water,Monitor point 8,12/08/2015,(2-Methoxymethylethoxy)propanol,105,ug,2X DILUTION
+BJ7786IV,Emissions to surface water,Monitor point 9,14/08/2015,(2-Methoxymethylethoxy)propanol,106,ug,3X DILUTION
+BJ7786IV,Emissions to surface water,Monitor point 10,14/08/2015,(2-Methoxymethylethoxy)propanol,107,ug,4-hour start up
+BJ7786IV,Emissions to surface water,Monitor point 11,14/08/2015,(2-Methoxymethylethoxy)propanol,107,ug,Abnormal
+BJ7786IV,Emissions to surface water,Monitor point 12,14/08/2015,(2-Methoxymethylethoxy)propanol,107,ug,ACID POSITIVE
+BJ7786IV,Emissions to surface water,Monitor point 13,14/08/2015,(2-Methoxymethylethoxy)propanol,107,ug,Acidified
+BJ7786IV,Emissions to surface water,Monitor point 14,14/08/2015,(2-Methoxymethylethoxy)propanol,107,ug,ADDITIONAL DILUTION
+BJ7786IV,Emissions to surface water,Monitor point 15,14/08/2015,(2-Methoxymethylethoxy)propanol,107,ug,Aerobic
+BJ7786IV,Emissions to surface water,Monitor point 16,14/08/2015,(2-Methoxymethylethoxy)propanol,107,ug,AFTER DERIVATISATION
+BJ7786IV,Emissions to surface water,Monitor point 17,14/08/2015,(2-Methoxymethylethoxy)propanol,107,ug,AIR DRIED
+BJ7786IV,Emissions to surface water,Monitor point 18,14/08/2015,(2-Methoxymethylethoxy)propanol,107,ug,Air dried solids
+BJ7786IV,Emissions to surface water,Monitor point 19,14/08/2015,(2-Methoxymethylethoxy)propanol,107,ug,Albuminoid
+BJ7786IV,Emissions to surface water,Monitor point 20,14/08/2015,(2-Methoxymethylethoxy)propanol,107,ug,ALL ISOMERS
+BJ7786IV,Emissions to surface water,Monitor point 21,14/08/2015,(2-Methoxymethylethoxy)propanol,107,ug,Anaerobic
+BJ7786IV,Emissions to surface water,Monitor point 22,14/08/2015,(2-Methoxymethylethoxy)propanol,107,ug,AS ITEQ
+BJ7786IV,Emissions to surface water,Monitor point 23,14/08/2015,(2-Methoxymethylethoxy)propanol,107,ug,As WHO TEQ
+BJ7786IV,Emissions to surface water,Monitor point 24,14/08/2015,(2-Methoxymethylethoxy)propanol,107,ug,AT REST
+BJ7786IV,Emissions to surface water,Monitor point 25,14/08/2015,(2-Methoxymethylethoxy)propanol,107,ug,BACKGROUND CORRECTED
+BJ7786IV,Emissions to surface water,Monitor point 26,14/08/2015,(2-Methoxymethylethoxy)propanol,107,ug,Beta oestradiol equivalent
+BJ7786IV,Emissions to surface water,Monitor point 27,14/08/2015,(2-Methoxymethylethoxy)propanol,107,ug,Bioavailable
+BJ7786IV,Emissions to surface water,Monitor point 28,14/08/2015,(2-Methoxymethylethoxy)propanol,107,ug,Calculated
+BJ7786IV,Emissions to surface water,Monitor point 29,14/08/2015,(2-Methoxymethylethoxy)propanol,107,ug,CODED
+BJ7786IV,Emissions to surface water,Monitor point 30,14/08/2015,(2-Methoxymethylethoxy)propanol,107,ug,Combined
+BJ7786IV,Emissions to surface water,Monitor point 31,14/08/2015,(2-Methoxymethylethoxy)propanol,107,ug,COMBINED FRACTION
+BJ7786IV,Emissions to surface water,Monitor point 32,14/08/2015,(2-Methoxymethylethoxy)propanol,107,ug,COMBINED LIMIT
+BJ7786IV,Emissions to surface water,Monitor point 33,14/08/2015,(2-Methoxymethylethoxy)propanol,107,ug,Comparison
+BJ7786IV,Emissions to surface water,Monitor point 34,14/08/2015,(2-Methoxymethylethoxy)propanol,107,ug,Complex
+BJ7786IV,Emissions to surface water,Monitor point 35,14/08/2015,(2-Methoxymethylethoxy)propanol,107,ug,Confirmed
+BJ7786IV,Emissions to surface water,Monitor point 36,14/08/2015,(2-Methoxymethylethoxy)propanol,107,ug,Corrected
+BJ7786IV,Emissions to surface water,Monitor point 37,14/08/2015,(2-Methoxymethylethoxy)propanol,107,ug,Count
+BJ7786IV,Emissions to surface water,Monitor point 38,14/08/2015,(2-Methoxymethylethoxy)propanol,107,ug,Critical Threshold (CT)
+BJ7786IV,Emissions to surface water,Monitor point 39,14/08/2015,(2-Methoxymethylethoxy)propanol,107,ug,Detected
+BJ7786IV,Emissions to surface water,Monitor point 40,14/08/2015,(2-Methoxymethylethoxy)propanol,107,ug,DIELECTRIC STRENGTH
+BJ7786IV,Emissions to surface water,Monitor point 41,14/08/2015,(2-Methoxymethylethoxy)propanol,107,ug,Digested
+BJ7786IV,Emissions to surface water,Monitor point 42,14/08/2015,(2-Methoxymethylethoxy)propanol,107,ug,Disposal
+BJ7786IV,Emissions to surface water,Monitor point 43,14/08/2015,(2-Methoxymethylethoxy)propanol,107,ug,Dissolved
+BJ7786IV,Emissions to surface water,Monitor point 44,14/08/2015,(2-Methoxymethylethoxy)propanol,107,ug,DRY WEIGHT
+BJ7786IV,Emissions to surface water,Monitor point 45,14/08/2015,(2-Methoxymethylethoxy)propanol,107,ug,Drying
+BJ7786IV,Emissions to surface water,Monitor point 46,14/08/2015,(2-Methoxymethylethoxy)propanol,107,ug,Duration
+BJ7786IV,Emissions to surface water,Monitor point 47,14/08/2015,(2-Methoxymethylethoxy)propanol,107,ug,DYNAMIC LOAD
+BJ7786IV,Emissions to surface water,Monitor point 48,14/08/2015,(2-Methoxymethylethoxy)propanol,107,ug,EASILY LIBERABLE
+BJ7786IV,Emissions to surface water,Monitor point 49,14/08/2015,(2-Methoxymethylethoxy)propanol,107,ug,Emulsified
+BJ7786IV,Emissions to surface water,Monitor point 50,14/08/2015,(2-Methoxymethylethoxy)propanol,107,ug,Estimated
+BJ7786IV,Emissions to surface water,Monitor point 51,14/08/2015,(2-Methoxymethylethoxy)propanol,107,ug,Extract
+BJ7786IV,Emissions to surface water,Monitor point 52,14/08/2015,(2-Methoxymethylethoxy)propanol,107,ug,Extractable
+BJ7786IV,Emissions to surface water,Monitor point 53,14/08/2015,(2-Methoxymethylethoxy)propanol,107,ug,EXTREME WEATHER
+BJ7786IV,Emissions to surface water,Monitor point 54,14/08/2015,(2-Methoxymethylethoxy)propanol,107,ug,Filtered
+BJ7786IV,Emissions to surface water,Monitor point 55,14/08/2015,(2-Methoxymethylethoxy)propanol,107,ug,FILTRATION SIMPLE
+BJ7786IV,Emissions to surface water,Monitor point 56,14/08/2015,(2-Methoxymethylethoxy)propanol,107,ug,Fraction
+BJ7786IV,Emissions to surface water,Monitor point 57,14/08/2015,(2-Methoxymethylethoxy)propanol,107,ug,FRACTION ORGANIC
+BJ7786IV,Emissions to surface water,Monitor point 58,14/08/2015,(2-Methoxymethylethoxy)propanol,107,ug,Free
+BJ7786IV,Emissions to surface water,Monitor point 59,14/08/2015,(2-Methoxymethylethoxy)propanol,107,ug,Free and loosely complexed
+BJ7786IV,Emissions to surface water,Monitor point 60,14/08/2015,(2-Methoxymethylethoxy)propanol,107,ug,FROM MINIMUM
+BJ7786IV,Emissions to surface water,Monitor point 61,14/08/2015,(2-Methoxymethylethoxy)propanol,107,ug,From qualifying renewable fuel sources
+BJ7786IV,Emissions to surface water,Monitor point 62,14/08/2015,(2-Methoxymethylethoxy)propanol,107,ug,Gas
+BJ7786IV,Emissions to surface water,Monitor point 63,14/08/2015,(2-Methoxymethylethoxy)propanol,107,ug,GAS FIRED
+BJ7786IV,Emissions to surface water,Monitor point 64,14/08/2015,(2-Methoxymethylethoxy)propanol,107,ug,Gas oil/low sulphur fuel
+BJ7786IV,Emissions to surface water,Monitor point 65,14/08/2015,(2-Methoxymethylethoxy)propanol,107,ug,Gauged
+BJ7786IV,Emissions to surface water,Monitor point 66,14/08/2015,(2-Methoxymethylethoxy)propanol,107,ug,HIGH COP
+BJ7786IV,Emissions to surface water,Monitor point 67,14/08/2015,(2-Methoxymethylethoxy)propanol,107,ug,HIGH LOAD
+BJ7786IV,Emissions to surface water,Monitor point 68,14/08/2015,(2-Methoxymethylethoxy)propanol,107,ug,Ignition
+BJ7786IV,Emissions to surface water,Monitor point 69,14/08/2015,(2-Methoxymethylethoxy)propanol,107,ug,In non-aqueous liquid
+BJ7786IV,Emissions to surface water,Monitor point 70,14/08/2015,(2-Methoxymethylethoxy)propanol,107,ug,In pore water
+BJ7786IV,Emissions to surface water,Monitor point 71,14/08/2015,(2-Methoxymethylethoxy)propanol,107,ug,IN SITU
+BJ7786IV,Emissions to surface water,Monitor point 72,14/08/2015,(2-Methoxymethylethoxy)propanol,107,ug,Insoluble
+BJ7786IV,Emissions to surface water,Monitor point 73,14/08/2015,(2-Methoxymethylethoxy)propanol,107,ug,Instrumental
+BJ7786IV,Emissions to surface water,Monitor point 74,14/08/2015,(2-Methoxymethylethoxy)propanol,107,ug,Integrator
+BJ7786IV,Emissions to surface water,Monitor point 75,14/08/2015,(2-Methoxymethylethoxy)propanol,107,ug,ITEQ
+BJ7786IV,Emissions to surface water,Monitor point 76,14/08/2015,(2-Methoxymethylethoxy)propanol,107,ug,Largest
+BJ7786IV,Emissions to surface water,Monitor point 77,14/08/2015,(2-Methoxymethylethoxy)propanol,107,ug,Leach
+BJ7786IV,Emissions to surface water,Monitor point 78,14/08/2015,(2-Methoxymethylethoxy)propanol,107,ug,Leachable
+BJ7786IV,Emissions to surface water,Monitor point 79,14/08/2015,(2-Methoxymethylethoxy)propanol,107,ug,Leachate
+BJ7786IV,Emissions to surface water,Monitor point 80,14/08/2015,(2-Methoxymethylethoxy)propanol,107,ug,Load
+BJ7786IV,Emissions to surface water,Monitor point 81,14/08/2015,(2-Methoxymethylethoxy)propanol,107,ug,LOW COP
+BJ7786IV,Emissions to surface water,Monitor point 82,14/08/2015,(2-Methoxymethylethoxy)propanol,107,ug,LOW LEVEL
+BJ7786IV,Emissions to surface water,Monitor point 83,14/08/2015,(2-Methoxymethylethoxy)propanol,107,ug,LOW LOAD
+BJ7786IV,Emissions to surface water,Monitor point 84,14/08/2015,(2-Methoxymethylethoxy)propanol,107,ug,Lower 95% confidence limit
+BJ7786IV,Emissions to surface water,Monitor point 85,14/08/2015,(2-Methoxymethylethoxy)propanol,107,ug,MAIN COLOUR
+BJ7786IV,Emissions to surface water,Monitor point 86,14/08/2015,(2-Methoxymethylethoxy)propanol,107,ug,Maximum
+BJ7786IV,Emissions to surface water,Monitor point 87,14/08/2015,(2-Methoxymethylethoxy)propanol,107,ug,Mean
+BJ7786IV,Emissions to surface water,Monitor point 88,14/08/2015,(2-Methoxymethylethoxy)propanol,107,ug,Measured
+BJ7786IV,Emissions to surface water,Monitor point 89,14/08/2015,(2-Methoxymethylethoxy)propanol,107,ug,Median
+BJ7786IV,Emissions to surface water,Monitor point 90,14/08/2015,(2-Methoxymethylethoxy)propanol,107,ug,MEPP
+BJ7786IV,Emissions to surface water,Monitor point 91,14/08/2015,(2-Methoxymethylethoxy)propanol,107,ug,MEPP down or cross gradient
+BJ7786IV,Emissions to surface water,Monitor point 92,14/08/2015,(2-Methoxymethylethoxy)propanol,107,ug,MEPP up gradient
+BJ7786IV,Emissions to surface water,Monitor point 93,14/08/2015,(2-Methoxymethylethoxy)propanol,107,ug,MIXED ISOMERS
+BJ7786IV,Emissions to surface water,Monitor point 94,14/08/2015,(2-Methoxymethylethoxy)propanol,107,ug,NATURAL GAS
+BJ7786IV,Emissions to surface water,Monitor point 95,14/08/2015,(2-Methoxymethylethoxy)propanol,107,ug,Natural gas and standby fuel when the boiler is run for >72 hours
+BJ7786IV,Emissions to surface water,Monitor point 96,14/08/2015,(2-Methoxymethylethoxy)propanol,107,ug,Naturalised
+BJ7786IV,Emissions to surface water,Monitor point 97,14/08/2015,(2-Methoxymethylethoxy)propanol,107,ug,Nature
+BJ7786IV,Emissions to surface water,Monitor point 98,14/08/2015,(2-Methoxymethylethoxy)propanol,107,ug,NATURE CODE
+BJ7786IV,Emissions to surface water,Monitor point 99,14/08/2015,(2-Methoxymethylethoxy)propanol,107,ug,Negative
+BJ7786IV,Emissions to surface water,Monitor point 100,14/08/2015,(2-Methoxymethylethoxy)propanol,107,ug,Nett
+BJ7786IV,Emissions to surface water,Monitor point 101,14/08/2015,(2-Methoxymethylethoxy)propanol,107,ug,NON-FOSSIL FUEL
+BJ7786IV,Emissions to surface water,Monitor point 102,14/08/2015,(2-Methoxymethylethoxy)propanol,107,ug,Non-volatile
+BJ7786IV,Emissions to surface water,Monitor point 103,14/08/2015,(2-Methoxymethylethoxy)propanol,107,ug,Normal
+BJ7786IV,Emissions to surface water,Monitor point 104,14/08/2015,(2-Methoxymethylethoxy)propanol,107,ug,NORMAL OPERATION
+BJ7786IV,Emissions to surface water,Monitor point 105,14/08/2015,(2-Methoxymethylethoxy)propanol,107,ug,ON SITE
+BJ7786IV,Emissions to surface water,Monitor point 106,14/08/2015,(2-Methoxymethylethoxy)propanol,107,ug,ONE STAGE
+BJ7786IV,Emissions to surface water,Monitor point 107,14/08/2015,(2-Methoxymethylethoxy)propanol,107,ug,Oxidised
+BJ7786IV,Emissions to surface water,Monitor point 108,14/08/2015,(2-Methoxymethylethoxy)propanol,107,ug,Particulate
+BJ7786IV,Emissions to surface water,Monitor point 109,14/08/2015,(2-Methoxymethylethoxy)propanol,107,ug,PASSIVE SAMPLING
+BJ7786IV,Emissions to surface water,Monitor point 110,14/08/2015,(2-Methoxymethylethoxy)propanol,107,ug,PEAK READING
+BJ7786IV,Emissions to surface water,Monitor point 111,14/08/2015,(2-Methoxymethylethoxy)propanol,107,ug,Per tonne of dissolved solids sludge
+BJ7786IV,Emissions to surface water,Monitor point 112,14/08/2015,(2-Methoxymethylethoxy)propanol,107,ug,Per tonne of product
+BJ7786IV,Emissions to surface water,Monitor point 113,14/08/2015,(2-Methoxymethylethoxy)propanol,107,ug,Permanent
+BJ7786IV,Emissions to surface water,Monitor point 114,14/08/2015,(2-Methoxymethylethoxy)propanol,107,ug,PHYSICALLY SEPARABLE
+BJ7786IV,Emissions to surface water,Monitor point 115,14/08/2015,(2-Methoxymethylethoxy)propanol,107,ug,Positive
+BJ7786IV,Emissions to surface water,Monitor point 116,14/08/2015,(2-Methoxymethylethoxy)propanol,107,ug,Predicted
+BJ7786IV,Emissions to surface water,Monitor point 117,14/08/2015,(2-Methoxymethylethoxy)propanol,107,ug,Presumptive
+BJ7786IV,Emissions to surface water,Monitor point 118,14/08/2015,(2-Methoxymethylethoxy)propanol,107,ug,Pumping
+BJ7786IV,Emissions to surface water,Monitor point 119,14/08/2015,(2-Methoxymethylethoxy)propanol,107,ug,Purged
+BJ7786IV,Emissions to surface water,Monitor point 120,14/08/2015,(2-Methoxymethylethoxy)propanol,107,ug,Qualitative
+BJ7786IV,Emissions to surface water,Monitor point 121,14/08/2015,(2-Methoxymethylethoxy)propanol,107,ug,Quantitative
+BJ7786IV,Emissions to surface water,Monitor point 122,14/08/2015,(2-Methoxymethylethoxy)propanol,107,ug,Quantity
+BJ7786IV,Emissions to surface water,Monitor point 123,14/08/2015,(2-Methoxymethylethoxy)propanol,107,ug,Rate of change
+BJ7786IV,Emissions to surface water,Monitor point 124,14/08/2015,(2-Methoxymethylethoxy)propanol,107,ug,Ratio
+BJ7786IV,Emissions to surface water,Monitor point 125,14/08/2015,(2-Methoxymethylethoxy)propanol,107,ug,Recovery
+BJ7786IV,Emissions to surface water,Monitor point 126,14/08/2015,(2-Methoxymethylethoxy)propanol,107,ug,Reducible
+BJ7786IV,Emissions to surface water,Monitor point 127,14/08/2015,(2-Methoxymethylethoxy)propanol,107,ug,Relative to atmospheric pressure
+BJ7786IV,Emissions to surface water,Monitor point 128,14/08/2015,(2-Methoxymethylethoxy)propanol,107,ug,Relative to chart datum
+BJ7786IV,Emissions to surface water,Monitor point 129,14/08/2015,(2-Methoxymethylethoxy)propanol,107,ug,Relative to local datum
+BJ7786IV,Emissions to surface water,Monitor point 130,14/08/2015,(2-Methoxymethylethoxy)propanol,107,ug,Residue
+BJ7786IV,Emissions to surface water,Monitor point 131,14/08/2015,(2-Methoxymethylethoxy)propanol,107,ug,RESPIRABLE DUST
+BJ7786IV,Emissions to surface water,Monitor point 132,14/08/2015,(2-Methoxymethylethoxy)propanol,107,ug,ROLLING TOTAL
+BJ7786IV,Emissions to surface water,Monitor point 133,14/08/2015,(2-Methoxymethylethoxy)propanol,107,ug,Screen
+BJ7786IV,Emissions to surface water,Monitor point 134,14/08/2015,(2-Methoxymethylethoxy)propanol,107,ug,Semi-quantitative
+BJ7786IV,Emissions to surface water,Monitor point 135,14/08/2015,(2-Methoxymethylethoxy)propanol,107,ug,Semi-volatile
+BJ7786IV,Emissions to surface water,Monitor point 136,14/08/2015,(2-Methoxymethylethoxy)propanol,107,ug,Separable
+BJ7786IV,Emissions to surface water,Monitor point 137,14/08/2015,(2-Methoxymethylethoxy)propanol,107,ug,Settleable
+BJ7786IV,Emissions to surface water,Monitor point 138,14/08/2015,(2-Methoxymethylethoxy)propanol,107,ug,Settled
+BJ7786IV,Emissions to surface water,Monitor point 139,14/08/2015,(2-Methoxymethylethoxy)propanol,107,ug,Shaken
+BJ7786IV,Emissions to surface water,Monitor point 140,14/08/2015,(2-Methoxymethylethoxy)propanol,107,ug,Sieved
+BJ7786IV,Emissions to surface water,Monitor point 141,14/08/2015,(2-Methoxymethylethoxy)propanol,107,ug,Smallest
+BJ7786IV,Emissions to surface water,Monitor point 142,14/08/2015,(2-Methoxymethylethoxy)propanol,107,ug,Solid
+BJ7786IV,Emissions to surface water,Monitor point 143,14/08/2015,(2-Methoxymethylethoxy)propanol,107,ug,SOLID SAMPLE
+BJ7786IV,Emissions to surface water,Monitor point 144,14/08/2015,(2-Methoxymethylethoxy)propanol,107,ug,Soluble
+BJ7786IV,Emissions to surface water,Monitor point 145,14/08/2015,(2-Methoxymethylethoxy)propanol,107,ug,SOLUBLE 2:1
+BJ7786IV,Emissions to surface water,Monitor point 146,14/08/2015,(2-Methoxymethylethoxy)propanol,107,ug,STANDBY FUEL
+BJ7786IV,Emissions to surface water,Monitor point 147,14/08/2015,(2-Methoxymethylethoxy)propanol,107,ug,Standby fuel only
+BJ7786IV,Emissions to surface water,Monitor point 148,14/08/2015,(2-Methoxymethylethoxy)propanol,107,ug,Stirred
+BJ7786IV,Emissions to surface water,Monitor point 149,14/08/2015,(2-Methoxymethylethoxy)propanol,107,ug,Strandline
+BJ7786IV,Emissions to surface water,Monitor point 150,14/08/2015,(2-Methoxymethylethoxy)propanol,107,ug,Strandline scale 0-3
+BJ7786IV,Emissions to surface water,Monitor point 151,14/08/2015,(2-Methoxymethylethoxy)propanol,107,ug,Strandline to waters edge
+BJ7786IV,Emissions to surface water,Monitor point 152,14/08/2015,(2-Methoxymethylethoxy)propanol,107,ug,Strandline to waters edge scale 0-3
+BJ7786IV,Emissions to surface water,Monitor point 153,14/08/2015,(2-Methoxymethylethoxy)propanol,107,ug,SUM IDENTIFIED
+BJ7786IV,Emissions to surface water,Monitor point 154,14/08/2015,(2-Methoxymethylethoxy)propanol,107,ug,Sum of 25 congeners
+BJ7786IV,Emissions to surface water,Monitor point 155,14/08/2015,(2-Methoxymethylethoxy)propanol,107,ug,Sum of all isomers
+BJ7786IV,Emissions to surface water,Monitor point 156,14/08/2015,(2-Methoxymethylethoxy)propanol,107,ug,Sum of components
+BJ7786IV,Emissions to surface water,Monitor point 157,14/08/2015,(2-Methoxymethylethoxy)propanol,107,ug,Sum of derivatives
+BJ7786IV,Emissions to surface water,Monitor point 158,14/08/2015,(2-Methoxymethylethoxy)propanol,107,ug,Sum of isomers
+BJ7786IV,Emissions to surface water,Monitor point 159,14/08/2015,(2-Methoxymethylethoxy)propanol,107,ug,Surface
+BJ7786IV,Emissions to surface water,Monitor point 160,14/08/2015,(2-Methoxymethylethoxy)propanol,107,ug,Suspended
+BJ7786IV,Emissions to surface water,Monitor point 161,14/08/2015,(2-Methoxymethylethoxy)propanol,107,ug,Temporary
+BJ7786IV,Emissions to surface water,Monitor point 162,14/08/2015,(2-Methoxymethylethoxy)propanol,107,ug,TEXTURE
+BJ7786IV,Emissions to surface water,Monitor point 163,14/08/2015,(2-Methoxymethylethoxy)propanol,107,ug,THRESHOLD NUMBER
+BJ7786IV,Emissions to surface water,Monitor point 164,14/08/2015,(2-Methoxymethylethoxy)propanol,107,ug,TITRATION
+BJ7786IV,Emissions to surface water,Monitor point 165,14/08/2015,(2-Methoxymethylethoxy)propanol,107,ug,TO MAXIMUM
+BJ7786IV,Emissions to surface water,Monitor point 166,14/08/2015,(2-Methoxymethylethoxy)propanol,107,ug,TOTAL
+BJ7786IV,Emissions to surface water,Monitor point 167,14/08/2015,(2-Methoxymethylethoxy)propanol,107,ug,TOTAL AVAILABLE
+BJ7786IV,Emissions to surface water,Monitor point 168,14/08/2015,(2-Methoxymethylethoxy)propanol,107,ug,TOTAL COUNT
+BJ7786IV,Emissions to surface water,Monitor point 169,14/08/2015,(2-Methoxymethylethoxy)propanol,107,ug,TOTAL DERIVED
+BJ7786IV,Emissions to surface water,Monitor point 170,14/08/2015,(2-Methoxymethylethoxy)propanol,107,ug,TOTAL ISOMERS
+BJ7786IV,Emissions to surface water,Monitor point 171,14/08/2015,(2-Methoxymethylethoxy)propanol,107,ug,TOTAL LOAD
+BJ7786IV,Emissions to surface water,Monitor point 172,14/08/2015,(2-Methoxymethylethoxy)propanol,107,ug,TOTAL MOVING 7-DAY EMISSIONS
+BJ7786IV,Emissions to surface water,Monitor point 173,14/08/2015,(2-Methoxymethylethoxy)propanol,107,ug,TOTAL OXIDISABLE
+BJ7786IV,Emissions to surface water,Monitor point 174,14/08/2015,(2-Methoxymethylethoxy)propanol,107,ug,TOTAL RESIDUAL
+BJ7786IV,Emissions to surface water,Monitor point 175,14/08/2015,(2-Methoxymethylethoxy)propanol,107,ug,TOTAL SURFACE
+BJ7786IV,Emissions to surface water,Monitor point 176,14/08/2015,(2-Methoxymethylethoxy)propanol,107,ug,TOTAL TOXICITY
+BJ7786IV,Emissions to surface water,Monitor point 177,14/08/2015,(2-Methoxymethylethoxy)propanol,107,ug,TOTAL VOLATILE
+BJ7786IV,Emissions to surface water,Monitor point 178,14/08/2015,(2-Methoxymethylethoxy)propanol,107,ug,TRACER
+BJ7786IV,Emissions to surface water,Monitor point 179,14/08/2015,(2-Methoxymethylethoxy)propanol,107,ug,TWO STAGE
+BJ7786IV,Emissions to surface water,Monitor point 180,14/08/2015,(2-Methoxymethylethoxy)propanol,107,ug,UNACIDIFIED
+BJ7786IV,Emissions to surface water,Monitor point 181,14/08/2015,(2-Methoxymethylethoxy)propanol,107,ug,UNDISTILLED
+BJ7786IV,Emissions to surface water,Monitor point 182,14/08/2015,(2-Methoxymethylethoxy)propanol,107,ug,UNFILTERED
+BJ7786IV,Emissions to surface water,Monitor point 183,14/08/2015,(2-Methoxymethylethoxy)propanol,107,ug,UNSETTLEABLE
+BJ7786IV,Emissions to surface water,Monitor point 184,14/08/2015,(2-Methoxymethylethoxy)propanol,107,ug,UNSIEVED
+BJ7786IV,Emissions to surface water,Monitor point 185,14/08/2015,(2-Methoxymethylethoxy)propanol,107,ug,UPPER 95% CONFIDENCE LIMIT
+BJ7786IV,Emissions to surface water,Monitor point 186,14/08/2015,(2-Methoxymethylethoxy)propanol,107,ug,VIRAL TRACER
+BJ7786IV,Emissions to surface water,Monitor point 187,14/08/2015,(2-Methoxymethylethoxy)propanol,107,ug,VISUAL
+BJ7786IV,Emissions to surface water,Monitor point 188,14/08/2015,(2-Methoxymethylethoxy)propanol,107,ug,VOLATILE
+BJ7786IV,Emissions to surface water,Monitor point 189,14/08/2015,(2-Methoxymethylethoxy)propanol,107,ug,VOLATILE SCAN
+BJ7786IV,Emissions to surface water,Monitor point 190,14/08/2015,(2-Methoxymethylethoxy)propanol,107,ug,WATERS EDGE
+BJ7786IV,Emissions to surface water,Monitor point 191,14/08/2015,(2-Methoxymethylethoxy)propanol,107,ug,WATERS EDGE SCALE 0-3
+BJ7786IV,Emissions to surface water,Monitor point 192,14/08/2015,(2-Methoxymethylethoxy)propanol,107,ug,WET WEIGHT
+BJ7786IV,Emissions to surface water,Monitor point 193,14/08/2015,(2-Methoxymethylethoxy)propanol,107,ug,RISING
+BJ7786IV,Emissions to surface water,Monitor point 194,14/08/2015,(2-Methoxymethylethoxy)propanol,107,ug,FALLING
+BJ7786IV,Emissions to surface water,Monitor point 195,14/08/2015,(2-Methoxymethylethoxy)propanol,107,ug,AT 35°C
+BJ7786IV,Emissions to surface water,Monitor point 196,14/08/2015,(2-Methoxymethylethoxy)propanol,107,ug,AT 105°C
+BJ7786IV,Emissions to surface water,Monitor point 197,14/08/2015,(2-Methoxymethylethoxy)propanol,107,ug,AT 20°C
+BJ7786IV,Emissions to surface water,Monitor point 198,14/08/2015,(2-Methoxymethylethoxy)propanol,107,ug,AT 25°C
+BJ7786IV,Emissions to surface water,Monitor point 199,14/08/2015,(2-Methoxymethylethoxy)propanol,107,ug,AT 22°C
+BJ7786IV,Emissions to surface water,Monitor point 200,14/08/2015,(2-Methoxymethylethoxy)propanol,107,ug,AT 37°C
+BJ7786IV,Emissions to surface water,Monitor point 201,14/08/2015,(2-Methoxymethylethoxy)propanol,107,ug,1 DAY
+BJ7786IV,Emissions to surface water,Monitor point 202,14/08/2015,(2-Methoxymethylethoxy)propanol,107,ug,3 DAY
+BJ7786IV,Emissions to surface water,Monitor point 203,14/08/2015,(2-Methoxymethylethoxy)propanol,107,ug,IN 100ML

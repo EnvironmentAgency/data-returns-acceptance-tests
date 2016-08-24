@@ -1,0 +1,40 @@
+EA_ID,Rtn_Type,Mon_Point,Mon_Date,Parameter,Value,Unit,Ref_Period
+BJ7786IV,Landfill leachate monitoring,Monitor point 3,07/08/2015,(2-Methoxymethylethoxy)propanol,100,ug,HALF AN HOUR AVERAGE
+BJ7786IV,Landfill leachate monitoring,Monitor point 4,08/08/2015,(2-Methoxymethylethoxy)propanol,101,ug,1 HOUR AN TOTAL
+BJ7786IV,Landfill leachate monitoring,Monitor point 5,09/08/2015,(2-Methoxymethylethoxy)propanol,102,ug,2 HOUR AN TOTAL
+BJ7786IV,Landfill leachate monitoring,Monitor point 6,10/08/2015,(2-Methoxymethylethoxy)propanol,103,ug,24 HOUR AN TOTAL
+BJ7786IV,Landfill leachate monitoring,Monitor point 7,11/08/2015,(2-Methoxymethylethoxy)propanol,104,ug,95% OF AN ALL MINUTE AVERAGES IN ANY HOUR PERIOD
+BJ7786IV,Landfill leachate monitoring,Monitor point 8,12/08/2015,(2-Methoxymethylethoxy)propanol,105,ug,95% OF AN VALIDATED DAILY MEANS WITHIN A CALENDAR YEAR
+BJ7786IV,Landfill leachate monitoring,Monitor point 9,13/08/2015,(2-Methoxymethylethoxy)propanol,106,ug,95% OF AN VALIDATED HOURLY AVERAGES WITHIN A CALENDAR YEAR
+BJ7786IV,Landfill leachate monitoring,Monitor point 10,14/08/2015,(2-Methoxymethylethoxy)propanol,107,ug,BI AN ANNUAL PERIODIC MEASUREMENT AVERAGE VALUE OVER SAMPLE PERIOD OF BETWEEN AND HOURS
+BJ7786IV,Landfill leachate monitoring,Monitor point 11,15/08/2015,(2-Methoxymethylethoxy)propanol,108,ug,CALENDAR AN MONTHLY MEAN
+BJ7786IV,Landfill leachate monitoring,Monitor point 12,16/08/2015,(2-Methoxymethylethoxy)propanol,109,ug,CONTINUOUS AN
+BJ7786IV,Landfill leachate monitoring,Monitor point 13,17/08/2015,(2-Methoxymethylethoxy)propanol,110,ug,CONTINUOUS AN AS APPROPRIATE TO REFERENCE
+BJ7786IV,Landfill leachate monitoring,Monitor point 14,18/08/2015,(2-Methoxymethylethoxy)propanol,111,ug,DAILY AN AVERAGE
+BJ7786IV,Landfill leachate monitoring,Monitor point 15,19/08/2015,(2-Methoxymethylethoxy)propanol,112,ug,DAILY AN MEAN
+BJ7786IV,Landfill leachate monitoring,Monitor point 16,20/08/2015,(2-Methoxymethylethoxy)propanol,113,ug,DAILY AN MEAN OF VALIDATED HOURLY AVERAGES
+BJ7786IV,Landfill leachate monitoring,Monitor point 17,21/08/2015,(2-Methoxymethylethoxy)propanol,114,ug,HOURLY AN MEAN
+BJ7786IV,Landfill leachate monitoring,Monitor point 18,22/08/2015,(2-Methoxymethylethoxy)propanol,115,ug,INSTANTANEOUS AN
+BJ7786IV,Landfill leachate monitoring,Monitor point 19,23/08/2015,(2-Methoxymethylethoxy)propanol,116,ug,MONTHLY AN AVERAGE
+BJ7786IV,Landfill leachate monitoring,Monitor point 20,24/08/2015,(2-Methoxymethylethoxy)propanol,117,ug,MONTHLY AN MEAN OF VALIDATED HOURLY AVERAGES
+BJ7786IV,Landfill leachate monitoring,Monitor point 21,25/08/2015,(2-Methoxymethylethoxy)propanol,118,ug,PERIODIC AN AS APPROPRIATE TO REFERENCE
+BJ7786IV,Landfill leachate monitoring,Monitor point 22,26/08/2015,(2-Methoxymethylethoxy)propanol,119,ug,PERIODIC AN DAILY
+BJ7786IV,Landfill leachate monitoring,Monitor point 23,27/08/2015,(2-Methoxymethylethoxy)propanol,120,ug,PERIODIC AN OVER MINIMUM HOUR PERIOD
+BJ7786IV,Landfill leachate monitoring,Monitor point 24,28/08/2015,(2-Methoxymethylethoxy)propanol,121,ug,PERIODIC AN OVER MINIMUM MINUTE MAXIMUM HOUR PERIOD
+BJ7786IV,Landfill leachate monitoring,Monitor point 25,29/08/2015,(2-Methoxymethylethoxy)propanol,122,ug,PERIODIC AN OVER MINIMUM HOUR PERIOD DATA REPORTED AS HALF HOUR AVERAGES
+BJ7786IV,Landfill leachate monitoring,Monitor point 26,30/08/2015,(2-Methoxymethylethoxy)propanol,123,ug,PERIODIC AN OVER MINIMUM HOURS MAXIMUM HOUR PERIOD
+BJ7786IV,Landfill leachate monitoring,Monitor point 27,30/08/2015,(2-Methoxymethylethoxy)propanol,123,ug,PRE AN OPERATION AND WHEN THERE IS A SIGNIFICANT OPERATIONAL CHANGE
+BJ7786IV,Landfill leachate monitoring,Monitor point 28,30/08/2015,(2-Methoxymethylethoxy)propanol,123,ug,SPOT AN SAMPLE
+BJ7786IV,Landfill leachate monitoring,Monitor point 29,30/08/2015,(2-Methoxymethylethoxy)propanol,123,ug,7 DAY AN TOTAL
+BJ7786IV,Landfill leachate monitoring,Monitor point 30,30/08/2015,(2-Methoxymethylethoxy)propanol,123,ug,ANNUAL AN MEAN
+BJ7786IV,Landfill leachate monitoring,Monitor point 31,30/08/2015,(2-Methoxymethylethoxy)propanol,123,ug,DAILY AN LOAD
+BJ7786IV,Landfill leachate monitoring,Monitor point 32,30/08/2015,(2-Methoxymethylethoxy)propanol,123,ug,DAILY AN TOTAL
+BJ7786IV,Landfill leachate monitoring,Monitor point 33,30/08/2015,(2-Methoxymethylethoxy)propanol,123,ug,MAXIMUM AN DAILY
+BJ7786IV,Landfill leachate monitoring,Monitor point 34,30/08/2015,(2-Methoxymethylethoxy)propanol,123,ug,MINIMUM AN DAILY
+BJ7786IV,Landfill leachate monitoring,Monitor point 35,30/08/2015,(2-Methoxymethylethoxy)propanol,123,ug,MONTHLY AN AVERAGE OF WEEKLY SPOT SAMPLE
+BJ7786IV,Landfill leachate monitoring,Monitor point 36,30/08/2015,(2-Methoxymethylethoxy)propanol,123,ug,MONTHLY AN MEAN
+BJ7786IV,Landfill leachate monitoring,Monitor point 37,30/08/2015,(2-Methoxymethylethoxy)propanol,123,ug,MONTHLY AN TOTAL
+BJ7786IV,Landfill leachate monitoring,Monitor point 38,30/08/2015,(2-Methoxymethylethoxy)propanol,123,ug,PREVIOUS AN HOURS TOTAL
+BJ7786IV,Landfill leachate monitoring,Monitor point 39,30/08/2015,(2-Methoxymethylethoxy)propanol,123,ug,TOTAL AN WEEKLY LOAD
+BJ7786IV,Landfill leachate monitoring,Monitor point 40,30/08/2015,(2-Methoxymethylethoxy)propanol,123,ug,20 MIN AN AVERAGE
+BJ7786IV,Landfill leachate monitoring,Monitor point 41,30/08/2015,(2-Methoxymethylethoxy)propanol,123,ug,4 DAY AN TOTAL
