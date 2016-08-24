@@ -27,7 +27,7 @@ Feature: Submit files which contain all Controlled list values
     Given I choose initial file <Filename> to upload
     Then I expect the file status for <Filename> to be "MULTIPLE VALIDATION ERRORS"
     When I open the file details for <Filename>
-    Then Validation information contains error for <DRref>
+    Then Correction details contains error for <DRref> for the header "<Header>"
     And I expect the column heading for error <DRref> to be "<Header>"
     And I expect the error type for error <DRref> to be "<Error>"
     Then I open row correction details for error <DRref>
