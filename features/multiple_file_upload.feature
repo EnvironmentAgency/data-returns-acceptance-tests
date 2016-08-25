@@ -24,6 +24,6 @@ Feature: Multiple file uploads
     Then I see the page header "Data returns file sent"
 
     Examples:
-      | Filename                                                          | Filename2                                                         |
-      | CUKE000_SUCCESS_NO_ERRORS.csv                                     | CUKE014_ALL_Fields_Multi_Return_Types_and_Permit_Formats_PASS.csv |
-      | CUKE003_Multiple_Permit_Formats_Single Rtn_Type_PASS.csv          | CUKE012_Multi_Permits_70_PASS.csv                                 |
+      | Filename                                                 | Filename2                                                         |
+      | CUKE000_SUCCESS_NO_ERRORS.csv                            | CUKE014_ALL_Fields_Multi_Return_Types_and_Permit_Formats_PASS.csv |
+      | CUKE003_Multiple_Permit_Formats_Single Rtn_Type_PASS.csv | CUKE012_Multi_Permits_70_PASS.csv                                 |
