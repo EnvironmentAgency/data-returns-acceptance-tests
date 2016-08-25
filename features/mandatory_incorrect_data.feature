@@ -21,11 +21,11 @@ Feature: Check file contents for incorrect MANDATORY data
     And I expect the row correction details for error <DRref> to be shown
 
     Examples:
-      | Filename                                        | DRref  | Header   | Error                 |
-      | CUKE1001_EA_ID_Incorrect_error.csv              | DR9000 | EA_ID    | Incorrect             |
-      | CUKE1002_Return_Type_Incorrect_Error.csv        | DR9010 | Rtn_Type | Incorrect             |
-      | CUKE1003_Monitoring_Point_Incorrect_Error.csv   | DR9060 | Mon_Point| Length and Incorrect  |
-      | CUKE1004_Monitoring_Date_Incorrect_Error.csv    | DR9020 | Mon_Date | Missing and Incorrect |
-      | CUKE1005_Parameter_Incorrect_Error.csv          | DR9030 | Parameter| Incorrect             |
-      | CUKE1006_Value_Incorrect_Error.csv              | DR9040 | Value    | Incorrect             |
-      | CUKE1007_Unit_Incorrect_Error.csv               | DR9050 | Unit     | Incorrect             |
+      | Filename                                        | DRref  | Header   | Error     |
+      | CUKE1001_EA_ID_Incorrect_error.csv              | DR9000 | EA_ID    | Incorrect |
+      | CUKE1002_Return_Type_Incorrect_Error.csv        | DR9010 | Rtn_Type | Incorrect |
+      | CUKE1003_Monitoring_Point_Incorrect_Error.csv   | DR9060 | Mon_Point| Incorrect |
+      | CUKE1004_Monitoring_Date_Incorrect_Error.csv    | DR9020 | Mon_Date | Incorrect |
+      | CUKE1005_Parameter_Incorrect_Error.csv          | DR9030 | Parameter| Incorrect |
+      | CUKE1006_Value_Incorrect_Error.csv              | DR9040 | Value    | Incorrect |
+      | CUKE1007_Unit_Incorrect_Error.csv               | DR9050 | Unit     | Incorrect |
