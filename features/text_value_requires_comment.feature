@@ -23,7 +23,7 @@ Feature: Submit files where text value requires comments
     * I open the file details for <Filename>
     * I expect the column heading for error <DRref> to be "<Header>"
     * I expect the error type for error <DRref> to be "<Error>"
-    * Validation information contains error for <DRref>
+    * Correction details contains error for <DRref> for the header "<Header>"
     * I open row correction details for error <DRref>
     * I see the page header "Details of errors"
     * I expect the row correction details for error <DRref> to be shown
