@@ -21,7 +21,7 @@ Feature: Multiple file uploads
     And I choose to "Send code"
     Then I am on the "Send your files" page
     And I choose to "Accept and send files"
-    Then I see the page header "Data returns file sent"
+    Then I see the page header "Data return sent"
 
     Examples:
       | Filename                                                 | Filename2                                                         |

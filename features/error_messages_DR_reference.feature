@@ -19,6 +19,7 @@ Feature: Check that the correct error message is displayed
     And I expect the row correction details for error <DRref> to be shown
 
     Examples:
+
       | Filename                                              | DRref  | Header        |
       | CUKE4041_OPT_RD_Code_256_Characters_FAIL.csv          | DR9170 | RD_Code       |
       | CUKE4038_OPT_CAS_256_Characters_FAIL.csv              | DR9160 | CAS           |
@@ -38,4 +39,5 @@ Feature: Check that the correct error message is displayed
       | CUKE1004_Monitoring_Date_Incorrect_Error.csv          | DR9020 | Mon_Date      |
       | CUKE1002_Return_Type_Incorrect_Error.csv              | DR9010 | Rtn_Type      |
       | CUKE1001_EA_ID_Incorrect_error.csv                    | DR9000 | EA_ID         |
+
 
