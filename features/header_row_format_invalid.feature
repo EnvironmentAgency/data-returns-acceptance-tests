@@ -30,10 +30,6 @@ Feature: Check file invalid header formats
     Then I expect the file status for <Filename> to be "THERE’S A PROBLEM WITH YOUR CSV FILE"
     When I open the file details for <Filename>
     Then Invalid file information contains error for <DRref>
-<<<<<<< HEAD
-
-=======
->>>>>>> 204baa37a873fb5451a1a32267d43692563e6ce0
     Examples:
       | Filename                                        | DRref  |
       | CUKE5005_Missing_EA_ID_Header_and comma.csv     | DR0450 |
