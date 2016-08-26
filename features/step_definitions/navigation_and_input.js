@@ -1,19 +1,19 @@
 function getUploadRowSelector(filename) {
-  // Selector to find a row container div which contains another div with the correct filename
-  return `//div[@id="upload-list"]//div[child::div[@class='filename']/text() = '${filename}']`;
+  // Selector to find a row which contains a column with the correct filename
+  return `//table[@id="upload-list"]//tr[child::td[@class='filename']/text() = '${filename}']`;
 }
 
 function getUploadFileStatusSelector(filename) {
   // Selector to find the status text for the file upload row
-  return `${getUploadRowSelector(filename)}/div[@class='status']`;
+  return `${getUploadRowSelector(filename)}/td[@class='status']`;
 }
 function getUploadFileMoreDetailsLinkSelector(filename) {
   // Selector to find the more details link for the file upload row
-  return `${getUploadRowSelector(filename)}//div[@class='details']/a`;
+  return `${getUploadRowSelector(filename)}//td[@class='details']/a`;
 }
 function getUploadFileRemoveLinkSelector(filename) {
   // Selector to find the submit button on the remove file form in the upload list
-  return `${getUploadRowSelector(filename)}/div[@class='remove']//input[@type='submit']`;
+  return `${getUploadRowSelector(filename)}/td[@class='remove']//input[@type='submit']`;
 }
 
 module.exports = function() {
@@ -39,7 +39,7 @@ module.exports = function() {
   this.Then(/^I expect the file status for (.*) to be "([^"]*)"$/, function (filename, message) {
     let fileStatusSelector = getUploadFileStatusSelector(filename);
     browser.waitUntil(function () {
-      return browser.getText(fileStatusSelector) === message
+      return browser.getText(fileStatusSelector) === message;
     }, 5000, 'expected file to be uploaded and checked within 5s', 250);
   });
   this.Then(/^I open the file details for (.*)$/, function (filename) {
