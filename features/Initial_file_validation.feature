@@ -16,7 +16,7 @@ Feature: Submit files for initial checking
     Then Invalid file information contains error for <DRref>
 
     Examples:
-      | Filename                                          | DRref  | Error                                           |
+      | Filename                                          | DRref  | Error                                          |
       | CUKE001.png                                       | DR400 | YOUR FILE ISN’T SAVED AS CSV                    |
       | CUKE002_Empty.csv                                 | DR500 | YOUR FILE IS EMPTY                              |
       | CUKE004_VIRUS.csv                                 | DR600 | YOUR FILE IS UNSAFE                             |
