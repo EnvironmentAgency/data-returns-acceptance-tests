@@ -11,10 +11,9 @@ this.Then(/^Invalid file information contains error for DR(\d+)$/, function (err
     return expect(expectedErrorCode).toEqual(foundErrorCode);
 });
 this.Then(/^Correction details contains error for DR(\d+) for the header "([^"]+)"$/, function (errorNumber, fieldName) {
-    let elem = browser.element(`#${fieldName}_error_code`);
-    let foundErrorCode = elem.getAttribute('value');
-    let expectedErrorCode = "DR" + errorNumber;
-    return expect(expectedErrorCode).toEqual(foundErrorCode);
+    let row = browser.element(`#ERR_DR${errorNumber}`);
+    let heading = browser.getText(`#ERR_DR${errorNumber} abbr`);
+    return expect(row).not.toBeNull() && expect(heading).toEqual(fieldName);
 });
 
 
