@@ -14,7 +14,7 @@ Feature: Check file invalid header formats
     And I choose header file <Filename> to upload
     Then I expect the file status for <Filename> to be "YOUR DATA RETURN IS INCOMPLETE (MISSING FIELDS)"
     When I open the file details for <Filename>
-    Then Validation information contains error for <DRref>
+    Then Invalid file information contains error for <DRref>
 
     Examples:
       | Filename                              | DRref  |
@@ -31,7 +31,7 @@ Feature: Check file invalid header formats
     And I choose header file <Filename> to upload
     Then I expect the file status for <Filename> to be "THERE’S A PROBLEM WITH YOUR CSV FILE"
     When I open the file details for <Filename>
-    Then Validation information contains error for <DRref>
+    Then Invalid file information contains error for <DRref>
     Examples:
       | Filename                                        | DRref  |
       | CUKE5005_Missing_EA_ID_Header_and comma.csv     | DR0450 |
@@ -46,7 +46,7 @@ Feature: Check file invalid header formats
     And I choose header file <Filename> to upload
     Then I expect the file status for <Filename> to be "YOUR FILE CONTAINS UNRECOGNISABLE FIELD HEADINGS"
     When I open the file details for <Filename>
-    Then Validation information contains error for <DRref>
+    Then Invalid file information contains error for <DRref>
 
     Examples:
       | Filename                                 | DRref  |

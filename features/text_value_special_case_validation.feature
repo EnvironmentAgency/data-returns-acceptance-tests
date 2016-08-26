@@ -29,7 +29,7 @@ Feature: Submit files with either Text_Value or Value data
     * I choose boolean file <Filename> to upload
     * I expect the file status for <Filename> to be "MULTIPLE VALIDATION ERRORS"
     * I open the file details for <Filename>
-    * Validation information contains error for <DRref>
+    * Correction details contains error for <DRref> for the header "<Header>"
     * I expect the column heading for error <DRref> to be "<Header>"
     * I expect the error type for error <DRref> to be "<Error>"
     * I open row correction details for error <DRref>
