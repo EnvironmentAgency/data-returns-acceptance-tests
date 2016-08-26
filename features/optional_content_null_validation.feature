@@ -13,7 +13,7 @@ Feature: Check acceptance of files where Optional data fields do not contain dat
     Given I choose validation test file <Filename> to upload
     Then I expect the file status for <Filename> to be "READY TO SEND"
     When I finish uploading files and continue
-    Then I see the page header "Confirm your files"
+    Then I see the page header "Confirm details"
 
     Examples:
       | Filename | 

@@ -12,7 +12,7 @@ Feature: Multiple file uploads
     Then I expect the file status for <Filename> to be "READY TO SEND"
     And I expect the file status for <Filename2> to be "READY TO SEND"
     When I finish uploading files and continue
-    Then I see the page header "Confirm your files"
+    Then I see the page header "Confirm details"
     And I choose to "Continue"
     And I input an email address
     Then I choose to "Send email"

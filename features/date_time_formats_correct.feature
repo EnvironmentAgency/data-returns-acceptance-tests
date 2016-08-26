@@ -16,7 +16,7 @@ Feature: Check that Dates and/or Dates and Times in UK and ISO formats are accep
     Given I choose date file <Filename> to upload
     Then I expect the file status for <Filename> to be "READY TO SEND"
     When I finish uploading files and continue
-    Then I see the page header "Confirm your files"
+    Then I see the page header "Confirm details"
 
     Examples:
       | Filename |
