@@ -10,11 +10,11 @@ Feature: Check file invalid header formats
 
   #------------------ Invalid Header Formats --------------------------
 
-  Scenario Outline: Check for missing header name only
+  Scenario Outline: Check for missing mandatory header name
     And I choose header file <Filename> to upload
     Then I expect the file status for <Filename> to be "YOUR DATA RETURN IS INCOMPLETE (MISSING FIELDS)"
     When I open the file details for <Filename>
-    Then Validation information contains error for <DRref>
+    Then Invalid file information contains error for <DRref>
 
     Examples:
       | Filename                              | DRref  |
@@ -24,14 +24,13 @@ Feature: Check file invalid header formats
       | CUKE5008_Missing_Mon_Point_Header.csv | DR0820 |
       | CUKE5010_Missing_Mon_Date_Header.csv  | DR0820 |
       | CUKE5012_Missing_Parameter_Header.csv | DR0820 |
-      | CUKE5014_Missing_Value_Header.csv     | DR0820 |
-      | CUKE5016_Missing_Unit_Header.csv      | DR0820 |
 
   Scenario Outline: Check for missing header name and associated comma
     And I choose header file <Filename> to upload
     Then I expect the file status for <Filename> to be "THERE’S A PROBLEM WITH YOUR CSV FILE"
     When I open the file details for <Filename>
-    Then Validation information contains error for <DRref>
+    Then Invalid file information contains error for <DRref>
+
     Examples:
       | Filename                                        | DRref  |
       | CUKE5005_Missing_EA_ID_Header_and comma.csv     | DR0450 |
@@ -46,8 +45,13 @@ Feature: Check file invalid header formats
     And I choose header file <Filename> to upload
     Then I expect the file status for <Filename> to be "YOUR FILE CONTAINS UNRECOGNISABLE FIELD HEADINGS"
     When I open the file details for <Filename>
-    Then Validation information contains error for <DRref>
+    Then Invalid file information contains error for <DRref>
 
     Examples:
-      | Filename                                 | DRref  |
-      | CUKE5018_Unrecognised_Optional_field.csv | DR0840 |
+      | Filename                                        | DRref  |
+      | CUKE5018_Unrecognised_Optional_field.csv        | DR0840 |
+      | CUKE5014_Missing_Value_Header.csv               | DR0820 |
+      | CUKE5016_Missing_Unit_Header.csv                | DR0820 |
+
+
+      
