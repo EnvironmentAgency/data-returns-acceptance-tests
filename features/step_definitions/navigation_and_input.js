@@ -39,8 +39,8 @@ module.exports = function() {
   this.Then(/^I expect the file status for (.*) to be "([^"]*)"$/, function (filename, message) {
     let fileStatusSelector = getUploadFileStatusSelector(filename);
     browser.waitUntil(function () {
-      return browser.getText(fileStatusSelector) === message;
-    }, 5000, 'expected file to be uploaded and checked within 5s', 250);
+      return  browser.getText(fileStatusSelector) === message;
+    }, 5000, `Unexpected file status.  Expected ${message} for file ${filename}`, 250);
   });
   this.Then(/^I open the file details for (.*)$/, function (filename) {
     return browser.click(getUploadFileMoreDetailsLinkSelector(filename));

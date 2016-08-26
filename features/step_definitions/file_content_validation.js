@@ -4,23 +4,16 @@ function checkForErrorCodeMaker(errorCode) {
 }
 
 module.exports = function() {
-  //------------ These check that the correct DR error message is displayed ------------------
-  // this.Then(/^Validation information contains error for DR(\d+)$/, checkForErrorCodeMaker);
-
 this.Then(/^Invalid file information contains error for DR(\d+)$/, function (errorNumber) {
-    var elem = browser.element('#error_code');
-    var foundErrorCode = elem.getAttribute('value');
-    var expectedErrorCode = "DR" + errorNumber
-    // console.log(errorCode)
-    // console.log(attr);
+    let elem = browser.element('#error_code');
+    let foundErrorCode = elem.getAttribute('value');
+    let expectedErrorCode = "DR" + errorNumber;
     return expect(expectedErrorCode).toEqual(foundErrorCode);
 });
 this.Then(/^Correction details contains error for DR(\d+) for the header "([^"]+)"$/, function (errorNumber, fieldName) {
-    var elem = browser.element(`#${fieldName}_error_code`);
-    var foundErrorCode = elem.getAttribute('value');
-    var expectedErrorCode = "DR" + errorNumber
-    // console.log(attr); // outputs: "example"
-    // return expect(errorCode).toEqual(`DR${attr}`);
+    let elem = browser.element(`#${fieldName}_error_code`);
+    let foundErrorCode = elem.getAttribute('value');
+    let expectedErrorCode = "DR" + errorNumber;
     return expect(expectedErrorCode).toEqual(foundErrorCode);
 });
 
