@@ -13,7 +13,7 @@ Feature: Check file acceptable header formats
     And I choose header file <Filename> to upload
     Then I expect the file status for <Filename> to be "READY TO SEND"
     When I finish uploading files and continue
-    Then I see the page header "Confirm your files"
+    Then I see the page header "Confirm details"
 
     Examples:
       | Filename |
