@@ -17,7 +17,7 @@ Feature: Submit files which contain all Controlled list values
       | Filename                                        |
       | CUKE018_ALL_PARAMETERS_ex_866_596_597_PASS.csv  |
       | CUKE020_ALL_RETURN_TYPES_PASS.csv               |
-      | CUKE022_ALL_UNITS_ex_51_Celsius_PASS.csv        |
+      | CUKE022_ALL_UNITS_PASS.csv        |
       | CUKE024_ALL_REFERENCE_PERIODS_PASS.csv          |
       | CUKE026_ALL_RETURN_PERIODS_PASS.csv             |
       | CUKE028_ALL_METHOD_STANDARDS_PASS.csv           |
