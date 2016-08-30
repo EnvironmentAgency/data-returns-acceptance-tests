@@ -30,5 +30,5 @@ Feature: Submit files where text value requires comments
 
     Examples:
       | Filename                                     | DRref   | Header   | Error     |
-      | CUKE7024_Text_Value_has_no_comment_FAIL.csv  | DR9140  | Comment  | Missing   |
-      | CUKE7024b_Text_Value_has_no_comment_FAIL.csv | DR9140  | Comment  | Missing   |
+      | CUKE7024_Text_Value_has_no_comment_FAIL.csv  | DR9140  | Comments  | Missing   |
+      | CUKE7024b_Text_Value_has_no_comment_FAIL.csv | DR9140  | Comments  | Missing   |
