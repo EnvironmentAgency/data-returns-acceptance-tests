@@ -59,5 +59,6 @@ Feature: Submit files which contain all Controlled list values
       | CUKE026_ALL_RETURN_PERIODS_UPPER_CASE_PASS.csv          |
       | CUKE028_ALL_METHOD_STANDARDS_LOWER_CASE_PASS.csv        |
       | CUKE030_ALL_QUALIFIERS_MIXED_CASE_PASS.csv              |
+      | CUKE7003_Text_Value_Boolean_ALL_CAPS_PASS.csv           |
 
 
