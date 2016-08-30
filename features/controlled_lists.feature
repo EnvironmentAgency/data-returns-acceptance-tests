@@ -15,7 +15,7 @@ Feature: Submit files which contain all Controlled list values
 
     Examples:
       | Filename                                        |
-      | CUKE018_ALL_PARAMETERS_ex_866_596_597_PASS.csv  |
+      | CUKE018_ALL_PARAMETERS_PASS.csv  |
       | CUKE020_ALL_RETURN_TYPES_PASS.csv               |
       | CUKE022_ALL_UNITS_PASS.csv        |
       | CUKE024_ALL_REFERENCE_PERIODS_PASS.csv          |
@@ -54,9 +54,9 @@ Feature: Submit files which contain all Controlled list values
       | Filename                                                |
       | CUKE018_ALL_PARAMETERS_ALL_CAPS_PASS.csv                |
       | CUKE020_ALL_RETURN_TYPES_CAPITALISE_TITLE_CASE_PASS.csv |
-      # | CUKE024_ALL_REFERENCE_PERIODS_LOWERCASE_PASS.csv        |
-      # | CUKE024_ALL_REFERENCE_PERIODS_UPPERCASE_PASS.csv        |
-      # | CUKE026_ALL_RETURN_PERIODS_UPPER_CASE_PASS.csv          |
+      | CUKE024_ALL_REFERENCE_PERIODS_LOWERCASE_PASS.csv        |
+      | CUKE024_ALL_REFERENCE_PERIODS_UPPERCASE_PASS.csv        |
+      | CUKE026_ALL_RETURN_PERIODS_UPPER_CASE_PASS.csv          |
       | CUKE028_ALL_METHOD_STANDARDS_LOWER_CASE_PASS.csv        |
       | CUKE030_ALL_QUALIFIERS_MIXED_CASE_PASS.csv              |
 

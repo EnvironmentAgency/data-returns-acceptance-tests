@@ -1,2 +1,2 @@
-EA_ID,Rtn_Type,Mon_Point,Mon_Date,Parameter,Value,Unit,Meth_Stand
-BJ7786IV,Landfill leachate monitoring,Monitor point 19,23/08/2015,(2-Methoxymethylethoxy)propanol,116,ug,INVALID STANDARD
+EA_ID,Rtn_Type,Site_Name,Mon_Point,Mon_Date,Parameter,Value,Unit,Meth_Stand
+BJ7786IV,Landfill leachate monitoring,Test site A,Monitor point 19,23/08/2015,(2-Methoxymethylethoxy)propanol,116,ug,INVALID STANDARD

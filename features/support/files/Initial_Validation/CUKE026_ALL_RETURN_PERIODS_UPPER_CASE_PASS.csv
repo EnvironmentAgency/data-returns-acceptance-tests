@@ -1,21 +1,21 @@
-EA_ID,Rtn_Type,Mon_Point,Mon_Date,Parameter,Value,Unit,Rtn_Period
-BJ7786IV,Landfill leachate monitoring,Monitor point 3,07/08/2015,(2-Methoxymethylethoxy)propanol,100,ug,WEEK 01 2017
-BJ7786IV,Landfill leachate monitoring,Monitor point 4,08/08/2015,(2-Methoxymethylethoxy)propanol,101,ug,JAN-16
-BJ7786IV,Landfill leachate monitoring,Monitor point 5,09/08/2015,(2-Methoxymethylethoxy)propanol,102,ug,FEB-16
-BJ7786IV,Landfill leachate monitoring,Monitor point 6,10/08/2015,(2-Methoxymethylethoxy)propanol,103,ug,MAR-16
-BJ7786IV,Landfill leachate monitoring,Monitor point 7,11/08/2015,(2-Methoxymethylethoxy)propanol,104,ug,APR-16
-BJ7786IV,Landfill leachate monitoring,Monitor point 8,12/08/2015,(2-Methoxymethylethoxy)propanol,105,ug,MAY-16
-BJ7786IV,Landfill leachate monitoring,Monitor point 9,13/08/2015,(2-Methoxymethylethoxy)propanol,106,ug,JUN-16
-BJ7786IV,Landfill leachate monitoring,Monitor point 10,14/08/2015,(2-Methoxymethylethoxy)propanol,107,ug,JUL-16
-BJ7786IV,Landfill leachate monitoring,Monitor point 11,15/08/2015,(2-Methoxymethylethoxy)propanol,108,ug,AUG-16
-BJ7786IV,Landfill leachate monitoring,Monitor point 12,16/08/2015,(2-Methoxymethylethoxy)propanol,109,ug,SEP-16
-BJ7786IV,Landfill leachate monitoring,Monitor point 13,17/08/2015,(2-Methoxymethylethoxy)propanol,110,ug,OCT-16
-BJ7786IV,Landfill leachate monitoring,Monitor point 14,18/08/2015,(2-Methoxymethylethoxy)propanol,111,ug,NOV-16
-BJ7786IV,Landfill leachate monitoring,Monitor point 15,19/08/2015,(2-Methoxymethylethoxy)propanol,112,ug,DEC-16
-BJ7786IV,Landfill leachate monitoring,Monitor point 16,20/08/2015,(2-Methoxymethylethoxy)propanol,113,ug,QTR 1 2017
-BJ7786IV,Landfill leachate monitoring,Monitor point 17,21/08/2015,(2-Methoxymethylethoxy)propanol,114,ug,QTR 2 2017
-BJ7786IV,Landfill leachate monitoring,Monitor point 18,22/08/2015,(2-Methoxymethylethoxy)propanol,115,ug,QTR 3 2017
-BJ7786IV,Landfill leachate monitoring,Monitor point 19,23/08/2015,(2-Methoxymethylethoxy)propanol,116,ug,QTR 4 2017
-BJ7786IV,Landfill leachate monitoring,Monitor point 20,22/08/2015,(2-Methoxymethylethoxy)propanol,116,ug,2017
-BJ7786IV,Landfill leachate monitoring,Monitor point 22,22/08/2015,(2-Methoxymethylethoxy)propanol,116,ug,16/17
-BJ7786IV,Landfill leachate monitoring,Monitor point 23,22/08/2015,(2-Methoxymethylethoxy)propanol,116,ug,WATER YEAR 7
+EA_ID,Rtn_Type,Site_Name,Mon_Point,Site_Name,Mon_Date,Parameter,Value,Unit,Rtn_Period
+BJ7786IV,Landfill leachate monitoring,Test site A,Monitor point 3,Test site 1,07/08/2015,(2-Methoxymethylethoxy)propanol,100,ug,WEEK 52 2015
+BJ7786IV,Landfill leachate monitoring,Test site A,Monitor point 4,Test site 2,08/08/2015,(2-Methoxymethylethoxy)propanol,101,ug,JAN 2015
+BJ7786IV,Landfill leachate monitoring,Test site A,Monitor point 5,Test site 3,09/08/2015,(2-Methoxymethylethoxy)propanol,102,ug,FEB 2015
+BJ7786IV,Landfill leachate monitoring,Test site A,Monitor point 6,Test site 4,10/08/2015,(2-Methoxymethylethoxy)propanol,103,ug,MAR 2015
+BJ7786IV,Landfill leachate monitoring,Test site A,Monitor point 7,Test site 5,11/08/2015,(2-Methoxymethylethoxy)propanol,104,ug,APR 2015
+BJ7786IV,Landfill leachate monitoring,Test site A,Monitor point 8,Test site 6,12/08/2015,(2-Methoxymethylethoxy)propanol,105,ug,MAY 2015
+BJ7786IV,Landfill leachate monitoring,Test site A,Monitor point 9,Test site 7,13/08/2015,(2-Methoxymethylethoxy)propanol,106,ug,JUN 2015
+BJ7786IV,Landfill leachate monitoring,Test site A,Monitor point 10,Test site 8,14/08/2015,(2-Methoxymethylethoxy)propanol,107,ug,JUL 2015
+BJ7786IV,Landfill leachate monitoring,Test site A,Monitor point 11,Test site 9,15/08/2015,(2-Methoxymethylethoxy)propanol,108,ug,AUG 2015
+BJ7786IV,Landfill leachate monitoring,Test site A,Monitor point 12,Test site 10,16/08/2015,(2-Methoxymethylethoxy)propanol,109,ug,SEP 2015
+BJ7786IV,Landfill leachate monitoring,Test site A,Monitor point 13,Test site 11,17/08/2015,(2-Methoxymethylethoxy)propanol,110,ug,Oct 2015
+BJ7786IV,Landfill leachate monitoring,Test site A,Monitor point 14,Test site 12,18/08/2015,(2-Methoxymethylethoxy)propanol,111,ug,Nov 2015
+BJ7786IV,Landfill leachate monitoring,Test site A,Monitor point 15,Test site 13,19/08/2015,(2-Methoxymethylethoxy)propanol,112,ug,Dec 2015
+BJ7786IV,Landfill leachate monitoring,Test site A,Monitor point 16,Test site 14,20/08/2015,(2-Methoxymethylethoxy)propanol,113,ug,Qtr 1 2015
+BJ7786IV,Landfill leachate monitoring,Test site A,Monitor point 17,Test site 15,21/08/2015,(2-Methoxymethylethoxy)propanol,114,ug,Qtr 2 2015
+BJ7786IV,Landfill leachate monitoring,Test site A,Monitor point 18,Test site 16,22/08/2015,(2-Methoxymethylethoxy)propanol,115,ug,Qtr 3 2015
+BJ7786IV,Landfill leachate monitoring,Test site A,Monitor point 19,Test site 17,23/08/2015,(2-Methoxymethylethoxy)propanol,116,ug,Qtr 4 2015
+BJ7786IV,Landfill leachate monitoring,Test site A,Monitor point 20,Test site 18,22/08/2015,(2-Methoxymethylethoxy)propanol,116,ug,2015
+BJ7786IV,Landfill leachate monitoring,Test site A,Monitor point 22,Test site 19,22/08/2015,(2-Methoxymethylethoxy)propanol,116,ug,2015/16
+BJ7786IV,Landfill leachate monitoring,Test site A,Monitor point 23,Test site 20,22/08/2015,(2-Methoxymethylethoxy)propanol,116,ug,Water year 2015
