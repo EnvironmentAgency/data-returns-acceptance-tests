@@ -1,2 +1,2 @@
-EA_ID,Rtn_Type,Mon_Point,Mon_Date,Parameter,Unit,Txt_Value
-BJ7786IV,Air point source emissions,Monitor point 3,07/08/2015,(2-Methoxymethylethoxy)propanol,ug,TRUE
+EA_ID,Rtn_Type,Site_Name,Mon_Point,Mon_Date,Parameter,Txt_Value
+BJ7786IV,Air point source emissions,Test site A,Monitor point 3,07/08/2015,(2-Methoxymethylethoxy)propanol,TRUE
