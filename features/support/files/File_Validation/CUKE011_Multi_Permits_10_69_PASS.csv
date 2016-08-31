@@ -1,7 +1,7 @@
-EA_ID,Rtn_Type,Mon_Point,Mon_Date,Parameter,Value,Unit
-10009,Emissions to surface water,Monitor point 1,2015-08-05,"1,1,2,2-Tetrachloroethane",100,ug
-19373,Emissions to surface water,Monitor point 1,2015-08-05,"1,1,2,2-Tetrachloroethane",100,ug
-19999,Emissions to surface water,Monitor point 1,2015-08-05,"1,1,2,2-Tetrachloroethane",100,ug
-20535,Emissions to surface water,Monitor point 1,2015-08-05,"1,1,2,2-Tetrachloroethane",100,ug
-54098,Emissions to surface water,Monitor point 1,2015-08-05,"1,1,2,2-Tetrachloroethane",100,ug
-54100,Emissions to surface water,Monitor point 1,2015-08-05,"1,1,2,2-Tetrachloroethane",100,ug
+EA_ID,Rtn_Type,Site_Name,Mon_Point,Mon_Date,Parameter,Value,Unit
+10009,Emissions to surface water,Test site 1,Monitor point 1,2015-08-05,"1,1,2,2-Tetrachloroethane",100,ug
+19373,Emissions to surface water,Test site 2,Monitor point 1,2015-08-05,"1,1,2,2-Tetrachloroethane",100,ug
+19999,Emissions to surface water,Test site 3,Monitor point 1,2015-08-05,"1,1,2,2-Tetrachloroethane",100,ug
+20535,Emissions to surface water,Test site 4,Monitor point 1,2015-08-05,"1,1,2,2-Tetrachloroethane",100,ug
+54098,Emissions to surface water,Test site 5,Monitor point 1,2015-08-05,"1,1,2,2-Tetrachloroethane",100,ug
+54100,Emissions to surface water,Test site 6,Monitor point 1,2015-08-05,"1,1,2,2-Tetrachloroethane",100,ug
