@@ -1,2 +1,2 @@
-EA_ID,Rtn_Type,Mon_Point,Mon_Date,Parameter,Value,Unit
-BJ7786IV,EPR/IED Air (point source) emissions return,Monitor point 1,2015-08-05,"XXXX-Amino-3,5,6-trichloropicolinic Acid",100,ug
+EA_ID,Rtn_Type,Site_Name,Mon_Point,Mon_Date,Parameter,Value,Unit
+BJ7786IV,Emissions to surface water,Test site A,Monitor point 1,2015-08-05,"XXXX-Amino-3,5,6-trichloropicolinic Acid",100,ug
