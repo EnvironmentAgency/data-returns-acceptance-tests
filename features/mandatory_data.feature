@@ -72,5 +72,5 @@ Feature: Check file contents for incorrect MANDATORY data
       | CUKE2005_Parameter_Missing_Error.csv          | DR9030 | Parameter | Missing | Missing |
       | CUKE2006_Value_Missing_Error.csv              | DR9040 | Value     | Missing | Missing |
       | CUKE2007_Unit_Missing_Error.csv               | DR9050 | Unit      | Missing | Missing |
-      # | CUKE2008_Site_name_missing_Error.csv          | DRXXXX | Site_Name | Missing | Missing |
+      # | CUKE2008_Site_name_missing_Error.csv        | DRXXXX | Site_Name | Missing | Missing |
 
