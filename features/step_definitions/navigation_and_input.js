@@ -46,8 +46,12 @@ module.exports = function() {
     return browser.click(getUploadFileMoreDetailsLinkSelector(filename));
   });
 
+// Waits for continue button to be enabled before clicking the button, allows csv processing time explicitly
   this.Then(/^I finish uploading files and continue$/, function () {
-    return browser.click("#continue-btn");
+        let continueButton  = browser.element('#continue-btn');
+        continueButton.waitForEnabled(continueButton,5000);
+
+        return browser.click("#continue-btn");
   });
   this.Then(/^I am unable to continue/, function () {
     return expect(browser.element("#continue-btn").getAttribute("disabled")).not.toBeNull();
