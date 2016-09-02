@@ -22,6 +22,7 @@ Feature: Submit files which contain all Controlled list values
       | CUKE026_ALL_RETURN_PERIODS_PASS.csv             |
       | CUKE028_ALL_METHOD_STANDARDS_PASS.csv           |
       | CUKE030_ALL_QUALIFIERS_PASS.csv                 |
+      | CUKE032_Ref_Period_ALL_PASS.csv                 |
 
   Scenario Outline: Submit file comprising invalid Controlled List value
     Given I choose initial file <Filename> to upload
