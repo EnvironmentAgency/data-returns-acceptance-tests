@@ -27,7 +27,7 @@ Feature: Check file contents for incorrect MANDATORY data
       | CUKE1005_Parameter_Incorrect_Error.csv          | DR9030 | Parameter| Incorrect |
       | CUKE1006_Value_Incorrect_Error.csv              | DR9040 | Value    | Incorrect |
       | CUKE1007_Unit_Incorrect_Error.csv               | DR9050 | Unit     | Incorrect |
-      | CUKE3009_Incorrect_Site_Name_value.csv          | DR9110 | Site_Name| Incorrect |
+      | CUKE3009_Incorrect_Site_Name_value_FAIL.csv          | DR9110 | Site_Name| Incorrect |
 
 
   Scenario Outline: For MANDATORY fields check that the correct error message is displayed for records where data is Missing and incorrect
@@ -72,5 +72,5 @@ Feature: Check file contents for incorrect MANDATORY data
       | CUKE2005_Parameter_Missing_Error.csv          | DR9030 | Parameter | Missing | Missing |
       # | CUKE2006_Value_Missing_Error.csv              | DR9040 | Value     | Missing | Missing | Bug?
       | CUKE2007_Unit_Missing_Error.csv               | DR9050 | Unit      | Missing | Missing |
-      | CUKE3008_Missing_Site_Name_value.csv          | DR9110 | Site_Name | Missing | Missing |
+      | CUKE3008_Missing_Site_Name_value_FAIL.csv          | DR9110 | Site_Name | Missing | Missing |
 

@@ -46,13 +46,20 @@ module.exports = function() {
     return browser.click(getUploadFileMoreDetailsLinkSelector(filename));
   });
 
-// Waits for continue button to be enabled before clicking the button, allows csv processing time explicitly
   this.Then(/^I finish uploading files and continue$/, function () {
-        let continueButton  = browser.element('#continue-btn');
-        continueButton.waitForEnabled(continueButton,5000);
-
+        // let fileReady = browser.element('.file-ready');
+        // fileReady.waitForText(fileReady, 5000)  
+        //  console.log(fileReady);
         return browser.click("#continue-btn");
   });
+
+// Waits for continue button to be enabled before clicking the button for multiple file uploads, allows csv processing time
+  this.Then(/^I finish uploading all files and continue$/, function () {
+        let continueButton  = browser.element('#continue-btn');
+        continueButton.waitForEnabled(continueButton,5000);
+        return browser.click("#continue-btn");
+  });
+
   this.Then(/^I am unable to continue/, function () {
     return expect(browser.element("#continue-btn").getAttribute("disabled")).not.toBeNull();
   });
