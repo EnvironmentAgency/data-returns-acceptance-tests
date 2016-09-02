@@ -1,4 +1,4 @@
-EA_ID,Rtn_Type,Mon_Point,Mon_Date,Parameter,Value,Unit
-MP3435KP,Emissions to surface water,Monitor point 1,2015-08-05,"1,1,2,2-Tetrachloroethane",100,ug
-BK0418IS,Emissions to surface water,Monitor point 1,2015-08-05,"1,1,2,2-Tetrachloroethane",100,ug
-ZP3533GG,Emissions to surface water,Monitor point 1,2015-08-05,"1,1,2,2-Tetrachloroethane",100,ug
+EA_ID,Rtn_Type,Site_Name,Mon_Point,Mon_Date,Parameter,Value,Unit
+MP3435KP,Emissions to surface water,Test site 1,Monitor point 1,2015-08-05,"1,1,2,2-Tetrachloroethane",100,ug
+BK0418IS,Emissions to surface water,Test site 2,Monitor point 1,2015-08-05,"1,1,2,2-Tetrachloroethane",100,ug
+ZP3533GG,Emissions to surface water,Test site 3,Monitor point 1,2015-08-05,"1,1,2,2-Tetrachloroethane",100,ug

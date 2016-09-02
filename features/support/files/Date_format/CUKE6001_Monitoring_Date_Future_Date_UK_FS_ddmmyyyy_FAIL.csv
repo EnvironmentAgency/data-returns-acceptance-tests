@@ -1,2 +1,2 @@
-EA_ID,Rtn_Type,Mon_Point,Mon_Date,Parameter,Value,Unit
-EP3136GK,Landfill gas borehole,Monitor point 1,20/03/2017,"16-(Thienylmethylene)Androstane-3,17-Diol SVOCS",123,ºC
+EA_ID,Rtn_Type,Site_Name,Mon_Point,Mon_Date,Parameter,Value,Unit
+EP3136GK,Landfill gas borehole,Test site 1,Monitor point 1,20/03/2017,"16-(Thienylmethylene)Androstane-3,17-Diol SVOCS",123,ºC
