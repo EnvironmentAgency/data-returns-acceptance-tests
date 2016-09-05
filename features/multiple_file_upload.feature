@@ -11,7 +11,7 @@ Feature: Multiple file uploads
     And I choose validation test file <Filename2> to upload
     Then I expect the file status for <Filename> to be "READY TO SEND"
     And I expect the file status for <Filename2> to be "READY TO SEND"
-    When I finish uploading all files and continue
+    When I finish uploading files and continue
     Then I see the page header "Confirm details"
     And I choose to "Continue"
     And I input an email address
