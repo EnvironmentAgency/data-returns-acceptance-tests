@@ -48,9 +48,9 @@ Feature: Check file contents for incorrect MANDATORY data
       | CUKE3003_Monitoring_Point_M_and_I_Error.csv | DR9060 | Mon_Point | Missing and incorrect |
       | CUKE3004_Monitoring_Date_M_and_I_Error.csv  | DR9020 | Mon_Date  | Missing and incorrect |
       | CUKE3005_Parameter_M_and_I_Error.csv        | DR9030 | Parameter | Missing and incorrect |
-      # | CUKE3006_Value_M_and_I_Error.csv            | DR9040 | Value     | Missing and incorrect | Bug ?
+      # | CUKE3006_Value_M_and_I_Error.csv            | DR9040 | Value     | Missing and incorrect | 
       | CUKE3007_Unit_M_and_I_Error.csv             | DR9050 | Unit      | Missing and incorrect |
-      # | CUKE3010_Site_Name_value_M_and_I.csv        | DR9110 | Site_Name | Missing and incorrect | Bug ?
+      | CUKE3010_Site_Name_value_M_and_I.csv        | DR9110 | Site_Name | Missing and incorrect | 
 
     Scenario Outline: For MANDATORY fields check that the correct error message is displayed for records where data is Missing
     Given I choose validation test file <Filename> to upload
@@ -70,7 +70,7 @@ Feature: Check file contents for incorrect MANDATORY data
       | CUKE2003_Monitoring_Point_Missing_Error.csv   | DR9060 | Mon_Point | Missing | Missing |
       | CUKE2004_Monitoring_Date_Missing_Error.csv    | DR9020 | Mon_Date  | Missing | Missing |
       | CUKE2005_Parameter_Missing_Error.csv          | DR9030 | Parameter | Missing | Missing |
-      # | CUKE2006_Value_Missing_Error.csv              | DR9040 | Value     | Missing | Missing | Bug?
+      # | CUKE2006_Value_Missing_Error.csv              | DR9040 | Value     | Missing | Missing | 
       | CUKE2007_Unit_Missing_Error.csv               | DR9050 | Unit      | Missing | Missing |
-      # | CUKE3008_Missing_Site_Name_value_FAIL.csv          | DR9110 | Site_Name | Missing | Missing | Bug
+      | CUKE3008_Missing_Site_Name_value_FAIL.csv          | DR9110 | Site_Name | Missing | Missing |
 
