@@ -26,7 +26,7 @@ Feature: Submit files where all data passes validation
       | Filename |
       | CUKE000_SUCCESS_NO_ERRORS.csv |
       | CUKE003_Multiple_Permit_Formats_Single Rtn_Type_PASS.csv |
-      # | CUKE006_LARGE_FILE_MAX_21M_16907_records_PASS.csv |
+      | CUKE006_LARGE_FILE_MAX_21M_16907_records_PASS.csv |
       | CUKE009_Multi_Permits_AA_GZ_PASS.csv |
       | CUKE010_Multi_Permits_HA_ZZ_PASS.csv |
       | CUKE011_Multi_Permits_10_69_PASS.csv |
