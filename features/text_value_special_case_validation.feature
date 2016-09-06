@@ -43,7 +43,7 @@ Feature: Submit files with either Text_Value or Value data
       | CUKE7030_Text_Value_and_Value_no_unit_no_header_FAIL.csv          | DR9999   | (Multiple)  | Conflicting  |
       | CUKE7030_Text_Value_and_Value_no_unit_no_header_FAIL.csv          | DR9050   | Unit        | Missing      |
       | CUKE7031_Text_Value_and_Value_no_unit_header_FAIL.csv             | DR9999   | (Multiple)  | Conflicting  | 
-      # | CUKE7032_No_Text_Value_and_No_Value_no_headers_Units_FAIL.csv   | DR9999   | Value       | Missing      | # Bug
+      | CUKE7032_No_Text_Value_and_No_Value_no_headers_Units_FAIL.csv     | DR9999   | Value       | Missing      |
       | CUKE7033_No_Text_Value_and_No_Value_no_headers_No_Units_FAIL.csv  | DR9999   | (Multiple)  | Missing      | 
       | CUKE7034_No_Text_Value_and_No_Value_headers_and_Value_FAIL.csv    | DR9050   | Unit        | Missing      |
       | CUKE7035_No_Text_Value_and_No_Value_no_headers_and_Value_FAIL.csv | DR9050   | Unit        | Missing      |
