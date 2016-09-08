@@ -1,13 +1,7 @@
-EA_ID,Rtn_Type,Site_Name,Mon_Point,Mon_Date,Parameter,Txt_Value
-BJ7786IV,Landfill annual monitoring report,Test site A,Monitor point 1,2015-08-05,"1,1,2,2-Tetrachloroethane",yes
-BJ7786IV,Landfill annual monitoring report,Test site A,Monitor point 1,2015-08-05,"1,1,2,2-Tetrachloroethane",no
-BJ7786IV,Landfill annual monitoring report,Test site A,Monitor point 1,2015-08-05,"1,1,2,2-Tetrachloroethane",true
-BJ7786IV,Landfill annual monitoring report,Test site A,Monitor point 1,2015-08-05,"1,1,2,2-Tetrachloroethane",false
-BJ7786IV,Landfill annual monitoring report,Test site A,Monitor point 1,2015-08-05,"1,1,2,2-Tetrachloroethane",Dry weight
-BJ7786IV,Landfill annual monitoring report,Test site A,Monitor point 1,2015-08-05,"1,1,2,2-Tetrachloroethane",Wet weight
-BJ7786IV,Landfill annual monitoring report,Test site A,Monitor point 1,2015-08-05,"1,1,2,2-Tetrachloroethane",m > AOD
-BJ7786IV,Landfill annual monitoring report,Test site A,Monitor point 1,2015-08-05,"1,1,2,2-Tetrachloroethane",m > cell base
-BJ7786IV,Landfill annual monitoring report,Test site A,Monitor point 1,2015-08-05,"1,1,2,2-Tetrachloroethane",Normal
-BJ7786IV,Landfill annual monitoring report,Test site A,Monitor point 1,2015-08-05,"1,1,2,2-Tetrachloroethane",Extreme weather
-BJ7786IV,Landfill annual monitoring report,Test site A,Monitor point 1,2015-08-05,"1,1,2,2-Tetrachloroethane",Gas fired
-BJ7786IV,Landfill annual monitoring report,Test site A,Monitor point 1,2015-08-05,"1,1,2,2-Tetrachloroethane",Gas oil / low sulphur fuel
+EA_ID,Rtn_Type,Site_Name,Mon_Point,Mon_Date,Parameter,Txt_Value,Comments
+BJ7786IV,Landfill annual monitoring report,Test site A,Monitor point 1,2015-08-05,"1,1,2,2-Tetrachloroethane",false,
+BJ7786IV,Landfill annual monitoring report,Test site A,Monitor point 1,2015-08-05,"1,1,2,2-Tetrachloroethane",no,
+BJ7786IV,Landfill annual monitoring report,Test site A,Monitor point 1,2015-08-05,"1,1,2,2-Tetrachloroethane",No result,
+BJ7786IV,Landfill annual monitoring report,Test site A,Monitor point 1,2015-08-05,"1,1,2,2-Tetrachloroethane",See comment,Comment
+BJ7786IV,Landfill annual monitoring report,Test site A,Monitor point 1,2015-08-05,"1,1,2,2-Tetrachloroethane",true,
+BJ7786IV,Landfill annual monitoring report,Test site A,Monitor point 1,2015-08-05,"1,1,2,2-Tetrachloroethane",yes,
