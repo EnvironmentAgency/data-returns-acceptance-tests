@@ -26,4 +26,4 @@ Feature: Submit files with alias alternative values
     Examples:
       | Filename 						                              |
       | CUKE4043_ALIAS_SUBSTITUTION.csv                   |
-      | CUKE7013_OPT_Text_Value_Boolean_1_PASS.csv        |
+      
