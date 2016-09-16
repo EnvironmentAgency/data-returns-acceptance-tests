@@ -1,2 +1,0 @@
-EA_ID,Rtn_Type,Site_Name,Mon_Point,Mon_Date,Parameter,Value,Unit,Ref_Period,Rtn_Period,Smpl_Ref,Smpl_By,Txt_Value,Site_Name,Comments,Meth_Stand,CiC,CAS,RD_Code
-BJ7786IV,Landfill leachate monitoring,Test site A,Monitor point 1,2015-08-05,"1,1,2,2-Tetrachloroethane",100,ug,Continuous,Field more than thirty characters,Sample Reference,Sampled By,m > AOD,Landfill Emissions Site,Comments,BS EN 12260,This is not a valid entry in this field,BS EN 12260,R1

@@ -1,5 +1,5 @@
 Feature: Submit files with alias alternative values
-  As a user I want to successfully submit files which have 
+  As a user I want to successfully submit files which have
   alternative values to what is in the controlled lists
   so that I can use recognised terms that are not in the controlled lists
 
@@ -24,6 +24,6 @@ Feature: Submit files with alias alternative values
     Then I see the page header "Data return sent"
 
     Examples:
-      | Filename 						                              |
-      | CUKE4043_ALIAS_SUBSTITUTION.csv                   |
+      | Filename                        |
+      | CUKE4043_ALIAS_SUBSTITUTION.csv |
       

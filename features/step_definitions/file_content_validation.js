@@ -15,26 +15,45 @@ function checkForErrorCodeMaker(errorNumber) {
 }
 
 module.exports = function () {
+    /**
+     * File level validation error methods
+     */
     this.Then(/^Invalid file information contains error for DR(\d+)$/, checkForErrorCodeMaker);
-    this.Then(/^I expect the row correction details for error DR(\d+) to be shown$/, checkForErrorCodeMaker);
 
-    this.Then(/^Correction details contains error for DR(\d+) for the header "([^"]+)"$/, function (errorNumber, fieldName) {
+    /**
+     * Corrections table (first level) error page
+     */
+    this.Then(/^Correction table contains error for DR(\d+) for the header "([^"]+)"$/, function (errorNumber, fieldName) {
         let row = browser.element(`#ERR_DR${errorNumber}`);
         let heading = browser.getText(`#ERR_DR${errorNumber} abbr`);
         return expect(row).not.toBeNull() && expect(heading).toEqual(fieldName);
     });
-
     this.Then(/^I open row correction details for error DR(\d+)$/, function (errorCode) {
         return browser.click(`//a[contains(@href, 'id=${errorCode}')]`);
     });
 
-    //------------ First level error details table ----------
-    this.Given(/^I expect the column heading for error DR(\d+) to be "([^"]+)"$/, function (errorCode, heading) {
-        // Column header name is in first cell of the row (td[1])
-        return expect(browser.getText(`//tr[@id='ERR_DR${errorCode}']//td[1]`)).toEqual(heading);
-    });
-    this.Given(/^I expect the error type for error DR(\d+) to be "([^"]+)"$/, function (errorCode, errorType) {
-        // Error type is in second cell of the row (td[2])
-        return expect(browser.getText(`//tr[@id='ERR_DR${errorCode}']//td[2]`)).toEqual(errorType);
+    /**
+     * Corrections detail (second level) error page
+     *
+     * @param errorCode the DR9XXX code expected
+     * @param errorTypes should be a comma delimited (no spaces) string containing all error types you should see on the corrections detail
+     * page
+     */
+    this.Then(/^I expect the row correction details for error DR(\d+) to show errors for (.+)/, function(errorCode, errorTypes) {
+        checkForErrorCodeMaker(errorCode);
+
+        let expectedErrorTypes = errorTypes.split(",");
+        // Error types are shown in the second column on the validation details page
+        let errorTypesInTableRows = browser.getText("//tr//td[2]");
+
+        for (let type of expectedErrorTypes) {
+            // Ensure this type has one or more entries in the table
+            expect(errorTypesInTableRows).toContain(type);
+
+            // Ensure that the correct error messages are displayed at the top of the corrections detail page for each type
+            // Find a div element with the appropriate class e.g. "CorrectionIncorrect"
+            let errorMessage = browser.element(`div.Correction${type}`);
+            expect(errorMessage).not.toBeNull();
+        }
     });
 };

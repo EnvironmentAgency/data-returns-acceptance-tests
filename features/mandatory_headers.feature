@@ -12,24 +12,24 @@ Feature: Check file invalid header formats
 
   Scenario Outline: Check for missing mandatory header name
     And I choose header file <Filename> to upload
-    Then I expect the file status for <Filename> to be "YOUR DATA RETURN IS INCOMPLETE (MISSING FIELDS)"
+    Then I expect the file status for <Filename> to be "FILE ERROR"
     When I open the file details for <Filename>
     Then Invalid file information contains error for <DRref>
 
     Examples:
-      | Filename                                        | DRref  |
-      | CUKE5001_Missing_Site_Name_Header_only.csv      | DR0820 |
-      | CUKE5003_Optional_headers_only.csv              | DR0820 |
-      | CUKE5004_Missing_EA_ID_Header.csv               | DR0820 |
-      | CUKE5006_Missing_Rtn_Type_Header.csv            | DR0820 | 
-      | CUKE5008_Missing_Mon_Point_Header.csv           | DR0820 |
-      | CUKE5010_Missing_Mon_Date_Header.csv            | DR0820 |
-      | CUKE5012_Missing_Parameter_Header.csv           | DR0820 |
-      
+      | Filename                                   | DRref  |
+      | CUKE5001_Missing_Site_Name_Header_only.csv | DR0820 |
+      | CUKE5003_Optional_headers_only.csv         | DR0820 |
+      | CUKE5004_Missing_EA_ID_Header.csv          | DR0820 |
+      | CUKE5006_Missing_Rtn_Type_Header.csv       | DR0820 |
+      | CUKE5008_Missing_Mon_Point_Header.csv      | DR0820 |
+      | CUKE5010_Missing_Mon_Date_Header.csv       | DR0820 |
+      | CUKE5012_Missing_Parameter_Header.csv      | DR0820 |
+
 
   Scenario Outline: Check for missing header name and with additional column (comma)
     And I choose header file <Filename> to upload
-    Then I expect the file status for <Filename> to be "YOUR DATA RETURN IS INCOMPLETE (MISSING FIELDS)"
+    Then I expect the file status for <Filename> to be "FILE ERROR"
     When I open the file details for <Filename>
     Then Invalid file information contains error for <DRref>
     Examples:
@@ -43,15 +43,15 @@ Feature: Check file invalid header formats
 
   Scenario Outline: Check for non-specification header name
     And I choose header file <Filename> to upload
-    Then I expect the file status for <Filename> to be "YOUR FILE CONTAINS UNRECOGNISABLE FIELD HEADINGS"
+    Then I expect the file status for <Filename> to be "FILE ERROR"
     When I open the file details for <Filename>
     Then Invalid file information contains error for <DRref>
 
     Examples:
-      | Filename                                        | DRref  |
-      | CUKE5018_Unrecognised_Optional_field.csv        | DR0840 |
-      | CUKE5014_Missing_Value_Header.csv               | DR0840 |
-      | CUKE5016_Missing_Unit_Header.csv                | DR0840 |
+      | Filename                                 | DRref  |
+      | CUKE5018_Unrecognised_Optional_field.csv | DR0840 |
+      | CUKE5014_Missing_Value_Header.csv        | DR0840 |
+      | CUKE5016_Missing_Unit_Header.csv         | DR0840 |
 
 
 

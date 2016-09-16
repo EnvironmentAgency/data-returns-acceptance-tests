@@ -29,7 +29,7 @@ function waitForText(selector, expectedText) {
             if (Array.isArray(textFound) && textFound.length > 0) {
                 textFound = textFound[0];
             }
-            expect(textFound).toEqual(expectedText);
+            expect(textFound.toLowerCase()).toEqual(expectedText.toLowerCase());
             return true;
         }
         return false;
@@ -58,6 +58,7 @@ module.exports = function () {
             return browser.getText(fileStatusSelector) === message;
         }, MAX_WAIT, `Unexpected file status.  Expected ${message} for file ${filename}`, CHECK_INTERVAL);
     });
+
     this.Then(/^I open the file details for (.*)$/, function (filename) {
         return browser.click(getUploadFileMoreDetailsLinkSelector(filename));
     });
@@ -89,9 +90,7 @@ module.exports = function () {
         return browser.click(selector);
     });
 
-
     //------------------ Input email and code --------------------
-
     this.Then('I input an email address', function () {
         return browser.setValue('.form-control', 'tim.stone.ea+' + Math.round(Math.random() * 1000) + '@gmail.com');
         // return browser.setValue('.form-control', "tim.stone.ea+test@gmail.com");
