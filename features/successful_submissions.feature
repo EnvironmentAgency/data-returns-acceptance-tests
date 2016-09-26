@@ -18,9 +18,9 @@ Feature: Submit files where all data passes validation
     Then I am on the "Enter your code" page
     Then I enter the confirmation code
     And I choose to "Send code"
-    Then I am on the "Send your files" page
-    And I choose to "Accept and send files"
-    Then I see the page header "Data return sent"
+    Then I am on the "Send your data" page
+    And I choose to "Accept and send"
+    Then I see the page header "Data returns sent"
 
     Examples:
       | Filename                                                          |
