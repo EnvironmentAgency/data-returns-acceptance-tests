@@ -1,7 +1,7 @@
 EA_ID,Rtn_Type,Site_Name,Mon_Point,Mon_Date,Parameter,Txt_Value,Comments
-BJ7786IV,Landfill annual monitoring report,Test site A,Monitor point 1,2015-08-05,"1,1,2,2-Tetrachloroethane",false,
-BJ7786IV,Landfill annual monitoring report,Test site A,Monitor point 1,2015-08-05,"1,1,2,2-Tetrachloroethane",no,
-BJ7786IV,Landfill annual monitoring report,Test site A,Monitor point 1,2015-08-05,"1,1,2,2-Tetrachloroethane",No result,
-BJ7786IV,Landfill annual monitoring report,Test site A,Monitor point 1,2015-08-05,"1,1,2,2-Tetrachloroethane",See comment,Comment
-BJ7786IV,Landfill annual monitoring report,Test site A,Monitor point 1,2015-08-05,"1,1,2,2-Tetrachloroethane",true,
-BJ7786IV,Landfill annual monitoring report,Test site A,Monitor point 1,2015-08-05,"1,1,2,2-Tetrachloroethane",yes,
+EP3136GK,Landfill annual monitoring report,Test site A,Monitor point 1,2015-08-05,"1,1,2,2-Tetrachloroethane",false,
+EP3136GK,Landfill annual monitoring report,Test site A,Monitor point 1,2015-08-05,"1,1,2,2-Tetrachloroethane",no,
+EP3136GK,Landfill annual monitoring report,Test site A,Monitor point 1,2015-08-05,"1,1,2,2-Tetrachloroethane",No result,
+EP3136GK,Landfill annual monitoring report,Test site A,Monitor point 1,2015-08-05,"1,1,2,2-Tetrachloroethane",See comment,Comment
+EP3136GK,Landfill annual monitoring report,Test site A,Monitor point 1,2015-08-05,"1,1,2,2-Tetrachloroethane",true,
+EP3136GK,Landfill annual monitoring report,Test site A,Monitor point 1,2015-08-05,"1,1,2,2-Tetrachloroethane",yes,
