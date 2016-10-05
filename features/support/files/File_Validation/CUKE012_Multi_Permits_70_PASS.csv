@@ -1,6 +1,0 @@
-EA_ID,Rtn_Type,Site_Name,Mon_Point,Mon_Date,Parameter,Value,Unit
-70052,Emissions to surface water,Test site 1,Monitor point 1,2015-08-05,"1,1,2,2-Tetrachloroethane",100,ug
-70611,Emissions to surface water,Test site 2,Monitor point 1,2015-08-05,"1,1,2,2-Tetrachloroethane",100,ug
-80000,Emissions to surface water,Test site 3,Monitor point 1,2015-08-05,"1,1,2,2-Tetrachloroethane",100,ug
-80065,Emissions to surface water,Test site 4,Monitor point 1,2015-08-05,"1,1,2,2-Tetrachloroethane",100,ug
-101644,Emissions to surface water,Test site 5,Monitor point 1,2015-08-05,"1,1,2,2-Tetrachloroethane",100,ug

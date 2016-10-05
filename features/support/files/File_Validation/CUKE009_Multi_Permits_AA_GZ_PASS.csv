@@ -1,8 +1,0 @@
-EA_ID,Rtn_Type,Site_Name,Mon_Point,Mon_Date,Parameter,Value,Unit
-BU6000IL,Landfill leachate monitoring,Test site 1,Monitor point 1,2015-08-05,"1,1,2,2-Tetrachloroethane",100,ug
-BJ7824IK,Emissions to surface water,Test site 2,Monitor point 1,2015-08-05,"1,1,2,2-Tetrachloroethane",100,ug
-EP3136GK,Emissions to groundwater,Test site 3,Monitor point 1,2015-08-05,"1,1,2,2-Tetrachloroethane",100,ug
-BU6000IL,Methane capped surfaces,Test site 4,Monitor point 1,2015-08-05,"1,1,2,2-Tetrachloroethane",100,ug
-BJ7824IK,Landfill gas borehole,Test site 5,Monitor point 1,2015-08-05,"1,1,2,2-Tetrachloroethane",100,ug
-EP3136GK,Landfill gas engine,Test site 6,Monitor point 1,2015-08-05,"1,1,2,2-Tetrachloroethane",100,ug
-BU6000IL,Landfill gas flare,Test site 7,Monitor point 1,2015-08-05,"1,1,2,2-Tetrachloroethane",100,ug
