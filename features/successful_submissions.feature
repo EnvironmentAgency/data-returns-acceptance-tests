@@ -8,7 +8,7 @@ Feature: Submit files where all data passes validation
     Then I start my submission
 
   Scenario Outline: Submit a valid file
-    Given I choose validation test file <Filename> to upload
+    Given I choose file <Filename> to upload
     Then I expect the file status for <Filename> to be "READY TO SEND"
     When I finish uploading files and continue
     Then I see the page header "Confirm details"
@@ -24,11 +24,11 @@ Feature: Submit files where all data passes validation
 
     Examples:
       | Filename                                                          |
-      | CUKE000_SUCCESS_NO_ERRORS.csv                                     |
+      | SUCCESS_NO_ERRORS.csv                                             |
       # | CUKE006_LARGE_FILE_MAX_21M_16907_records_PASS.csv                 |
 
   Scenario Outline: For OPTIONAL fields check that null values are accepted
-    Given I choose validation test file <Filename> to upload
+    Given I choose file <Filename> to upload
     Then I expect the file status for <Filename> to be "READY TO SEND"
     When I finish uploading files and continue
     Then I see the page header "Confirm details"

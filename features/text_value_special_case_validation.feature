@@ -14,7 +14,7 @@ Feature: Submit files with either Text_Value or Value data
     Then I start my submission
 
   Scenario Outline: Successfully submit a valid file where either text value or value are given
-    And I choose boolean file <Filename> to upload
+    And I choose file <Filename> to upload
     Then I expect the file status for <Filename> to be "READY TO SEND"
 
     Examples:
