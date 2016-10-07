@@ -1,0 +1,59 @@
+Feature: Check that the correct data error message is displayed
+  As an user I want the correct error message to be displayed
+  when a file fails data validation
+
+  Background:
+    Given I am on the start page
+    And I am on the "Send landfill data returns" page
+    Then I start my submission
+
+  #------------------ Check error DR error message displayed --------------------
+
+  Scenario Outline: Check that the correct error messages are given in the validation pages.
+    Given I choose file <Filename> to upload
+    Then I expect the file status for <Filename> to be "DATA ERROR"
+    When I open the file details for <Filename>
+    Then Correction table contains error for <DRref> for the header "<Header>"
+    Then I open row correction details for error <DRref>
+    And I see the page header "Correct <Header> errors"
+    And I expect the row correction details for error <DRref> to show errors for <Error>
+
+    Examples:
+
+      | Filename                                             | DRref  | Header     | Error     |
+      | DR9000_EA_ID_Missing.csv                             | DR9000 | EA_ID      | Missing   |
+      | DR9000_EA_ID.csv                                     | DR9000 | EA_ID      | Incorrect |
+      | DR9010_Rtn_Type_Missing.csv                          | DR9010 | Rtn_Type   | Missing   |
+      | DR9010_Rtn_Type.csv                                  | DR9010 | Rtn_Type   | Incorrect |
+      | DR9020_Mon_Date.csv                                  | DR9020 | Mon_Date   | Incorrect |
+      | DR9020_Mon_Date_Missing.csv                          | DR9020 | Mon_Date   | Missing   |
+      | DR9030_Parameter_Missing.csv                         | DR9030 | Parameter  | Missing   |
+      | DR9030_Parameter.csv                                 | DR9030 | Parameter  | Incorrect |
+      | DR9040_Value.csv                                     | DR9040 | Value      | Incorrect |
+      | DR9050_Unit.csv                                      | DR9050 | Unit       | Incorrect |
+      | DR9050_Unit_Missing.csv                              | DR9050 | Unit       | Missing   |
+      | DR9060_Mon_Point_Missing.csv                         | DR9060 | Mon_Point  | Missing   |
+      | DR9060_Mon_Point.csv                                 | DR9060 | Mon_Point  | Incorrect |
+      | DR9070_Rtn_Period.csv                                | DR9070 | Rtn_Period | Incorrect |
+      | DR9080_Txt_Value.csv                                 | DR9080 | Txt_Value  | Incorrect |
+      | DR9090_Ref_Period.csv                                | DR9090 | Ref_Period | Incorrect |
+      | DR9100_Meth_Stand.csv                                | DR9100 | Meth_Stand | Incorrect |
+      | DR9110_Site_Name.csv                                 | DR9110 | Site_Name  | Incorrect |
+      | DR9110_Site_Name_missing.csv                         | DR9110 | Site_Name  | Missing   |
+      | DR9110_Site_Name_256_Length.csv                      | DR9110 | Site_Name  | Length    |
+      | DR9120_Smpl_Ref_Incorrect.csv                        | DR9120 | Smpl_Ref   | Incorrect |
+      | DR9120_Smpl_Ref.csv                                  | DR9120 | Smpl_Ref   | Length    |
+      | DR9130_Smpl_By_Length.csv                            | DR9130 | Smpl_By    | Length    |
+      | DR9140_Comments.csv                                  | DR9140 | Comments   | Length    |
+      | DR9150_CiC.csv                                       | DR9150 | CiC        | Length    |
+      | DR9160_CAS.csv                                       | DR9160 | CAS        | Length    |
+      | DR9170_RD_Code.csv                                   | DR9170 | RD_Code    | Length    |
+      
+      
+      
+      
+      
+      
+    
+
+
