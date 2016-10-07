@@ -14,7 +14,7 @@ Feature: Submit files with either Text_Value or Value data
     Then I start my submission
 
   Scenario Outline: Successfully submit a valid file where either text value or value are given
-    And I choose boolean file <Filename> to upload
+    And I choose file <Filename> to upload
     Then I expect the file status for <Filename> to be "READY TO SEND"
 
     Examples:
@@ -25,24 +25,4 @@ Feature: Submit files with either Text_Value or Value data
       | CUKE7028_Value_No_Text_Value_with_no_header_PASS.csv |
 
 
-  Scenario Outline: Check that the correct error message is for invalid value, text value logic
-    * I choose boolean file <Filename> to upload
-    * I expect the file status for <Filename> to be "DATA ERROR"
-    * I open the file details for <Filename>
-    * Correction table contains error for <DRref> for the header "<Header>"
-    * I open row correction details for error <DRref>
-    * I see the page header "Correct <Header> errors"
-    * I expect the row correction details for error <DRref> to show errors for <Error>
-
-    Examples:
-      | Filename                                                          | DRref  | Header   | Error       |
-      | CUKE7029_Text_Value_and_Value_and_unit_FAIL.csv                   | DR9999 | Multiple | Conflicting |
-      | CUKE7029_Text_Value_and_Value_and_unit_FAIL.csv                   | DR9050 | Unit     | Conflicting |
-      | CUKE7030_Text_Value_and_Value_no_unit_no_header_FAIL.csv          | DR9999 | Multiple | Conflicting |
-      | CUKE7030_Text_Value_and_Value_no_unit_no_header_FAIL.csv          | DR9050 | Unit     | Missing     |
-      | CUKE7031_Text_Value_and_Value_no_unit_header_FAIL.csv             | DR9999 | Multiple | Conflicting |
-      | CUKE7032_No_Text_Value_and_No_Value_no_headers_Units_FAIL.csv     | DR9999 | Multiple | Missing     |
-      | CUKE7033_No_Text_Value_and_No_Value_no_headers_No_Units_FAIL.csv  | DR9999 | Multiple | Missing     |
-      | CUKE7034_No_Text_Value_and_No_Value_headers_and_Value_FAIL.csv    | DR9050 | Unit     | Missing     |
-      | CUKE7035_No_Text_Value_and_No_Value_no_headers_and_Value_FAIL.csv | DR9050 | Unit     | Missing     |
 

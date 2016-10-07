@@ -7,8 +7,8 @@ Feature: Multiple file uploads
     Then I start my submission
 
   Scenario Outline: Submit a valid file
-    Given I choose validation test file <Filename> to upload
-    And I choose validation test file <Filename2> to upload
+    Given I choose file <Filename> to upload
+    And I choose file <Filename2> to upload
     Then I expect the file status for <Filename> to be "READY TO SEND"
     And I expect the file status for <Filename2> to be "READY TO SEND"
     When I finish uploading files and continue
@@ -25,5 +25,5 @@ Feature: Multiple file uploads
 
     Examples:
       | Filename                                                 | Filename2                             |
-      | CUKE000_SUCCESS_NO_ERRORS.csv                            | CUKE001_SUCCESS_NO_ERRORS.csv         |
+      | SUCCESS_NO_ERRORS.csv                                    | SUCCESS_NO_ERRORS_2.csv               |
       
