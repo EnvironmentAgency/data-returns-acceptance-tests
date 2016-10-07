@@ -7,8 +7,8 @@ module.exports = function() {
   this.Given(/^I choose header file (.*) to upload$/, function(filename) {
     browser.chooseFile(fileChooserXpath, `features/support/files/Header_format/${filename}`);
   });
-  this.Then(/^I choose initial file (.*) to upload$/, function(filename) {
-    browser.chooseFile(fileChooserXpath, `features/support/files/Initial_Validation/${filename}`);
+  this.Then(/^I choose file (.*) to upload$/, function(filename) {
+    browser.chooseFile(fileChooserXpath, `features/support/files/${filename}`);
   });
   this.Given(/^I choose validation test file (.*) to upload$/, function(filename) {
     browser.chooseFile(fileChooserXpath, `features/support/files/File_Validation/${filename}`);

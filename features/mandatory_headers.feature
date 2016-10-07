@@ -41,17 +41,7 @@ Feature: Check file invalid header formats
       | CUKE5013_Missing_Parameter_Header_and_comma.csv | DR0820 |
       | CUKE5019_Missing_Site_Name_Header_and_comma.csv | DR0820 |
 
-  Scenario Outline: Check for non-specification header name
-    And I choose header file <Filename> to upload
-    Then I expect the file status for <Filename> to be "FILE ERROR"
-    When I open the file details for <Filename>
-    Then Invalid file information contains error for <DRref>
 
-    Examples:
-      | Filename                                 | DRref  |
-      | CUKE5018_Unrecognised_Optional_field.csv | DR0840 |
-      | CUKE5014_Missing_Value_Header.csv        | DR0840 |
-      | CUKE5016_Missing_Unit_Header.csv         | DR0840 |
 
 
       
