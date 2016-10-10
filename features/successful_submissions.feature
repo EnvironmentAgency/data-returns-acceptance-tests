@@ -24,7 +24,7 @@ Feature: Submit files where all data passes validation
 
     Examples:
       | Filename                                                          |
-      | SUCCESS_NO_ERRORS.csv                                             |
+      | multiple_file_upload_1.csv                                        |
       # | CUKE006_LARGE_FILE_MAX_21M_16907_records_PASS.csv                 |
 
   Scenario Outline: For OPTIONAL fields check that null values are accepted
