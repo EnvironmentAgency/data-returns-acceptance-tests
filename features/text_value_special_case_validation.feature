@@ -18,11 +18,11 @@ Feature: Submit files with either Text_Value or Value data
     Then I expect the file status for <Filename> to be "READY TO SEND"
 
     Examples:
-      | Filename                                             |
-      | CUKE7025_Text_Value_No_Value_with_header_PASS.csv    |
-      | CUKE7026_Text_Value_No_Value_with_no_header_PASS.csv |
-      | CUKE7027_Value_No_Text_Value_with_header_PASS.csv    |
-      | CUKE7028_Value_No_Text_Value_with_no_header_PASS.csv |
+      | Filename                                                                           |
+      | text_value_special_case_validation_Text_Value_No_Value_with_header_PASS.csv        |
+      | text_value_special_case_validation_Text_Value_No_Value_with_no_header_PASS.csv     |
+      | text_value_special_case_validation_Value_No_Text_Value_with_header_PASS.csv        |
+      | text_value_special_case_validation_Value_No_Text_Value_with_no_header_PASS.csv     |
 
 
 
