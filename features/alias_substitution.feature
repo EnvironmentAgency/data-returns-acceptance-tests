@@ -1,5 +1,7 @@
-Feature: Multiple file uploads
-  As a user I want to successfully submit multiple files in one submission
+Feature: Submit files with alias alternative values
+  As a user I want to successfully submit files which have
+  alternative values to what is in the controlled lists
+  so that I can use recognised terms that are not in the controlled lists
 
   Background:
     Given I am on the start page
@@ -8,10 +10,7 @@ Feature: Multiple file uploads
 
   Scenario Outline: Submit a valid file
     Given I choose file <Filename> to upload
-    And I choose file <Filename2> to upload
-    And I choose file <Filename3> to upload
     Then I expect the file status for <Filename> to be "READY TO SEND"
-    And I expect the file status for <Filename2> to be "READY TO SEND"
     When I finish uploading files and continue
     Then I see the page header "Confirm details"
     And I choose to "Continue"
@@ -25,6 +24,6 @@ Feature: Multiple file uploads
     Then I see the page header "Data returns sent"
 
     Examples:
-      | Filename                     | Filename2                  | Filename3                  |
-      | multiple_file_upload_1.csv   | multiple_file_upload_2.csv | multiple_file_upload_3.csv |
+      | Filename               |
+      | ALIAS_SUBSTITUTION.csv |
       
