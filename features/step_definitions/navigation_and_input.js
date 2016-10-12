@@ -91,20 +91,57 @@ module.exports = function () {
     });
 
     //------------------ Input email and code --------------------
-    this.Then('I input an email address', function () {
-        return browser.setValue('.form-control', 'tim.stone.ea+' + Math.round(Math.random() * 1000) + '@gmail.com');
-        // return browser.setValue('.form-control', "tim.stone.ea+test@gmail.com");
+    this.Then('I submit an email address', function () {
+        browser.setValue('.form-control', 'tim.stone.ea+' + Math.round(Math.random() * 1000) + '@gmail.com');
+        browser.click("#nextBtn");
     });
 
-    this.Then('I enter an invalid email address', function () {
-        return browser.setValue('.form-control', "xxxxyz.xyz");
+    this.Then('I submit an invalid email address', function () {
+        browser.setValue('.form-control', "XXXX");
+        browser.click("#nextBtn");
     });
 
-    this.Then('an invalid email error message is shown', function () {
+    this.Then('I submit an invalid pin number', function () {
+        browser.setValue('.form-control', "xxxxyz.xyz");
+        browser.click("#nextBtn");
+    });
+
+    this.Then('I don\'t enter an email address', function () {
+        browser.click("#nextBtn");
+    });
+
+    this.Then('I don\'t enter a pin number', function () {
+        browser.setValue('.form-control', "");
+        browser.click("#nextBtn");
+    });
+
+
+    this.Then(/^an error message is shown$/, function () {
         expect(browser.getText('.error-summary'));
     });
 
-    this.Then('I enter the confirmation code', function () {
+    this.Then(/^I enter the confirmation code$/, function () {
         return browser.setValue('.form-control', "1960");
     });
+
+    this.Given(/^I've chosen my data to return$/, function () {
+         this.browser.url('/start');
+         browser.click('.button-get-started');
+         browser.chooseFile("//input[@type='file']", `features/support/files/success.csv`);
+         browser.waitUntil(function () {
+            let isDisabled = browser.getAttribute("#continue-btn", "disabled");
+            if (!isDisabled) {
+                // Found continue button and it is not disabled, click it and continue...
+                browser.click("#continue-btn");
+                return true;
+            }
+            return false;
+        }, MAX_WAIT, `Failed to finish uploading files and continue within the allowed time.`, CHECK_INTERVAL);
+    });
+
+       this.Given(/^I've confirmed my data$/, function () {
+       let selector = `//*[contains(@class, "button")][@value="Continue" or text() = "Continue"]`;
+        return browser.click(selector);
+       });
+
 };

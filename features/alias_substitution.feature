@@ -14,8 +14,7 @@ Feature: Submit files with alias alternative values
     When I finish uploading files and continue
     Then I see the page header "Confirm details"
     And I choose to "Continue"
-    And I input an email address
-    Then I choose to "Send email"
+    And I submit an email address
     Then I am on the "Enter your code" page
     Then I enter the confirmation code
     And I choose to "Send code"
