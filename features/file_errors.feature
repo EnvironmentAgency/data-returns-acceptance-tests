@@ -5,8 +5,7 @@ Feature: Submit files for initial checking
   for correctness
 
   Background:
-    Given I am on the start page
-    And I am on the "Send landfill data returns" page
+    Given I am on the "Send landfill data returns" page
     Then I start my submission
 
   Scenario Outline: Check for file errors (unreadable/malicious CSV content)

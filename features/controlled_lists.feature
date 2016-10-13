@@ -3,8 +3,7 @@ Feature: Submit files which contain all Controlled list values
   is not held on the Controlled list for that item
 
   Background:
-    Given I am on the start page
-    And I am on the "Send landfill data returns" page
+    Given I am on the "Send landfill data returns" page
     Then I start my submission
 
   Scenario Outline: Submit file comprising all Controlled Lists values

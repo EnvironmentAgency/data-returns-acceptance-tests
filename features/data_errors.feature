@@ -3,8 +3,7 @@ Feature: Check that the correct data error message is displayed
   when a file fails data validation
 
   Background:
-    Given I am on the start page
-    And I am on the "Send landfill data returns" page
+    Given I am on the "Send landfill data returns" page
     Then I start my submission
 
   #------------------ Check error DR error message displayed --------------------

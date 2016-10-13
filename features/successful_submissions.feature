@@ -3,8 +3,7 @@ Feature: Submit files where all data passes validation
   correctly structured and all data is valid
 
   Background:
-    Given I am on the start page
-    And I am on the "Send landfill data returns" page
+    Given I am on the "Send landfill data returns" page
     Then I start my submission
 
   Scenario Outline: Submit a valid file
