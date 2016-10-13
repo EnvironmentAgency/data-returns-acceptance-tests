@@ -4,8 +4,8 @@ Feature: Submit files with alias alternative values
   so that I can use recognised terms that are not in the controlled lists
 
   Background:
-    Given I am on the start page
-    And I am on the "Send landfill data returns" page
+    
+    Given I am on the "Send landfill data returns" page
     Then I start my submission
 
   Scenario Outline: Submit a valid file

@@ -38,6 +38,11 @@ function waitForText(selector, expectedText) {
 
 
 module.exports = function () {
+
+      this.Before(function () {
+        return this.browser.url('/start');
+    });
+
     //------------- Page check navigation -----------------------
     this.Given(/^I am on the start page$/, function () {
         return this.browser.url('/start');
@@ -125,7 +130,7 @@ module.exports = function () {
     });
 
     this.Given(/^I've chosen my data to return$/, function () {
-         this.browser.url('/start');
+         // this.browser.url('/start');
          browser.click('.button-get-started');
          browser.chooseFile("//input[@type='file']", `features/support/files/success.csv`);
          browser.waitUntil(function () {

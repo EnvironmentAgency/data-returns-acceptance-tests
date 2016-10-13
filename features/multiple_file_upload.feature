@@ -2,8 +2,7 @@ Feature: Multiple file uploads
   As a user I want to successfully submit multiple files in one submission
 
   Background:
-    Given I am on the start page
-    And I am on the "Send landfill data returns" page
+    Given I am on the "Send landfill data returns" page
     Then I start my submission
 
   Scenario Outline: Submit a valid file

@@ -9,8 +9,7 @@ Feature: Submit files with either Text_Value or Value data
   If Txt_Value is used, Unit cannot be used
 
   Background:
-    Given I am on the start page
-    And I am on the "Send landfill data returns" page
+    Given I am on the "Send landfill data returns" page
     Then I start my submission
 
   Scenario Outline: Successfully submit a valid file where either text value or value are given
