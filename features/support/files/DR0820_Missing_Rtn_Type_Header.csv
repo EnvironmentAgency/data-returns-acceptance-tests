@@ -1,2 +1,2 @@
-Rtn_Type,Mon_Point,Site_Name,Mon_Date,Parameter,Value,Unit,
-EP3136GK,Landfill Annual monitoring report,Test site A,Monitor point 1,2015-08-05,"1,1,2,2-Tetrachloroethane",100,
+EA_ID,Site_Name,Mon_Point,Mon_Date,Parameter,Value,Unit
+EP3136GK,Test site A,Monitor point 1,2015-08-05,"1,1,2,2-Tetrachloroethane",100,g

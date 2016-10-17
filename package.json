@@ -10,6 +10,8 @@
     "chimp": "0.41.1"
   },
   "scripts": {
-    "test": "node node_modules/chimp/dist/bin/chimp.js"
+    "test": "node node_modules/chimp/dist/bin/chimp.js",
+    "testff": "node node_modules/chimp/dist/bin/chimp.js --browser=firefox",
+    "testdbg": "node node_modules/chimp/dist/bin/chimp.js --debug"
   }
 }

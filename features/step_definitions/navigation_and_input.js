@@ -39,7 +39,7 @@ function waitForText(selector, expectedText) {
 
 module.exports = function () {
 
-      this.Before(function () {
+    this.Before(function () {
         return this.browser.url('/start');
     });
 
@@ -130,10 +130,10 @@ module.exports = function () {
     });
 
     this.Given(/^I've chosen my data to return$/, function () {
-         // this.browser.url('/start');
-         browser.click('.button-get-started');
-         browser.chooseFile("//input[@type='file']", `features/support/files/success.csv`);
-         browser.waitUntil(function () {
+        // this.browser.url('/start');
+        browser.click('.button-get-started');
+        browser.chooseFile("//input[@type='file']", `features/support/files/SUCCESS.csv`);
+        browser.waitUntil(function () {
             let isDisabled = browser.getAttribute("#continue-btn", "disabled");
             if (!isDisabled) {
                 // Found continue button and it is not disabled, click it and continue...
@@ -144,9 +144,9 @@ module.exports = function () {
         }, MAX_WAIT, `Failed to finish uploading files and continue within the allowed time.`, CHECK_INTERVAL);
     });
 
-       this.Given(/^I've confirmed my data$/, function () {
-       let selector = `//*[contains(@class, "button")][@value="Continue" or text() = "Continue"]`;
+    this.Given(/^I've confirmed my data$/, function () {
+        let selector = `//*[contains(@class, "button")][@value="Continue" or text() = "Continue"]`;
         return browser.click(selector);
-       });
+    });
 
 };
