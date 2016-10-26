@@ -7,7 +7,7 @@
     "node": "4.4.7"
   },
   "dependencies": {
-    "chimp": "0.41.1"
+    "chimp": "0.41.2"
   },
   "scripts": {
     "test": "node node_modules/chimp/dist/bin/chimp.js",

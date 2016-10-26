@@ -48,6 +48,25 @@ module.exports = function () {
         return this.browser.url('/start');
     });
 
+    //------------- Page url navigation -----------------------
+    this.Then(/^I navigate to URL "([^"]*)"$/, function (url) {
+        // TODO: This is a bit of a fudge to get around a limitation in chimp regarding relative paths....
+        // (supposed to be fixed in 0.42.2 but isn't....)
+        let target = url;
+        if (!target.startsWith("http")) {
+            let baseUrl = this.browser._original.options.baseUrl;
+            if (baseUrl.endsWith("/")) {
+                baseUrl = baseUrl.substr(0, baseUrl.length - 1);
+            }
+            target = baseUrl + url;
+        }
+
+        this.browser.url(target);
+    });
+    this.Then(/^I go back in browser history$/, function () {
+        return this.browser.back();
+    });
+
     this.Then(/^I am on the "([^"]*)" page$/, function (heading) {
         return waitForText('h1', heading);
     });
@@ -95,9 +114,16 @@ module.exports = function () {
         return browser.click(selector);
     });
 
+    this.Then(/^I click the link "([^"]*)"$/, function (linkText) {
+        let selector = `//a[contains(text(), "${linkText}")]`;
+        return browser.click(selector);
+    });
+
     //------------------ Input email and code --------------------
     this.Then('I submit an email address', function () {
-        browser.setValue('.form-control', 'tim.stone.ea+' + Math.round(Math.random() * 1000) + '@gmail.com');
+        let emailInput = browser.element('.form-control');
+        emailInput.waitForExist(5000);
+        emailInput.setValue('tim.stone.ea+' + Math.round(Math.random() * 1000) + '@gmail.com');
         browser.click("#nextBtn");
     });
 
