@@ -3,7 +3,7 @@ sudo: false
 language: node_js
 
 node_js:
-  - 4.4.7
+  - 4.5.0
 
 git:
   depth: 3
@@ -15,13 +15,3 @@ addons:
 
 before_script:
   - echo "module.exports = { browser:'phantomjs', webdriverio:{ baseUrl:'https://dr-dev.envage.co.uk' } }" > chimp.js
-
-# Have this option to stop travis-ci building twice. Currently we have travis set to build both
-# PR's and pushes. However this means when we push to a PR we have to wait for Travis to finish
-# 2 builds. If we unticked 'pushes' when the PR was finally merged that would not be built. The
-# brute force approach would be to untick build PR's and just build all pushes. We instead have
-# gone with the approach outlined here http://stackoverflow.com/a/31882307
-branches:
-  only:
-    - master
-    - develop
