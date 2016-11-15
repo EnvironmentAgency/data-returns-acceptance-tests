@@ -23,7 +23,7 @@ Feature: Submit files where all data passes validation
     Examples:
       | Filename                                                          |
       | multiple_file_upload_1.csv                                        |
-      # | CUKE006_LARGE_FILE_MAX_21M_16907_records_PASS.csv                 |
+      | CUKE006_LARGE_FILE_MAX_21M_16907_records_PASS.csv                 |
 
   Scenario Outline: For OPTIONAL fields check that null values are accepted
     Given I choose file <Filename> to upload
@@ -35,14 +35,6 @@ Feature: Submit files where all data passes validation
       | Filename                              |
       | successful_submissions_OPT_Ref_Period_Null_PASS.csv |
       | successful_submissions_OPT_Mon_Period_NULL_PASS.csv |
-
-# Tests for Smpl_Ref and Smpl_By currently disabled as these are to be removed from the service
-#      | successful_submissions_OPT__Smpl_Ref_NULL_PASS.csv  |
-#      | successful_submissions_OPT_Smpl_By_NULL_PASS.csv    |
-
       | successful_submissions_OPT_Comments_NULL_PASS.csv   |
       | successful_submissions_OPT_Meth_Stand_NULL_PASS.csv |
       | successful_submissions_OPT_CiC_NULL_PASS.csv        |
-# Tests for CAS/RD_Code removed for now as these MAY be deprecated when we receive the dep for pi/lcp/rems
-#      | successful_submissions_OPT_CAS_NULL_PASS.csv        |
-#      | successful_submissions_OPT_RD_Code_NULL_PASS.csv    |
