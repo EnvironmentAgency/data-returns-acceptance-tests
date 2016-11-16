@@ -55,7 +55,7 @@ Feature: Check that the correct data error message is displayed
       | DR9140_Txt_Value_has_no_comment_FAIL.csv                        | DR9140 | Comments           | Missing           |
       | DR9150_CiC.csv                                                  | DR9150 | CiC                | Length            |
 
-        Scenario Outline: Check that the correct error messages are given in the validation pages.
+        Scenario Outline: Check that the correct error messages are given for special cases
         Given I choose file <Filename> to upload
         Then I expect the file status for <Filename> to be "DATA ERROR"
         When I open the file details for <Filename>
