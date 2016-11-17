@@ -36,7 +36,7 @@
     Examples:
       | Filename                    | alternate_id      | ea_id |
       | EA_ID_SUBSTITUTION.csv      | E081              | 70601 |
-      | EA_ID_SUBSTITUTION_2.csv    | SP3734TR          | 70601 |
+      | EA_ID_SUBSTITUTION_2.csv    | sp3734tr          | 70601 |
 
 
     Scenario Outline: Correct EA_ID is used where alternatives are available
