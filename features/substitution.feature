@@ -33,16 +33,10 @@
     When I finish uploading files and continue
     Then I see that <alternate_id> has been substituted to <ea_id>
 
-
-
     Examples:
       | Filename                 | alternate_id   | ea_id |
       | EA_ID_SUBSTITUTION.csv   | E081           | 70601 |
 
-
-    # Examples:
-    #   | Filename                 | sub1   | sub2 |
-    #   | EA_ID_SUBSTITUTION.csv   | E081,70601           | AP1234BC,730340 |
 
     Scenario Outline: Correct EA_ID is used where alternatives are available
     Given I choose file <Filename> to upload

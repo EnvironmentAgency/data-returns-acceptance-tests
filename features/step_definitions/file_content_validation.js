@@ -65,7 +65,7 @@ module.exports = function () {
         let outputIdSpan = row.element(".resolvedUniqueIdentifier");
 
 
-        console.log(`Found row containing ${inputIdSpan.getText()} substituted with ${outputIdSpan.getText()}`);
+        // console.log(`Found row containing ${inputIdSpan.getText()} substituted with ${outputIdSpan.getText()}`);
 
         return (inputIdSpan.getText() === inputEaId && outputIdSpan.getText() === outputEaId); 
     }
@@ -76,7 +76,7 @@ module.exports = function () {
         let foundMatch = false;
 
         if (Array.isArray(eaIdOutputRows)) {
-            console.log(`Found ${eaIdOutputRows.length} rows of eaids`);
+            // console.log(`Found ${eaIdOutputRows.length} rows of eaids`);
             for (let row of eaIdOutputRows) {
                 if (checkEaIdRow(row, inputEaId, outputEaId)) {
                     foundMatch = true;
