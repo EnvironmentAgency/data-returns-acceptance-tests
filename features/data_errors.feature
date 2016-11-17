@@ -55,7 +55,7 @@ Feature: Check that the correct data error message is displayed
       | DR9140_Txt_Value_has_no_comment_FAIL.csv                        | DR9140 | Comments           | Missing           |
       | DR9150_CiC.csv                                                  | DR9150 | CiC                | Length            |
 
-        Scenario Outline: Check that the correct error messages are given in the validation pages.
+        Scenario Outline: Check that the correct error messages are given for special cases
         Given I choose file <Filename> to upload
         Then I expect the file status for <Filename> to be "DATA ERROR"
         When I open the file details for <Filename>
@@ -71,6 +71,7 @@ Feature: Check that the correct data error message is displayed
       | DR9999_No_Text_Value_and_No_Value_no_headers_Units_FAIL.csv     | DR9999 | Value, Txt_Value   | Missing           | Value and Txt_Value |
       | DR9999_No_Text_Value_and_No_Value_no_headers_No_Units_FAIL.csv  | DR9999 | Value, Txt_Value   | Missing           | Value and Txt_Value |
       | DR9999_Value_and_Txt_Value_Missing.csv                          | DR9999 | Value, Txt_Value   | Missing           | Value and Txt_Value |
+      | DR9000_EA_ID_Site_name_mismatch.csv                             | DR9000 | EA_ID, Site_Name   | Conflicting       | EA_ID and Site_Name |
 
 
   

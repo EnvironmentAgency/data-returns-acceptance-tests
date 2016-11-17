@@ -56,4 +56,51 @@ module.exports = function () {
             expect(errorMessage).not.toBeNull();
         }
     });
+
+    /**
+    Given an individual row, check for an EA_ID substitution (inputEaId replaced with outputEaId)
+    */
+    function checkEaIdRow(row, inputEaId, outputEaId) {
+        let inputIdSpan = row.element(".submittedUniqueIdentifier");
+        let outputIdSpan = row.element(".resolvedUniqueIdentifier");
+
+
+        // console.log(`Found row containing ${inputIdSpan.getText()} substituted with ${outputIdSpan.getText()}`);
+
+        return (inputIdSpan.getText() === inputEaId && outputIdSpan.getText() === outputEaId); 
+    }
+
+
+    this.Then(/^I see that (\S+) has been substituted to (\S+)$/, function (inputEaId, outputEaId) {
+        let eaIdOutputRows = browser.element("li.ea-id");
+        let foundMatch = false;
+
+        if (Array.isArray(eaIdOutputRows)) {
+            // console.log(`Found ${eaIdOutputRows.length} rows of eaids`);
+            for (let row of eaIdOutputRows) {
+                if (checkEaIdRow(row, inputEaId, outputEaId)) {
+                    foundMatch = true;
+                    break;
+                }
+        
+            }
+        } else {
+            foundMatch = checkEaIdRow(eaIdOutputRows, inputEaId, outputEaId);
+        }
+
+        expect(foundMatch).toEqual(true);   
+    });
+    
+
+    this.Then(/^I see that the EA_ID (\S+) has been used$/, function (eaId) {
+
+        let eaIdSpan = browser.element(".resolvedUniqueIdentifier");
+
+        if (Array.isArray(eaIdSpan)) eaIdSpan = eaIdSpan[0];
+
+        if (eaIdSpan.getText() === eaId) {
+            return true;
+        }
+        throw `Failed to find EA_ID ${eaId} on confirmation page`; 
+    });
 };
