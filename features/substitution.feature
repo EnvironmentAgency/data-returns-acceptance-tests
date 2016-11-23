@@ -36,7 +36,7 @@
     Examples:
       | Filename                    | alternate_id      | ea_id |
       | EA_ID_SUBSTITUTION.csv      | E081              | 70601 |
-      | EA_ID_SUBSTITUTION_2.csv    | sp3734tr          | 70601 |
+      # | EA_ID_SUBSTITUTION_2.csv    | sp3734tr          | 70601 |
 
 
     Scenario Outline: Correct EA_ID is used where alternatives are available
@@ -48,3 +48,11 @@
      Examples:
       | Filename                 | ea_id |
       | EA_ID_SUBSTITUTION_3.csv | 70601 |
+
+    Scenario Outline: Incorrect characters are substituted for known correct characters
+    Given I choose file <Filename> to upload
+    Then I expect the file status for <Filename> to be "READY TO SEND"
+
+     Examples:
+      | Filename                   |
+      | CHARACTER_SUBSTITUTION.csv |
