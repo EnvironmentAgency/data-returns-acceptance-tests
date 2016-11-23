@@ -7,7 +7,10 @@
     "node": "4.4.7"
   },
   "dependencies": {
-    "chimp": "0.41.2"
+    "chimp": "0.41.2",
+    "fs-extra": "^1.0.0",
+    "lodash": "^4.17.2",
+    "tmp": "0.0.31"
   },
   "scripts": {
     "test": "node node_modules/chimp/dist/bin/chimp.js",
