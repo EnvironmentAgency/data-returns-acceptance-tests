@@ -1,171 +1,28 @@
-[
   {
-    "os": "Windows",
-    "os_version": "XP",
-    "browser": "chrome",
-    "device": null,
-    "browser_version": "49.0"
-  },
+  "browsers": [
+      "chrome_previous",
+      "chrome_latest",
+      "firefox_previous",
+      "firefox_latest",
+      "ie_8",
+      "ie_9",
+      "ie_10",
+      "ie_11",
+      "edge_previous",
+      "edge_latest",
   {
-    "os": "Windows",
-    "os_version": "XP",
-    "browser": "firefox",
+    "os": "OS X",
+    "os_version": "El Capitan",
+    "browser": "safari",
     "device": null,
-    "browser_version": "47.0"
-  },
-  {
-    "os": "Windows",
-    "os_version": "7",
-    "browser": "chrome",
-    "device": null,
-    "browser_version": "54.0"
-  },
-  {
-    "os": "Windows",
-    "os_version": "7",
-    "browser": "ie",
-    "device": null,
-    "browser_version": "8.0"
-  },
-  {
-    "os": "Windows",
-    "os_version": "7",
-    "browser": "ie",
-    "device": null,
-    "browser_version": "9.0"
-  },
-  {
-    "os": "Windows",
-    "os_version": "7",
-    "browser": "ie",
-    "device": null,
-    "browser_version": "10.0"
-  },
-  {
-    "os": "Windows",
-    "os_version": "7",
-    "browser": "ie",
-    "device": null,
-    "browser_version": "11.0"
-  },
-  {
-    "os": "Windows",
-    "os_version": "7",
-    "browser": "firefox",
-    "device": null,
-    "browser_version": "49.0"
-  },
-  {
-    "os": "Windows",
-    "os_version": "7",
-    "browser": "firefox",
-    "device": null,
-    "browser_version": "50.0 beta"
-  },
-  {
-    "os": "Windows",
-    "os_version": "8",
-    "browser": "chrome",
-    "device": null,
-    "browser_version": "54.0"
-  },
-  {
-    "os": "Windows",
-    "os_version": "8",
-    "browser": "ie",
-    "device": null,
-    "browser_version": "10.0"
-  },
-  {
-    "os": "Windows",
-    "os_version": "8",
-    "browser": "firefox",
-    "device": null,
-    "browser_version": "49.0"
-  },
-  {
-    "os": "Windows",
-    "os_version": "8",
-    "browser": "firefox",
-    "device": null,
-    "browser_version": "50.0 beta"
-  },
-  {
-    "os": "Windows",
-    "os_version": "8.1",
-    "browser": "chrome",
-    "device": null,
-    "browser_version": "54.0"
-  },
-  {
-    "os": "Windows",
-    "os_version": "8.1",
-    "browser": "ie",
-    "device": null,
-    "browser_version": "11.0"
-  },
-  {
-    "os": "Windows",
-    "os_version": "8.1",
-    "browser": "firefox",
-    "device": null,
-    "browser_version": "49.0"
-  },
-  {
-    "os": "Windows",
-    "os_version": "8.1",
-    "browser": "firefox",
-    "device": null,
-    "browser_version": "50.0 beta"
-  },
-  {
-    "os": "Windows",
-    "os_version": "10",
-    "browser": "chrome",
-    "device": null,
-    "browser_version": "54.0"
-  },
-  {
-    "os": "Windows",
-    "os_version": "10",
-    "browser": "ie",
-    "device": null,
-    "browser_version": "11.0"
-  },
-  {
-    "os": "Windows",
-    "os_version": "10",
-    "browser": "edge",
-    "device": null,
-    "browser_version": "13.0"
-  },
-  {
-    "os": "Windows",
-    "os_version": "10",
-    "browser": "firefox",
-    "device": null,
-    "browser_version": "49.0"
-  },
-  {
-    "os": "Windows",
-    "os_version": "10",
-    "browser": "firefox",
-    "device": null,
-    "browser_version": "50.0 beta"
+    "browser_version": "9.1"
   },
   {
     "os": "OS X",
     "os_version": "Sierra",
-    "browser": "firefox",
+    "browser": "safari",
     "device": null,
-    "browser_version": "49.0"
-  },
-  {
-    "os": "OS X",
-    "os_version": "Sierra",
-    "browser": "firefox",
-    "device": null,
-    "browser_version": "50.0 beta"
+    "browser_version": "10.0"
   },
   {
     "os": "ios",
@@ -176,37 +33,10 @@
   },
   {
     "os": "android",
-    "os_version": "4.4",
-    "browser": "android",
-    "device": "Samsung Galaxy S5",
-    "browser_version": null
-  },
-  {
-    "os": "android",
-    "os_version": "4.4",
-    "browser": "android",
-    "device": "Samsung Galaxy S5 Mini",
-    "browser_version": null
-  },
-  {
-    "os": "android",
-    "os_version": "4.4",
-    "browser": "android",
-    "device": "HTC One M8",
-    "browser_version": null
-  },
-  {
-    "os": "android",
     "os_version": "5.0",
     "browser": "android",
     "device": "Google Nexus 5",
     "browser_version": null
   },
-  {
-    "os": "android",
-    "os_version": "4.2",
-    "browser": "android",
-    "device": "Google Nexus 4",
-    "browser_version": null
-  }
-]
+  ]
+}
