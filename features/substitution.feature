@@ -5,22 +5,20 @@
 
   Background:
     
-    Given I am on the "Send landfill data returns" page
+    Given I am on the landing page
     Then I start my submission
 
   Scenario Outline: Alias values are correctly validated
     Given I choose file <Filename> to upload
     Then I expect the file status for <Filename> to be "READY TO SEND"
     When I finish uploading files and continue
-    Then I see the page header "Confirm details"
-    And I choose to "Continue"
-    And I submit an email address
-    Then I am on the "Enter your code" page
-    Then I enter the confirmation code
-    And I choose to "Send code"
-    Then I am on the "Send your data" page
-    And I choose to "Accept and send"
-    Then I see the page header "Data returns sent"
+    Then I am on the confirm details page
+    And I confirm my details are correct
+    Then I submit an email address
+    Then I submit the confirmation code
+    Then I am on the send your files page
+    And I choose to send my files now
+    Then I am on the data returns sent page
 
     Examples:
       | Filename               |

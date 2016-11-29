@@ -4,7 +4,7 @@ Feature: Invalid data entry checks
 
     Background:
     Given I've chosen my data to return
-    And I've confirmed my data
+      And I confirm my details are correct
     And I submit an email address
 
     Scenario: Invalid pin number is entered

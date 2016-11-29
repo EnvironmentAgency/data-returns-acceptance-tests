@@ -3,14 +3,14 @@ Feature: Submit files which contain all Controlled list values
   is not held on the Controlled list for that item
 
   Background:
-    Given I am on the "Send landfill data returns" page
+    Given I am on the landing page
     Then I start my submission
 
   Scenario Outline: Submit file comprising all Controlled Lists values
     Given I choose file <Filename> to upload
     Then I expect the file status for <Filename> to be "READY TO SEND"
     When I finish uploading files and continue
-    Then I see the page header "Confirm details"
+    Then I am on the confirm details page
 
     Examples:
       | Filename                                   |

@@ -5,12 +5,13 @@ Feature: Submit files for initial checking
   for correctness
 
   Background:
-    Given I am on the "Send landfill data returns" page
+    Given I am on the landing page
     Then I start my submission
 
   Scenario Outline: Check for file errors (unreadable/malicious CSV content)
     And I choose file <Filename> to upload
     Then I expect the file status for <Filename> to be "<Error>"
+    Given I am unable to continue
     When I open the file details for <Filename>
     Then Invalid file information contains error for <DRref>
 

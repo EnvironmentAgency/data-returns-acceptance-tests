@@ -4,12 +4,12 @@ Feature: Invalid data entry checks
 
     Background:
     Given I've chosen my data to return
-    And I've confirmed my data
+    And I confirm my details are correct
 
     Scenario: Invalid email address is entered
     When I submit an invalid email address
-    Then an error message is shown
+    Then I am told the email address is invalid
 
     Scenario: No email address is entered
     When I don't enter an email address
-    Then an error message is shown
+    Then I am told the email address is invalid

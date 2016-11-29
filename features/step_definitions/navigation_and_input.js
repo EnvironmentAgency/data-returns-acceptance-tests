@@ -1,178 +1,154 @@
-// Maximum wait time
-const MAX_WAIT = 45000;
-const CHECK_INTERVAL = 100;
+'use strict';
 
+let StartPage = require("../support/pages/start.page");
+let UploadPage = require("../support/pages/upload.page");
+let ConfirmPage = require("../support/pages/confirm.page");
+let EmailPage = require("../support/pages/email.page");
+let PinPage = require("../support/pages/pin.page");
+let SendPage = require("../support/pages/send.page")
+let SentPage = require("../support/pages/sent.page")
 
-function getUploadRowSelector(filename) {
-    // Selector to find a row which contains a column with the correct filename
-    return `//table[@id="upload-list"]//tr[child::td[@class='filename']/text() = '${filename}']`;
-}
+const waitForNavigation = require("../support/lib/wait-for-navigation-on-action");
 
-function getUploadFileStatusSelector(filename) {
-    // Selector to find the status text for the file upload row
-    return `${getUploadRowSelector(filename)}/td[@class='status']`;
-}
-function getUploadFileMoreDetailsLinkSelector(filename) {
-    // Selector to find the more details link for the file upload row
-    return `${getUploadRowSelector(filename)}//td[@class='details']/a`;
-}
-function getUploadFileRemoveLinkSelector(filename) {
-    // Selector to find the submit button on the remove file form in the upload list
-    return `${getUploadRowSelector(filename)}/td[@class='remove']//input[@type='submit']`;
-}
-
-function waitForText(selector, expectedText) {
-    browser.waitUntil(function () {
-        let textFound = browser.getText(selector);
-        if (textFound) {
-            // If there are multiple h1 elements - we're only interested in the first of them
-            if (Array.isArray(textFound) && textFound.length > 0) {
-                textFound = textFound[0];
-            }
-            expect(textFound.toLowerCase()).toEqual(expectedText.toLowerCase());
-            return true;
-        }
-        return false;
-    }, MAX_WAIT, `Failed to find expected text "${expectedText}" for the selector ${selector} within the allowed time.`, CHECK_INTERVAL);
-}
 
 
 module.exports = function () {
 
     this.Before(function () {
-        return this.browser.url('/start');
+        StartPage.open();
     });
 
     //------------- Page check navigation -----------------------
-    this.Given(/^I am on the start page$/, function () {
-        return this.browser.url('/start');
+    this.defineStep(/^I am on the start page$/, function () {
+        StartPage.open();
     });
+
+    //----------------------Button press -------------
+    this.defineStep(/^I start my submission$/, function () {
+        StartPage.continue();
+    });
+
+    this.defineStep(/^I am on the landing page$/, function() {
+       StartPage.checkOpen();
+    });
+
+    this.defineStep(/^I am on the upload page$/, function() {
+        UploadPage.checkOpen();
+    });
+    this.defineStep(/^I am on the confirm details page$/, function() {
+        ConfirmPage.checkOpen();
+    });
+    this.defineStep(/^I am on the email page$/, function() {
+        EmailPage.checkOpen();
+    });
+    this.defineStep(/^I am on the pin page$/, function() {
+        PinPage.checkOpen();
+    });
+    this.defineStep(/^I am on the send your files page$/, function() {
+        SendPage.checkOpen();
+    });
+    this.defineStep(/^I am on the data returns sent page$/, function() {
+        SentPage.checkOpen();
+    });
+
 
     //------------- Page url navigation -----------------------
-    this.Then(/^I navigate to URL "([^"]*)"$/, function (url) {
-        // TODO: This is a bit of a fudge to get around a limitation in chimp regarding relative paths....
-        // (supposed to be fixed in 0.42.2 but isn't....)
-        let target = url;
-        if (!target.startsWith("http")) {
-            let baseUrl = this.browser._original.options.baseUrl;
-            if (baseUrl.endsWith("/")) {
-                baseUrl = baseUrl.substr(0, baseUrl.length - 1);
-            }
-            target = baseUrl + url;
-        }
-
-        this.browser.url(target);
-    });
-    this.Then(/^I go back in browser history$/, function () {
-        return this.browser.back();
+    this.defineStep(/^I navigate to URL "([^"]*)"$/, function (url) {
+        waitForNavigation(function() {
+            browser.url(url);
+        });
     });
 
-    this.Then(/^I am on the "([^"]*)" page$/, function (heading) {
-        return waitForText('h1', heading);
+    this.defineStep(/^I go back in browser history$/, function () {
+        waitForNavigation(function() {
+            return browser.back();
+        });
     });
 
-    this.Then(/^I see the page header "([^"]*)"$/, function (expectedHeading) {
-        return waitForText('//main//h1', expectedHeading);
+    this.defineStep(/^I am on the "([^"]*)" page$/, function (expectedHeading) {
+        let heading = browser.element('h1');
+        let text = heading.getText();
+        text.should.equal(expectedHeading);
+    });
+
+    this.defineStep(/^I see the page header "([^"]*)"$/, function (expectedHeading) {
+        let heading = browser.element('//main//h1');
+        let text = heading.getText();
+        text.should.equal(expectedHeading);
     });
 
     //---------------------- Functions specific to the file upload table -------------
-    this.Then(/^I expect the file status for (.*) to be "([^"]*)"$/, function (filename, message) {
-        let fileStatusSelector = getUploadFileStatusSelector(filename);
-        browser.waitUntil(function () {
-            return browser.getText(fileStatusSelector) === message;
-        }, MAX_WAIT, `Unexpected file status.  Expected ${message} for file ${filename}`, CHECK_INTERVAL);
+    this.defineStep(/^I expect the file status for (.*) to be "([^"]*)"$/, function (filename, expectedStatus) {
+        UploadPage.ensureFileStatusEqual(filename, expectedStatus);
     });
 
-    this.Then(/^I open the file details for (.*)$/, function (filename) {
-        return browser.click(getUploadFileMoreDetailsLinkSelector(filename));
+    this.defineStep(/^I open the file details for (.*)$/, function (filename) {
+        UploadPage.openFileDetails(filename);
     });
 
-    this.Then(/^I finish uploading files and continue$/, function () {
-        browser.waitUntil(function () {
-            let isDisabled = browser.getAttribute("#continue-btn", "disabled");
-            if (!isDisabled) {
-                // Found continue button and it is not disabled, click it and continue...
-                browser.click("#continue-btn");
-                return true;
-            }
-            return false;
-        }, MAX_WAIT, `Failed to finish uploading files and continue within the allowed time.`, CHECK_INTERVAL);
+    this.defineStep(/^I finish uploading files and continue$/, function () {
+        UploadPage.continue();
     });
 
-    this.Then(/^I am unable to continue/, function () {
-        return expect(browser.element("#continue-btn").getAttribute("disabled")).not.toBeNull();
+    this.defineStep(/^I am unable to continue/, function () {
+        UploadPage.ensureCantContinue();
     });
 
 
-    //----------------------Button press -------------
-    this.Then(/^I start my submission$/, function () {
-        return browser.click('.button-get-started');
+    this.defineStep(/^I choose to "([^"]*)"$/, function (buttonText) {
+        waitForNavigation(function() {
+            let button = browser.element(`//*[contains(@class, "button")][@value="${buttonText}" or text() = "${buttonText}"]`);
+            button.click();
+        });
     });
 
-    this.Then(/^I choose to "([^"]*)"$/, function (button) {
-        let selector = `//*[contains(@class, "button")][@value="${button}" or text() = "${button}"]`;
-        return browser.click(selector);
-    });
-
-    this.Then(/^I click the link "([^"]*)"$/, function (linkText) {
-        let selector = `//a[contains(text(), "${linkText}")]`;
-        return browser.click(selector);
+    this.defineStep(/^I click the link "([^"]*)"$/, function (linkText) {
+        waitForNavigation(function() {
+            let selector = `//a[contains(text(), "${linkText}")]`;
+            return browser.click(selector);
+        });
     });
 
     //------------------ Input email and code --------------------
-    this.Then('I submit an email address', function () {
-        let emailInput = browser.element('.form-control');
-        emailInput.waitForExist(5000);
-        emailInput.setValue('tim.stone.ea+' + Math.round(Math.random() * 1000) + '@gmail.com');
-        browser.click("#nextBtn");
+    this.defineStep('I submit an email address', function () {
+        EmailPage.submitEmail('tim.stone.ea+' + Math.round(Math.random() * 1000) + '@gmail.com');
+    });
+    this.defineStep('I submit an invalid email address', function () {
+        EmailPage.submitEmail("XXXX");
+    });
+    this.defineStep('I don\'t enter an email address', function () {
+        EmailPage.continue();
+    });
+    this.defineStep('I am told the email address is invalid', function () {
+        EmailPage.ensureErrorShown();
     });
 
-    this.Then('I submit an invalid email address', function () {
-        browser.setValue('.form-control', "XXXX");
-        browser.click("#nextBtn");
+    this.defineStep('I submit the confirmation code', function () {
+        PinPage.submitPin("1960");
+    });
+    this.defineStep('I submit an invalid pin number', function () {
+        PinPage.submitPin("xxxxyz.xyz");
+    });
+    this.defineStep('I don\'t enter a pin number', function () {
+        PinPage.submitPin("");
     });
 
-    this.Then('I submit an invalid pin number', function () {
-        browser.setValue('.form-control', "xxxxyz.xyz");
-        browser.click("#nextBtn");
-    });
-
-    this.Then('I don\'t enter an email address', function () {
-        browser.click("#nextBtn");
-    });
-
-    this.Then('I don\'t enter a pin number', function () {
-        browser.setValue('.form-control', "");
-        browser.click("#nextBtn");
+    this.defineStep('I choose to send my files now', function () {
+        SendPage.continue();
     });
 
 
-    this.Then(/^an error message is shown$/, function () {
-        expect(browser.getText('.error-summary'));
+    this.defineStep(/^an error message is shown$/, function () {
+        let errorSummaryText = browser.getText('.error-summary');
+        errorSummaryText.should.not.be.null;
     });
 
-    this.Then(/^I enter the confirmation code$/, function () {
-        return browser.setValue('.form-control', "1960");
+    this.defineStep(/^I've chosen my data to return$/, function () {
+        let filename = "SUCCESS.csv";
+        StartPage.open();
+        StartPage.continue();
+        UploadPage.upload(filename);
+        UploadPage.ensureFileStatusEqual(filename, "READY TO SEND");
+        UploadPage.continue();
     });
-
-    this.Given(/^I've chosen my data to return$/, function () {
-        // this.browser.url('/start');
-        browser.click('.button-get-started');
-        browser.chooseFile("//input[@type='file']", `features/support/files/SUCCESS.csv`);
-        browser.waitUntil(function () {
-            let isDisabled = browser.getAttribute("#continue-btn", "disabled");
-            if (!isDisabled) {
-                // Found continue button and it is not disabled, click it and continue...
-                browser.click("#continue-btn");
-                return true;
-            }
-            return false;
-        }, MAX_WAIT, `Failed to finish uploading files and continue within the allowed time.`, CHECK_INTERVAL);
-    });
-
-    this.Given(/^I've confirmed my data$/, function () {
-        let selector = `//*[contains(@class, "button")][@value="Continue" or text() = "Continue"]`;
-        return browser.click(selector);
-    });
-
 };

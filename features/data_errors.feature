@@ -3,7 +3,7 @@ Feature: Check that the correct data error message is displayed
   when a file fails data validation
 
   Background:
-    Given I am on the "Send landfill data returns" page
+    Given I am on the landing page
     Then I start my submission
 
   #------------------ Check error DR error message displayed --------------------
@@ -11,6 +11,7 @@ Feature: Check that the correct data error message is displayed
   Scenario Outline: Check that the correct error messages are given in the validation pages.
     Given I choose file <Filename> to upload
     Then I expect the file status for <Filename> to be "DATA ERROR"
+    Given I am unable to continue
     When I open the file details for <Filename>
     Then Correction table contains error for <DRref> for the header "<Header>"
     Then I open row correction details for error <DRref>
@@ -58,6 +59,7 @@ Feature: Check that the correct data error message is displayed
         Scenario Outline: Check that the correct error messages are given for special cases
         Given I choose file <Filename> to upload
         Then I expect the file status for <Filename> to be "DATA ERROR"
+        Given I am unable to continue
         When I open the file details for <Filename>
         Then Correction table contains error for <DRref> for the header "<Message>"
         Then I open row correction details for error <DRref>

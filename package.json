@@ -1,20 +1,32 @@
 {
   "name": "data-returns-acceptance-tests",
-  "description": "Acceptance tests for the data returns web service",
   "version": "1.0.0",
-  "private": true,
-  "engines": {
-    "node": "4.4.7"
-  },
-  "dependencies": {
-    "chimp": "0.41.2",
-    "fs-extra": "^1.0.0",
-    "lodash": "^4.17.2",
-    "tmp": "0.0.31"
-  },
+  "description": "Acceptance tests for the Data Returns service",
+  "main": "index.js",
   "scripts": {
-    "test": "node node_modules/chimp/dist/bin/chimp.js",
-    "testff": "node node_modules/chimp/dist/bin/chimp.js --browser=firefox",
-    "testdbg": "node node_modules/chimp/dist/bin/chimp.js --debug"
-  }
+    "test": "./node_modules/.bin/wdio ./local.conf.js",
+    "bstest": "./node_modules/.bin/wdio ./browserstack.conf.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EnvironmentAgency/data-returns-acceptance-tests.git"
+  },
+  "author": "Sam Gardner-Dell",
+  "bugs": {
+    "url": "https://github.com/EnvironmentAgency/data-returns-acceptance-tests/issues"
+  },
+  "homepage": "https://github.com/EnvironmentAgency/data-returns-acceptance-tests#readme",
+  "dependencies": {
+    "chai": "^3.5.0",
+    "cucumber": "1.3.1",
+    "lodash": "^4.17.2",
+    "wdio-browserstack-service": "0.1.3",
+    "wdio-cucumber-framework": "0.2.12",
+    "wdio-dot-reporter": "0.0.6",
+    "wdio-junit-reporter": "0.1.0",
+    "wdio-selenium-standalone-service": "0.0.7",
+    "wdio-spec-reporter": "0.0.3",
+    "webdriverio": "4.4.0"
+  },
+  "devDependencies": {}
 }

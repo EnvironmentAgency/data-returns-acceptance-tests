@@ -15,25 +15,61 @@ This project contains the acceptance tests for the Data Returns service. We use 
 It assumes use of [Chimp](https://github.com/xolvio/chimp) in order to run the tests.
 
 ## Pre-requisites
+This project uses **Chimp** to run acceptance tests using cucumber-js and jasmine.  
 
-The project has no direct dependencies but requires **Chimp** to be installed first. **Chimp** itself relies on [Oracle JDK v1.8+](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html) and [Node](https://nodejs.org/en/) to be installed. Check out the [installation guide](https://chimp.readme.io/docs/installation) for further details.
+* [Oracle JDK v1.8+](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
+* [Node](https://nodejs.org/en/)
 
 ## Installation
 
-Assuming **Chimp** is installed you'll first need to clone the project from GitHub
+
+First clone the project from GitHub
 
 ```bash
-git clone https://github.com/EnvironmentAgency/quke.git
+git clone https://github.com/EnvironmentAgency/data-returns-acceptance-tests.git
+```
+
+To install project dependencies, open a console inside the root folder of git repository and run:
+
+```bash
+npm install
+
 ```
 
 Next you'll need to create a `chimp.js` file in the root of the project folder. Use [example.chimp.js](example.chimp.js) for reference.
 
 ## Execution
 
+###Standalone
 Open a terminal and ensure you are at the root of the project. Then simply run
 
 ```bash
 chimp
+```
+
+####Browserstack
+To run on browserstack additional configuration files are required:
+
+**/browserstacklocal.json**
+
+Configuration settings for the BrowserStackLocal binary.  This agent allows browserstack.com to route traffic via the local machine and 
+requires settings as per the example below. "key" is the only required argument but "forcelocal" is likely always needed to allow traffic to 
+route via the local host.  For a full guide to the different options see  the [BrowserStackLocal Modifiers Guide](https://www.browserstack.com/local-testing#modifiers) 
+and the [browserstack-local NPM package](https://www.npmjs.com/package/browserstack-local) 
+
+```json
+{
+  "key": "BROWSERSTACK_ACCESS_KEY",
+  "force": "true",
+  "forcelocal": "true",
+  "only": "nonsslserver.domain,80,0,sslserver.domain:443,1",
+  "onlyAutomate": true,
+  "forceproxy": "true",
+  "proxyHost": "proxyserver.domain",
+  "proxyPort": "3128",
+  "proxyUser": "username",
+  "proxyPass": "password"
+}
 ```
 
 ### Run a specific feature
