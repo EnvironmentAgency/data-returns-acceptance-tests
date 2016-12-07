@@ -137,8 +137,8 @@ exports.config = {
             "timestamp": true,
             "json": false,
             "showLevel": true,
-            "handleExceptions": true,
-            "humanReadableUnhandledException": true
+            "handleExceptions": false,
+            "humanReadableUnhandledException": false
         });
     },
     //
