@@ -107,6 +107,12 @@ exports.config = {
             browser.timeouts('implicit', defaultTimeout);
             return isExisting;
         });
+        browser.addCommand('disableImplicitWait', function () {
+            browser.timeouts('implicit', 0);
+        });
+        browser.addCommand('restoreImplicitWait', function () {
+            browser.timeouts('implicit', defaultTimeout);
+        });
 
 
         /**

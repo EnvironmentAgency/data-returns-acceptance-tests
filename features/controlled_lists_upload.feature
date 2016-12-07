@@ -2,15 +2,11 @@ Feature: Submit files which contain all Controlled list values
   As a user I want to be informed if any of the data entered
   is not held on the Controlled list for that item
 
-  Background:
-    Given I am on the landing page
-    Then I start my submission
-
   Scenario Outline: Submit file comprising all Controlled Lists values
     Given I choose file <Filename> to upload
     Then I expect the file status for <Filename> to be "READY TO SEND"
     When I finish uploading files and continue
-    Then I am on the confirm details page
+    Then I confirm my details are correct
 
     Examples:
       | Filename                                   |
@@ -22,8 +18,3 @@ Feature: Submit files which contain all Controlled list values
       | CONTROLLED_LIST_METHOD_STANDARDS_PASS.csv  |
       | CONTROLLED_LIST_QUALIFIERS_PASS.csv        |
       | CONTROLLED_LIST_Ref_Period_ALL_PASS.csv    |
-
-
-
-
-
