@@ -45,7 +45,7 @@ let browserStackConfig = {
     // ============
     // Capabilities
     // ============
-    maxInstances: 5,
+    maxInstances: 3,
     capabilities: setupCapabilities([
         {
             "browserName": "chrome",
@@ -87,20 +87,32 @@ let browserStackConfig = {
             "browserName": "ie",
             "browser_version": "11.0"
         },
-        {
-            "os": "Windows",
-            "os_version": "10",
-            "browserName": "edge",
-            "device": null,
-            "browser_version": "13.0"
-        },
+        // The microsoft edge driver is currently very buggy (clicking a button returning element obscured error)
+        // disabled until the automation driver is more mature.
+        // {
+        //     "os": "Windows",
+        //     "os_version": "10",
+        //     "browserName": "edge",
+        //     // The automation driver for this browser does support file uploads - use data returns preloading to load data and establish sessions.
+        //     "preloadFiles": true
+        // },
         {
             "os": "OS X",
             "os_version": "Sierra",
             "browserName": "safari",
-            "device": null,
-            "browser_version": "10.0"
-        }
+            "browser_version": "10.0",
+            // The automation driver for this browser does support file uploads - use data returns preloading to load data and establish sessions.
+            "preloadFiles": true
+        },
+        {
+            "os": "ios",
+            "os_version": "9.1",
+            "browserName": "iphone",
+            "browser_version": null,
+            "device": "iPhone 6S Plus",
+            // The automation driver for this browser does support file uploads - use data returns preloading to load data and establish sessions.
+            "preloadFiles": true
+        },
     ]),
 
     // ===================
@@ -114,4 +126,4 @@ let browserStackConfig = {
     // Test runner services
     services: ['browserstack']
 };
-exports.config = lodash.merge({}, commonConfig, browserStackConfig);
+exports.config = lodash.defaultsDeep(browserStackConfig, commonConfig);

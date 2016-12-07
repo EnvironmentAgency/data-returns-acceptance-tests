@@ -2,21 +2,15 @@ Feature: Submit files where all data passes validation
   As a user I want to successfully submit files which are
   correctly structured and all data is valid
 
-  Background:
-    Given I am on the landing page
-    Then I start my submission
-
   Scenario Outline: Submit a valid file
     Given I choose file <Filename> to upload
     Then I expect the file status for <Filename> to be "READY TO SEND"
     When I finish uploading files and continue
-    Then I am on the confirm details page
     And I confirm my details are correct
     And I submit an email address
     Then I submit the confirmation code
-    Then I am on the send your files page
     And I choose to send my files now
-    Then I am on the data returns sent page
+    Then My returns have been sent
 
     Examples:
       | Filename                                                          |
@@ -27,7 +21,7 @@ Feature: Submit files where all data passes validation
     Given I choose file <Filename> to upload
     Then I expect the file status for <Filename> to be "READY TO SEND"
     When I finish uploading files and continue
-    Then I am on the confirm details page
+    Then I confirm my details are correct
 
     Examples:
       | Filename                              |

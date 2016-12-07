@@ -1,4 +1,5 @@
 "use strict";
+const winston = require('winston');
 let Page = require('./page');
 const waitForNav = require('../lib/wait-for-navigation-on-action');
 
@@ -42,10 +43,13 @@ class ConfirmPage extends Page {
 
     continue() {
         super.checkOpen();
+
+        winston.debug('Finding confirmation page continue button');
         let button = browser.element("#continueBtn");
-        waitForNav(function() {
-            button.click();
-        });
+        button.waitForVisible(3000);
+        winston.debug('Clicking confirmation page continue button');
+        button.click();
+        winston.debug('Finished clicking the confirmation page continue button');
     }
 }
 module.exports = new ConfirmPage();

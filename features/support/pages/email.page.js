@@ -1,8 +1,5 @@
 "use strict";
 let Page = require('./page');
-
-const waitForNav = require('../lib/wait-for-navigation-on-action');
-
 class EmailPage extends Page {
     get url() {
         return "/email"

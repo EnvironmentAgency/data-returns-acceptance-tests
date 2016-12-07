@@ -6,14 +6,16 @@ let localConfig = {
     // ============
     // Capabilities
     // ============
-    // Maximum instances to run in parallel.  Can be overriden on a per-browser basis by adding maxInstances option under each capability.
+    // Maximum instances to run in parallel.  Can be overridden on a per-browser basis by adding maxInstances option under each capability.
     maxInstances: 5,
     capabilities: [
         {
-            browserName: 'chrome'
+            browserName: 'chrome',
+            maxInstances: 1
         },
         {
-            browserName: 'firefox'
+            browserName: 'firefox',
+            maxInstances: 1
         }
     ],
 
@@ -37,4 +39,4 @@ let localConfig = {
         version: '3.0.1'
     }
 };
-exports.config = lodash.merge({}, commonConfig, localConfig);
+exports.config = lodash.defaultsDeep(localConfig, commonConfig);

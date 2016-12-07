@@ -8,13 +8,10 @@ Feature: Submit files with either Text_Value or Value data
   If Value is used, Unit must be used
   If Txt_Value is used, Unit cannot be used
 
-  Background:
-    Given I am on the landing page
-    Then I start my submission
-
   Scenario Outline: Successfully submit a valid file where either text value or value are given
-    And I choose file <Filename> to upload
+    Given I choose file <Filename> to upload
     Then I expect the file status for <Filename> to be "READY TO SEND"
+    And I finish uploading files and continue
 
     Examples:
       | Filename                                                                           |
@@ -22,6 +19,3 @@ Feature: Submit files with either Text_Value or Value data
       | text_value_special_case_validation_Text_Value_No_Value_with_no_header_PASS.csv     |
       | text_value_special_case_validation_Value_No_Text_Value_with_header_PASS.csv        |
       | text_value_special_case_validation_Value_No_Text_Value_with_no_header_PASS.csv     |
-
-
-

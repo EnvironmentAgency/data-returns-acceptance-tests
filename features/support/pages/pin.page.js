@@ -1,7 +1,5 @@
 "use strict";
 let Page = require('./page');
-
-const waitForNav = require('../lib/wait-for-navigation-on-action');
 class PinPage extends Page {
     get url() {
         return "pin"

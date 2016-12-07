@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "./node_modules/.bin/wdio ./local.conf.js",
-    "bstest": "./node_modules/.bin/wdio ./browserstack.conf.js"
+    "bstest": "./node_modules/.bin/wdio ./browserstack.conf.js",
+    "lint": "./node_modules/eslint/bin/eslint.js ./features/step_definitions/** ./features/support/lib/** ./features/support/pages/**"
   },
   "repository": {
     "type": "git",
@@ -20,13 +21,18 @@
     "chai": "^3.5.0",
     "cucumber": "1.3.1",
     "lodash": "^4.17.2",
-    "wdio-browserstack-service": "0.1.3",
+    "path": "^0.12.7",
+    "request": "^2.79.0",
+    "wdio-browserstack-service": "0.1.4",
     "wdio-cucumber-framework": "0.2.12",
     "wdio-dot-reporter": "0.0.6",
-    "wdio-junit-reporter": "0.1.0",
+    "wdio-junit-reporter": "0.2.0",
     "wdio-selenium-standalone-service": "0.0.7",
     "wdio-spec-reporter": "0.0.3",
-    "webdriverio": "4.4.0"
+    "webdriverio": "4.4.0",
+    "winston": "^2.3.0"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "eslint": "^3.11.1"
+  }
 }

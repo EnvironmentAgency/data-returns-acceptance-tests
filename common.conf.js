@@ -1,7 +1,8 @@
 'use strict';
-exports.config = {
+const winston = require("winston");
+const DataReturnsUserSession = require('./features/support/lib/preload-file');
 
-    //
+exports.config = {
     // ==================
     // Specify Test Files
     // ==================
@@ -19,14 +20,17 @@ exports.config = {
     // By default WebdriverIO commands are executed in a synchronous way using the wdio-sync package.
     sync: true,
     // Level of logging verbosity: silent | verbose | command | data | result | error
-    logLevel: 'silent',
+    logLevel: 'error',
+    // Winston log level (used by step definitions) (defaults to 'info', see winston for options)
+    winstonLogLevel: 'info',
+
     // Enables colors for log output.
     coloredLogs: true,
     // Saves a screenshot to a given path if a command fails.
     screenshotPath: './logs/errorShots/',
     screenshotOnReject: true,
     // Default timeout for all waitFor* commands.
-    waitforTimeout: 30000,
+    waitforTimeout: 60000,
     // Default interval for all waitFor* commands (number of ms between checks to see if the runner should stop waiting)
     waitforInterval: 250,
     // Default timeout in milliseconds for request
@@ -53,7 +57,7 @@ exports.config = {
         failFast: true,    // <boolean> abort the run on first failure
         format: ['pretty'], // <string[]> (type[:path]) specify the output format, optionally supply PATH to redirect formatter output (repeatable)
         colors: true,       // <boolean> disable colors in formatter output
-        snippets: true,     // <boolean> hide step definition snippets for pending steps
+        snippets: false,     // <boolean> hide step definition snippets for pending steps
         source: true,       // <boolean> hide source uris
         profile: [],        // <string[]> (name) specify the profile to use
         strict: true,      // <boolean> fail if there are any undefined or pending steps
@@ -84,13 +88,52 @@ exports.config = {
         global.assert = chai.assert;
         global.should = chai.should();
 
-        // timeout that specifies a time to wait for the implicit element location strategy when locating elements using the element or elements commands
-        browser.timeouts('implicit', this.waitforTimeout);
-        // time to wait for asynchronous scripts to run
-        browser.timeouts('script', this.waitforTimeout);
-        // time to wait for the page loading to complete
-        browser.timeouts('page load', this.waitforTimeout);
 
+        // // timeout that specifies a time to wait for the implicit element location strategy when locating elements using the element or elements commands
+        let defaultTimeout = this.waitforTimeout;
+
+        browser.timeouts('implicit', defaultTimeout);
+        // time to wait for asynchronous scripts to run
+        browser.timeouts('script', defaultTimeout);
+        // time to wait for the page loading to complete
+        browser.timeouts('page load', defaultTimeout);
+
+        /**
+         * Check if an element exists without waiting for it...
+         */
+        browser.addCommand('isExistingNoWait', function (selector) {
+            browser.timeouts('implicit', 0);
+            let isExisting = browser.isExisting(selector);
+            browser.timeouts('implicit', defaultTimeout);
+            return isExisting;
+        });
+
+
+        /**
+         * Add browser command to allow files to be preloaded into a data returns session (files uploaded from test runner rather than
+         * from client browser)
+         */
+        browser.addCommand('preloadFiles', function async(files) {
+            let preloadSession = new DataReturnsUserSession(browser.options.baseUrl + '/file/preload');
+            let filenames = Array.isArray(files) ? files : [files];
+            filenames = filenames.map(filename => `features/support/files/${filename}`);
+            return preloadSession.upload(filenames);
+        });
+
+        /**
+         * Configure winston logging
+         */
+        winston.clear();
+        winston.add(winston.transports.Console, {
+            "level": this.winstonLogLevel || "info",
+            "colorize": true,
+            "silent": false,
+            "timestamp": true,
+            "json": false,
+            "showLevel": true,
+            "handleExceptions": true,
+            "humanReadableUnhandledException": true
+        });
     },
     //
     // Hook that gets executed before the suite starts
@@ -138,10 +181,8 @@ exports.config = {
     // }
 
     // Cucumber specific hooks
-    beforeFeature: function (feature) {
-        // Delete all cookies to get a new session
-        browser.deleteCookie();
-    },
+    // beforeFeature: function (feature) {
+    // },
     // beforeScenario: function (scenario) {
     // },
     // beforeStep: function (step) {

@@ -1,7 +1,7 @@
 'use strict';
-let UploadPage = require("../support/pages/upload.page.js");
+let automateUpload = require("../../../support/lib/automate-upload");
 module.exports = function () {
     this.defineStep(/^I choose file (.*) to upload$/, function(filename) {
-        UploadPage.upload(filename);
+        automateUpload([filename]);
     });
 };

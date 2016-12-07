@@ -1,4 +1,5 @@
-"use strict";
+'use strict';
+const winston = require('winston');
 class Page {
     constructor() {
     }
@@ -11,19 +12,29 @@ class Page {
         browser.url(this.url);
     }
 
-    checkOpen() {
-        let checkFn = function () {
-            return browser.getUrl().includes(this.url);
-        }.bind(this);
 
-        browser.waitUntil(checkFn,
-            browser.options.waitforTimeout,
-            `Expected URL '${browser.getUrl()}' to contain '${this.url}'`,
-            browser.options.waitforInterval);
+    isOpen() {
+        winston.debug(`Page.isOpen() checking browser URL ${browser.getUrl()} matches ${this.url}`);
+        return browser.getUrl().includes(this.url);
+    }
+
+
+    checkOpen() {
+        let fn = this.isOpen.bind(this);
+        let url = this.url;
+        try {
+            browser.waitUntil(fn,
+                20000,
+                `Expected URL '${browser.getUrl()}' to contain '${url}'`,
+                500);
+        } catch(e) {
+            winston.error(e);
+            throw e;
+        }
+        winston.debug(`Checking for ${url} completed successfully`);
     }
 
     continue() {
-
     }
 }
 module.exports = Page;
