@@ -60,12 +60,12 @@ class UploadPage extends Page {
         let expectedStatus = status.toUpperCase();
         browser.waitUntil(function () {
             let browserStatus = browser.getText(fileStatusSelector).toUpperCase();
-            if (!browserStatus === expectedStatus) {
+            if (browserStatus !== expectedStatus) {
                 winston.debug(`Waiting for ${filename} file status ${browserStatus} to match ${expectedStatus}`);
                 return false;
             }
             return true;
-        }, browser.options.waitforTimeout, `Unexpected file status.  Expected ${status} for file ${filename}`, 25);
+        }, browser.options.waitforTimeout, `Unexpected file status.  Expected ${status} for file ${filename}`, 250);
     }
 
     openFileDetails(filename) {
