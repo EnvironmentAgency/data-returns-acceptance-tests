@@ -51,6 +51,9 @@ let localConfig = {
     services: ['selenium-standalone'],
     seleniumLogs: './logs/selenium',
 
+    // Disabled screenshots as these are failing when using the firefox driver
+    screenshotOnReject: false,
+
     // Running Jenkins with older version of selenium as the 3.0.1 release does not integrate with firefox correcly
     // Geckodriver firefox v48+ uses seems unreliable and needs more time to mature.
     seleniumArgs: {
