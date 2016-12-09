@@ -38,7 +38,7 @@ let localConfig = {
     ]),
 
     // Temporary - diagnosing problems on Jenkins
-    logLevel: 'error',
+    logLevel: 'verbose',
 
 
     // ===================
