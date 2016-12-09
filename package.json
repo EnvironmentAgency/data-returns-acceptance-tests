@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "./node_modules/.bin/wdio ./local.conf.js",
+    "ci": "./node_modules/.bin/wdio ./jenkins.conf.js",
     "bstest": "./node_modules/.bin/wdio ./browserstack.conf.js",
     "lint": "./node_modules/eslint/bin/eslint.js ./features/step_definitions/** ./features/support/lib/** ./features/support/pages/**"
   },
