@@ -2,22 +2,40 @@
 const lodash = require("lodash");
 let commonConfig = require("./common.conf").config;
 
+/**
+ * Helper to set common options on capabilities
+ *
+ * @param capabilitiesArray
+ * @returns {Array|*}
+ */
+const setupCapabilities = function (capabilitiesArray) {
+    let common = {
+        maxInstances: 1
+    };
+
+    if (process.env.BROWSER_PROXY) {
+        common.proxyType = 'manual';
+        common.httpProxy = process.env.BROWSER_PROXY;
+        common.sslProxy = process.env.BROWSER_PROXY;
+    }
+
+    return capabilitiesArray.map(cap => lodash.merge({}, cap, common));
+};
+
 let localConfig = {
     // ============
     // Capabilities
     // ============
     // Maximum instances to run in parallel.  Can be overridden on a per-browser basis by adding maxInstances option under each capability.
     maxInstances: 3,
-    capabilities: [
+    capabilities: setupCapabilities([
         {
-            browserName: 'chrome',
-            maxInstances: 1
+            browserName: 'chrome'
         },
         {
-            browserName: 'firefox',
-            maxInstances: 1
+            browserName: 'firefox'
         }
-    ],
+    ]),
 
     // ===================
     // Test Configurations
