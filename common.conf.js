@@ -22,7 +22,7 @@ exports.config = {
     // Level of logging verbosity: silent | verbose | command | data | result | error
     logLevel: 'error',
     // Winston log level (used by step definitions) (defaults to 'info', see winston for options)
-    winstonLogLevel: 'info',
+    winstonLogLevel: 'debug',
 
     // Enables colors for log output.
     coloredLogs: true,

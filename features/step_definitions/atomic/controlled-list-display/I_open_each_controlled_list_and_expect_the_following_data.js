@@ -6,6 +6,7 @@ module.exports = function () {
         for (let row of dataTable.hashes()) {
             let listTitle = row.Title;
             let expectedData = {
+                list: listTitle,
                 primary: row.Primary,
                 aliases:  JSON.parse(row.Aliases)
             };

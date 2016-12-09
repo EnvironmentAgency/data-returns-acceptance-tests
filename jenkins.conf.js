@@ -10,7 +10,12 @@ let localConfig = {
     maxInstances: 3,
     capabilities: [
         {
-            browserName: 'chrome'
+            browserName: 'chrome',
+            maxInstances: 1
+        },
+        {
+            browserName: 'firefox',
+            maxInstances: 1
         }
     ],
 
@@ -27,11 +32,14 @@ let localConfig = {
     // commands. Instead, they hook themselves up into the test process.
     services: ['selenium-standalone'],
     seleniumLogs: './logs/selenium',
+
+    // Running Jenkins with older version of selenium as the 3.0.1 release does not integrate with firefox correcly
+    // Geckodriver firefox v48+ uses seems unreliable and needs more time to mature.
     seleniumArgs: {
-        version: '3.0.1'
+        version: '2.53.1'
     },
     seleniumInstallArgs: {
-        version: '3.0.1'
+        version: '2.53.1'
     }
 };
 exports.config = lodash.defaultsDeep(localConfig, commonConfig);
