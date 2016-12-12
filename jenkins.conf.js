@@ -12,13 +12,6 @@ const setupCapabilities = function (capabilitiesArray) {
     let common = {
         maxInstances: 1
     };
-
-    if (process.env.BROWSER_PROXY) {
-        common.proxyType = 'manual';
-        common.httpProxy = process.env.BROWSER_PROXY;
-        common.sslProxy = process.env.BROWSER_PROXY;
-    }
-
     return capabilitiesArray.map(cap => lodash.merge({}, cap, common));
 };
 
@@ -52,17 +45,21 @@ let localConfig = {
     // Services take over a specific job you don't want to take care of. They enhance
     // your test setup with almost no effort. Unlike plugins, they don't add new
     // commands. Instead, they hook themselves up into the test process.
-    services: ['selenium-standalone'],
+    services: ['selenium-standalone', 'firefox-profile'],
 
     seleniumLogs: './logs/selenium',
 
-    // firefoxProfile: {
-    //     'network.proxy.type': 1,
-    //     'network.proxy.http': process.env.BROWSER_PROXY_HOST,
-    //     'network.proxy.http_port': parseInt(process.env.BROWSER_PROXY_PORT) || 3128,
-    //     'network.proxy.ssl': process.env.BROWSER_PROXY_HOST,
-    //     'network.proxy.ssl_port': parseInt(process.env.BROWSER_PROXY_PORT) || 3128,
-    // },
+    firefoxProfile: {
+        'network.proxy.type': 1,
+        'network.proxy.http': process.env.BROWSER_PROXY_HOST,
+        'network.proxy.http_port': parseInt(process.env.BROWSER_PROXY_PORT) || 3128,
+        'network.proxy.ssl': process.env.BROWSER_PROXY_HOST,
+        'network.proxy.ssl_port': parseInt(process.env.BROWSER_PROXY_PORT) || 3128,
+
+        // Workaround for issue with firefox when multiple aliases for localhost are defined in the hosts file
+        // Without this, the Firefox driver will respond with BAD REQUEST to all calls.
+        'webdriver_firefox_allowed_hosts': 'localhost,ip6-localhost,ip6-loopback'
+    },
 
     // Disabled screenshots as these are failing when using the firefox driver
     screenshotOnReject: false,
