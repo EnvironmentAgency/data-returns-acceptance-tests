@@ -3,11 +3,11 @@ const os = require('os');
 const lodash = require('lodash');
 let commonConfig = require("./common.conf").config;
 
-let browserstackUser = process.env.BS_USER;
-let browserstackKey = process.env.BS_KEY;
+let browserstackUser = process.env.BROWSERSTACK_USERNAME;
+let browserstackKey = process.env.BROWSERSTACK_ACCESS_KEY;
 
 if (!(browserstackUser || browserstackKey)) {
-    throw new Error("Please ensure that the BS_USER and BS_KEY environment variables are defined.")
+    throw new Error("Please ensure that the BROWSERSTACK_USERNAME and BROWSERSTACK_ACCESS_KEY environment variables are defined.")
 }
 
 const setupCapabilities = function (capabilitiesArray) {
@@ -40,7 +40,12 @@ let browserStackConfig = {
     user: browserstackUser,
     key: browserstackKey,
     browserstackLocal: true,
-    browserstackOpts: {},
+    browserstackOpts: {
+        force: true,
+        forcelocal: true,
+        proxyHost: process.env.BROWSER_PROXY_HOST,
+        proxyPort: process.env.BROWSER_PROXY_PORT
+    },
 
     // ============
     // Capabilities
