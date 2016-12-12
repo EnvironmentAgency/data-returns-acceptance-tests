@@ -22,17 +22,13 @@ let localConfig = {
     // Maximum instances to run in parallel.  Can be overridden on a per-browser basis by adding maxInstances option under each capability.
     maxInstances: 3,
     capabilities: setupCapabilities([
-        // {
-        //     browserName: 'chrome'
-        // },
+        {
+            browserName: 'chrome'
+        },
         {
             browserName: 'firefox'
         }
     ]),
-
-    // Temporary - diagnosing problems on Jenkins
-    logLevel: 'verbose',
-
 
     // ===================
     // Test Configurations
@@ -52,17 +48,14 @@ let localConfig = {
     firefoxProfile: {
         'network.proxy.type': 1,
         'network.proxy.http': process.env.BROWSER_PROXY_HOST,
-        'network.proxy.http_port': parseInt(process.env.BROWSER_PROXY_PORT) || 3128,
+        'network.proxy.http_port': process.env.BROWSER_PROXY_PORT ? parseInt(process.env.BROWSER_PROXY_PORT) : 3128,
         'network.proxy.ssl': process.env.BROWSER_PROXY_HOST,
-        'network.proxy.ssl_port': parseInt(process.env.BROWSER_PROXY_PORT) || 3128,
+        'network.proxy.ssl_port': process.env.BROWSER_PROXY_PORT ? parseInt(process.env.BROWSER_PROXY_PORT) : 3128,
 
         // Workaround for issue with firefox when multiple aliases for localhost are defined in the hosts file
         // Without this, the Firefox driver will respond with BAD REQUEST to all calls.
         'webdriver_firefox_allowed_hosts': 'localhost,ip6-localhost,ip6-loopback'
     },
-
-    // Disabled screenshots as these are failing when using the firefox driver
-    screenshotOnReject: false,
 
     // Running Jenkins with older version of selenium as the 3.0.1 release does not integrate with firefox correcly
     // Geckodriver firefox v48+ uses seems unreliable and needs more time to mature.
