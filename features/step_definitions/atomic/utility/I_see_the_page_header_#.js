@@ -1,8 +1,7 @@
 'use strict';
 module.exports = function () {
     this.defineStep(/^I see the page header "([^"]*)"$/, function (expectedHeading) {
-        let heading = browser.element('//main//h1');
-        let text = heading.getText();
-        text.should.equal(expectedHeading);
+        let heading = browser.getText('span#title');
+        heading.should.equal(expectedHeading);
     });
 };

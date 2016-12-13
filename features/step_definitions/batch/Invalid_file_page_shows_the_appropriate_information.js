@@ -4,7 +4,7 @@ let UploadPage = require("../../support/pages/upload.page");
 let FileInvalidPage = require("../../support/pages/file.invalid.page");
 
 module.exports = function () {
-    this.defineStep('Invalid file page shows the appropriate information', function() {
+    this.defineStep('Invalid file page shows the appropriate information', {timeout: 10 * 60 * 1000}, function() {
         let fileList = global.fileList;
 
         for (let testFile of fileList) {
@@ -13,7 +13,6 @@ module.exports = function () {
             if (!UploadPage.isOpen()) {
                 UploadPage.open();
             }
-            winston.debug("Opening file details");
             UploadPage.openFileDetails(testFile.filename);
 
             winston.debug("Checking for appropriate file invalid page");

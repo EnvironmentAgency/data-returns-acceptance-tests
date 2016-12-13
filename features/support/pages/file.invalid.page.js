@@ -1,5 +1,6 @@
 "use strict";
 let Page = require('./page');
+const winston = require('winston');
 class FileInvalidPage extends Page {
     get url() {
         return "/file/invalid"
@@ -7,14 +8,9 @@ class FileInvalidPage extends Page {
 
     checkErrorCodeIncluded(errorCode) {
         super.checkOpen();
-        browser.waitUntil(function () {
-            let foundErrorCode = browser.getAttribute("#error_code", "value");
-            if (foundErrorCode) {
-                foundErrorCode.should.equal(errorCode);
-                return true;
-            }
-            return false;
-        }, browser.options.waitforTimeout, `Failed to find expected hidden element with error code for error ${errorCode} within the allowed time.`, 25);
+        winston.debug(`Checking invalid file page contains an element with id=error_code with the value ${errorCode}`);
+        let foundErrorCode = browser.getAttribute("#error_code", "value");
+        foundErrorCode.should.equal(errorCode);
     }
 }
 module.exports = new FileInvalidPage();

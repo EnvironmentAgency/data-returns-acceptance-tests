@@ -1,4 +1,5 @@
 "use strict";
+const winston = require('winston');
 let Page = require('./page');
 
 class CorrectionsDetailPage extends Page {
@@ -6,14 +7,9 @@ class CorrectionsDetailPage extends Page {
 
     checkErrorCodeIncluded(errorCode) {
         super.checkOpen();
-        browser.waitUntil(function () {
-            let foundErrorCode = browser.getAttribute("#error_code", "value");
-            if (foundErrorCode) {
-                foundErrorCode.should.equal(errorCode);
-                return true;
-            }
-            return false;
-        }, browser.options.waitforTimeout, `Failed to find expected hidden element with error code for error ${errorCode} within the allowed time.`, 25);
+        winston.debug(`Checking correction detail page contains an element with id=error_code with the value ${errorCode}`);
+        let foundErrorCode = browser.getAttribute("#error_code", "value");
+        foundErrorCode.should.equal(errorCode);
     }
 
     checkErrorTypes(errorCode, errorTypes) {
@@ -22,13 +18,16 @@ class CorrectionsDetailPage extends Page {
         this.checkErrorCodeIncluded(errorCode);
 
         let expectedErrorTypes = errorTypes.split(",");
+        winston.debug(`Checking for expected error types: ${expectedErrorTypes}`);
+
         // Error types are shown in the second column on the validation details page
-        let errorTypesInTableRows = browser.getText("//tr//td[2]");
+        let errorTypesInTableRows = browser.getText("table#data-error-table td.td-error");
+        if (!Array.isArray(errorTypesInTableRows)) {
+            errorTypesInTableRows = [errorTypesInTableRows];
+        }
+        errorTypesInTableRows.should.include.members(expectedErrorTypes);
 
         for (let type of expectedErrorTypes) {
-            // Ensure this type has one or more entries in the table
-            errorTypesInTableRows.should.include(type);
-
             // Ensure that the correct error messages are displayed at the top of the corrections detail page for each type
             // Find a div element with the appropriate class e.g. "CorrectionIncorrect"
             let errorMessage = browser.element(`div.Correction${type}`);

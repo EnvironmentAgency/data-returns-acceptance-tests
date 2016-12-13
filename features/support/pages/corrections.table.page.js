@@ -1,7 +1,6 @@
 "use strict";
+const winston = require('winston');
 let Page = require('./page');
-
-const waitForNav = require('../lib/wait-for-navigation-on-action');
 
 class CorrectionsTablePage extends Page {
     get url() {
@@ -12,14 +11,12 @@ class CorrectionsTablePage extends Page {
         super.checkOpen();
 
         let errorNumber = errorCode.replace(/\D+/g, '');
-        waitForNav(function() {
-            browser.click(`//a[contains(@href, 'id=${errorNumber}')]`);
-        });
+        browser.click(`//a[contains(@href, 'id=${errorNumber}')]`);
     }
-
 
     checkReportedFieldForErrorCode(errorCode, fieldName) {
         super.checkOpen();
+        winston.debug(`Checking reported field (${fieldName}) and error code (${errorCode})`);
         let row = browser.element(`#ERR_${errorCode}`);
         let heading = browser.getText(`#ERR_${errorCode} abbr`);
         row.should.not.be.null;

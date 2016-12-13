@@ -56,6 +56,7 @@ class UploadPage extends Page {
     }
 
     ensureFileStatusEqual(filename, status) {
+        super.checkOpen();
         let fileStatusSelector = getUploadFileStatusSelector(filename);
         let expectedStatus = status.toUpperCase();
         browser.waitUntil(function () {
@@ -69,22 +70,27 @@ class UploadPage extends Page {
     }
 
     openFileDetails(filename) {
+        super.checkOpen();
+        winston.debug(`Opening file details for ${filename} from the file upload table.`);
         browser.click(getUploadFileMoreDetailsLinkSelector(filename));
     }
 
     ensureCanContinue() {
+        super.checkOpen();
         let button = browser.element("#continueBtn");
         let disabled = button.getAttribute("disabled") === 'true';
         disabled.should.be.false;
     }
 
     ensureCantContinue() {
+        super.checkOpen();
         let button = browser.element("#continueBtn");
         let disabled = button.getAttribute("disabled") === 'true';
         disabled.should.be.true;
     }
 
     continue() {
+        super.checkOpen();
         try {
             browser.waitUntil(function () {
                 let isDisabled = browser.getAttribute("#continueBtn","disabled");

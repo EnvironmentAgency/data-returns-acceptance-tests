@@ -50,7 +50,7 @@ let browserStackConfig = {
     // ============
     // Capabilities
     // ============
-    maxInstances: 3,
+    maxInstances: 5,
     capabilities: setupCapabilities([
         {
             "browserName": "chrome",
@@ -110,6 +110,33 @@ let browserStackConfig = {
             "preloadFiles": true
         },
         {
+            "os": "android",
+            "os_version": "4.4",
+            "browser": "android",
+            "device": "Samsung Galaxy S5",
+            "browser_version": null,
+            // The automation driver for this browser does support file uploads - use data returns preloading to load data and establish sessions.
+            "preloadFiles": true
+        },
+        {
+            "os": "ios",
+            "os_version": "6.0",
+            "browser": "iphone",
+            "device": "iPhone 5",
+            "browser_version": null,
+            // The automation driver for this browser does support file uploads - use data returns preloading to load data and establish sessions.
+            "preloadFiles": true
+        },
+        {
+            "os": "ios",
+            "os_version": "8.3",
+            "browser": "ipad",
+            "device": "iPad Air",
+            "browser_version": null,
+            // The automation driver for this browser does support file uploads - use data returns preloading to load data and establish sessions.
+            "preloadFiles": true
+        },
+        {
             "os": "ios",
             "os_version": "9.1",
             "browserName": "iphone",
@@ -117,7 +144,7 @@ let browserStackConfig = {
             "device": "iPhone 6S Plus",
             // The automation driver for this browser does support file uploads - use data returns preloading to load data and establish sessions.
             "preloadFiles": true
-        },
+        }
     ]),
 
     // ===================
@@ -129,6 +156,11 @@ let browserStackConfig = {
     baseUrl: process.env.SERVICE_URL || 'http://localhost:3000',
 
     // Test runner services
-    services: ['browserstack']
+    services: ['browserstack'],
+
+    // Configure cucumberjs to ignore any features marked with browserstackIgnore.
+    cucumberOpts: {
+        tags: ['~@browserstackIgnore']
+    }
 };
 exports.config = lodash.defaultsDeep(browserStackConfig, commonConfig);
