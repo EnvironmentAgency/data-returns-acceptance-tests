@@ -6,7 +6,6 @@ class SendPage extends Page {
     continue() {
         super.checkOpen();
         let button = browser.element("#continueBtn");
-        button.waitForVisible(3000);
         button.click();
     }
 }

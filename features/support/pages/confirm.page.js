@@ -43,11 +43,8 @@ class ConfirmPage extends Page {
 
     continue() {
         super.checkOpen();
-
         winston.debug('Finding confirmation page continue button');
         let button = browser.element("#continueBtn");
-        button.waitForVisible(3000);
-        winston.debug('Clicking confirmation page continue button');
         button.click();
         winston.debug('Finished clicking the confirmation page continue button');
     }
