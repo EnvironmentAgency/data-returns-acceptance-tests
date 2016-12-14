@@ -21,18 +21,17 @@ const setupCapabilities = function (capabilitiesArray) {
         "browserstack.local": true,
         "browserstack.debug": false,
         "browserstack.video": true,
-        "browserstack.timezone": "London"
+        "browserstack.timezone": "London",
+        "browserstack.javascriptEnabled": true
     }));
 };
 
 let browserStackProxyOpts = {};
 if (process.env.BROWSER_PROXY_HOST) {
     browserStackProxyOpts = {
-        forceproxy: true,
-        proxyHost: process.env.BROWSER_PROXY_HOST,
-        proxyPort: process.env.BROWSER_PROXY_PORT || 3128,
-        "local-proxy-host": process.env.BROWSER_PROXY_HOST,
-        "local-proxy-port": process.env.BROWSER_PROXY_PORT || 3128
+        "-force-proxy": true,
+        "-proxy-host": process.env.BROWSER_PROXY_HOST,
+        "-proxy-port": process.env.BROWSER_PROXY_PORT || 3128
     };
 }
 
@@ -52,9 +51,21 @@ let browserStackConfig = {
     user: browserstackUser,
     key: browserstackKey,
     browserstackLocal: true,
+
+    // At the current time there is a mismatch between the browserstack-local npm package and the BrowserStackLocal binary with respect
+    // to supplying command line arguments. The binary moved from arguments preceded with a single dash to the standard double-dash method,
+    // however currently the npm package has not been updated to reflect this.
+    //
+    // This caused problems attempting to set the appropriate proxy information (see browserStackProxyOpts above) so as a workaround
+    // I am currently supplying all browserStackOpts according to the command line rules (https://www.browserstack.com/local-testing#modifiers)
+    // but with a single dash only.  This is because the browserstack-local npm package automatically prepends a second dash to any argument
+    // it doesn't recognise.
+    //
+    // It is likely that browserstack-local will likely be updated to fix this issue very soon (I can already see the new code in the github
+    // repo) and at this point the options here will need to be reworked to comply to the browserstack-local guidance.
     browserstackOpts: lodash.merge({}, browserStackProxyOpts, {
-        force: true,
-        forcelocal: true
+        "-force": true,
+        "-force-local": true,
     }),
 
     // ============
