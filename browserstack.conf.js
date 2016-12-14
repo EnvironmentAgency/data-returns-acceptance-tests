@@ -25,6 +25,18 @@ const setupCapabilities = function (capabilitiesArray) {
     }));
 };
 
+let browserStackProxyOpts = {};
+if (process.env.BROWSER_PROXY_HOST) {
+    browserStackProxyOpts = {
+        forceproxy: true,
+        proxyHost: process.env.BROWSER_PROXY_HOST,
+        proxyPort: process.env.BROWSER_PROXY_PORT || 3128,
+        "local-proxy-host": process.env.BROWSER_PROXY_HOST,
+        "local-proxy-port": process.env.BROWSER_PROXY_PORT || 3128
+    };
+}
+
+
 let browserStackConfig = {
     // ==================
     // Browserstack selenium host/port
@@ -40,12 +52,10 @@ let browserStackConfig = {
     user: browserstackUser,
     key: browserstackKey,
     browserstackLocal: true,
-    browserstackOpts: {
+    browserstackOpts: lodash.merge({}, browserStackProxyOpts, {
         force: true,
-        forcelocal: true,
-        proxyHost: process.env.BROWSER_PROXY_HOST,
-        proxyPort: process.env.BROWSER_PROXY_PORT
-    },
+        forcelocal: true
+    }),
 
     // ============
     // Capabilities
