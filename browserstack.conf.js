@@ -29,9 +29,9 @@ const setupCapabilities = function (capabilitiesArray) {
 let browserStackProxyOpts = {};
 if (process.env.BROWSER_PROXY_HOST) {
     browserStackProxyOpts = {
-        "-force-proxy": true,
-        "-proxy-host": process.env.BROWSER_PROXY_HOST,
-        "-proxy-port": process.env.BROWSER_PROXY_PORT || 3128
+        forceProxy: true,
+        proxyHost: process.env.BROWSER_PROXY_HOST,
+        proxyPort: process.env.BROWSER_PROXY_PORT || 3128
     };
 }
 
@@ -52,20 +52,10 @@ let browserStackConfig = {
     key: browserstackKey,
     browserstackLocal: true,
 
-    // At the current time there is a mismatch between the browserstack-local npm package and the BrowserStackLocal binary with respect
-    // to supplying command line arguments. The binary moved from arguments preceded with a single dash to the standard double-dash method,
-    // however currently the npm package has not been updated to reflect this.
-    //
-    // This caused problems attempting to set the appropriate proxy information (see browserStackProxyOpts above) so as a workaround
-    // I am currently supplying all browserStackOpts according to the command line rules (https://www.browserstack.com/local-testing#modifiers)
-    // but with a single dash only.  This is because the browserstack-local npm package automatically prepends a second dash to any argument
-    // it doesn't recognise.
-    //
-    // It is likely that browserstack-local will likely be updated to fix this issue very soon (I can already see the new code in the github
-    // repo) and at this point the options here will need to be reworked to comply to the browserstack-local guidance.
     browserstackOpts: lodash.merge({}, browserStackProxyOpts, {
-        "-force": true,
-        "-force-local": true,
+        logFile: "./logs/local.log",
+        force: true,
+        forceLocal: true
     }),
 
     // ============
@@ -159,7 +149,7 @@ let browserStackConfig = {
         // Configure cucumberjs to ignore any features marked with browserstackIgnore.
         tags: ['~@browserstackIgnore'],
         // Increase step timeout on browserstack (things just seem to take longer!)
-        timeout: 180000,
+        timeout: 180000
     },
 
 };
