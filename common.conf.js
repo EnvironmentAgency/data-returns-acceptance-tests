@@ -1,6 +1,11 @@
 'use strict';
 const winston = require("winston");
 const DataReturnsUserSession = require('./features/support/lib/preload-file');
+const fs = require("fs-extra");
+
+// Ensure logs folder exists
+const logDir = __dirname + '/logs';
+fs.ensureDirSync(logDir);
 
 exports.config = {
     // ==================

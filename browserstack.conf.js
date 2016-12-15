@@ -149,7 +149,7 @@ let browserStackConfig = {
         // Configure cucumberjs to ignore any features marked with browserstackIgnore.
         tags: ['~@browserstackIgnore'],
         // Increase step timeout on browserstack (things just seem to take longer!)
-        timeout: 180000
+        timeout: 120000
     },
 
 };
