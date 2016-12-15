@@ -20,7 +20,7 @@ const setupCapabilities = function (capabilitiesArray) {
         "project": "Data Returns",
         "browserstack.local": true,
         "browserstack.debug": false,
-        "browserstack.video": true,
+        "browserstack.video": false,
         "browserstack.timezone": "London",
         "browserstack.javascriptEnabled": true
     }));
@@ -61,7 +61,7 @@ let browserStackConfig = {
     // ============
     // Capabilities
     // ============
-    maxInstances: 3,
+    maxInstances: 1,
     capabilities: setupCapabilities([
         {
             "browserName": "chrome",
