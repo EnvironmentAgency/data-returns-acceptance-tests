@@ -155,9 +155,12 @@ let browserStackConfig = {
     // Test runner services
     services: ['browserstack'],
 
-    // Configure cucumberjs to ignore any features marked with browserstackIgnore.
     cucumberOpts: {
-        tags: ['~@browserstackIgnore']
-    }
+        // Configure cucumberjs to ignore any features marked with browserstackIgnore.
+        tags: ['~@browserstackIgnore'],
+        // Increase step timeout on browserstack (things just seem to take longer!)
+        timeout: 180000,
+    },
+
 };
 exports.config = lodash.defaultsDeep(browserStackConfig, commonConfig);
