@@ -71,7 +71,7 @@ let browserStackConfig = {
     // ============
     // Capabilities
     // ============
-    maxInstances: 5,
+    maxInstances: 3,
     capabilities: setupCapabilities([
         {
             "browserName": "chrome",
@@ -82,12 +82,6 @@ let browserStackConfig = {
             "browserName": "firefox",
             "os": "Windows",
             "os_version": "10",
-        },
-        {
-            "os": "Windows",
-            "os_version": "XP",
-            "browserName": "ie",
-            "browser_version": "7.0"
         },
         {
             "os": "Windows",
@@ -135,24 +129,6 @@ let browserStackConfig = {
             "os_version": "4.4",
             "browser": "android",
             "device": "Samsung Galaxy S5",
-            "browser_version": null,
-            // The automation driver for this browser does support file uploads - use data returns preloading to load data and establish sessions.
-            "preloadFiles": true
-        },
-        {
-            "os": "ios",
-            "os_version": "6.0",
-            "browser": "iphone",
-            "device": "iPhone 5",
-            "browser_version": null,
-            // The automation driver for this browser does support file uploads - use data returns preloading to load data and establish sessions.
-            "preloadFiles": true
-        },
-        {
-            "os": "ios",
-            "os_version": "8.3",
-            "browser": "ipad",
-            "device": "iPad Air",
             "browser_version": null,
             // The automation driver for this browser does support file uploads - use data returns preloading to load data and establish sessions.
             "preloadFiles": true
