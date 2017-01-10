@@ -1,11 +1,11 @@
-Feature: I should be able to submit files of 10Mb and the system
+Feature: I should be able to submit files of 4Mb and the system
   should be able to report all the errors on largely incorrect files
   of this size
 
   Scenario: Check that the correct error messages are given in the validation pages.
     Given I have the following files and expectations
       | Filename                                                        | Status     | ErrorCode | ErrorField | ErrorCategories   |
-      | failures-10Mb.csv                                               | DATA ERROR | DR9010    | Rtn_Type   | Incorrect         |
+      | failures-4Mb.csv                                                | DATA ERROR | DR9010    | Rtn_Type   | Incorrect         |
     When I upload those files
     Then I am unable to continue
     And I expect each file's status to meet expectations
@@ -23,4 +23,4 @@ Feature: I should be able to submit files of 10Mb and the system
 
     Examples:
       | Filename                                                          |
-      | success-10Mb.csv                                                  |
+      | success-4Mb.csv                                                   |
