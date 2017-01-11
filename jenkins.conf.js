@@ -26,7 +26,8 @@ let localConfig = {
             browserName: 'chrome'
         },
         {
-            browserName: 'firefox'
+            browserName: 'firefox',
+            maxInstances: 1
         }
     ]),
 
