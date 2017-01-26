@@ -7,7 +7,8 @@ Feature: Check that controlled lists are correctly displayed in the guidance
       | Title                         | Primary                      | Aliases                                                    |
       | Return type                   | Landfill leachate monitoring | []                                                         |
       | Return period                 | Jun YYYY                     | []                                                         |
-      | Releases and transfers        | Waste Water                  | []                                                         |
+# Implemented for PI and disabled for landfill release
+#      | Releases and transfers        | Waste Water                  | []                                                         |
       | Monitoring standard or method | BS EN ISO 17294              | []                                                         |
       | Text value                    | See comment                  | ["See comments"]                                           |
       | Parameter (substance name)    | Tetrachloroethane            | ["1,1,1,2-Tetrachloroethane", "1,1,2,2-Tetrachloroethane"] |
