@@ -2,14 +2,18 @@ Feature: Invalid data entry checks
   As a user I want to be informed if the information I'm providing is invalid
   So that I can correct any mistakes I've made
 
-    Background:
+  Background:
     Given I've chosen my data to return
     And I confirm my details are correct
 
-    Scenario: Invalid email address is entered
+  Scenario: Invalid email address is entered
     When I submit an invalid email address
     Then I am told the email address is invalid
 
-    Scenario: No email address is entered
+  Scenario: No email address is entered
     When I don't enter an email address
     Then I am told the email address is invalid
+
+
+  Scenario: Same email address used multiple times
+    Then I enter the same email address too many times and it gets blocked

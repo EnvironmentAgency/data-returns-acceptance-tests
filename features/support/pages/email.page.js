@@ -17,6 +17,25 @@ class EmailPage extends Page {
         this.continue();
     }
 
+    isEmailFieldAvailable() {
+        browser.disableImplicitWait();
+        try {
+            return browser.isExisting("#email");
+        } finally {
+            browser.restoreImplicitWait();
+        }
+    }
+
+    assertBlocked() {
+        super.checkOpen();
+        // Initial check
+        let foundErrorCode = browser.getAttribute("#error_code", "value");
+        foundErrorCode.should.equal("DR2055");
+        this.isEmailFieldAvailable().should.be.false;
+    }
+
+
+
     ensureErrorShown() {
         super.checkOpen();
         let errorSummaryElement = browser.element('.error-summary');

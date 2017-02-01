@@ -14,3 +14,7 @@ Feature: Invalid data entry checks
   Scenario: No pin number is entered
     When I don't enter a pin number
     Then an error message is shown
+
+  Scenario: Invalid pin entered too many times
+    When I keep submitting an invalid pin and get locked out
+    Then I am blocked from pin entry
