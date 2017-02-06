@@ -7,7 +7,7 @@ Feature: Check that the service degrades gracefully if the user attempts to make
     Then I navigate to URL "<URL>"
     Then I see the page header "Do you want to send files?"
     Then I click the link "Choose files and send"
-    Then I see the page header "Check your data"
+    Then I see the page header "Upload and check your data"
 
     Examples:
       | URL           |
@@ -33,4 +33,4 @@ Feature: Check that the service degrades gracefully if the user attempts to make
     And I go back in browser history
     Then I see the page header "Do you want to send files?"
     And I go back in browser history
-    Then I see the page header "Check your data"
+    Then I see the page header "Upload and check your data"
