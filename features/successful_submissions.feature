@@ -16,6 +16,7 @@ Feature: Submit files where all data passes validation
       | Filename                                                          |
       | multiple_file_upload_1.csv                                        |
       | CUKE006_LARGE_FILE_MAX_21M_16907_records_PASS.csv                 |
+      | DR9060_Mon_Point.csv                                              |
 
   Scenario Outline: For OPTIONAL fields check that null values are accepted
     Given I choose file <Filename> to upload
@@ -24,7 +25,7 @@ Feature: Submit files where all data passes validation
     Then I confirm my details are correct
 
     Examples:
-      | Filename                              |
+      | Filename                                            |
       | successful_submissions_OPT_Ref_Period_Null_PASS.csv |
       | successful_submissions_OPT_Mon_Period_NULL_PASS.csv |
       | successful_submissions_OPT_Comments_NULL_PASS.csv   |

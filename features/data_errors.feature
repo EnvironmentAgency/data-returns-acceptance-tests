@@ -28,8 +28,7 @@ Feature: Check that the correct data error message is displayed
       | DR9050_No_Text_Value_and_No_Value_headers_and_Value_FAIL.csv    | DATA ERROR | DR9050    | Unit       | Missing           |
       | DR9050_No_Text_Value_and_No_Value_no_headers_and_Value_FAIL.csv | DATA ERROR | DR9050    | Unit       | Missing           |
       | DR9060_Mon_Point_Missing.csv                                    | DATA ERROR | DR9060    | Mon_Point  | Missing           |
-      | DR9060_Monitoring_Point_M_and_I_Error.csv                       | DATA ERROR | DR9060    | Mon_Point  | Missing,Incorrect |
-      | DR9060_Mon_Point.csv                                            | DATA ERROR | DR9060    | Mon_Point  | Incorrect         |
+      | DR9060_Monitoring_Point_M_and_I_Error.csv                       | DATA ERROR | DR9060    | Mon_Point  | Missing,Length    |
       | DR9070_Rtn_Period.csv                                           | DATA ERROR | DR9070    | Rtn_Period | Incorrect         |
       | DR9080_Txt_Value.csv                                            | DATA ERROR | DR9080    | Txt_Value  | Incorrect         |
       | DR9090_Ref_Period.csv                                           | DATA ERROR | DR9090    | Ref_Period | Incorrect         |
