@@ -1,36 +1,36 @@
-EA_ID,Rtn_Type,Site_Name,Mon_Point,Mon_Date,Parameter,Value,Unit,Ref_Period
-AA9999AA,Landfill annual monitoring report,Test Site,Monitor point 1,2015-08-05,"1,1,2,2-Tetrachloroethane",100,ug,Half hour average
-AA9999AA,Landfill annual monitoring report,Test Site,Monitor point 1,2015-08-05,"1,1,2,2-Tetrachloroethane",100,ug,1 hour total
-AA9999AA,Landfill annual monitoring report,Test Site,Monitor point 1,2015-08-05,"1,1,2,2-Tetrachloroethane",100,ug,2 hour total
-AA9999AA,Landfill annual monitoring report,Test Site,Monitor point 1,2015-08-05,"1,1,2,2-Tetrachloroethane",100,ug,24 hour total
-AA9999AA,Landfill annual monitoring report,Test Site,Monitor point 1,2015-08-05,"1,1,2,2-Tetrachloroethane",100,ug,95% of all 10-minute averages in any 24-hour period
-AA9999AA,Landfill annual monitoring report,Test Site,Monitor point 1,2015-08-05,"1,1,2,2-Tetrachloroethane",100,ug,95% of validated daily means within a calendar year
-AA9999AA,Landfill annual monitoring report,Test Site,Monitor point 1,2015-08-05,"1,1,2,2-Tetrachloroethane",100,ug,95% of validated hourly averages within a calendar year
-AA9999AA,Landfill annual monitoring report,Test Site,Monitor point 1,2015-08-05,"1,1,2,2-Tetrachloroethane",100,ug,Bi-annual periodic measurement average value over sample period of between 6 and 8 hours
-AA9999AA,Landfill annual monitoring report,Test Site,Monitor point 1,2015-08-05,"1,1,2,2-Tetrachloroethane",100,ug,Continuous
-AA9999AA,Landfill annual monitoring report,Test Site,Monitor point 1,2015-08-05,"1,1,2,2-Tetrachloroethane",100,ug,Continuous - as appropriate to reference
-AA9999AA,Landfill annual monitoring report,Test Site,Monitor point 1,2015-08-05,"1,1,2,2-Tetrachloroethane",100,ug,Daily mean
-AA9999AA,Landfill annual monitoring report,Test Site,Monitor point 1,2015-08-05,"1,1,2,2-Tetrachloroethane",100,ug,Daily mean of validated hourly averages
-AA9999AA,Landfill annual monitoring report,Test Site,Monitor point 1,2015-08-05,"1,1,2,2-Tetrachloroethane",100,ug,Hourly mean
-AA9999AA,Landfill annual monitoring report,Test Site,Monitor point 1,2015-08-05,"1,1,2,2-Tetrachloroethane",100,ug,Instantaneous
-AA9999AA,Landfill annual monitoring report,Test Site,Monitor point 1,2015-08-05,"1,1,2,2-Tetrachloroethane",100,ug,Monthly mean of validated hourly averages
-AA9999AA,Landfill annual monitoring report,Test Site,Monitor point 1,2015-08-05,"1,1,2,2-Tetrachloroethane",100,ug,Periodic - as appropriate to reference
-AA9999AA,Landfill annual monitoring report,Test Site,Monitor point 1,2015-08-05,"1,1,2,2-Tetrachloroethane",100,ug,Periodic daily
-AA9999AA,Landfill annual monitoring report,Test Site,Monitor point 1,2015-08-05,"1,1,2,2-Tetrachloroethane",100,ug,Periodic over minimum 1 hour period
-AA9999AA,Landfill annual monitoring report,Test Site,Monitor point 1,2015-08-05,"1,1,2,2-Tetrachloroethane",100,ug,"Periodic over minimum 30 minute, maximum 8 hour period"
-AA9999AA,Landfill annual monitoring report,Test Site,Monitor point 1,2015-08-05,"1,1,2,2-Tetrachloroethane",100,ug,"Periodic over minimum 4 hour period, data reported as half hour averages"
-AA9999AA,Landfill annual monitoring report,Test Site,Monitor point 1,2015-08-05,"1,1,2,2-Tetrachloroethane",100,ug,"Periodic over minimum 6 hours, maximum 8 hour period"
-AA9999AA,Landfill annual monitoring report,Test Site,Monitor point 1,2015-08-05,"1,1,2,2-Tetrachloroethane",100,ug,Pre-operation and when there is a significant operational change
-AA9999AA,Landfill annual monitoring report,Test Site,Monitor point 1,2015-08-05,"1,1,2,2-Tetrachloroethane",100,ug,Spot sample
-AA9999AA,Landfill annual monitoring report,Test Site,Monitor point 1,2015-08-05,"1,1,2,2-Tetrachloroethane",100,ug,7 day total
-AA9999AA,Landfill annual monitoring report,Test Site,Monitor point 1,2015-08-05,"1,1,2,2-Tetrachloroethane",100,ug,Annual mean
-AA9999AA,Landfill annual monitoring report,Test Site,Monitor point 1,2015-08-05,"1,1,2,2-Tetrachloroethane",100,ug,Daily load
-AA9999AA,Landfill annual monitoring report,Test Site,Monitor point 1,2015-08-05,"1,1,2,2-Tetrachloroethane",100,ug,Maximum daily
-AA9999AA,Landfill annual monitoring report,Test Site,Monitor point 1,2015-08-05,"1,1,2,2-Tetrachloroethane",100,ug,Minimum daily
-AA9999AA,Landfill annual monitoring report,Test Site,Monitor point 1,2015-08-05,"1,1,2,2-Tetrachloroethane",100,ug,Monthly average of weekly spot sample
-AA9999AA,Landfill annual monitoring report,Test Site,Monitor point 1,2015-08-05,"1,1,2,2-Tetrachloroethane",100,ug,Monthly mean
-AA9999AA,Landfill annual monitoring report,Test Site,Monitor point 1,2015-08-05,"1,1,2,2-Tetrachloroethane",100,ug,Monthly total
-AA9999AA,Landfill annual monitoring report,Test Site,Monitor point 1,2015-08-05,"1,1,2,2-Tetrachloroethane",100,ug,Previous 72 hours total
-AA9999AA,Landfill annual monitoring report,Test Site,Monitor point 1,2015-08-05,"1,1,2,2-Tetrachloroethane",100,ug,Total weekly load
-AA9999AA,Landfill annual monitoring report,Test Site,Monitor point 1,2015-08-05,"1,1,2,2-Tetrachloroethane",100,ug,20 min average
-AA9999AA,Landfill annual monitoring report,Test Site,Monitor point 1,2015-08-05,"1,1,2,2-Tetrachloroethane",100,ug,4 day total
+"EA_ID","Rtn_Type","Site_Name","Mon_Point","Mon_Date","Parameter","Value","Unit","Ref_Period"
+"AA9999AA","Landfill annual monitoring report","Test Site","Monitor point 1","2015-08-05","1,1,2,2-Tetrachloroethane",100,"ug","Half hour average"
+"AA9999AA","Landfill annual monitoring report","Test Site","Monitor point 1","2015-08-05","1,1,2,2-Tetrachloroethane",100,"ug","1 hour total"
+"AA9999AA","Landfill annual monitoring report","Test Site","Monitor point 1","2015-08-05","1,1,2,2-Tetrachloroethane",100,"ug","2 hour total"
+"AA9999AA","Landfill annual monitoring report","Test Site","Monitor point 1","2015-08-05","1,1,2,2-Tetrachloroethane",100,"ug","24 hour total"
+"AA9999AA","Landfill annual monitoring report","Test Site","Monitor point 1","2015-08-05","1,1,2,2-Tetrachloroethane",100,"ug","95% of all 10-minute averages in any 24 hour period"
+"AA9999AA","Landfill annual monitoring report","Test Site","Monitor point 1","2015-08-05","1,1,2,2-Tetrachloroethane",100,"ug","95% of validated daily means within a calendar year"
+"AA9999AA","Landfill annual monitoring report","Test Site","Monitor point 1","2015-08-05","1,1,2,2-Tetrachloroethane",100,"ug","95% of validated hourly averages within a calendar year"
+"AA9999AA","Landfill annual monitoring report","Test Site","Monitor point 1","2015-08-05","1,1,2,2-Tetrachloroethane",100,"ug","Bi-annual periodic measurement average value over sample period of between 6 and 8 hours"
+"AA9999AA","Landfill annual monitoring report","Test Site","Monitor point 1","2015-08-05","1,1,2,2-Tetrachloroethane",100,"ug","Continuous"
+"AA9999AA","Landfill annual monitoring report","Test Site","Monitor point 1","2015-08-05","1,1,2,2-Tetrachloroethane",100,"ug","Continuous - as appropriate to reference"
+"AA9999AA","Landfill annual monitoring report","Test Site","Monitor point 1","2015-08-05","1,1,2,2-Tetrachloroethane",100,"ug","Daily mean"
+"AA9999AA","Landfill annual monitoring report","Test Site","Monitor point 1","2015-08-05","1,1,2,2-Tetrachloroethane",100,"ug","Daily mean of validated hourly averages"
+"AA9999AA","Landfill annual monitoring report","Test Site","Monitor point 1","2015-08-05","1,1,2,2-Tetrachloroethane",100,"ug","Hourly mean"
+"AA9999AA","Landfill annual monitoring report","Test Site","Monitor point 1","2015-08-05","1,1,2,2-Tetrachloroethane",100,"ug","Instantaneous"
+"AA9999AA","Landfill annual monitoring report","Test Site","Monitor point 1","2015-08-05","1,1,2,2-Tetrachloroethane",100,"ug","Monthly mean of validated hourly averages"
+"AA9999AA","Landfill annual monitoring report","Test Site","Monitor point 1","2015-08-05","1,1,2,2-Tetrachloroethane",100,"ug","Periodic - as appropriate to reference"
+"AA9999AA","Landfill annual monitoring report","Test Site","Monitor point 1","2015-08-05","1,1,2,2-Tetrachloroethane",100,"ug","Periodic daily"
+"AA9999AA","Landfill annual monitoring report","Test Site","Monitor point 1","2015-08-05","1,1,2,2-Tetrachloroethane",100,"ug","Periodic over minimum 1 hour period"
+"AA9999AA","Landfill annual monitoring report","Test Site","Monitor point 1","2015-08-05","1,1,2,2-Tetrachloroethane",100,"ug","Periodic over minimum 30 minute, maximum 8 hour period"
+"AA9999AA","Landfill annual monitoring report","Test Site","Monitor point 1","2015-08-05","1,1,2,2-Tetrachloroethane",100,"ug","Periodic over minimum 4 hour period, data reported as half hour averages"
+"AA9999AA","Landfill annual monitoring report","Test Site","Monitor point 1","2015-08-05","1,1,2,2-Tetrachloroethane",100,"ug","Periodic over minimum 6 hours, maximum 8 hour period"
+"AA9999AA","Landfill annual monitoring report","Test Site","Monitor point 1","2015-08-05","1,1,2,2-Tetrachloroethane",100,"ug","Pre-operation and when there is a significant operational change"
+"AA9999AA","Landfill annual monitoring report","Test Site","Monitor point 1","2015-08-05","1,1,2,2-Tetrachloroethane",100,"ug","Spot sample"
+"AA9999AA","Landfill annual monitoring report","Test Site","Monitor point 1","2015-08-05","1,1,2,2-Tetrachloroethane",100,"ug","7 day total"
+"AA9999AA","Landfill annual monitoring report","Test Site","Monitor point 1","2015-08-05","1,1,2,2-Tetrachloroethane",100,"ug","Annual mean"
+"AA9999AA","Landfill annual monitoring report","Test Site","Monitor point 1","2015-08-05","1,1,2,2-Tetrachloroethane",100,"ug","Daily load"
+"AA9999AA","Landfill annual monitoring report","Test Site","Monitor point 1","2015-08-05","1,1,2,2-Tetrachloroethane",100,"ug","Maximum daily"
+"AA9999AA","Landfill annual monitoring report","Test Site","Monitor point 1","2015-08-05","1,1,2,2-Tetrachloroethane",100,"ug","Minimum daily"
+"AA9999AA","Landfill annual monitoring report","Test Site","Monitor point 1","2015-08-05","1,1,2,2-Tetrachloroethane",100,"ug","Monthly average of weekly spot sample"
+"AA9999AA","Landfill annual monitoring report","Test Site","Monitor point 1","2015-08-05","1,1,2,2-Tetrachloroethane",100,"ug","Monthly mean"
+"AA9999AA","Landfill annual monitoring report","Test Site","Monitor point 1","2015-08-05","1,1,2,2-Tetrachloroethane",100,"ug","Monthly total"
+"AA9999AA","Landfill annual monitoring report","Test Site","Monitor point 1","2015-08-05","1,1,2,2-Tetrachloroethane",100,"ug","Previous 72 hours total"
+"AA9999AA","Landfill annual monitoring report","Test Site","Monitor point 1","2015-08-05","1,1,2,2-Tetrachloroethane",100,"ug","Total weekly load"
+"AA9999AA","Landfill annual monitoring report","Test Site","Monitor point 1","2015-08-05","1,1,2,2-Tetrachloroethane",100,"ug","20 min average"
+"AA9999AA","Landfill annual monitoring report","Test Site","Monitor point 1","2015-08-05","1,1,2,2-Tetrachloroethane",100,"ug","4 day total"
