@@ -35,7 +35,6 @@ Feature: Check that the correct data error message is displayed
       | DR9100_Meth_Stand.csv                                           | DATA ERROR | DR9100    | Meth_Stand | Incorrect         |
       | DR9110_Site_Name.csv                                            | DATA ERROR | DR9110    | Site_Name  | Incorrect         |
       | DR9110_Site_Name_missing.csv                                    | DATA ERROR | DR9110    | Site_Name  | Missing           |
-      | DR9110_Site_Name_256_Length.csv                                 | DATA ERROR | DR9110    | Site_Name  | Length            |
       | DR9110_Site_Name_value_M_and_I.csv                              | DATA ERROR | DR9110    | Site_Name  | Missing,Incorrect |
       | DR9140_Comments.csv                                             | DATA ERROR | DR9140    | Comments   | Length            |
       | DR9140_Txt_Value_has_no_comment_FAIL.csv                        | DATA ERROR | DR9140    | Comments   | Missing           |
