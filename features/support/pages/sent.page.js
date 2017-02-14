@@ -6,7 +6,7 @@ class SentPage extends Page {
     isReturnSent() {
         super.checkOpen();
         let heading = browser.getText('span#title');
-        heading.should.equal("Data returns sent");
+        heading.should.equal("Data file sent");
     }
 
 }
