@@ -53,7 +53,7 @@ Feature: Check that the correct data error message is displayed
       | DR9999_No_Text_Value_and_No_Value_no_headers_Units_FAIL.csv    | DATA ERROR | DR9999    | Value, Txt_Value | Missing         | Value and Txt_Value |
       | DR9999_No_Text_Value_and_No_Value_no_headers_No_Units_FAIL.csv | DATA ERROR | DR9999    | Value, Txt_Value | Missing         | Value and Txt_Value |
       | DR9999_Value_and_Txt_Value_Missing.csv                         | DATA ERROR | DR9999    | Value, Txt_Value | Missing         | Value and Txt_Value |
-      | DR9000_EA_ID_Site_name_mismatch.csv                            | DATA ERROR | DR9000    | EA_ID, Site_Name | Conflicting     | EA_ID and Site_Name |
+      | DR9110_EA_ID_Site_name_mismatch.csv                            | DATA ERROR | DR9110    | EA_ID, Site_Name | Conflicting     | EA_ID and Site_Name |
     When I upload those files
     Then I am unable to continue
     And I expect each file's status to meet expectations
