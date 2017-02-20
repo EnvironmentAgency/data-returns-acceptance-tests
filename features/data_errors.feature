@@ -33,9 +33,9 @@ Feature: Check that the correct data error message is displayed
       | DR9080_Txt_Value.csv                                            | DATA ERROR | DR9080    | Txt_Value  | Incorrect         |
       | DR9090_Ref_Period.csv                                           | DATA ERROR | DR9090    | Ref_Period | Incorrect         |
       | DR9100_Meth_Stand.csv                                           | DATA ERROR | DR9100    | Meth_Stand | Incorrect         |
-      | DR9110_Site_Name.csv                                            | DATA ERROR | DR9110    | Site_Name  | Incorrect         |
+      | DR9110_Site_Name.csv                                            | DATA ERROR | DR9110    | EA_ID, Site_Name | Conflicting |
       | DR9110_Site_Name_missing.csv                                    | DATA ERROR | DR9110    | Site_Name  | Missing           |
-      | DR9110_Site_Name_value_M_and_I.csv                              | DATA ERROR | DR9110    | Site_Name  | Missing,Incorrect |
+      | DR9110_Site_Name_value_M_and_I.csv                              | DATA ERROR | DR9110    | EA_ID, Site_Name | Conflicting            |
       | DR9140_Comments.csv                                             | DATA ERROR | DR9140    | Comments   | Length            |
       | DR9140_Txt_Value_has_no_comment_FAIL.csv                        | DATA ERROR | DR9140    | Comments   | Missing           |
       | DR9150_CiC.csv                                                  | DATA ERROR | DR9150    | CiC        | Length            |
