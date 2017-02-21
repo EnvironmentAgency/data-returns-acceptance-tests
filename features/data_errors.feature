@@ -33,9 +33,9 @@ Feature: Check that the correct data error message is displayed
       | DR9080_Txt_Value.csv                                            | DATA ERROR | DR9080    | Txt_Value  | Incorrect         |
       | DR9090_Ref_Period.csv                                           | DATA ERROR | DR9090    | Ref_Period | Incorrect         |
       | DR9100_Meth_Stand.csv                                           | DATA ERROR | DR9100    | Meth_Stand | Incorrect         |
-      | DR9110_Site_Name.csv                                            | DATA ERROR | DR9110    | Site_Name  | Incorrect         |
+      | DR9110_Site_Name.csv                                            | DATA ERROR | DR9110    | EA_ID, Site_Name | Conflicting |
       | DR9110_Site_Name_missing.csv                                    | DATA ERROR | DR9110    | Site_Name  | Missing           |
-      | DR9110_Site_Name_value_M_and_I.csv                              | DATA ERROR | DR9110    | Site_Name  | Missing,Incorrect |
+      | DR9110_Site_Name_value_M_and_I.csv                              | DATA ERROR | DR9110    | EA_ID, Site_Name | Conflicting            |
       | DR9140_Comments.csv                                             | DATA ERROR | DR9140    | Comments   | Length            |
       | DR9140_Txt_Value_has_no_comment_FAIL.csv                        | DATA ERROR | DR9140    | Comments   | Missing           |
       | DR9150_CiC.csv                                                  | DATA ERROR | DR9150    | CiC        | Length            |
@@ -53,7 +53,7 @@ Feature: Check that the correct data error message is displayed
       | DR9999_No_Text_Value_and_No_Value_no_headers_Units_FAIL.csv    | DATA ERROR | DR9999    | Value, Txt_Value | Missing         | Value and Txt_Value |
       | DR9999_No_Text_Value_and_No_Value_no_headers_No_Units_FAIL.csv | DATA ERROR | DR9999    | Value, Txt_Value | Missing         | Value and Txt_Value |
       | DR9999_Value_and_Txt_Value_Missing.csv                         | DATA ERROR | DR9999    | Value, Txt_Value | Missing         | Value and Txt_Value |
-      | DR9000_EA_ID_Site_name_mismatch.csv                            | DATA ERROR | DR9000    | EA_ID, Site_Name | Conflicting     | EA_ID and Site_Name |
+      | DR9110_EA_ID_Site_name_mismatch.csv                            | DATA ERROR | DR9110    | EA_ID, Site_Name | Conflicting     | EA_ID and Site_Name |
     When I upload those files
     Then I am unable to continue
     And I expect each file's status to meet expectations
