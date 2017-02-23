@@ -47,3 +47,11 @@ Feature: Submit files with alias alternative values
     Examples:
       | Filename                   |
       | CHARACTER_SUBSTITUTION.csv |
+
+  Scenario Outline: Non printing unicode characters are converted to whitespace
+    Given I choose file <Filename> to upload
+    Then I expect the file status for <Filename> to be "READY TO SEND"
+
+    Examples:
+      | Filename                    |
+      | NON_PRINTING_CHARACTERS.csv |
