@@ -25,10 +25,8 @@ Feature: Submit files with alias alternative values
     Then I see that <alternate_id> has been substituted to <ea_id>
 
     Examples:
-      | Filename               | alternate_id | ea_id |
-      | EA_ID_SUBSTITUTION.csv | E081         | 70601 |
-      # | EA_ID_SUBSTITUTION_2.csv    | sp3734tr          | 70601 |
-
+      | Filename               | alternate_id | ea_id    |
+      | EA_ID_SUBSTITUTION.csv | AA9998AA     | AA9999AA |
 
   Scenario Outline: Correct EA_ID is used where alternatives are available
     Given I choose file <Filename> to upload
@@ -37,8 +35,8 @@ Feature: Submit files with alias alternative values
     Then I see that the EA_ID <ea_id> has been used
 
     Examples:
-      | Filename                 | ea_id |
-      | EA_ID_SUBSTITUTION_3.csv | 70601 |
+      | Filename                 | ea_id    |
+      | EA_ID_SUBSTITUTION_3.csv | AA9999AA |
 
   Scenario Outline: Incorrect characters are substituted for known correct characters
     Given I choose file <Filename> to upload
