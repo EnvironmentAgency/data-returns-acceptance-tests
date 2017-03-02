@@ -20,6 +20,7 @@ Feature: Submit files for initial checking
       | DR0840_Unrecognised_header.csv           | DR0840    | FILE ERROR |
       | DR0860_Duplicate_Site_Name_Header.csv    | DR0860    | FILE ERROR |
       | DR0860_Duplicate_Sample_by_Header.csv    | DR0860    | FILE ERROR |
+      | DR0880_No_Records.csv                       | DR0880    | FILE ERROR |
     When I upload those files
     Then I am unable to continue
     And I expect each file's status to meet expectations
