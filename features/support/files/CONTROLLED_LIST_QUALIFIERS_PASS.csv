@@ -1,218 +1,218 @@
 EA_ID,Rtn_Type,Site_Name,Mon_Point,Mon_Date,Parameter,Value,Unit,Qualifier
-AA9999AA,Emissions to surface water,Test Site,Monitor point 3,07/08/2015,Tetrachloroethane,100,ug,% of Total
-AA9999AA,Emissions to surface water,Test Site,Monitor point 4,08/08/2015,Tetrachloroethane,101,ug,0.5x Dilution
-AA9999AA,Emissions to surface water,Test Site,Monitor point 5,09/08/2015,Tetrachloroethane,102,ug,10x Dilution
-AA9999AA,Emissions to surface water,Test Site,Monitor point 6,10/08/2015,Tetrachloroethane,103,ug,1x Dilution
-AA9999AA,Emissions to surface water,Test Site,Monitor point 7,11/08/2015,Tetrachloroethane,104,ug,25x Dilution
-AA9999AA,Emissions to surface water,Test Site,Monitor point 8,12/08/2015,Tetrachloroethane,105,ug,2x Dilution
-AA9999AA,Emissions to surface water,Test Site,Monitor point 9,14/08/2015,Tetrachloroethane,106,ug,3x Dilution
-AA9999AA,Emissions to surface water,Test Site,Monitor point 10,14/08/2015,Tetrachloroethane,107,ug,4-hour start up
-AA9999AA,Emissions to surface water,Test Site,Monitor point 11,14/08/2015,Tetrachloroethane,107,ug,Abnormal
-AA9999AA,Emissions to surface water,Test Site,Monitor point 12,14/08/2015,Tetrachloroethane,107,ug,Acid Positive
-AA9999AA,Emissions to surface water,Test Site,Monitor point 13,14/08/2015,Tetrachloroethane,107,ug,Acidified
-AA9999AA,Emissions to surface water,Test Site,Monitor point 14,14/08/2015,Tetrachloroethane,107,ug,Additional Dilution
-AA9999AA,Emissions to surface water,Test Site,Monitor point 15,14/08/2015,Tetrachloroethane,107,ug,Aerobic
-AA9999AA,Emissions to surface water,Test Site,Monitor point 16,14/08/2015,Tetrachloroethane,107,ug,After Derivatisation
-AA9999AA,Emissions to surface water,Test Site,Monitor point 17,14/08/2015,Tetrachloroethane,107,ug,Air Dried
-AA9999AA,Emissions to surface water,Test Site,Monitor point 18,14/08/2015,Tetrachloroethane,107,ug,Air Dried Solids
-AA9999AA,Emissions to surface water,Test Site,Monitor point 19,14/08/2015,Tetrachloroethane,107,ug,Albuminoid
-AA9999AA,Emissions to surface water,Test Site,Monitor point 20,14/08/2015,Tetrachloroethane,107,ug,All isomers
-AA9999AA,Emissions to surface water,Test Site,Monitor point 21,14/08/2015,Tetrachloroethane,107,ug,Anaerobic
-AA9999AA,Emissions to surface water,Test Site,Monitor point 22,14/08/2015,Tetrachloroethane,107,ug,As ITEQ
-AA9999AA,Emissions to surface water,Test Site,Monitor point 23,14/08/2015,Tetrachloroethane,107,ug,As WHO TEQ
-AA9999AA,Emissions to surface water,Test Site,Monitor point 24,14/08/2015,Tetrachloroethane,107,ug,At rest
-AA9999AA,Emissions to surface water,Test Site,Monitor point 25,14/08/2015,Tetrachloroethane,107,ug,Background Corrected
-AA9999AA,Emissions to surface water,Test Site,Monitor point 26,14/08/2015,Tetrachloroethane,107,ug,Beta Oestradiol Equivalent
-AA9999AA,Emissions to surface water,Test Site,Monitor point 27,14/08/2015,Tetrachloroethane,107,ug,Bioavailable
-AA9999AA,Emissions to surface water,Test Site,Monitor point 28,14/08/2015,Tetrachloroethane,107,ug,Calculated
-AA9999AA,Emissions to surface water,Test Site,Monitor point 29,14/08/2015,Tetrachloroethane,107,ug,Coded
-AA9999AA,Emissions to surface water,Test Site,Monitor point 30,14/08/2015,Tetrachloroethane,107,ug,Combined
-AA9999AA,Emissions to surface water,Test Site,Monitor point 31,14/08/2015,Tetrachloroethane,107,ug,Combined Fraction
-AA9999AA,Emissions to surface water,Test Site,Monitor point 32,14/08/2015,Tetrachloroethane,107,ug,combined limit
-AA9999AA,Emissions to surface water,Test Site,Monitor point 33,14/08/2015,Tetrachloroethane,107,ug,Comparison
-AA9999AA,Emissions to surface water,Test Site,Monitor point 34,14/08/2015,Tetrachloroethane,107,ug,Complex
-AA9999AA,Emissions to surface water,Test Site,Monitor point 35,14/08/2015,Tetrachloroethane,107,ug,Confirmed
-AA9999AA,Emissions to surface water,Test Site,Monitor point 36,14/08/2015,Tetrachloroethane,107,ug,Corrected
-AA9999AA,Emissions to surface water,Test Site,Monitor point 37,14/08/2015,Tetrachloroethane,107,ug,Count
-AA9999AA,Emissions to surface water,Test Site,Monitor point 38,14/08/2015,Tetrachloroethane,107,ug,Critical Threshold (CT)
-AA9999AA,Emissions to surface water,Test Site,Monitor point 39,14/08/2015,Tetrachloroethane,107,ug,Detected
-AA9999AA,Emissions to surface water,Test Site,Monitor point 40,14/08/2015,Tetrachloroethane,107,ug,Dielectric Strength
-AA9999AA,Emissions to surface water,Test Site,Monitor point 41,14/08/2015,Tetrachloroethane,107,ug,Digested
-AA9999AA,Emissions to surface water,Test Site,Monitor point 42,14/08/2015,Tetrachloroethane,107,ug,Disposal
-AA9999AA,Emissions to surface water,Test Site,Monitor point 43,14/08/2015,Tetrachloroethane,107,ug,Dissolved
-AA9999AA,Emissions to surface water,Test Site,Monitor point 44,14/08/2015,Tetrachloroethane,107,ug,Dry Weight
-AA9999AA,Emissions to surface water,Test Site,Monitor point 45,14/08/2015,Tetrachloroethane,107,ug,Drying
-AA9999AA,Emissions to surface water,Test Site,Monitor point 46,14/08/2015,Tetrachloroethane,107,ug,Duration
-AA9999AA,Emissions to surface water,Test Site,Monitor point 47,14/08/2015,Tetrachloroethane,107,ug,Dynamic Load
-AA9999AA,Emissions to surface water,Test Site,Monitor point 48,14/08/2015,Tetrachloroethane,107,ug,Easily Liberable
-AA9999AA,Emissions to surface water,Test Site,Monitor point 49,14/08/2015,Tetrachloroethane,107,ug,Emulsified
-AA9999AA,Emissions to surface water,Test Site,Monitor point 50,14/08/2015,Tetrachloroethane,107,ug,Estimated
-AA9999AA,Emissions to surface water,Test Site,Monitor point 51,14/08/2015,Tetrachloroethane,107,ug,Extract
-AA9999AA,Emissions to surface water,Test Site,Monitor point 52,14/08/2015,Tetrachloroethane,107,ug,Extractable
-AA9999AA,Emissions to surface water,Test Site,Monitor point 53,14/08/2015,Tetrachloroethane,107,ug,Extreme weather
-AA9999AA,Emissions to surface water,Test Site,Monitor point 54,14/08/2015,Tetrachloroethane,107,ug,Filtered
-AA9999AA,Emissions to surface water,Test Site,Monitor point 55,14/08/2015,Tetrachloroethane,107,ug,Filtration Simple
-AA9999AA,Emissions to surface water,Test Site,Monitor point 56,14/08/2015,Tetrachloroethane,107,ug,Fraction
-AA9999AA,Emissions to surface water,Test Site,Monitor point 57,14/08/2015,Tetrachloroethane,107,ug,Fraction Organic
-AA9999AA,Emissions to surface water,Test Site,Monitor point 58,14/08/2015,Tetrachloroethane,107,ug,Free
-AA9999AA,Emissions to surface water,Test Site,Monitor point 59,14/08/2015,Tetrachloroethane,107,ug,Free and Loosely Complexed
-AA9999AA,Emissions to surface water,Test Site,Monitor point 60,14/08/2015,Tetrachloroethane,107,ug,From Minimum
-AA9999AA,Emissions to surface water,Test Site,Monitor point 61,14/08/2015,Tetrachloroethane,107,ug,From Qualifying Renewable Fuel Sources
-AA9999AA,Emissions to surface water,Test Site,Monitor point 62,14/08/2015,Tetrachloroethane,107,ug,Gas
-AA9999AA,Emissions to surface water,Test Site,Monitor point 63,14/08/2015,Tetrachloroethane,107,ug,Gas fired
-AA9999AA,Emissions to surface water,Test Site,Monitor point 64,14/08/2015,Tetrachloroethane,107,ug,Gas oil / low sulphur fuel
-AA9999AA,Emissions to surface water,Test Site,Monitor point 65,14/08/2015,Tetrachloroethane,107,ug,Gauged
-AA9999AA,Emissions to surface water,Test Site,Monitor point 66,14/08/2015,Tetrachloroethane,107,ug,High COP
-AA9999AA,Emissions to surface water,Test Site,Monitor point 67,14/08/2015,Tetrachloroethane,107,ug,High Load
-AA9999AA,Emissions to surface water,Test Site,Monitor point 68,14/08/2015,Tetrachloroethane,107,ug,Ignition
-AA9999AA,Emissions to surface water,Test Site,Monitor point 69,14/08/2015,Tetrachloroethane,107,ug,In non-aqueous liquid
-AA9999AA,Emissions to surface water,Test Site,Monitor point 70,14/08/2015,Tetrachloroethane,107,ug,In leachate
-AA9999AA,Emissions to surface water,Test Site,Monitor point 71,14/08/2015,Tetrachloroethane,107,ug,In pore water
-AA9999AA,Emissions to surface water,Test Site,Monitor point 72,14/08/2015,Tetrachloroethane,107,ug,In situ
-AA9999AA,Emissions to surface water,Test Site,Monitor point 73,14/08/2015,Tetrachloroethane,107,ug,Insoluble
-AA9999AA,Emissions to surface water,Test Site,Monitor point 74,14/08/2015,Tetrachloroethane,107,ug,Instrumental
-AA9999AA,Emissions to surface water,Test Site,Monitor point 75,14/08/2015,Tetrachloroethane,107,ug,Integrator
-AA9999AA,Emissions to surface water,Test Site,Monitor point 76,14/08/2015,Tetrachloroethane,107,ug,ITEQ
-AA9999AA,Emissions to surface water,Test Site,Monitor point 77,14/08/2015,Tetrachloroethane,107,ug,Largest
-AA9999AA,Emissions to surface water,Test Site,Monitor point 78,14/08/2015,Tetrachloroethane,107,ug,Leach
-AA9999AA,Emissions to surface water,Test Site,Monitor point 79,14/08/2015,Tetrachloroethane,107,ug,Leachable
-AA9999AA,Emissions to surface water,Test Site,Monitor point 80,14/08/2015,Tetrachloroethane,107,ug,Leachate
-AA9999AA,Emissions to surface water,Test Site,Monitor point 81,14/08/2015,Tetrachloroethane,107,ug,Load
-AA9999AA,Emissions to surface water,Test Site,Monitor point 82,14/08/2015,Tetrachloroethane,107,ug,Low COP
-AA9999AA,Emissions to surface water,Test Site,Monitor point 83,14/08/2015,Tetrachloroethane,107,ug,Low Level
-AA9999AA,Emissions to surface water,Test Site,Monitor point 84,14/08/2015,Tetrachloroethane,107,ug,Low Load
-AA9999AA,Emissions to surface water,Test Site,Monitor point 85,14/08/2015,Tetrachloroethane,107,ug,Lower 95% Confidence Limit
-AA9999AA,Emissions to surface water,Test Site,Monitor point 86,14/08/2015,Tetrachloroethane,107,ug,Main Colour
-AA9999AA,Emissions to surface water,Test Site,Monitor point 87,14/08/2015,Tetrachloroethane,107,ug,Maximum
-AA9999AA,Emissions to surface water,Test Site,Monitor point 88,14/08/2015,Tetrachloroethane,107,ug,Mean
-AA9999AA,Emissions to surface water,Test Site,Monitor point 89,14/08/2015,Tetrachloroethane,107,ug,Measured
-AA9999AA,Emissions to surface water,Test Site,Monitor point 90,14/08/2015,Tetrachloroethane,107,ug,Median
-AA9999AA,Emissions to surface water,Test Site,Monitor point 91,14/08/2015,Tetrachloroethane,107,ug,MEPP
-AA9999AA,Emissions to surface water,Test Site,Monitor point 92,14/08/2015,Tetrachloroethane,107,ug,MEPP Down or Cross gradient
-AA9999AA,Emissions to surface water,Test Site,Monitor point 93,14/08/2015,Tetrachloroethane,107,ug,MEPP Up gradient
-AA9999AA,Emissions to surface water,Test Site,Monitor point 94,14/08/2015,Tetrachloroethane,107,ug,Mixed Isomers
-AA9999AA,Emissions to surface water,Test Site,Monitor point 95,14/08/2015,Tetrachloroethane,107,ug,Natural gas
-AA9999AA,Emissions to surface water,Test Site,Monitor point 96,14/08/2015,Tetrachloroethane,107,ug,Natural gas and standby fuel when the boiler is run for >72 hours
-AA9999AA,Emissions to surface water,Test Site,Monitor point 97,14/08/2015,Tetrachloroethane,107,ug,Naturalised
-AA9999AA,Emissions to surface water,Test Site,Monitor point 98,14/08/2015,Tetrachloroethane,107,ug,Nature
-AA9999AA,Emissions to surface water,Test Site,Monitor point 99,14/08/2015,Tetrachloroethane,107,ug,Nature Code
-AA9999AA,Emissions to surface water,Test Site,Monitor point 100,14/08/2015,Tetrachloroethane,107,ug,Negative
-AA9999AA,Emissions to surface water,Test Site,Monitor point 101,14/08/2015,Tetrachloroethane,107,ug,Nett
-AA9999AA,Emissions to surface water,Test Site,Monitor point 102,14/08/2015,Tetrachloroethane,107,ug,Non-Fossil Fuel
-AA9999AA,Emissions to surface water,Test Site,Monitor point 103,14/08/2015,Tetrachloroethane,107,ug,Non-volatile
-AA9999AA,Emissions to surface water,Test Site,Monitor point 104,14/08/2015,Tetrachloroethane,107,ug,Normal
-AA9999AA,Emissions to surface water,Test Site,Monitor point 105,14/08/2015,Tetrachloroethane,107,ug,Normal operation
-AA9999AA,Emissions to surface water,Test Site,Monitor point 106,14/08/2015,Tetrachloroethane,107,ug,On site
-AA9999AA,Emissions to surface water,Test Site,Monitor point 107,14/08/2015,Tetrachloroethane,107,ug,One stage
-AA9999AA,Emissions to surface water,Test Site,Monitor point 108,14/08/2015,Tetrachloroethane,107,ug,Oxidised
-AA9999AA,Emissions to surface water,Test Site,Monitor point 109,14/08/2015,Tetrachloroethane,107,ug,Particulate
-AA9999AA,Emissions to surface water,Test Site,Monitor point 110,14/08/2015,Tetrachloroethane,107,ug,Passive Sampling
-AA9999AA,Emissions to surface water,Test Site,Monitor point 111,14/08/2015,Tetrachloroethane,107,ug,Peak Reading
-AA9999AA,Emissions to surface water,Test Site,Monitor point 112,14/08/2015,Tetrachloroethane,107,ug,Per tonne of dissolved solids sludge
-AA9999AA,Emissions to surface water,Test Site,Monitor point 113,14/08/2015,Tetrachloroethane,107,ug,Per tonne of product
-AA9999AA,Emissions to surface water,Test Site,Monitor point 114,14/08/2015,Tetrachloroethane,107,ug,Permanent
-AA9999AA,Emissions to surface water,Test Site,Monitor point 115,14/08/2015,Tetrachloroethane,107,ug,Physically Separable
-AA9999AA,Emissions to surface water,Test Site,Monitor point 116,14/08/2015,Tetrachloroethane,107,ug,Positive
-AA9999AA,Emissions to surface water,Test Site,Monitor point 117,14/08/2015,Tetrachloroethane,107,ug,Predicted
-AA9999AA,Emissions to surface water,Test Site,Monitor point 118,14/08/2015,Tetrachloroethane,107,ug,Presumptive
-AA9999AA,Emissions to surface water,Test Site,Monitor point 119,14/08/2015,Tetrachloroethane,107,ug,Pumping
-AA9999AA,Emissions to surface water,Test Site,Monitor point 120,14/08/2015,Tetrachloroethane,107,ug,Purged
-AA9999AA,Emissions to surface water,Test Site,Monitor point 121,14/08/2015,Tetrachloroethane,107,ug,Qualitative
-AA9999AA,Emissions to surface water,Test Site,Monitor point 122,14/08/2015,Tetrachloroethane,107,ug,Quantitative
-AA9999AA,Emissions to surface water,Test Site,Monitor point 123,14/08/2015,Tetrachloroethane,107,ug,Quantity
-AA9999AA,Emissions to surface water,Test Site,Monitor point 124,14/08/2015,Tetrachloroethane,107,ug,Rate of Change
-AA9999AA,Emissions to surface water,Test Site,Monitor point 125,14/08/2015,Tetrachloroethane,107,ug,Ratio
-AA9999AA,Emissions to surface water,Test Site,Monitor point 126,14/08/2015,Tetrachloroethane,107,ug,Recovery
-AA9999AA,Emissions to surface water,Test Site,Monitor point 127,14/08/2015,Tetrachloroethane,107,ug,Reducible
-AA9999AA,Emissions to surface water,Test Site,Monitor point 128,14/08/2015,Tetrachloroethane,107,ug,Relative to Atmospheric Pressure
-AA9999AA,Emissions to surface water,Test Site,Monitor point 129,14/08/2015,Tetrachloroethane,107,ug,Relative to Chart Datum
-AA9999AA,Emissions to surface water,Test Site,Monitor point 130,14/08/2015,Tetrachloroethane,107,ug,Relative to Local Datum
-AA9999AA,Emissions to surface water,Test Site,Monitor point 131,14/08/2015,Tetrachloroethane,107,ug,Residue
-AA9999AA,Emissions to surface water,Test Site,Monitor point 132,14/08/2015,Tetrachloroethane,107,ug,Respirable Dust
-AA9999AA,Emissions to surface water,Test Site,Monitor point 133,14/08/2015,Tetrachloroethane,107,ug,Rolling Total
-AA9999AA,Emissions to surface water,Test Site,Monitor point 134,14/08/2015,Tetrachloroethane,107,ug,Screen
-AA9999AA,Emissions to surface water,Test Site,Monitor point 135,14/08/2015,Tetrachloroethane,107,ug,Semi-quantitative
-AA9999AA,Emissions to surface water,Test Site,Monitor point 136,14/08/2015,Tetrachloroethane,107,ug,Semi-volatile
-AA9999AA,Emissions to surface water,Test Site,Monitor point 137,14/08/2015,Tetrachloroethane,107,ug,Separable
-AA9999AA,Emissions to surface water,Test Site,Monitor point 138,14/08/2015,Tetrachloroethane,107,ug,Settleable
-AA9999AA,Emissions to surface water,Test Site,Monitor point 139,14/08/2015,Tetrachloroethane,107,ug,Settled
-AA9999AA,Emissions to surface water,Test Site,Monitor point 140,14/08/2015,Tetrachloroethane,107,ug,Shaken
-AA9999AA,Emissions to surface water,Test Site,Monitor point 141,14/08/2015,Tetrachloroethane,107,ug,Sieved
-AA9999AA,Emissions to surface water,Test Site,Monitor point 142,14/08/2015,Tetrachloroethane,107,ug,Smallest
-AA9999AA,Emissions to surface water,Test Site,Monitor point 143,14/08/2015,Tetrachloroethane,107,ug,Solid
-AA9999AA,Emissions to surface water,Test Site,Monitor point 144,14/08/2015,Tetrachloroethane,107,ug,Solid sample
-AA9999AA,Emissions to surface water,Test Site,Monitor point 145,14/08/2015,Tetrachloroethane,107,ug,Soluble
-AA9999AA,Emissions to surface water,Test Site,Monitor point 146,14/08/2015,Tetrachloroethane,107,ug,Soluble 2:1
-AA9999AA,Emissions to surface water,Test Site,Monitor point 147,14/08/2015,Tetrachloroethane,107,ug,Standby fuel
-AA9999AA,Emissions to surface water,Test Site,Monitor point 148,14/08/2015,Tetrachloroethane,107,ug,Standby fuel only
-AA9999AA,Emissions to surface water,Test Site,Monitor point 149,14/08/2015,Tetrachloroethane,107,ug,Stirred
-AA9999AA,Emissions to surface water,Test Site,Monitor point 150,14/08/2015,Tetrachloroethane,107,ug,Strandline
-AA9999AA,Emissions to surface water,Test Site,Monitor point 151,14/08/2015,Tetrachloroethane,107,ug,Strandline Scale 0-3
-AA9999AA,Emissions to surface water,Test Site,Monitor point 152,14/08/2015,Tetrachloroethane,107,ug,Strandline to Waters Edge
-AA9999AA,Emissions to surface water,Test Site,Monitor point 153,14/08/2015,Tetrachloroethane,107,ug,Strandline to Waters Edge Scale 0-3
-AA9999AA,Emissions to surface water,Test Site,Monitor point 154,14/08/2015,Tetrachloroethane,107,ug,Sum Identified
-AA9999AA,Emissions to surface water,Test Site,Monitor point 155,14/08/2015,Tetrachloroethane,107,ug,Sum of 25 Congeners
-AA9999AA,Emissions to surface water,Test Site,Monitor point 156,14/08/2015,Tetrachloroethane,107,ug,Sum of All Isomers
-AA9999AA,Emissions to surface water,Test Site,Monitor point 157,14/08/2015,Tetrachloroethane,107,ug,Sum of Components
-AA9999AA,Emissions to surface water,Test Site,Monitor point 158,14/08/2015,Tetrachloroethane,107,ug,Sum of Derivatives
-AA9999AA,Emissions to surface water,Test Site,Monitor point 159,14/08/2015,Tetrachloroethane,107,ug,Sum of Isomers
-AA9999AA,Emissions to surface water,Test Site,Monitor point 160,14/08/2015,Tetrachloroethane,107,ug,Surface
-AA9999AA,Emissions to surface water,Test Site,Monitor point 161,14/08/2015,Tetrachloroethane,107,ug,Suspended
-AA9999AA,Emissions to surface water,Test Site,Monitor point 162,14/08/2015,Tetrachloroethane,107,ug,Temporary
-AA9999AA,Emissions to surface water,Test Site,Monitor point 163,14/08/2015,Tetrachloroethane,107,ug,Texture
-AA9999AA,Emissions to surface water,Test Site,Monitor point 164,14/08/2015,Tetrachloroethane,107,ug,Threshold Number
-AA9999AA,Emissions to surface water,Test Site,Monitor point 165,14/08/2015,Tetrachloroethane,107,ug,Titration
-AA9999AA,Emissions to surface water,Test Site,Monitor point 166,14/08/2015,Tetrachloroethane,107,ug,To Maximum
-AA9999AA,Emissions to surface water,Test Site,Monitor point 167,14/08/2015,Tetrachloroethane,107,ug,Total
-AA9999AA,Emissions to surface water,Test Site,Monitor point 168,14/08/2015,Tetrachloroethane,107,ug,Total Available
-AA9999AA,Emissions to surface water,Test Site,Monitor point 169,14/08/2015,Tetrachloroethane,107,ug,Total Count
-AA9999AA,Emissions to surface water,Test Site,Monitor point 170,14/08/2015,Tetrachloroethane,107,ug,Total Derived
-AA9999AA,Emissions to surface water,Test Site,Monitor point 171,14/08/2015,Tetrachloroethane,107,ug,Total Isomers
-AA9999AA,Emissions to surface water,Test Site,Monitor point 172,14/08/2015,Tetrachloroethane,107,ug,Total Load
-AA9999AA,Emissions to surface water,Test Site,Monitor point 173,14/08/2015,Tetrachloroethane,107,ug,Total Moving 7-Day Emissions
-AA9999AA,Emissions to surface water,Test Site,Monitor point 174,14/08/2015,Tetrachloroethane,107,ug,Total Oxidisable
-AA9999AA,Emissions to surface water,Test Site,Monitor point 175,14/08/2015,Tetrachloroethane,107,ug,Total Residual
-AA9999AA,Emissions to surface water,Test Site,Monitor point 176,14/08/2015,Tetrachloroethane,107,ug,Total Surface
-AA9999AA,Emissions to surface water,Test Site,Monitor point 177,14/08/2015,Tetrachloroethane,107,ug,Total Toxicity
-AA9999AA,Emissions to surface water,Test Site,Monitor point 178,14/08/2015,Tetrachloroethane,107,ug,Total Volatile
-AA9999AA,Emissions to surface water,Test Site,Monitor point 179,14/08/2015,Tetrachloroethane,107,ug,Tracer
-AA9999AA,Emissions to surface water,Test Site,Monitor point 180,14/08/2015,Tetrachloroethane,107,ug,Two Stage
-AA9999AA,Emissions to surface water,Test Site,Monitor point 181,14/08/2015,Tetrachloroethane,107,ug,Unacidified
-AA9999AA,Emissions to surface water,Test Site,Monitor point 182,14/08/2015,Tetrachloroethane,107,ug,Undistilled
-AA9999AA,Emissions to surface water,Test Site,Monitor point 183,14/08/2015,Tetrachloroethane,107,ug,Unfiltered
-AA9999AA,Emissions to surface water,Test Site,Monitor point 184,14/08/2015,Tetrachloroethane,107,ug,Unsettleable
-AA9999AA,Emissions to surface water,Test Site,Monitor point 185,14/08/2015,Tetrachloroethane,107,ug,Unsieved
-AA9999AA,Emissions to surface water,Test Site,Monitor point 186,14/08/2015,Tetrachloroethane,107,ug,Upper 95% Confidence Limit
-AA9999AA,Emissions to surface water,Test Site,Monitor point 187,14/08/2015,Tetrachloroethane,107,ug,Viral Tracer
-AA9999AA,Emissions to surface water,Test Site,Monitor point 188,14/08/2015,Tetrachloroethane,107,ug,Visual
-AA9999AA,Emissions to surface water,Test Site,Monitor point 189,14/08/2015,Tetrachloroethane,107,ug,Volatile
-AA9999AA,Emissions to surface water,Test Site,Monitor point 190,14/08/2015,Tetrachloroethane,107,ug,Volatile Scan
-AA9999AA,Emissions to surface water,Test Site,Monitor point 191,14/08/2015,Tetrachloroethane,107,ug,Waters Edge
-AA9999AA,Emissions to surface water,Test Site,Monitor point 192,14/08/2015,Tetrachloroethane,107,ug,Waters Edge Scale 0-3
-AA9999AA,Emissions to surface water,Test Site,Monitor point 193,14/08/2015,Tetrachloroethane,107,ug,Wet Weight
-AA9999AA,Emissions to surface water,Test Site,Monitor point 194,14/08/2015,Tetrachloroethane,107,ug,Rising
-AA9999AA,Emissions to surface water,Test Site,Monitor point 195,14/08/2015,Tetrachloroethane,107,ug,Falling
-AA9999AA,Emissions to surface water,Test Site,Monitor point 196,14/08/2015,Tetrachloroethane,107,ug,at 35°c
-AA9999AA,Emissions to surface water,Test Site,Monitor point 197,14/08/2015,Tetrachloroethane,107,ug,at 105°c
-AA9999AA,Emissions to surface water,Test Site,Monitor point 198,14/08/2015,Tetrachloroethane,107,ug,at 20°c
-AA9999AA,Emissions to surface water,Test Site,Monitor point 199,14/08/2015,Tetrachloroethane,107,ug,at 25°c
-AA9999AA,Emissions to surface water,Test Site,Monitor point 200,14/08/2015,Tetrachloroethane,107,ug,at 22°c
-AA9999AA,Emissions to surface water,Test Site,Monitor point 201,14/08/2015,Tetrachloroethane,107,ug,at 37°c
-AA9999AA,Emissions to surface water,Test Site,Monitor point 202,14/08/2015,Tetrachloroethane,107,ug,1 day
-AA9999AA,Emissions to surface water,Test Site,Monitor point 203,14/08/2015,Tetrachloroethane,107,ug,3 day
-AA9999AA,Emissions to surface water,Test Site,Monitor point 204,14/08/2015,Tetrachloroethane,107,ug,in 100ml
-AA9999AA,Emissions to surface water,Test Site,Monitor point 205,14/08/2015,Tetrachloroethane,107,ug,in 500ml
-AA9999AA,Emissions to surface water,Test Site,Monitor point 206,14/08/2015,Tetrachloroethane,107,ug,dissolved or emulsified
-AA9999AA,Emissions to surface water,Test Site,Monitor point 207,14/08/2015,Tetrachloroethane,107,ug,PAH
-AA9999AA,Emissions to surface water,Test Site,Monitor point 208,14/08/2015,Tetrachloroethane,107,ug,ESG SVOC
-AA9999AA,Emissions to surface water,Test Site,Monitor point 209,14/08/2015,Tetrachloroethane,107,ug,"Total, unfiltered"
-AA9999AA,Emissions to surface water,Test Site,Monitor point 210,14/08/2015,Tetrachloroethane,107,ug,"Dissolved, filtered"
-AA9999AA,Emissions to surface water,Test Site,Monitor point 211,14/08/2015,Tetrachloroethane,107,ug,"Total available, filtered"
-AA9999AA,Emissions to surface water,Test Site,Monitor point 212,14/08/2015,Tetrachloroethane,107,ug,"Dissolved, total"
-AA9999AA,Emissions to surface water,Test Site,Monitor point 213,14/08/2015,Tetrachloroethane,107,ug,After tuning
-AA9999AA,Emissions to surface water,Test Site,Monitor point 214,14/08/2015,Tetrachloroethane,107,ug,Before tuning
-AA9999AA,Emissions to surface water,Test Site,Monitor point 215,14/08/2015,Tetrachloroethane,107,ug,Flow
-AA9999AA,Emissions to surface water,Test Site,Monitor point 216,14/08/2015,Tetrachloroethane,107,ug,Flux
-AA9999AA,Emissions to surface water,Test Site,Monitor point 217,14/08/2015,Tetrachloroethane,107,ug,Minimum
-AA9999AA,Emissions to surface water,Test Site,Monitor point 218,14/08/2015,Tetrachloroethane,107,ug,at 180°c
-AA9999AA,Emissions to surface water,Test Site,Monitor point 219,14/08/2015,Tetrachloroethane,107,ug,Precipitated
+42355,Emissions to surface water,Biffa - Marchington Landfill Site,Monitor point 3,07/08/2015,Tetrachloroethane,100,ug,% of Total
+42355,Emissions to surface water,Biffa - Marchington Landfill Site,Monitor point 4,08/08/2015,Tetrachloroethane,101,ug,0.5x Dilution
+42355,Emissions to surface water,Biffa - Marchington Landfill Site,Monitor point 5,09/08/2015,Tetrachloroethane,102,ug,10x Dilution
+42355,Emissions to surface water,Biffa - Marchington Landfill Site,Monitor point 6,10/08/2015,Tetrachloroethane,103,ug,1x Dilution
+42355,Emissions to surface water,Biffa - Marchington Landfill Site,Monitor point 7,11/08/2015,Tetrachloroethane,104,ug,25x Dilution
+42355,Emissions to surface water,Biffa - Marchington Landfill Site,Monitor point 8,12/08/2015,Tetrachloroethane,105,ug,2x Dilution
+42355,Emissions to surface water,Biffa - Marchington Landfill Site,Monitor point 9,14/08/2015,Tetrachloroethane,106,ug,3x Dilution
+42355,Emissions to surface water,Biffa - Marchington Landfill Site,Monitor point 10,14/08/2015,Tetrachloroethane,107,ug,4-hour start up
+42355,Emissions to surface water,Biffa - Marchington Landfill Site,Monitor point 11,14/08/2015,Tetrachloroethane,107,ug,Abnormal
+42355,Emissions to surface water,Biffa - Marchington Landfill Site,Monitor point 12,14/08/2015,Tetrachloroethane,107,ug,Acid Positive
+42355,Emissions to surface water,Biffa - Marchington Landfill Site,Monitor point 13,14/08/2015,Tetrachloroethane,107,ug,Acidified
+42355,Emissions to surface water,Biffa - Marchington Landfill Site,Monitor point 14,14/08/2015,Tetrachloroethane,107,ug,Additional Dilution
+42355,Emissions to surface water,Biffa - Marchington Landfill Site,Monitor point 15,14/08/2015,Tetrachloroethane,107,ug,Aerobic
+42355,Emissions to surface water,Biffa - Marchington Landfill Site,Monitor point 16,14/08/2015,Tetrachloroethane,107,ug,After Derivatisation
+42355,Emissions to surface water,Biffa - Marchington Landfill Site,Monitor point 17,14/08/2015,Tetrachloroethane,107,ug,Air Dried
+42355,Emissions to surface water,Biffa - Marchington Landfill Site,Monitor point 18,14/08/2015,Tetrachloroethane,107,ug,Air Dried Solids
+42355,Emissions to surface water,Biffa - Marchington Landfill Site,Monitor point 19,14/08/2015,Tetrachloroethane,107,ug,Albuminoid
+42355,Emissions to surface water,Biffa - Marchington Landfill Site,Monitor point 20,14/08/2015,Tetrachloroethane,107,ug,All isomers
+42355,Emissions to surface water,Biffa - Marchington Landfill Site,Monitor point 21,14/08/2015,Tetrachloroethane,107,ug,Anaerobic
+42355,Emissions to surface water,Biffa - Marchington Landfill Site,Monitor point 22,14/08/2015,Tetrachloroethane,107,ug,As ITEQ
+42355,Emissions to surface water,Biffa - Marchington Landfill Site,Monitor point 23,14/08/2015,Tetrachloroethane,107,ug,As WHO TEQ
+42355,Emissions to surface water,Biffa - Marchington Landfill Site,Monitor point 24,14/08/2015,Tetrachloroethane,107,ug,At rest
+42355,Emissions to surface water,Biffa - Marchington Landfill Site,Monitor point 25,14/08/2015,Tetrachloroethane,107,ug,Background Corrected
+42355,Emissions to surface water,Biffa - Marchington Landfill Site,Monitor point 26,14/08/2015,Tetrachloroethane,107,ug,Beta Oestradiol Equivalent
+42355,Emissions to surface water,Biffa - Marchington Landfill Site,Monitor point 27,14/08/2015,Tetrachloroethane,107,ug,Bioavailable
+42355,Emissions to surface water,Biffa - Marchington Landfill Site,Monitor point 28,14/08/2015,Tetrachloroethane,107,ug,Calculated
+42355,Emissions to surface water,Biffa - Marchington Landfill Site,Monitor point 29,14/08/2015,Tetrachloroethane,107,ug,Coded
+42355,Emissions to surface water,Biffa - Marchington Landfill Site,Monitor point 30,14/08/2015,Tetrachloroethane,107,ug,Combined
+42355,Emissions to surface water,Biffa - Marchington Landfill Site,Monitor point 31,14/08/2015,Tetrachloroethane,107,ug,Combined Fraction
+42355,Emissions to surface water,Biffa - Marchington Landfill Site,Monitor point 32,14/08/2015,Tetrachloroethane,107,ug,combined limit
+42355,Emissions to surface water,Biffa - Marchington Landfill Site,Monitor point 33,14/08/2015,Tetrachloroethane,107,ug,Comparison
+42355,Emissions to surface water,Biffa - Marchington Landfill Site,Monitor point 34,14/08/2015,Tetrachloroethane,107,ug,Complex
+42355,Emissions to surface water,Biffa - Marchington Landfill Site,Monitor point 35,14/08/2015,Tetrachloroethane,107,ug,Confirmed
+42355,Emissions to surface water,Biffa - Marchington Landfill Site,Monitor point 36,14/08/2015,Tetrachloroethane,107,ug,Corrected
+42355,Emissions to surface water,Biffa - Marchington Landfill Site,Monitor point 37,14/08/2015,Tetrachloroethane,107,ug,Count
+42355,Emissions to surface water,Biffa - Marchington Landfill Site,Monitor point 38,14/08/2015,Tetrachloroethane,107,ug,Critical Threshold (CT)
+42355,Emissions to surface water,Biffa - Marchington Landfill Site,Monitor point 39,14/08/2015,Tetrachloroethane,107,ug,Detected
+42355,Emissions to surface water,Biffa - Marchington Landfill Site,Monitor point 40,14/08/2015,Tetrachloroethane,107,ug,Dielectric Strength
+42355,Emissions to surface water,Biffa - Marchington Landfill Site,Monitor point 41,14/08/2015,Tetrachloroethane,107,ug,Digested
+42355,Emissions to surface water,Biffa - Marchington Landfill Site,Monitor point 42,14/08/2015,Tetrachloroethane,107,ug,Disposal
+42355,Emissions to surface water,Biffa - Marchington Landfill Site,Monitor point 43,14/08/2015,Tetrachloroethane,107,ug,Dissolved
+42355,Emissions to surface water,Biffa - Marchington Landfill Site,Monitor point 44,14/08/2015,Tetrachloroethane,107,ug,Dry Weight
+42355,Emissions to surface water,Biffa - Marchington Landfill Site,Monitor point 45,14/08/2015,Tetrachloroethane,107,ug,Drying
+42355,Emissions to surface water,Biffa - Marchington Landfill Site,Monitor point 46,14/08/2015,Tetrachloroethane,107,ug,Duration
+42355,Emissions to surface water,Biffa - Marchington Landfill Site,Monitor point 47,14/08/2015,Tetrachloroethane,107,ug,Dynamic Load
+42355,Emissions to surface water,Biffa - Marchington Landfill Site,Monitor point 48,14/08/2015,Tetrachloroethane,107,ug,Easily Liberable
+42355,Emissions to surface water,Biffa - Marchington Landfill Site,Monitor point 49,14/08/2015,Tetrachloroethane,107,ug,Emulsified
+42355,Emissions to surface water,Biffa - Marchington Landfill Site,Monitor point 50,14/08/2015,Tetrachloroethane,107,ug,Estimated
+42355,Emissions to surface water,Biffa - Marchington Landfill Site,Monitor point 51,14/08/2015,Tetrachloroethane,107,ug,Extract
+42355,Emissions to surface water,Biffa - Marchington Landfill Site,Monitor point 52,14/08/2015,Tetrachloroethane,107,ug,Extractable
+42355,Emissions to surface water,Biffa - Marchington Landfill Site,Monitor point 53,14/08/2015,Tetrachloroethane,107,ug,Extreme weather
+42355,Emissions to surface water,Biffa - Marchington Landfill Site,Monitor point 54,14/08/2015,Tetrachloroethane,107,ug,Filtered
+42355,Emissions to surface water,Biffa - Marchington Landfill Site,Monitor point 55,14/08/2015,Tetrachloroethane,107,ug,Filtration Simple
+42355,Emissions to surface water,Biffa - Marchington Landfill Site,Monitor point 56,14/08/2015,Tetrachloroethane,107,ug,Fraction
+42355,Emissions to surface water,Biffa - Marchington Landfill Site,Monitor point 57,14/08/2015,Tetrachloroethane,107,ug,Fraction Organic
+42355,Emissions to surface water,Biffa - Marchington Landfill Site,Monitor point 58,14/08/2015,Tetrachloroethane,107,ug,Free
+42355,Emissions to surface water,Biffa - Marchington Landfill Site,Monitor point 59,14/08/2015,Tetrachloroethane,107,ug,Free and Loosely Complexed
+42355,Emissions to surface water,Biffa - Marchington Landfill Site,Monitor point 60,14/08/2015,Tetrachloroethane,107,ug,From Minimum
+42355,Emissions to surface water,Biffa - Marchington Landfill Site,Monitor point 61,14/08/2015,Tetrachloroethane,107,ug,From Qualifying Renewable Fuel Sources
+42355,Emissions to surface water,Biffa - Marchington Landfill Site,Monitor point 62,14/08/2015,Tetrachloroethane,107,ug,Gas
+42355,Emissions to surface water,Biffa - Marchington Landfill Site,Monitor point 63,14/08/2015,Tetrachloroethane,107,ug,Gas fired
+42355,Emissions to surface water,Biffa - Marchington Landfill Site,Monitor point 64,14/08/2015,Tetrachloroethane,107,ug,Gas oil / low sulphur fuel
+42355,Emissions to surface water,Biffa - Marchington Landfill Site,Monitor point 65,14/08/2015,Tetrachloroethane,107,ug,Gauged
+42355,Emissions to surface water,Biffa - Marchington Landfill Site,Monitor point 66,14/08/2015,Tetrachloroethane,107,ug,High COP
+42355,Emissions to surface water,Biffa - Marchington Landfill Site,Monitor point 67,14/08/2015,Tetrachloroethane,107,ug,High Load
+42355,Emissions to surface water,Biffa - Marchington Landfill Site,Monitor point 68,14/08/2015,Tetrachloroethane,107,ug,Ignition
+42355,Emissions to surface water,Biffa - Marchington Landfill Site,Monitor point 69,14/08/2015,Tetrachloroethane,107,ug,In non-aqueous liquid
+42355,Emissions to surface water,Biffa - Marchington Landfill Site,Monitor point 70,14/08/2015,Tetrachloroethane,107,ug,In leachate
+42355,Emissions to surface water,Biffa - Marchington Landfill Site,Monitor point 71,14/08/2015,Tetrachloroethane,107,ug,In pore water
+42355,Emissions to surface water,Biffa - Marchington Landfill Site,Monitor point 72,14/08/2015,Tetrachloroethane,107,ug,In situ
+42355,Emissions to surface water,Biffa - Marchington Landfill Site,Monitor point 73,14/08/2015,Tetrachloroethane,107,ug,Insoluble
+42355,Emissions to surface water,Biffa - Marchington Landfill Site,Monitor point 74,14/08/2015,Tetrachloroethane,107,ug,Instrumental
+42355,Emissions to surface water,Biffa - Marchington Landfill Site,Monitor point 75,14/08/2015,Tetrachloroethane,107,ug,Integrator
+42355,Emissions to surface water,Biffa - Marchington Landfill Site,Monitor point 76,14/08/2015,Tetrachloroethane,107,ug,ITEQ
+42355,Emissions to surface water,Biffa - Marchington Landfill Site,Monitor point 77,14/08/2015,Tetrachloroethane,107,ug,Largest
+42355,Emissions to surface water,Biffa - Marchington Landfill Site,Monitor point 78,14/08/2015,Tetrachloroethane,107,ug,Leach
+42355,Emissions to surface water,Biffa - Marchington Landfill Site,Monitor point 79,14/08/2015,Tetrachloroethane,107,ug,Leachable
+42355,Emissions to surface water,Biffa - Marchington Landfill Site,Monitor point 80,14/08/2015,Tetrachloroethane,107,ug,Leachate
+42355,Emissions to surface water,Biffa - Marchington Landfill Site,Monitor point 81,14/08/2015,Tetrachloroethane,107,ug,Load
+42355,Emissions to surface water,Biffa - Marchington Landfill Site,Monitor point 82,14/08/2015,Tetrachloroethane,107,ug,Low COP
+42355,Emissions to surface water,Biffa - Marchington Landfill Site,Monitor point 83,14/08/2015,Tetrachloroethane,107,ug,Low Level
+42355,Emissions to surface water,Biffa - Marchington Landfill Site,Monitor point 84,14/08/2015,Tetrachloroethane,107,ug,Low Load
+42355,Emissions to surface water,Biffa - Marchington Landfill Site,Monitor point 85,14/08/2015,Tetrachloroethane,107,ug,Lower 95% Confidence Limit
+42355,Emissions to surface water,Biffa - Marchington Landfill Site,Monitor point 86,14/08/2015,Tetrachloroethane,107,ug,Main Colour
+42355,Emissions to surface water,Biffa - Marchington Landfill Site,Monitor point 87,14/08/2015,Tetrachloroethane,107,ug,Maximum
+42355,Emissions to surface water,Biffa - Marchington Landfill Site,Monitor point 88,14/08/2015,Tetrachloroethane,107,ug,Mean
+42355,Emissions to surface water,Biffa - Marchington Landfill Site,Monitor point 89,14/08/2015,Tetrachloroethane,107,ug,Measured
+42355,Emissions to surface water,Biffa - Marchington Landfill Site,Monitor point 90,14/08/2015,Tetrachloroethane,107,ug,Median
+42355,Emissions to surface water,Biffa - Marchington Landfill Site,Monitor point 91,14/08/2015,Tetrachloroethane,107,ug,MEPP
+42355,Emissions to surface water,Biffa - Marchington Landfill Site,Monitor point 92,14/08/2015,Tetrachloroethane,107,ug,MEPP Down or Cross gradient
+42355,Emissions to surface water,Biffa - Marchington Landfill Site,Monitor point 93,14/08/2015,Tetrachloroethane,107,ug,MEPP Up gradient
+42355,Emissions to surface water,Biffa - Marchington Landfill Site,Monitor point 94,14/08/2015,Tetrachloroethane,107,ug,Mixed Isomers
+42355,Emissions to surface water,Biffa - Marchington Landfill Site,Monitor point 95,14/08/2015,Tetrachloroethane,107,ug,Natural gas
+42355,Emissions to surface water,Biffa - Marchington Landfill Site,Monitor point 96,14/08/2015,Tetrachloroethane,107,ug,Natural gas and standby fuel when the boiler is run for >72 hours
+42355,Emissions to surface water,Biffa - Marchington Landfill Site,Monitor point 97,14/08/2015,Tetrachloroethane,107,ug,Naturalised
+42355,Emissions to surface water,Biffa - Marchington Landfill Site,Monitor point 98,14/08/2015,Tetrachloroethane,107,ug,Nature
+42355,Emissions to surface water,Biffa - Marchington Landfill Site,Monitor point 99,14/08/2015,Tetrachloroethane,107,ug,Nature Code
+42355,Emissions to surface water,Biffa - Marchington Landfill Site,Monitor point 100,14/08/2015,Tetrachloroethane,107,ug,Negative
+42355,Emissions to surface water,Biffa - Marchington Landfill Site,Monitor point 101,14/08/2015,Tetrachloroethane,107,ug,Nett
+42355,Emissions to surface water,Biffa - Marchington Landfill Site,Monitor point 102,14/08/2015,Tetrachloroethane,107,ug,Non-Fossil Fuel
+42355,Emissions to surface water,Biffa - Marchington Landfill Site,Monitor point 103,14/08/2015,Tetrachloroethane,107,ug,Non-volatile
+42355,Emissions to surface water,Biffa - Marchington Landfill Site,Monitor point 104,14/08/2015,Tetrachloroethane,107,ug,Normal
+42355,Emissions to surface water,Biffa - Marchington Landfill Site,Monitor point 105,14/08/2015,Tetrachloroethane,107,ug,Normal operation
+42355,Emissions to surface water,Biffa - Marchington Landfill Site,Monitor point 106,14/08/2015,Tetrachloroethane,107,ug,On site
+42355,Emissions to surface water,Biffa - Marchington Landfill Site,Monitor point 107,14/08/2015,Tetrachloroethane,107,ug,One stage
+42355,Emissions to surface water,Biffa - Marchington Landfill Site,Monitor point 108,14/08/2015,Tetrachloroethane,107,ug,Oxidised
+42355,Emissions to surface water,Biffa - Marchington Landfill Site,Monitor point 109,14/08/2015,Tetrachloroethane,107,ug,Particulate
+42355,Emissions to surface water,Biffa - Marchington Landfill Site,Monitor point 110,14/08/2015,Tetrachloroethane,107,ug,Passive Sampling
+42355,Emissions to surface water,Biffa - Marchington Landfill Site,Monitor point 111,14/08/2015,Tetrachloroethane,107,ug,Peak Reading
+42355,Emissions to surface water,Biffa - Marchington Landfill Site,Monitor point 112,14/08/2015,Tetrachloroethane,107,ug,Per tonne of dissolved solids sludge
+42355,Emissions to surface water,Biffa - Marchington Landfill Site,Monitor point 113,14/08/2015,Tetrachloroethane,107,ug,Per tonne of product
+42355,Emissions to surface water,Biffa - Marchington Landfill Site,Monitor point 114,14/08/2015,Tetrachloroethane,107,ug,Permanent
+42355,Emissions to surface water,Biffa - Marchington Landfill Site,Monitor point 115,14/08/2015,Tetrachloroethane,107,ug,Physically Separable
+42355,Emissions to surface water,Biffa - Marchington Landfill Site,Monitor point 116,14/08/2015,Tetrachloroethane,107,ug,Positive
+42355,Emissions to surface water,Biffa - Marchington Landfill Site,Monitor point 117,14/08/2015,Tetrachloroethane,107,ug,Predicted
+42355,Emissions to surface water,Biffa - Marchington Landfill Site,Monitor point 118,14/08/2015,Tetrachloroethane,107,ug,Presumptive
+42355,Emissions to surface water,Biffa - Marchington Landfill Site,Monitor point 119,14/08/2015,Tetrachloroethane,107,ug,Pumping
+42355,Emissions to surface water,Biffa - Marchington Landfill Site,Monitor point 120,14/08/2015,Tetrachloroethane,107,ug,Purged
+42355,Emissions to surface water,Biffa - Marchington Landfill Site,Monitor point 121,14/08/2015,Tetrachloroethane,107,ug,Qualitative
+42355,Emissions to surface water,Biffa - Marchington Landfill Site,Monitor point 122,14/08/2015,Tetrachloroethane,107,ug,Quantitative
+42355,Emissions to surface water,Biffa - Marchington Landfill Site,Monitor point 123,14/08/2015,Tetrachloroethane,107,ug,Quantity
+42355,Emissions to surface water,Biffa - Marchington Landfill Site,Monitor point 124,14/08/2015,Tetrachloroethane,107,ug,Rate of Change
+42355,Emissions to surface water,Biffa - Marchington Landfill Site,Monitor point 125,14/08/2015,Tetrachloroethane,107,ug,Ratio
+42355,Emissions to surface water,Biffa - Marchington Landfill Site,Monitor point 126,14/08/2015,Tetrachloroethane,107,ug,Recovery
+42355,Emissions to surface water,Biffa - Marchington Landfill Site,Monitor point 127,14/08/2015,Tetrachloroethane,107,ug,Reducible
+42355,Emissions to surface water,Biffa - Marchington Landfill Site,Monitor point 128,14/08/2015,Tetrachloroethane,107,ug,Relative to Atmospheric Pressure
+42355,Emissions to surface water,Biffa - Marchington Landfill Site,Monitor point 129,14/08/2015,Tetrachloroethane,107,ug,Relative to Chart Datum
+42355,Emissions to surface water,Biffa - Marchington Landfill Site,Monitor point 130,14/08/2015,Tetrachloroethane,107,ug,Relative to Local Datum
+42355,Emissions to surface water,Biffa - Marchington Landfill Site,Monitor point 131,14/08/2015,Tetrachloroethane,107,ug,Residue
+42355,Emissions to surface water,Biffa - Marchington Landfill Site,Monitor point 132,14/08/2015,Tetrachloroethane,107,ug,Respirable Dust
+42355,Emissions to surface water,Biffa - Marchington Landfill Site,Monitor point 133,14/08/2015,Tetrachloroethane,107,ug,Rolling Total
+42355,Emissions to surface water,Biffa - Marchington Landfill Site,Monitor point 134,14/08/2015,Tetrachloroethane,107,ug,Screen
+42355,Emissions to surface water,Biffa - Marchington Landfill Site,Monitor point 135,14/08/2015,Tetrachloroethane,107,ug,Semi-quantitative
+42355,Emissions to surface water,Biffa - Marchington Landfill Site,Monitor point 136,14/08/2015,Tetrachloroethane,107,ug,Semi-volatile
+42355,Emissions to surface water,Biffa - Marchington Landfill Site,Monitor point 137,14/08/2015,Tetrachloroethane,107,ug,Separable
+42355,Emissions to surface water,Biffa - Marchington Landfill Site,Monitor point 138,14/08/2015,Tetrachloroethane,107,ug,Settleable
+42355,Emissions to surface water,Biffa - Marchington Landfill Site,Monitor point 139,14/08/2015,Tetrachloroethane,107,ug,Settled
+42355,Emissions to surface water,Biffa - Marchington Landfill Site,Monitor point 140,14/08/2015,Tetrachloroethane,107,ug,Shaken
+42355,Emissions to surface water,Biffa - Marchington Landfill Site,Monitor point 141,14/08/2015,Tetrachloroethane,107,ug,Sieved
+42355,Emissions to surface water,Biffa - Marchington Landfill Site,Monitor point 142,14/08/2015,Tetrachloroethane,107,ug,Smallest
+42355,Emissions to surface water,Biffa - Marchington Landfill Site,Monitor point 143,14/08/2015,Tetrachloroethane,107,ug,Solid
+42355,Emissions to surface water,Biffa - Marchington Landfill Site,Monitor point 144,14/08/2015,Tetrachloroethane,107,ug,Solid sample
+42355,Emissions to surface water,Biffa - Marchington Landfill Site,Monitor point 145,14/08/2015,Tetrachloroethane,107,ug,Soluble
+42355,Emissions to surface water,Biffa - Marchington Landfill Site,Monitor point 146,14/08/2015,Tetrachloroethane,107,ug,Soluble 2:1
+42355,Emissions to surface water,Biffa - Marchington Landfill Site,Monitor point 147,14/08/2015,Tetrachloroethane,107,ug,Standby fuel
+42355,Emissions to surface water,Biffa - Marchington Landfill Site,Monitor point 148,14/08/2015,Tetrachloroethane,107,ug,Standby fuel only
+42355,Emissions to surface water,Biffa - Marchington Landfill Site,Monitor point 149,14/08/2015,Tetrachloroethane,107,ug,Stirred
+42355,Emissions to surface water,Biffa - Marchington Landfill Site,Monitor point 150,14/08/2015,Tetrachloroethane,107,ug,Strandline
+42355,Emissions to surface water,Biffa - Marchington Landfill Site,Monitor point 151,14/08/2015,Tetrachloroethane,107,ug,Strandline Scale 0-3
+42355,Emissions to surface water,Biffa - Marchington Landfill Site,Monitor point 152,14/08/2015,Tetrachloroethane,107,ug,Strandline to Waters Edge
+42355,Emissions to surface water,Biffa - Marchington Landfill Site,Monitor point 153,14/08/2015,Tetrachloroethane,107,ug,Strandline to Waters Edge Scale 0-3
+42355,Emissions to surface water,Biffa - Marchington Landfill Site,Monitor point 154,14/08/2015,Tetrachloroethane,107,ug,Sum Identified
+42355,Emissions to surface water,Biffa - Marchington Landfill Site,Monitor point 155,14/08/2015,Tetrachloroethane,107,ug,Sum of 25 Congeners
+42355,Emissions to surface water,Biffa - Marchington Landfill Site,Monitor point 156,14/08/2015,Tetrachloroethane,107,ug,Sum of All Isomers
+42355,Emissions to surface water,Biffa - Marchington Landfill Site,Monitor point 157,14/08/2015,Tetrachloroethane,107,ug,Sum of Components
+42355,Emissions to surface water,Biffa - Marchington Landfill Site,Monitor point 158,14/08/2015,Tetrachloroethane,107,ug,Sum of Derivatives
+42355,Emissions to surface water,Biffa - Marchington Landfill Site,Monitor point 159,14/08/2015,Tetrachloroethane,107,ug,Sum of Isomers
+42355,Emissions to surface water,Biffa - Marchington Landfill Site,Monitor point 160,14/08/2015,Tetrachloroethane,107,ug,Surface
+42355,Emissions to surface water,Biffa - Marchington Landfill Site,Monitor point 161,14/08/2015,Tetrachloroethane,107,ug,Suspended
+42355,Emissions to surface water,Biffa - Marchington Landfill Site,Monitor point 162,14/08/2015,Tetrachloroethane,107,ug,Temporary
+42355,Emissions to surface water,Biffa - Marchington Landfill Site,Monitor point 163,14/08/2015,Tetrachloroethane,107,ug,Texture
+42355,Emissions to surface water,Biffa - Marchington Landfill Site,Monitor point 164,14/08/2015,Tetrachloroethane,107,ug,Threshold Number
+42355,Emissions to surface water,Biffa - Marchington Landfill Site,Monitor point 165,14/08/2015,Tetrachloroethane,107,ug,Titration
+42355,Emissions to surface water,Biffa - Marchington Landfill Site,Monitor point 166,14/08/2015,Tetrachloroethane,107,ug,To Maximum
+42355,Emissions to surface water,Biffa - Marchington Landfill Site,Monitor point 167,14/08/2015,Tetrachloroethane,107,ug,Total
+42355,Emissions to surface water,Biffa - Marchington Landfill Site,Monitor point 168,14/08/2015,Tetrachloroethane,107,ug,Total Available
+42355,Emissions to surface water,Biffa - Marchington Landfill Site,Monitor point 169,14/08/2015,Tetrachloroethane,107,ug,Total Count
+42355,Emissions to surface water,Biffa - Marchington Landfill Site,Monitor point 170,14/08/2015,Tetrachloroethane,107,ug,Total Derived
+42355,Emissions to surface water,Biffa - Marchington Landfill Site,Monitor point 171,14/08/2015,Tetrachloroethane,107,ug,Total Isomers
+42355,Emissions to surface water,Biffa - Marchington Landfill Site,Monitor point 172,14/08/2015,Tetrachloroethane,107,ug,Total Load
+42355,Emissions to surface water,Biffa - Marchington Landfill Site,Monitor point 173,14/08/2015,Tetrachloroethane,107,ug,Total Moving 7-Day Emissions
+42355,Emissions to surface water,Biffa - Marchington Landfill Site,Monitor point 174,14/08/2015,Tetrachloroethane,107,ug,Total Oxidisable
+42355,Emissions to surface water,Biffa - Marchington Landfill Site,Monitor point 175,14/08/2015,Tetrachloroethane,107,ug,Total Residual
+42355,Emissions to surface water,Biffa - Marchington Landfill Site,Monitor point 176,14/08/2015,Tetrachloroethane,107,ug,Total Surface
+42355,Emissions to surface water,Biffa - Marchington Landfill Site,Monitor point 177,14/08/2015,Tetrachloroethane,107,ug,Total Toxicity
+42355,Emissions to surface water,Biffa - Marchington Landfill Site,Monitor point 178,14/08/2015,Tetrachloroethane,107,ug,Total Volatile
+42355,Emissions to surface water,Biffa - Marchington Landfill Site,Monitor point 179,14/08/2015,Tetrachloroethane,107,ug,Tracer
+42355,Emissions to surface water,Biffa - Marchington Landfill Site,Monitor point 180,14/08/2015,Tetrachloroethane,107,ug,Two Stage
+42355,Emissions to surface water,Biffa - Marchington Landfill Site,Monitor point 181,14/08/2015,Tetrachloroethane,107,ug,Unacidified
+42355,Emissions to surface water,Biffa - Marchington Landfill Site,Monitor point 182,14/08/2015,Tetrachloroethane,107,ug,Undistilled
+42355,Emissions to surface water,Biffa - Marchington Landfill Site,Monitor point 183,14/08/2015,Tetrachloroethane,107,ug,Unfiltered
+42355,Emissions to surface water,Biffa - Marchington Landfill Site,Monitor point 184,14/08/2015,Tetrachloroethane,107,ug,Unsettleable
+42355,Emissions to surface water,Biffa - Marchington Landfill Site,Monitor point 185,14/08/2015,Tetrachloroethane,107,ug,Unsieved
+42355,Emissions to surface water,Biffa - Marchington Landfill Site,Monitor point 186,14/08/2015,Tetrachloroethane,107,ug,Upper 95% Confidence Limit
+42355,Emissions to surface water,Biffa - Marchington Landfill Site,Monitor point 187,14/08/2015,Tetrachloroethane,107,ug,Viral Tracer
+42355,Emissions to surface water,Biffa - Marchington Landfill Site,Monitor point 188,14/08/2015,Tetrachloroethane,107,ug,Visual
+42355,Emissions to surface water,Biffa - Marchington Landfill Site,Monitor point 189,14/08/2015,Tetrachloroethane,107,ug,Volatile
+42355,Emissions to surface water,Biffa - Marchington Landfill Site,Monitor point 190,14/08/2015,Tetrachloroethane,107,ug,Volatile Scan
+42355,Emissions to surface water,Biffa - Marchington Landfill Site,Monitor point 191,14/08/2015,Tetrachloroethane,107,ug,Waters Edge
+42355,Emissions to surface water,Biffa - Marchington Landfill Site,Monitor point 192,14/08/2015,Tetrachloroethane,107,ug,Waters Edge Scale 0-3
+42355,Emissions to surface water,Biffa - Marchington Landfill Site,Monitor point 193,14/08/2015,Tetrachloroethane,107,ug,Wet Weight
+42355,Emissions to surface water,Biffa - Marchington Landfill Site,Monitor point 194,14/08/2015,Tetrachloroethane,107,ug,Rising
+42355,Emissions to surface water,Biffa - Marchington Landfill Site,Monitor point 195,14/08/2015,Tetrachloroethane,107,ug,Falling
+42355,Emissions to surface water,Biffa - Marchington Landfill Site,Monitor point 196,14/08/2015,Tetrachloroethane,107,ug,at 35°c
+42355,Emissions to surface water,Biffa - Marchington Landfill Site,Monitor point 197,14/08/2015,Tetrachloroethane,107,ug,at 105°c
+42355,Emissions to surface water,Biffa - Marchington Landfill Site,Monitor point 198,14/08/2015,Tetrachloroethane,107,ug,at 20°c
+42355,Emissions to surface water,Biffa - Marchington Landfill Site,Monitor point 199,14/08/2015,Tetrachloroethane,107,ug,at 25°c
+42355,Emissions to surface water,Biffa - Marchington Landfill Site,Monitor point 200,14/08/2015,Tetrachloroethane,107,ug,at 22°c
+42355,Emissions to surface water,Biffa - Marchington Landfill Site,Monitor point 201,14/08/2015,Tetrachloroethane,107,ug,at 37°c
+42355,Emissions to surface water,Biffa - Marchington Landfill Site,Monitor point 202,14/08/2015,Tetrachloroethane,107,ug,1 day
+42355,Emissions to surface water,Biffa - Marchington Landfill Site,Monitor point 203,14/08/2015,Tetrachloroethane,107,ug,3 day
+42355,Emissions to surface water,Biffa - Marchington Landfill Site,Monitor point 204,14/08/2015,Tetrachloroethane,107,ug,in 100ml
+42355,Emissions to surface water,Biffa - Marchington Landfill Site,Monitor point 205,14/08/2015,Tetrachloroethane,107,ug,in 500ml
+42355,Emissions to surface water,Biffa - Marchington Landfill Site,Monitor point 206,14/08/2015,Tetrachloroethane,107,ug,dissolved or emulsified
+42355,Emissions to surface water,Biffa - Marchington Landfill Site,Monitor point 207,14/08/2015,Tetrachloroethane,107,ug,PAH
+42355,Emissions to surface water,Biffa - Marchington Landfill Site,Monitor point 208,14/08/2015,Tetrachloroethane,107,ug,ESG SVOC
+42355,Emissions to surface water,Biffa - Marchington Landfill Site,Monitor point 209,14/08/2015,Tetrachloroethane,107,ug,"Total, unfiltered"
+42355,Emissions to surface water,Biffa - Marchington Landfill Site,Monitor point 210,14/08/2015,Tetrachloroethane,107,ug,"Dissolved, filtered"
+42355,Emissions to surface water,Biffa - Marchington Landfill Site,Monitor point 211,14/08/2015,Tetrachloroethane,107,ug,"Total available, filtered"
+42355,Emissions to surface water,Biffa - Marchington Landfill Site,Monitor point 212,14/08/2015,Tetrachloroethane,107,ug,"Dissolved, total"
+42355,Emissions to surface water,Biffa - Marchington Landfill Site,Monitor point 213,14/08/2015,Tetrachloroethane,107,ug,After tuning
+42355,Emissions to surface water,Biffa - Marchington Landfill Site,Monitor point 214,14/08/2015,Tetrachloroethane,107,ug,Before tuning
+42355,Emissions to surface water,Biffa - Marchington Landfill Site,Monitor point 215,14/08/2015,Tetrachloroethane,107,ug,Flow
+42355,Emissions to surface water,Biffa - Marchington Landfill Site,Monitor point 216,14/08/2015,Tetrachloroethane,107,ug,Flux
+42355,Emissions to surface water,Biffa - Marchington Landfill Site,Monitor point 217,14/08/2015,Tetrachloroethane,107,ug,Minimum
+42355,Emissions to surface water,Biffa - Marchington Landfill Site,Monitor point 218,14/08/2015,Tetrachloroethane,107,ug,at 180°c
+42355,Emissions to surface water,Biffa - Marchington Landfill Site,Monitor point 219,14/08/2015,Tetrachloroethane,107,ug,Precipitated

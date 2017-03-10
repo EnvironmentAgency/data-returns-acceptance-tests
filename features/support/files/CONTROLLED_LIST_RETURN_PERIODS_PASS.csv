@@ -1,21 +1,21 @@
 EA_ID,Rtn_Type,Site_Name,Mon_Point,Mon_Date,Parameter,Value,Unit,Rtn_Period
-AA9999AA,Landfill leachate monitoring,Test Site,Monitor point 3,07/08/2015,(2-Methoxymethylethoxy)propanol,100,ug,Week 01 2016
-AA9999AA,Landfill leachate monitoring,Test Site,Monitor point 4,08/08/2015,(2-Methoxymethylethoxy)propanol,101,ug,Jan 2016
-AA9999AA,Landfill leachate monitoring,Test Site,Monitor point 5,09/08/2015,(2-Methoxymethylethoxy)propanol,102,ug,Feb 2016
-AA9999AA,Landfill leachate monitoring,Test Site,Monitor point 6,10/08/2015,(2-Methoxymethylethoxy)propanol,103,ug,Mar 2016
-AA9999AA,Landfill leachate monitoring,Test Site,Monitor point 7,11/08/2015,(2-Methoxymethylethoxy)propanol,104,ug,Apr 2016
-AA9999AA,Landfill leachate monitoring,Test Site,Monitor point 8,12/08/2015,(2-Methoxymethylethoxy)propanol,105,ug,May 2016
-AA9999AA,Landfill leachate monitoring,Test Site,Monitor point 9,13/08/2015,(2-Methoxymethylethoxy)propanol,106,ug,Jun 2016
-AA9999AA,Landfill leachate monitoring,Test Site,Monitor point 10,14/08/2015,(2-Methoxymethylethoxy)propanol,107,ug,Jul 2016
-AA9999AA,Landfill leachate monitoring,Test Site,Monitor point 11,15/08/2015,(2-Methoxymethylethoxy)propanol,108,ug,Aug 2016
-AA9999AA,Landfill leachate monitoring,Test Site,Monitor point 12,16/08/2015,(2-Methoxymethylethoxy)propanol,109,ug,Sep 2016
-AA9999AA,Landfill leachate monitoring,Test Site,Monitor point 13,17/08/2015,(2-Methoxymethylethoxy)propanol,110,ug,Oct 2016
-AA9999AA,Landfill leachate monitoring,Test Site,Monitor point 14,18/08/2015,(2-Methoxymethylethoxy)propanol,111,ug,Nov 2016
-AA9999AA,Landfill leachate monitoring,Test Site,Monitor point 15,19/08/2015,(2-Methoxymethylethoxy)propanol,112,ug,Dec 2016
-AA9999AA,Landfill leachate monitoring,Test Site,Monitor point 16,20/08/2015,(2-Methoxymethylethoxy)propanol,113,ug,Qtr 1 2016
-AA9999AA,Landfill leachate monitoring,Test Site,Monitor point 17,21/08/2015,(2-Methoxymethylethoxy)propanol,114,ug,Qtr 2 2016
-AA9999AA,Landfill leachate monitoring,Test Site,Monitor point 18,22/08/2015,(2-Methoxymethylethoxy)propanol,115,ug,Qtr 3 2016
-AA9999AA,Landfill leachate monitoring,Test Site,Monitor point 19,23/08/2015,(2-Methoxymethylethoxy)propanol,116,ug,Qtr 4 2016
-AA9999AA,Landfill leachate monitoring,Test Site,Monitor point 20,22/08/2015,(2-Methoxymethylethoxy)propanol,116,ug,2016
-AA9999AA,Landfill leachate monitoring,Test Site,Monitor point 22,22/08/2015,(2-Methoxymethylethoxy)propanol,116,ug,16/17
-AA9999AA,Landfill leachate monitoring,Test Site,Monitor point 23,22/08/2015,(2-Methoxymethylethoxy)propanol,116,ug,Water year 2016
+42355,Landfill leachate monitoring,Biffa - Marchington Landfill Site,Monitor point 3,07/08/2015,(2-Methoxymethylethoxy)propanol,100,ug,Week 01 2016
+42355,Landfill leachate monitoring,Biffa - Marchington Landfill Site,Monitor point 4,08/08/2015,(2-Methoxymethylethoxy)propanol,101,ug,Jan 2016
+42355,Landfill leachate monitoring,Biffa - Marchington Landfill Site,Monitor point 5,09/08/2015,(2-Methoxymethylethoxy)propanol,102,ug,Feb 2016
+42355,Landfill leachate monitoring,Biffa - Marchington Landfill Site,Monitor point 6,10/08/2015,(2-Methoxymethylethoxy)propanol,103,ug,Mar 2016
+42355,Landfill leachate monitoring,Biffa - Marchington Landfill Site,Monitor point 7,11/08/2015,(2-Methoxymethylethoxy)propanol,104,ug,Apr 2016
+42355,Landfill leachate monitoring,Biffa - Marchington Landfill Site,Monitor point 8,12/08/2015,(2-Methoxymethylethoxy)propanol,105,ug,May 2016
+42355,Landfill leachate monitoring,Biffa - Marchington Landfill Site,Monitor point 9,13/08/2015,(2-Methoxymethylethoxy)propanol,106,ug,Jun 2016
+42355,Landfill leachate monitoring,Biffa - Marchington Landfill Site,Monitor point 10,14/08/2015,(2-Methoxymethylethoxy)propanol,107,ug,Jul 2016
+42355,Landfill leachate monitoring,Biffa - Marchington Landfill Site,Monitor point 11,15/08/2015,(2-Methoxymethylethoxy)propanol,108,ug,Aug 2016
+42355,Landfill leachate monitoring,Biffa - Marchington Landfill Site,Monitor point 12,16/08/2015,(2-Methoxymethylethoxy)propanol,109,ug,Sep 2016
+42355,Landfill leachate monitoring,Biffa - Marchington Landfill Site,Monitor point 13,17/08/2015,(2-Methoxymethylethoxy)propanol,110,ug,Oct 2016
+42355,Landfill leachate monitoring,Biffa - Marchington Landfill Site,Monitor point 14,18/08/2015,(2-Methoxymethylethoxy)propanol,111,ug,Nov 2016
+42355,Landfill leachate monitoring,Biffa - Marchington Landfill Site,Monitor point 15,19/08/2015,(2-Methoxymethylethoxy)propanol,112,ug,Dec 2016
+42355,Landfill leachate monitoring,Biffa - Marchington Landfill Site,Monitor point 16,20/08/2015,(2-Methoxymethylethoxy)propanol,113,ug,Qtr 1 2016
+42355,Landfill leachate monitoring,Biffa - Marchington Landfill Site,Monitor point 17,21/08/2015,(2-Methoxymethylethoxy)propanol,114,ug,Qtr 2 2016
+42355,Landfill leachate monitoring,Biffa - Marchington Landfill Site,Monitor point 18,22/08/2015,(2-Methoxymethylethoxy)propanol,115,ug,Qtr 3 2016
+42355,Landfill leachate monitoring,Biffa - Marchington Landfill Site,Monitor point 19,23/08/2015,(2-Methoxymethylethoxy)propanol,116,ug,Qtr 4 2016
+42355,Landfill leachate monitoring,Biffa - Marchington Landfill Site,Monitor point 20,22/08/2015,(2-Methoxymethylethoxy)propanol,116,ug,2016
+42355,Landfill leachate monitoring,Biffa - Marchington Landfill Site,Monitor point 22,22/08/2015,(2-Methoxymethylethoxy)propanol,116,ug,16/17
+42355,Landfill leachate monitoring,Biffa - Marchington Landfill Site,Monitor point 23,22/08/2015,(2-Methoxymethylethoxy)propanol,116,ug,Water year 2016
