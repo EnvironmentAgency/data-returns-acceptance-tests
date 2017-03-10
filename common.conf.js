@@ -1,4 +1,5 @@
 'use strict';
+const util = require('util');
 const winston = require("winston");
 const DataReturnsUserSession = require('./features/support/lib/preload-file');
 const fs = require("fs-extra");
@@ -27,7 +28,7 @@ exports.config = {
     // Level of logging verbosity: silent | verbose | command | data | result | error
     logLevel: 'error',
     // Winston log level (used by step definitions) (defaults to 'info', see winston for options)
-    winstonLogLevel: 'error',
+    winstonLogLevel: 'info',
 
     // Enables colors for log output.
     coloredLogs: true,
@@ -80,8 +81,12 @@ exports.config = {
     // resolved to continue.
     //
     // Gets executed once before all workers get launched.
-    // onPrepare: function (config, capabilities) {
-    // },
+    onPrepare: function (config, capabilities) {
+        let prettyConfig = util.inspect(config, {depth: null, colors: true});
+        let prettyCapabilities = util.inspect(capabilities, {depth: null, colors: true});
+        winston.info(`Running tests with configuration: \nCapabilities: ${prettyCapabilities}}\n\nConfiguration:${prettyConfig}`);
+    },
+
     //
     // Gets executed before test execution begins. At this point you can access all global
     // variables, such as `browser`. It is the perfect place to define custom commands.

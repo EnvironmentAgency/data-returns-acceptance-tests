@@ -19,10 +19,11 @@ const setupCapabilities = function (capabilitiesArray) {
         "maxInstances": 1,
         "project": "Data Returns",
         "browserstack.local": true,
-        "browserstack.debug": false,
+        "browserstack.debug": true,
         "browserstack.video": false,
         "browserstack.timezone": "London",
-        "browserstack.javascriptEnabled": true
+        "browserstack.javascriptEnabled": true,
+        "acceptSslCerts": true
     }));
 };
 
@@ -57,6 +58,8 @@ let browserStackConfig = {
         force: true,
         forceLocal: true
     }),
+    // Default timeout for all waitFor* commands.
+    waitforTimeout: 120000,
 
     // ============
     // Capabilities
@@ -111,6 +114,7 @@ let browserStackConfig = {
             "os_version": "Sierra",
             "browserName": "safari",
             "browser_version": "10.0",
+            "browserstack.safari.allowAllCookies": true,
             // The automation driver for this browser does support file uploads - use data returns preloading to load data and establish sessions.
             "preloadFiles": true
         },
@@ -129,6 +133,7 @@ let browserStackConfig = {
             "browserName": "iphone",
             "browser_version": null,
             "device": "iPhone 6S Plus",
+            "browserstack.safari.allowAllCookies": true,
             // The automation driver for this browser does support file uploads - use data returns preloading to load data and establish sessions.
             "preloadFiles": true
         }

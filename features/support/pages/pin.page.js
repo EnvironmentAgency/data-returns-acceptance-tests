@@ -13,7 +13,9 @@ class PinPage extends Page {
     }
 
     submitPin(pin) {
-        this.enterPin(pin);
+        if (pin) {
+            this.enterPin(pin);
+        }
         this.continue();
     }
 

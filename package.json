@@ -24,17 +24,17 @@
     "fs-extra": "^2.0.0",
     "lodash": "4.17.4",
     "path": "0.12.7",
-    "request": "2.79.0",
+    "request": "2.81.0",
     "wdio-browserstack-service": "0.1.4",
     "wdio-cucumber-framework": "0.2.15",
     "wdio-firefox-profile-service": "0.0.1",
     "wdio-junit-reporter": "0.2.0",
-    "wdio-selenium-standalone-service": "0.0.7",
+    "wdio-selenium-standalone-service": "0.0.8",
     "wdio-spec-reporter": "0.0.5",
     "webdriverio": "4.6.2",
     "winston": "2.3.1"
   },
   "devDependencies": {
-    "eslint": "3.14.1"
+    "eslint": "3.17.1"
   }
 }

@@ -93,9 +93,9 @@ class UploadPage extends Page {
         super.checkOpen();
         try {
             browser.waitUntil(function () {
-                let isDisabled = browser.getAttribute("#continueBtn","disabled");
+                let isDisabled = browser.getAttribute("#continueBtn", "disabled") === 'true';
                 if (isDisabled) {
-                    winston.debug(`Waiting for upload page continue button to be enabled before continuing. (isDisabled=${isDisabled})`);
+                    winston.info(`Waiting for upload page continue button to be enabled before continuing. (isDisabled=${isDisabled})`);
                 }
                 return !isDisabled;
             }, 20000, `Failed to finish uploading files and continue within the allowed time.`, 500);
