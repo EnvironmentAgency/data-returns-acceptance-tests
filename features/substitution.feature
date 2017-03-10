@@ -26,7 +26,7 @@ Feature: Submit files with alias alternative values
 
     Examples:
       | Filename               | alternate_id | ea_id    |
-      | EA_ID_SUBSTITUTION.csv | AA9998AA     | AA9999AA |
+      | EA_ID_SUBSTITUTION.csv | UP3791FG     | 42355    |
 
   Scenario Outline: Correct EA_ID is used where alternatives are available
     Given I choose file <Filename> to upload
@@ -36,7 +36,7 @@ Feature: Submit files with alias alternative values
 
     Examples:
       | Filename                 | ea_id    |
-      | EA_ID_SUBSTITUTION_3.csv | AA9999AA |
+      | EA_ID_SUBSTITUTION_3.csv | 42355    |
 
   Scenario Outline: Incorrect characters are substituted for known correct characters
     Given I choose file <Filename> to upload
