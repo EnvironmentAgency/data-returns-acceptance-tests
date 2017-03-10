@@ -23,7 +23,7 @@ class Page {
             let fn = this.isOpen.bind(this);
             let url = this.url;
             try {
-                browser.waitUntil(fn, 20000, `Expected URL '${browser.getUrl()}' to contain '${url}'`, 500);
+                browser.waitUntil(fn, browser.options.waitforTimeout, `Expected URL '${browser.getUrl()}' to contain '${url}'`, 1000);
             } catch (e) {
                 winston.error(e);
                 throw e;

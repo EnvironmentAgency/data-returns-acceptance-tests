@@ -98,7 +98,7 @@ class UploadPage extends Page {
                     winston.info(`Waiting for upload page continue button to be enabled before continuing. (isDisabled=${isDisabled})`);
                 }
                 return !isDisabled;
-            }, 20000, `Failed to finish uploading files and continue within the allowed time.`, 500);
+            }, browser.options.waitforTimeout, `Failed to finish uploading files and continue within the allowed time.`, 500);
         } catch (e) {
             winston.error("Error waiting for continue to be enabled", e);
             throw e;
