@@ -23,6 +23,9 @@ class PinPage extends Page {
         browser.disableImplicitWait();
         try {
             return browser.isExisting("#validation_code");
+        } catch (e) {
+            winston.warn("Exception from driver when testing for existence of pin field - assuming email field not available");
+            return false;
         } finally {
             browser.restoreImplicitWait();
         }

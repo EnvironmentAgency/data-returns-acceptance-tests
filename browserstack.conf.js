@@ -102,13 +102,13 @@ let browserStackConfig = {
         },
         // The microsoft edge driver is currently very buggy (clicking a button returning element obscured error)
         // disabled until the automation driver is more mature.
-        // {
-        //     "os": "Windows",
-        //     "os_version": "10",
-        //     "browserName": "edge",
-        //     // The automation driver for this browser does support file uploads - use data returns preloading to load data and establish sessions.
-        //     "preloadFiles": true
-        // },
+        {
+            "os": "Windows",
+            "os_version": "10",
+            "browserName": "edge",
+            // The automation driver for this browser does support file uploads - use data returns preloading to load data and establish sessions.
+            "preloadFiles": true
+        },
         {
             "os": "OS X",
             "os_version": "Sierra",
