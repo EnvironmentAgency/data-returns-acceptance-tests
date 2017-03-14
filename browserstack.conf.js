@@ -66,17 +66,17 @@ let browserStackConfig = {
     // ============
     maxInstances: 1,
     capabilities: setupCapabilities([
-        {
-            "browserName": "chrome",
-            "os": "Windows",
-            "os_version": "10",
-        },
-        {
-            "browserName": "firefox",
-            "os": "Windows",
-            "os_version": "10",
-        },
-        {
+        // {
+        //     "browserName": "chrome",
+        //     "os": "Windows",
+        //     "os_version": "10",
+        // },
+        // {
+        //     "browserName": "firefox",
+        //     "os": "Windows",
+        //     "os_version": "10",
+        // },
+        // {
             "os": "Windows",
             "os_version": "7",
             "browserName": "ie",
