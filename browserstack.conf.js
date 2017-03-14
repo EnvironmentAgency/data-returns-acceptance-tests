@@ -76,7 +76,7 @@ let browserStackConfig = {
         //     "os": "Windows",
         //     "os_version": "10",
         // },
-        // {
+        {
             "os": "Windows",
             "os_version": "7",
             "browserName": "ie",
