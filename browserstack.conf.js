@@ -64,7 +64,7 @@ let browserStackConfig = {
     // ============
     // Capabilities
     // ============
-    maxInstances: 1,
+    maxInstances: 2,
     capabilities: setupCapabilities([
         // {
         //     "browserName": "chrome",
