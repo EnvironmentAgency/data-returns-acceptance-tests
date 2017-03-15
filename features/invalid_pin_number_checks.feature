@@ -9,11 +9,11 @@ Feature: Invalid data entry checks
 
   Scenario: Invalid pin number is entered
     When I submit an invalid pin number
-    Then an error message is shown
+    Then I am shown the DR2225 error
 
   Scenario: No pin number is entered
     When I don't enter a pin number
-    Then an error message is shown
+    Then I am shown the DR2225 error
 
   Scenario: Invalid pin entered too many times
     When I keep submitting an invalid pin and get locked out

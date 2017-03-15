@@ -8,12 +8,13 @@ Feature: Invalid data entry checks
 
   Scenario: Invalid email address is entered
     When I submit an invalid email address
-    Then I am told the email address is invalid
+    Then I am shown the DR2050 error
+
+
 
   Scenario: No email address is entered
     When I don't enter an email address
-    Then I am told the email address is invalid
-
+    Then I am shown the DR2050 error
 
   Scenario: Same email address used multiple times
     Then I enter the same email address too many times and it gets blocked
