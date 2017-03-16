@@ -139,16 +139,31 @@ exports.config = {
         /**
          * Configure winston logging
          */
-        winston.clear();
-        winston.add(winston.transports.Console, {
-            "level": this.winstonLogLevel || "info",
-            "colorize": true,
-            "silent": false,
-            "timestamp": true,
-            "json": false,
-            "showLevel": true,
-            "handleExceptions": false,
-            "humanReadableUnhandledException": false
+        let cfg = this;
+        winston.configure({
+            transports: [
+                new (winston.transports.Console)({
+                    "level": cfg.winstonLogLevel || "info",
+                    "colorize": true,
+                    "silent": false,
+                    "timestamp": true,
+                    "json": false,
+                    "showLevel": true,
+                    "handleExceptions": false,
+                    "humanReadableUnhandledException": false
+                }),
+            ],
+            filters: [
+                function (level, msg, meta) {
+                    let sessionId = browser.session().sessionId;
+                    let sessionTxt = sessionId ? sessionId + ": " : "";
+                    let cap = browser.desiredCapabilities;
+                    // let env = `${cap.os} ${cap.os_version} ${cap.browserName} ${cap.browser_version}`;
+                    let env = `${cap.browserName || "Unknown"} ${cap.browser_version || ""}`;
+
+                    return `[0;35m[${sessionTxt}${env}][0;39m ${msg}`;
+                }
+            ]
         });
     },
     //
@@ -197,10 +212,13 @@ exports.config = {
     // }
 
     // Cucumber specific hooks
-    // beforeFeature: function (feature) {
-    // },
-    // beforeScenario: function (scenario) {
-    // },
+    beforeFeature: function (feature) {
+        winston.info(`Running feature: ${feature.getName()}`);
+
+    },
+    beforeScenario: function (scenario) {
+        winston.info(`Running scenario: ${scenario.getName()}`);
+    },
     // beforeStep: function (step) {
     // },
     // afterStep: function (stepResult) {

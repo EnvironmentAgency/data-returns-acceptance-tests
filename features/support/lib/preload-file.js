@@ -48,7 +48,7 @@ class DataReturnsUserSession {
 
     upload(filePaths) {
         let self = this;
-        return self.getSession().then(function() {
+        return self.getSession().then(function () {
             return Promise.race(filePaths.map(fp => self.uploadFile(fp)));
         });
     }
@@ -81,7 +81,7 @@ class DataReturnsUserSession {
                 request.post(requestData, function (err, httpResponse, body) {
                     if (err || httpResponse.statusCode !== 200) {
                         let error = err || new Error(`Unexpected response (${httpResponse.statusCode}) from server when attempting to preload files`);
-                        winston.error(err);
+                        winston.error("Error encountered on session preload POST request", error);
                         return reject(error);
                     }
                     let data = JSON.parse(body);

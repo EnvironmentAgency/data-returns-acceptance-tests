@@ -9,22 +9,26 @@ class PinPage extends Page {
     enterPin(pin) {
         super.checkOpen();
         let pinInput = browser.element('#validation_code');
-        pinInput.setValue(pin);
+        if (pin) {
+            pinInput.setValue(pin);
+        } else {
+            pinInput.clearElement();
+        }
+
     }
 
     submitPin(pin) {
-        if (pin) {
-            this.enterPin(pin);
-        }
+        this.enterPin(pin);
         this.continue();
     }
 
     isPinFieldAvailable() {
         browser.disableImplicitWait();
+
         try {
             return browser.isExisting("#validation_code");
         } catch (e) {
-            winston.warn("Exception from driver when testing for existence of pin field - assuming email field not available");
+            winston.warn("Exception from driver when testing for existence of pin field - assuming field not available");
             return false;
         } finally {
             browser.restoreImplicitWait();

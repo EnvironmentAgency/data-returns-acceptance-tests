@@ -25,7 +25,7 @@ class Page {
             try {
                 browser.waitUntil(fn, browser.options.waitforTimeout, `Expected URL '${browser.getUrl()}' to contain '${url}'`, 1000);
             } catch (e) {
-                winston.error(e);
+                winston.error("Error checking if page is open ", e);
                 throw e;
             }
         }

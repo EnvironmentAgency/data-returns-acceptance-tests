@@ -24,7 +24,7 @@ class EmailPage extends Page {
         try {
             return browser.isExisting("#email");
         } catch (e) {
-            winston.warn("Exception from driver when testing for existence of email field - assuming email field not available");
+            winston.warn("Exception from driver when testing for existence of email field - assuming field not available");
             return false;
         } finally {
             browser.restoreImplicitWait();
@@ -39,8 +39,6 @@ class EmailPage extends Page {
         this.isEmailFieldAvailable().should.be.false;
     }
 
-
-
     ensureErrorShown() {
         super.checkOpen();
         let errorSummaryElement = browser.element('.error-summary');
@@ -53,7 +51,5 @@ class EmailPage extends Page {
         let button = browser.element("#continueBtn");
         button.click();
     }
-
-
 }
 module.exports = new EmailPage();
