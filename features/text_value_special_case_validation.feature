@@ -14,8 +14,8 @@ Feature: Submit files with either Text_Value or Value data
     And I finish uploading files and continue
 
     Examples:
-      | Filename                                                                           |
-      | text_value_special_case_validation_Text_Value_No_Value_with_header_PASS.csv        |
-      | text_value_special_case_validation_Text_Value_No_Value_with_no_header_PASS.csv     |
-      | text_value_special_case_validation_Value_No_Text_Value_with_header_PASS.csv        |
-      | text_value_special_case_validation_Value_No_Text_Value_with_no_header_PASS.csv     |
+      | Filename                                                                       |
+      | text_value_special_case_validation_Text_Value_No_Value_with_header_PASS.csv    |
+      | text_value_special_case_validation_Text_Value_No_Value_with_no_header_PASS.csv |
+      | text_value_special_case_validation_Value_No_Text_Value_with_header_PASS.csv    |
+      | text_value_special_case_validation_Value_No_Text_Value_with_no_header_PASS.csv |

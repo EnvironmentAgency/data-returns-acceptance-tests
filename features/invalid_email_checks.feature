@@ -10,8 +10,6 @@ Feature: Invalid data entry checks
     When I submit an invalid email address
     Then I am shown the DR2050 error
 
-
-
   Scenario: No email address is entered
     When I don't enter an email address
     Then I am shown the DR2050 error

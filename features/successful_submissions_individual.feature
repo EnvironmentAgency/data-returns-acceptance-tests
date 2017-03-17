@@ -13,10 +13,9 @@ Feature: Submit files where all data passes validation
     Then My returns have been sent
 
     Examples:
-      | Filename                                                          |
-      | multiple_file_upload_1.csv                                        |
-      | CUKE006_LARGE_FILE_MAX_21M_16907_records_PASS.csv                 |
-      | DR9060_Mon_Point.csv                                              |
+      | Filename                                          |
+      | CUKE006_LARGE_FILE_MAX_21M_16907_records_PASS.csv |
+      | success-4Mb.csv                                   |
 
   Scenario Outline: For OPTIONAL fields check that null values are accepted
     Given I choose file <Filename> to upload

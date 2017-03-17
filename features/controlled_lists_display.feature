@@ -14,4 +14,4 @@ Feature: Check that controlled lists are correctly displayed in the guidance
       | Parameter (substance name)    | Tetrachloroethane            | ["1,1,1,2-Tetrachloroethane", "1,1,2,2-Tetrachloroethane"] |
       | Qualifier                     | Total volatile               | []                                                         |
       | Reference period              | Daily mean                   | ["Daily average"]                                          |
-      | Unit or measure               | µg                           | ["ug"]                                                     |
+      | Unit or measure               | d                            | ["day"]                                                    |
