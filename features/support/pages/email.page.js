@@ -12,7 +12,6 @@ class EmailPage extends Page {
     }
 
     submitEmail(emailAddress) {
-        super.checkOpen();
         this.enterEmail(emailAddress);
         this.continue();
     }

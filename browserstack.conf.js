@@ -65,16 +65,6 @@ let browserStackConfig = {
     // ============
     maxInstances: 3,
     capabilities: setupCapabilities([
-        // {
-        //     "browserName": "chrome",
-        //     "os": "Windows",
-        //     "os_version": "10",
-        // },
-        // {
-        //     "browserName": "firefox",
-        //     "os": "Windows",
-        //     "os_version": "10",
-        // },
         {
             "os": "Windows",
             "os_version": "7",
