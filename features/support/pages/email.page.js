@@ -1,6 +1,4 @@
 "use strict";
-const winston = require('winston');
-
 let Page = require('./page');
 class EmailPage extends Page {
     get url() {
@@ -20,15 +18,7 @@ class EmailPage extends Page {
     }
 
     isEmailFieldAvailable() {
-        browser.disableImplicitWait();
-        try {
-            return browser.isExisting("#email");
-        } catch (e) {
-            winston.warn("Exception from driver when testing for existence of email field - assuming field not available");
-            return false;
-        } finally {
-            browser.restoreImplicitWait();
-        }
+        return browser.isExistingNoWait('#email');
     }
 
     assertBlocked() {

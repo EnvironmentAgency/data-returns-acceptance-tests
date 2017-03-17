@@ -48,9 +48,15 @@ class DataReturnsUserSession {
 
     upload(filePaths) {
         let self = this;
-        return self.getSession().then(function () {
-            return Promise.race(filePaths.map(fp => self.uploadFile(fp)));
-        });
+        return self.getSession()
+            .then(() => Promise.all(filePaths.map(fp => self.uploadFile(fp))))
+            .then((promises) => {
+                return {
+                    sessionId: promises[0].sessionId,
+                    sessionKey: promises[0].sessionKey,
+                    files: promises.map(p => p.files).reduce((combined, fileArray) => combined.concat(fileArray), [])
+                };
+            });
     }
 
     uploadFile(filePath) {
@@ -85,7 +91,7 @@ class DataReturnsUserSession {
                         return reject(error);
                     }
                     let data = JSON.parse(body);
-                    winston.info(`Successfully preloaded file ${data.files} into session ${data.sessionId}`);
+                    winston.info(`Successfully preloaded file ${data.files} into data-returns frontend preload session ${data.sessionId}`);
                     return resolve(data);
                 });
             }).catch(reject);

@@ -13,8 +13,7 @@ if (!(browserstackUser || browserstackKey)) {
 const setupCapabilities = function (capabilitiesArray) {
     let buildTimestamp = new Date().toISOString();
     buildTimestamp = buildTimestamp.substring(0, buildTimestamp.length - 8);
-
-    return capabilitiesArray.map(cap => lodash.merge({}, cap, {
+    return capabilitiesArray.map(cap => lodash.defaultsDeep(cap, {
         "build": `${process.env.USER}@${os.hostname()} ${buildTimestamp}`.replace(/[^A-Za-z0-9 :._@]/g, '_'),
         "maxInstances": 1,
         "project": "Data Returns",
@@ -53,18 +52,18 @@ let browserStackConfig = {
     key: browserstackKey,
     browserstackLocal: true,
 
-    browserstackOpts: lodash.merge({}, browserStackProxyOpts, {
+    browserstackOpts: lodash.defaultsDeep(browserStackProxyOpts, {
         logFile: "./logs/local.log",
         force: true,
         forceLocal: true
     }),
     // Default timeout for all waitFor* commands.
-    waitforTimeout: 120000,
+    waitforTimeout: 90000,
 
     // ============
     // Capabilities
     // ============
-    maxInstances: 2,
+    maxInstances: 3,
     capabilities: setupCapabilities([
         // {
         //     "browserName": "chrome",
@@ -100,8 +99,6 @@ let browserStackConfig = {
             "browserName": "ie",
             "browser_version": "11.0"
         },
-        // The microsoft edge driver is currently very buggy (clicking a button returning element obscured error)
-        // disabled until the automation driver is more mature.
         {
             "os": "Windows",
             "os_version": "10",
@@ -154,7 +151,7 @@ let browserStackConfig = {
         // Configure cucumberjs to ignore any features marked with browserstackIgnore.
         tags: ['~@browserstackIgnore'],
         // Increase step timeout on browserstack (things just seem to take longer!)
-        timeout: 120000
+        timeout: 240000
     },
 
 };

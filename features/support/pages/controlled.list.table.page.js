@@ -9,9 +9,7 @@ class ControlledListTablePage extends Page {
 
     checkDataDisplayed(dataItem) {
         super.checkOpen();
-        browser.disableImplicitWait();
-
-        try {
+        browser.executeFunctionNoWait(function () {
             let primaryValue = dataItem.primary;
             let expectedAliases = dataItem.aliases || [];
 
@@ -29,9 +27,7 @@ class ControlledListTablePage extends Page {
                 // Ensure that the expected aliases are displayed
                 targetAliasTextArr.should.include.members(expectedAliases);
             }
-        } finally {
-            browser.restoreImplicitWait();
-        }
+        });
     }
 
 }

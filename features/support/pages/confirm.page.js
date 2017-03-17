@@ -1,7 +1,6 @@
 "use strict";
 const winston = require('winston');
 let Page = require('./page');
-const waitForNav = require('../lib/wait-for-navigation-on-action');
 
 function checkEaIdRow(row, inputEaId, outputEaId) {
     let inputIdSpan = row.element(".submittedUniqueIdentifier");

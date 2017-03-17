@@ -1,5 +1,4 @@
 'use strict';
-const winston = require('winston');
 let Page = require('./page');
 class PinPage extends Page {
     get url() {
@@ -23,16 +22,7 @@ class PinPage extends Page {
     }
 
     isPinFieldAvailable() {
-        browser.disableImplicitWait();
-
-        try {
-            return browser.isExisting("#validation_code");
-        } catch (e) {
-            winston.warn("Exception from driver when testing for existence of pin field - assuming field not available");
-            return false;
-        } finally {
-            browser.restoreImplicitWait();
-        }
+        return browser.isExistingNoWait('#validation_code');
     }
 
     assertBlocked() {

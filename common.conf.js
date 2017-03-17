@@ -1,7 +1,6 @@
 'use strict';
 const util = require('util');
 const winston = require("winston");
-const DataReturnsUserSession = require('./features/support/lib/preload-file');
 const fs = require("fs-extra");
 
 // Ensure logs folder exists
@@ -98,6 +97,8 @@ exports.config = {
         global.assert = chai.assert;
         global.should = chai.should();
 
+        // reference to configuration object
+        let cfg = this;
 
         // // timeout that specifies a time to wait for the implicit element location strategy when locating elements using the element or elements commands
         let defaultTimeout = this.waitforTimeout;
@@ -112,34 +113,35 @@ exports.config = {
          * Check if an element exists without waiting for it...
          */
         browser.addCommand('isExistingNoWait', function (selector) {
-            browser.timeouts('implicit', 0);
-            let isExisting = browser.isExisting(selector);
-            browser.timeouts('implicit', defaultTimeout);
-            return isExisting;
+            return browser.executeFunctionNoWait(function () {
+                let scrCfgVal = cfg.screenshotOnReject;
+                cfg.screenshotOnReject = false;
+                try {
+                    return browser.isExisting(selector);
+                } catch (e) {
+                    // Safari Driver likes to throw exceptions rather than simply return false....
+                    winston.warn("Exception generated on browser.isExisting call, assuming element could not be found.");
+                    return false;
+                } finally {
+                    cfg.screenshotOnReject = scrCfgVal;
+                }
+            });
         });
-        browser.addCommand('disableImplicitWait', function () {
-            browser.timeouts('implicit', 0);
-        });
-        browser.addCommand('restoreImplicitWait', function () {
-            browser.timeouts('implicit', defaultTimeout);
-        });
-
-
         /**
-         * Add browser command to allow files to be preloaded into a data returns session (files uploaded from test runner rather than
-         * from client browser)
+         * Allow any function to be executed with no implicit wait time.
          */
-        browser.addCommand('preloadFiles', function async(files) {
-            let preloadSession = new DataReturnsUserSession(browser.options.baseUrl + '/file/preload');
-            let filenames = Array.isArray(files) ? files : [files];
-            filenames = filenames.map(filename => `features/support/files/${filename}`);
-            return preloadSession.upload(filenames);
+        browser.addCommand('executeFunctionNoWait', function (fn) {
+            try {
+                browser.timeouts('implicit', 0);
+                return fn();
+            } finally {
+                browser.timeouts('implicit', defaultTimeout);
+            }
         });
 
         /**
          * Configure winston logging
          */
-        let cfg = this;
         winston.configure({
             transports: [
                 new (winston.transports.Console)({
