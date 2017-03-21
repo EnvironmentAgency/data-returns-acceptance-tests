@@ -1,5 +1,4 @@
 "use strict";
-const winston = require('winston');
 let Page = require('./page');
 
 function checkEaIdRow(row, inputEaId, outputEaId) {
@@ -38,14 +37,6 @@ class ConfirmPage extends Page {
         let eaIdSpan = browser.element(".resolvedUniqueIdentifier");
         if (Array.isArray(eaIdSpan)) eaIdSpan = eaIdSpan[0];
         eaIdSpan.getText().should.be.equal(eaId);
-    }
-
-    continue() {
-        super.checkOpen();
-        winston.debug('Finding confirmation page continue button');
-        let button = browser.element("#continueBtn");
-        button.click();
-        winston.debug('Finished clicking the confirmation page continue button');
     }
 }
 module.exports = new ConfirmPage();

@@ -34,11 +34,5 @@ class EmailPage extends Page {
         errorSummaryElement.waitForExist();
         errorSummaryElement.getText().should.not.be.null;
     }
-
-    continue() {
-        super.checkOpen();
-        let button = browser.element("#continueBtn");
-        button.click();
-    }
 }
 module.exports = new EmailPage();

@@ -1,5 +1,6 @@
 'use strict';
 const winston = require('winston');
+const waitForNav = require('../lib/wait-for-navigation-on-action');
 class Page {
     constructor() {
     }
@@ -33,6 +34,25 @@ class Page {
     }
 
     continue() {
+        let self = this;
+        self.checkOpen();
+
+        try {
+            browser.waitUntil(function () {
+                let isDisabled = browser.getAttribute("#continueBtn", "disabled") === 'true';
+                if (isDisabled) {
+                    winston.info(`Waiting for continue button on ${self.url} to be enabled before continuing. (isDisabled=${isDisabled})`);
+                }
+                return !isDisabled;
+            }, browser.options.waitforTimeout, `Continue button on ${self.url} not enabled within the allowed time.`, 500);
+        } catch (e) {
+            winston.error("Error waiting for continue to be enabled", e);
+            throw e;
+        }
+
+        waitForNav(function () {
+            browser.click("#continueBtn");
+        });
     }
 }
 module.exports = Page;

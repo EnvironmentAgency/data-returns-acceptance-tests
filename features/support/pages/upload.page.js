@@ -1,7 +1,6 @@
 "use strict";
 let Page = require('./page');
 const winston = require('winston');
-const waitForNav = require('../lib/wait-for-navigation-on-action');
 
 function getUploadRowSelector(filename) {
     // Selector to find a row which contains a column with the correct filename
@@ -87,25 +86,6 @@ class UploadPage extends Page {
         let button = browser.element("#continueBtn");
         let disabled = button.getAttribute("disabled") === 'true';
         disabled.should.be.true;
-    }
-
-    continue() {
-        super.checkOpen();
-        try {
-            browser.waitUntil(function () {
-                let isDisabled = browser.getAttribute("#continueBtn", "disabled") === 'true';
-                if (isDisabled) {
-                    winston.info(`Waiting for upload page continue button to be enabled before continuing. (isDisabled=${isDisabled})`);
-                }
-                return !isDisabled;
-            }, browser.options.waitforTimeout, `Failed to finish uploading files and continue within the allowed time.`, 500);
-        } catch (e) {
-            winston.error("Error waiting for continue to be enabled", e);
-            throw e;
-        }
-        waitForNav(function () {
-            browser.click("#continueBtn");
-        });
     }
 }
 module.exports = new UploadPage();

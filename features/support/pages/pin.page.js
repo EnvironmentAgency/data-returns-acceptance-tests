@@ -39,11 +39,5 @@ class PinPage extends Page {
         foundErrorCodeAfterRefresh.should.equal("DR2280");
         this.isPinFieldAvailable().should.be.false;
     }
-
-    continue() {
-        super.checkOpen();
-        let button = browser.element("#continueBtn");
-        button.click();
-    }
 }
 module.exports = new PinPage();
