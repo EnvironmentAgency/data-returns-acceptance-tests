@@ -13,7 +13,7 @@ module.exports = function (files) {
         let preloadSession = new DataReturnsUserSession(browser.options.baseUrl + '/file/preload');
         let filenames = Array.isArray(files) ? files : [files];
         filenames = filenames.map(filename => `features/support/files/${filename}`);
-        preloadSession.upload(filenames)
+        return preloadSession.upload(filenames)
             .then((sessionData) => {
                 winston.info(`Finished uploading all files.  Initialising browser for preloaded session: ${util.inspect(sessionData, {depth: null, colors: true})}`);
                 browser.url(`/file/preload?sessionId=${sessionData.sessionId}&sessionKey=${sessionData.sessionKey}`)
