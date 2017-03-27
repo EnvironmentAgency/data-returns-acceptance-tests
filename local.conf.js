@@ -10,7 +10,12 @@ let localConfig = {
     maxInstances: 3,
     capabilities: [
         {
-            browserName: 'chrome'
+            browserName: 'chrome',
+            maxInstances: 3
+        },
+        {
+            browserName: 'firefox',
+            maxInstances: 1
         }
     ],
 
@@ -28,10 +33,10 @@ let localConfig = {
     services: ['selenium-standalone'],
     seleniumLogs: './logs/selenium',
     seleniumArgs: {
-        version: '3.0.1'
+        version: '3.3.1'
     },
     seleniumInstallArgs: {
-        version: '3.0.1'
+        version: '3.3.1'
     }
 };
 exports.config = lodash.defaultsDeep(localConfig, commonConfig);

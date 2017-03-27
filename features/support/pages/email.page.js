@@ -6,7 +6,6 @@ class EmailPage extends Page {
     }
 
     enterEmail(emailAddress) {
-        super.checkOpen();
         let emailInput = browser.element('#email');
         emailInput.setValue(emailAddress);
     }
@@ -17,11 +16,10 @@ class EmailPage extends Page {
     }
 
     isEmailFieldAvailable() {
-        return browser.isExistingNoWait('#email');
+        return browser.isExistingSafe('#email');
     }
 
     assertBlocked() {
-        super.checkOpen();
         // Initial check
         let foundErrorCode = browser.getAttribute("#error_code", "value");
         foundErrorCode.should.equal("DR2055");
@@ -29,7 +27,6 @@ class EmailPage extends Page {
     }
 
     ensureErrorShown() {
-        super.checkOpen();
         let errorSummaryElement = browser.element('.error-summary');
         errorSummaryElement.waitForExist();
         errorSummaryElement.getText().should.not.be.null;

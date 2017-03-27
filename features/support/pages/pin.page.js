@@ -6,7 +6,6 @@ class PinPage extends Page {
     }
 
     enterPin(pin) {
-        super.checkOpen();
         let pinInput = browser.element('#validation_code');
         if (pin) {
             pinInput.setValue(pin);
@@ -22,12 +21,10 @@ class PinPage extends Page {
     }
 
     isPinFieldAvailable() {
-        return browser.isExistingNoWait('#validation_code');
+        return browser.isExistingSafe('#validation_code');
     }
 
     assertBlocked() {
-        super.checkOpen();
-
         // Initial check
         let foundErrorCode = browser.getAttribute("#error_code", "value");
         foundErrorCode.should.equal("DR2280");

@@ -1,6 +1,6 @@
 'use strict';
 let EmailPage = require("../../../support/pages/email.page");
-const address = `willgetgblocked+${Math.round(Math.random() * 1000)}@example.com`;
+const address = `willgetgblocked+${Math.round(Math.random() * 100000)}@example.com`;
 
 module.exports = function () {
     this.defineStep('I enter the same email address too many times and it gets blocked', function () {

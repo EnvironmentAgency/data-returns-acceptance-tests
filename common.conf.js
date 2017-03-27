@@ -2,6 +2,8 @@
 const util = require('util');
 const winston = require("winston");
 const fs = require("fs-extra");
+const waitForNav = require('./features/support/lib/wait-for-navigation-on-action');
+const DataReturnsUserSession = require('./features/support/lib/preload-file');
 
 // Ensure logs folder exists
 const logDir = __dirname + '/logs';
@@ -26,18 +28,36 @@ exports.config = {
     sync: true,
     // Level of logging verbosity: silent | verbose | command | data | result | error
     logLevel: 'error',
-    // Winston log level (used by step definitions) (defaults to 'info', see winston for options)
-    winstonLogLevel: 'info',
-
+    // Wdio debugging (use node inspector)
+    debug: false,
     // Enables colors for log output.
     coloredLogs: true,
     // Saves a screenshot to a given path if a command fails.
     screenshotPath: './logs/errorShots/',
+    // Take screenshots if the selenium driver crashes
     screenshotOnReject: true,
     // Default timeout for all waitFor* commands.
     waitforTimeout: 60000,
     // Default interval for all waitFor* commands (number of ms between checks to see if the runner should stop waiting)
-    waitforInterval: 250,
+    waitforInterval: 500,
+
+    /**
+     * Project-specific configuration options
+     *
+     * Add any project-specific configuration options here (keep things separate from the standard wdio config)
+     *
+     */
+    _projectConfiguration: {
+        // Winston log level (used by step definitions) (defaults to 'info', see winston for options)
+        winstonLogLevel: 'info',
+        // timeout that specifies a time to wait for the implicit element location strategy when locating elements using the element or elements commands
+        implicitTimeout: 0,
+        // time to wait for the page loading to complete
+        pageTimeout: 30000,
+        // time to wait for asynchronous scripts to run
+        scriptTimeout: 30000
+    },
+
     // Default timeout in milliseconds for request
     // if Selenium Grid doesn't send response
     connectionRetryTimeout: 90000,
@@ -99,45 +119,46 @@ exports.config = {
 
         // reference to configuration object
         let cfg = this;
+        // reference to the current session identifier
+        let testSessionId = browser.session().sessionId;
 
-        // // timeout that specifies a time to wait for the implicit element location strategy when locating elements using the element or elements commands
-        let defaultTimeout = this.waitforTimeout;
-
-        browser.timeouts('implicit', defaultTimeout);
-        // time to wait for asynchronous scripts to run
-        browser.timeouts('script', defaultTimeout);
-        // time to wait for the page loading to complete
-        browser.timeouts('page load', defaultTimeout);
+        // Set up project specific timeout configuration settings
+        browser.timeouts('implicit', cfg._projectConfiguration.implicitTimeout);
+        browser.timeouts('script', cfg._projectConfiguration.scriptTimeout);
+        browser.timeouts('page load', cfg._projectConfiguration.pageTimeout);
 
         /**
-         * Check if an element exists without waiting for it...
+         * Safe version of the browser.isExisting() functionality
+         *
+         * Safari driver on browserstack likes to throw exceptions when you call isExisting on an element which doesn't exist.
+         * This function protects against this.
          */
-        browser.addCommand('isExistingNoWait', function (selector) {
-            return browser.executeFunctionNoWait(function () {
-                let scrCfgVal = cfg.screenshotOnReject;
-                cfg.screenshotOnReject = false;
-                try {
-                    return browser.isExisting(selector);
-                } catch (e) {
-                    // Safari Driver likes to throw exceptions rather than simply return false....
-                    winston.warn("Exception generated on browser.isExisting call, assuming element could not be found.");
-                    return false;
-                } finally {
-                    cfg.screenshotOnReject = scrCfgVal;
-                }
-            });
-        });
-        /**
-         * Allow any function to be executed with no implicit wait time.
-         */
-        browser.addCommand('executeFunctionNoWait', function (fn) {
+        browser.addCommand('isExistingSafe', function (selector) {
             try {
-                browser.timeouts('implicit', 0);
-                return fn();
-            } finally {
-                browser.timeouts('implicit', defaultTimeout);
+                return browser.isExisting(selector);
+            } catch (e) {
+                winston.warn("Ignoring exception thrown on isExisting call.");
+                return false;
             }
         });
+
+        /**
+         * Preload files into the session using wdio async
+         */
+        browser.addCommand('preloadFiles', function async(files) {
+            /**
+             * Preload files directly into a data returns frontend preload session (files uploaded from test runner rather than from client browser)
+             */
+            let preloadSession = new DataReturnsUserSession(browser.options.baseUrl + '/file/preload');
+            let filenames = Array.isArray(files) ? files : [files];
+            filenames = filenames.map(filename => `features/support/files/${filename}`);
+            return preloadSession.upload(filenames)
+                .then((sessionData) => {
+                    winston.info(`Finished uploading all files.  Session data: ${util.inspect(sessionData, {depth: null, colors: true})}`);
+                    return sessionData;
+                });
+        });
+
 
         /**
          * Configure winston logging
@@ -145,7 +166,7 @@ exports.config = {
         winston.configure({
             transports: [
                 new (winston.transports.Console)({
-                    "level": cfg.winstonLogLevel || "info",
+                    "level": cfg._projectConfiguration.winstonLogLevel || "info",
                     "colorize": true,
                     "silent": false,
                     "timestamp": true,
@@ -157,8 +178,7 @@ exports.config = {
             ],
             filters: [
                 function (level, msg, meta) {
-                    let sessionId = browser.session().sessionId;
-                    let sessionTxt = sessionId ? sessionId + ": " : "";
+                    let sessionTxt = testSessionId ? testSessionId + ": " : "";
                     let cap = browser.desiredCapabilities;
                     // let env = `${cap.os} ${cap.os_version} ${cap.browserName} ${cap.browser_version}`;
                     let env = `${cap.browserName || "Unknown"} ${cap.browser_version || ""}`;

@@ -8,7 +8,6 @@ class ControlledListTablePage extends Page {
     }
 
     checkDataDisplayed(dataItem) {
-        super.checkOpen();
         let primaryValue = dataItem.primary;
         let expectedAliases = dataItem.aliases || [];
 

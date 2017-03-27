@@ -14,7 +14,6 @@ class ConfirmPage extends Page {
     get url() { return "/file/confirm" }
 
     checkEaIdSubstituted(originalEaId, substitutedEaId) {
-        super.checkOpen();
         let eaIdOutputRows = browser.element("li.ea-id");
         let foundMatch = false;
 
@@ -33,7 +32,6 @@ class ConfirmPage extends Page {
     }
 
     checkEaIdReported(eaId) {
-        super.checkOpen();
         let eaIdSpan = browser.element(".resolvedUniqueIdentifier");
         if (Array.isArray(eaIdSpan)) eaIdSpan = eaIdSpan[0];
         eaIdSpan.getText().should.be.equal(eaId);

@@ -6,14 +6,12 @@ class CorrectionsDetailPage extends Page {
     get url() { return "/correction/detail" }
 
     checkErrorCodeIncluded(errorCode) {
-        super.checkOpen();
         winston.debug(`Checking correction detail page contains an element with id=error_code with the value ${errorCode}`);
         let foundErrorCode = browser.getAttribute("#error_code", "value");
         foundErrorCode.should.equal(errorCode);
     }
 
     checkErrorTypes(errorCode, errorTypes) {
-        super.checkOpen();
         // First check the error code we want is displayed
         this.checkErrorCodeIncluded(errorCode);
 

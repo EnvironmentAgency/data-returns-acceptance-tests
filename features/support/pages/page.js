@@ -10,8 +10,11 @@ class Page {
     }
 
     open() {
+        let self = this;
         winston.debug(`Opening url ${this.url}`);
-        browser.url(this.url);
+        waitForNav(function () {
+            browser.url(self.url);
+        });
     }
 
     isOpen() {
@@ -44,7 +47,7 @@ class Page {
                     winston.info(`Waiting for continue button on ${self.url} to be enabled before continuing. (isDisabled=${isDisabled})`);
                 }
                 return !isDisabled;
-            }, browser.options.waitforTimeout, `Continue button on ${self.url} not enabled within the allowed time.`, 500);
+            }, browser.options.waitforTimeout, `Continue button on ${self.url} not enabled within the allowed time.`, browser.options.waitforInterval);
         } catch (e) {
             winston.error("Error waiting for continue to be enabled", e);
             throw e;

@@ -19,9 +19,10 @@ const setupCapabilities = function (capabilitiesArray) {
         "project": "Data Returns",
         "browserstack.local": true,
         "browserstack.debug": true,
-        "browserstack.video": false,
+        "browserstack.video": true,
         "browserstack.timezone": "London",
         "browserstack.javascriptEnabled": true,
+        "pageLoadStrategy": "normal",
         "acceptSslCerts": true
     }));
 };
@@ -59,6 +60,29 @@ let browserStackConfig = {
     }),
     // Default timeout for all waitFor* commands.
     waitforTimeout: 90000,
+
+
+    // Disable screenshots when used with browserstack.  Their usually of little use on the test runner side.
+    // Browserstack video and screenshots are more useful.
+    screenshotPath: null,
+    screenshotOnReject: false,
+
+    /**
+     * Project-specific configuration options
+     *
+     * Add any project-specific configuration options here (keep things separate from the standard wdio config)
+     *
+     */
+    _projectConfiguration: {
+        // Winston log level (used by step definitions) (defaults to 'info', see winston for options)
+        winstonLogLevel: 'info',
+        // timeout that specifies a time to wait for the implicit element location strategy when locating elements using the element or elements commands
+        implicitTimeout: 0,
+        // time to wait for the page loading to complete (allow much longer when running on browserstack)
+        pageTimeout: 90000,
+        // time to wait for asynchronous scripts to run
+        scriptTimeout: 30000
+    },
 
     // ============
     // Capabilities

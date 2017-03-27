@@ -1,6 +1,7 @@
 "use strict";
 let Page = require('./page');
 const winston = require('winston');
+const waitForNav = require('../lib/wait-for-navigation-on-action');
 
 function getUploadRowSelector(filename) {
     // Selector to find a row which contains a column with the correct filename
@@ -31,19 +32,17 @@ class UploadPage extends Page {
     }
 
     get uploader() {
-        super.checkOpen();
         return browser.element(this.uploaderXpath);
     }
 
     upload(files) {
-        super.checkOpen();
         let uploader = browser.element(this.uploaderXpath);
         uploader.waitForExist(browser.options.waitforTimeout);
 
         let filenames = Array.isArray(files) ? files : [files];
         filenames = filenames.map(filename => `features/support/files/${filename}`);
 
-        let mustSubmit = browser.isExistingNoWait('#submit-upload');
+        let mustSubmit = browser.isExistingSafe('#submit-upload');
         for (let filename of filenames) {
             browser.chooseFile(this.uploaderXpath, filename);
 
@@ -55,36 +54,43 @@ class UploadPage extends Page {
     }
 
     ensureFileStatusEqual(filename, status) {
-        super.checkOpen();
         let fileStatusSelector = getUploadFileStatusSelector(filename);
         let expectedStatus = status.toUpperCase();
+        let actualStatus = null;
         browser.waitUntil(function () {
-            let browserStatus = browser.getText(fileStatusSelector).toUpperCase();
-            if (browserStatus !== expectedStatus) {
-                winston.debug(`Waiting for ${filename} file status ${browserStatus} to match ${expectedStatus}`);
+            try {
+                actualStatus = browser.getText(fileStatusSelector).toUpperCase();
+            } catch (e) {
+                actualStatus = null;
+            }
+
+            if (actualStatus !== null && actualStatus  !== expectedStatus) {
+                winston.info(`Waiting for ${filename} file status ${actualStatus} to match expected status ${expectedStatus}`);
                 return false;
             }
             return true;
-        }, browser.options.waitforTimeout, `Unexpected file status.  Expected ${status} for file ${filename}`, 250);
+        }, browser.options.waitforTimeout, `Unexpected file status.  Expected ${status} for file ${filename}`, browser.options.waitforInterval);
     }
 
     openFileDetails(filename) {
-        super.checkOpen();
         winston.debug(`Opening file details for ${filename} from the file upload table.`);
-        browser.click(getUploadFileMoreDetailsLinkSelector(filename));
+        let selector = getUploadFileMoreDetailsLinkSelector(filename);
+        waitForNav(function () {
+            browser.click(selector);
+        });
     }
 
     ensureCanContinue() {
-        super.checkOpen();
         let button = browser.element("#continueBtn");
         let disabled = button.getAttribute("disabled") === 'true';
         disabled.should.be.false;
     }
 
     ensureCantContinue() {
-        super.checkOpen();
         let button = browser.element("#continueBtn");
-        let disabled = button.getAttribute("disabled") === 'true';
+        let disabledAttribute = button.getAttribute("disabled");
+        winston.info("Continue button status: " + disabledAttribute);
+        let disabled = disabledAttribute === 'true';
         disabled.should.be.true;
     }
 }

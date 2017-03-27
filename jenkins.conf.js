@@ -10,9 +10,8 @@ let commonConfig = require("./common.conf").config;
  */
 const setupCapabilities = function (capabilitiesArray) {
     let common = {
-        maxInstances: 1
     };
-    return capabilitiesArray.map(cap => lodash.merge({}, cap, common));
+    return capabilitiesArray.map(cap => lodash.defaultsDeep(cap, common));
 };
 
 let localConfig = {
@@ -20,7 +19,8 @@ let localConfig = {
     // Capabilities
     // ============
     // Maximum instances to run in parallel.  Can be overridden on a per-browser basis by adding maxInstances option under each capability.
-    maxInstances: 3,
+    maxInstances: 2,
+    maxInstancesPerCapability: 1,
     capabilities: setupCapabilities([
         {
             browserName: 'chrome'

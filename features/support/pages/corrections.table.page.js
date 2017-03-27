@@ -1,4 +1,5 @@
 "use strict";
+const waitForNav = require('../lib/wait-for-navigation-on-action');
 const winston = require('winston');
 let Page = require('./page');
 
@@ -8,24 +9,26 @@ class CorrectionsTablePage extends Page {
     }
 
     openCorrectionsDetail(errorCode) {
-        super.checkOpen();
+        winston.info(`Opening corrections detail page for error code ${errorCode}`);
+        waitForNav(function () {
+            let row = CorrectionsTablePage.getRowForErrorCode(errorCode);
+            let errorsCell = row.element("td.td-errors");
+            let detailHref = errorsCell.element("a");
+            winston.info(`Opening corrections detail link ${detailHref.getAttribute('href')}`);
+            detailHref.click();
+        });
+    }
 
-        let errorNumber = errorCode.replace(/\D+/g, '');
-        browser.click(`//a[contains(@href, 'id=${errorNumber}')]`);
+    static getRowForErrorCode(errorCode) {
+        return browser.element(`#ERR_${errorCode}`);
     }
 
     checkReportedFieldForErrorCode(errorCode, fieldName) {
-        super.checkOpen();
-        let debugHtml = browser.getHTML("body");
-        try {
-            let row = browser.element(`#ERR_${errorCode}`);
-            let heading = browser.getText(`#ERR_${errorCode} abbr`);
-            row.should.not.be.null;
-            heading.should.equal(fieldName);
-        } catch (e) {
-            winston.error(`Failed to check for for reported field and error code on corrections table.\nBody text: ${debugHtml}`, e);
-            throw e;
-        }
+        winston.info(`Checking field heading ${fieldName} is displayed for error code ${errorCode}`);
+        let row = CorrectionsTablePage.getRowForErrorCode(errorCode);
+        let heading = browser.getText(`#ERR_${errorCode} abbr`);
+        row.should.not.be.null;
+        heading.should.equal(fieldName);
     }
 }
 module.exports = new CorrectionsTablePage();

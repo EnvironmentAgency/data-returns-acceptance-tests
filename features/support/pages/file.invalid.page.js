@@ -7,7 +7,6 @@ class FileInvalidPage extends Page {
     }
 
     checkErrorCodeIncluded(errorCode) {
-        super.checkOpen();
         winston.debug(`Checking invalid file page contains an element with id=error_code with the value ${errorCode}`);
         let foundErrorCode = browser.getAttribute("#error_code", "value");
         foundErrorCode.should.equal(errorCode);
