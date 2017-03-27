@@ -21,20 +21,20 @@
   "dependencies": {
     "chai": "3.5.0",
     "cucumber": "^2.0.0-rc.8",
-    "fs-extra": "^2.1.0",
+    "fs-extra": "^2.1.2",
     "lodash": "4.17.4",
     "path": "0.12.7",
     "request": "2.81.0",
     "wdio-browserstack-service": "0.1.4",
     "wdio-cucumber-framework": "0.2.16",
-    "wdio-firefox-profile-service": "0.0.1",
-    "wdio-junit-reporter": "0.2.0",
+    "wdio-firefox-profile-service": "0.0.3",
+    "wdio-junit-reporter": "0.3.0",
     "wdio-selenium-standalone-service": "0.0.8",
     "wdio-spec-reporter": "0.1.0",
     "webdriverio": "4.6.2",
     "winston": "2.3.1"
   },
   "devDependencies": {
-    "eslint": "3.17.1"
+    "eslint": "3.18.0"
   }
 }
