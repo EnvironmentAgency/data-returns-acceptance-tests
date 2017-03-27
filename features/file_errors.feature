@@ -1,4 +1,4 @@
-Feature: Submit files for initial checking
+Feature: File errors
   As a user I want to be informed if there are any
   significant problems with the format or structure
   of the file before the contents are validated

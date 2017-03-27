@@ -1,4 +1,5 @@
-Feature: Check that controlled lists are correctly displayed in the guidance
+Feature: Controlled list display
+  Check that controlled lists are correctly displayed in the guidance
   As a user I want to be able to view the content of controlled lists
 
   Scenario: Check the controlled list pages display expected data

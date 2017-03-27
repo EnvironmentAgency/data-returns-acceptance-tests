@@ -1,4 +1,5 @@
-Feature: I should be able to submit files of 4Mb and the system
+Feature: Handle large files
+  I should be able to submit files of 4Mb and the system
   should be able to report all the errors on largely incorrect files
   of this size
 

@@ -1,4 +1,5 @@
-Feature: Check that the correct data error message is displayed
+Feature: Data errors
+  Check that the correct data error message is displayed
   As an user I want the correct error message to be displayed
   when a file fails data validation
 

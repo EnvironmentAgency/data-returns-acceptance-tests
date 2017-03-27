@@ -1,4 +1,4 @@
-Feature: Multiple file uploads
+Feature: Successful submissions: Multiple file uploads
   As a user I want to successfully submit multiple files in one submission
 
   Scenario: Submit multiple valid files

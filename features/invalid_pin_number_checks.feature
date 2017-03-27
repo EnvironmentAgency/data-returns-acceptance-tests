@@ -1,4 +1,4 @@
-Feature: Invalid data entry checks
+Feature: Invalid pin number entry checks
   As a user I want to be informed if the information I'm providing is invalid
   So that I can correct any mistakes I've made
 

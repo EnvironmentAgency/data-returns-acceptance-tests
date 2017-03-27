@@ -1,4 +1,5 @@
-Feature: Submit files where all data passes validation
+Feature: Successful submissions: Individual uploads
+  Submit files where all data passes validation
   As a user I want to successfully submit files which are
   correctly structured and all data is valid
 
