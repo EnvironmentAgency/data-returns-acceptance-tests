@@ -47,7 +47,7 @@ Open a terminal and ensure you are at the root of the project. Then simply run
 chimp
 ```
 
-####Browserstack
+#### Browserstack
 To run on browserstack additional configuration files are required:
 
 **/browserstacklocal.json**
