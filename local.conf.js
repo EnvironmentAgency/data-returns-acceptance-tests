@@ -33,10 +33,10 @@ let localConfig = {
     services: ['selenium-standalone'],
     seleniumLogs: './logs/selenium',
     seleniumArgs: {
-        version: '3.3.1'
+        version: '3.4.0'
     },
     seleniumInstallArgs: {
-        version: '3.3.1'
+        version: '3.4.0'
     }
 };
 exports.config = lodash.defaultsDeep(localConfig, commonConfig);

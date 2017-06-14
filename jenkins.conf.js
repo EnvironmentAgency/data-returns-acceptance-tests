@@ -60,10 +60,10 @@ let localConfig = {
     // Running Jenkins with older version of selenium as the 3.0.1 release does not integrate with firefox correcly
     // Geckodriver firefox v48+ uses seems unreliable and needs more time to mature.
     seleniumArgs: {
-        version: '2.53.1'
+        version: '3.4.0'
     },
     seleniumInstallArgs: {
-        version: '2.53.1'
+        version: '3.4.0'
     }
 };
 exports.config = lodash.defaultsDeep(localConfig, commonConfig);
