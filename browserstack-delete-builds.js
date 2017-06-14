@@ -12,34 +12,33 @@
  * Use without the --delete flag will show the build id's to be deleted (but won't delete anything)
  * Use without the --pattern=blah flag will result in all builds being in scope for deletion
  */
-const winston = require("winston");
-const util = require("util");
-const lodash = require("lodash");
-let request = require("request");
-let args = process.argv.slice(2);
+const winston = require('winston');
+const lodash = require('lodash');
+const request = require('request');
+const args = process.argv.slice(2);
 
-let doDelete = !lodash.isNil(args.find((element) => element === "--delete"));
-let patternRegex = /^--pattern=(.+)/;
-let patternArg = args.find((element) => patternRegex.test(element));
+const doDelete = !lodash.isNil(args.find((element) => element === '--delete'));
+const patternRegex = /^--pattern=(.+)/;
+const patternArg = args.find((element) => patternRegex.test(element));
 
 let pattern = null;
 if (patternArg) {
-    let patternMatch = patternRegex.exec(patternArg);
+    const patternMatch = patternRegex.exec(patternArg);
     if (patternMatch != null && patternMatch.length > 0) {
-        pattern = patternMatch[1]
+        pattern = patternMatch[1];
     }
 }
 
-winston.info("doDelete=" + doDelete);
-winston.info("pattern=" + pattern);
+winston.info('doDelete=' + doDelete);
+winston.info('pattern=' + pattern);
 
-let browserstackUser = process.env.BROWSERSTACK_USERNAME;
-let browserstackKey = process.env.BROWSERSTACK_ACCESS_KEY;
-let auth = new Buffer(`${browserstackUser}:${browserstackKey}`).toString('base64');
+const browserstackUser = process.env.BROWSERSTACK_USERNAME;
+const browserstackKey = process.env.BROWSERSTACK_ACCESS_KEY;
+const auth = Buffer.from(`${browserstackUser}:${browserstackKey}`).toString('base64');
 
-let requestData = {
-    url: "https://www.browserstack.com/automate/builds.json?limit=100000",
-    timeout: 60000, //ms 60 seconds
+const requestData = {
+    url: 'https://www.browserstack.com/automate/builds.json?limit=100000',
+    timeout: 60000, // ms 60 seconds
     qs: {},
     headers: {
         'Authorization': `Basic ${auth}`
@@ -49,14 +48,14 @@ let requestData = {
 // Make REST call into the Data Exchange service, and handle the result.
 request.get(requestData, function (err, httpResponse, body) {
     if (err || httpResponse.statusCode !== 200) {
-        let error = err || new Error(`Unexpected response (${httpResponse.statusCode}) from browserstack server`);
+        const error = err || new Error(`Unexpected response (${httpResponse.statusCode}) from browserstack server`);
         winston.error(error);
     } else {
-        let data = JSON.parse(body);
+        const data = JSON.parse(body);
 
-        let dataInScope = [];
+        const dataInScope = [];
 
-        for (let build of data) {
+        for (const build of data) {
             let include = pattern === null;
 
             if (pattern !== null) {
@@ -67,14 +66,13 @@ request.get(requestData, function (err, httpResponse, body) {
             }
         }
 
-
-        for (let id of dataInScope) {
-            winston.info("Will delete build with id = " + id);
+        for (const id of dataInScope) {
+            winston.info('Will delete build with id = ' + id);
 
             if (doDelete) {
-                let detleteRequestData = {
+                const detleteRequestData = {
                     url: `https://www.browserstack.com/automate/builds/${id}.json`,
-                    timeout: 60000, //ms 60 seconds
+                    timeout: 60000, // ms 60 seconds
                     qs: {},
                     headers: {
                         'Authorization': `Basic ${auth}`
@@ -83,14 +81,13 @@ request.get(requestData, function (err, httpResponse, body) {
 
                 request.delete(detleteRequestData, function (err, httpResponse, body) {
                     if (err || httpResponse.statusCode !== 200) {
-                        let error = err || new Error(`Unexpected response (${httpResponse.statusCode}) from browserstack server`);
+                        const error = err || new Error(`Unexpected response (${httpResponse.statusCode}) from browserstack server`);
                         winston.error(error);
                     } else {
-                        winston.info("Actually deleted " + id);
+                        winston.info('Actually deleted ' + id);
                     }
                 });
             }
         }
     }
 });
-

@@ -8,7 +8,7 @@
     "test": "npm run-script lint && ./node_modules/.bin/wdio ./local.conf.js",
     "ci": "./node_modules/.bin/wdio ./jenkins.conf.js",
     "bstest": "./node_modules/.bin/wdio ./browserstack.conf.js",
-    "lint": "./node_modules/eslint/bin/eslint.js ./features/step_definitions/** ./features/support/lib/** ./features/support/pages/**"
+    "lint": "./node_modules/eslint/bin/eslint.js *.js ./features/step_definitions/** ./features/support/lib/** ./features/support/pages/**"
   },
   "repository": {
     "type": "git",

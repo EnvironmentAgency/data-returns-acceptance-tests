@@ -1,20 +1,20 @@
 'use strict';
-const lodash = require("lodash");
-let commonConfig = require("./common.conf").config;
+const lodash = require('lodash');
+const commonConfig = require('./common.conf').config;
 
 /**
  * Helper to set common options on capabilities
  *
- * @param capabilitiesArray
- * @returns {Array|*}
+ * @param {Array} capabilitiesArray capabilities to be processed
+ * @returns {Array|*} an updated array with common capabilities added to each entry
  */
 const setupCapabilities = function (capabilitiesArray) {
-    let common = {
+    const common = {
     };
     return capabilitiesArray.map(cap => lodash.defaultsDeep(cap, common));
 };
 
-let localConfig = {
+const localConfig = {
     // ============
     // Capabilities
     // ============

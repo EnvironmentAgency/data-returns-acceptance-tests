@@ -3,7 +3,7 @@ sudo: false
 language: node_js
 
 node_js:
-  - 4.4.7
+  - 6.11.0
 
 git:
   depth: 3
@@ -14,7 +14,7 @@ addons:
       - libfontconfig
 
 before_script:
-  - echo "module.exports = { browser:'phantomjs', webdriverio:{ baseUrl:'https://dr-dev.envage.co.uk' } }" > chimp.js
+  - export SERVICE_URL=https://dr-dev.envage.co.uk
 
 # Have this option to stop travis-ci building twice. Currently we have travis set to build both
 # PR's and pushes. However this means when we push to a PR we have to wait for Travis to finish

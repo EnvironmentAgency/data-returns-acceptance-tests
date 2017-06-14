@@ -1,12 +1,12 @@
 'use strict';
 const util = require('util');
-const winston = require("winston");
-const fs = require("fs-extra");
-const waitForNav = require('./features/support/lib/wait-for-navigation-on-action');
+const path = require('path');
+const winston = require('winston');
+const fs = require('fs-extra');
 const DataReturnsUserSession = require('./features/support/lib/preload-file');
 
 // Ensure logs folder exists
-const logDir = __dirname + '/logs';
+const logDir = path.resolve(__dirname, 'logs');
 fs.ensureDirSync(logDir);
 
 exports.config = {
@@ -75,20 +75,20 @@ exports.config = {
 
     // If you are using Cucumber you need to specify the location of your step definitions.
     cucumberOpts: {
-        require: ['./features/step_definitions'],        // <string[]> (file/dir) require files before executing features
-        backtrace: true,   // <boolean> show full backtrace for errors
-        compiler: [],       // <string[]> ("extension:module") require files with the given EXTENSION after requiring MODULE (repeatable)
-        dryRun: false,      // <boolean> invoke formatters without executing steps
-        failFast: true,    // <boolean> abort the run on first failure
+        require: ['./features/step_definitions'], // <string[]> (file/dir) require files before executing features
+        backtrace: true, // <boolean> show full backtrace for errors
+        compiler: [], // <string[]> ("extension:module") require files with the given EXTENSION after requiring MODULE (repeatable)
+        dryRun: false, // <boolean> invoke formatters without executing steps
+        failFast: true, // <boolean> abort the run on first failure
         format: ['pretty'], // <string[]> (type[:path]) specify the output format, optionally supply PATH to redirect formatter output (repeatable)
-        colors: true,       // <boolean> disable colors in formatter output
-        snippets: false,     // <boolean> hide step definition snippets for pending steps
-        source: true,       // <boolean> hide source uris
-        profile: [],        // <string[]> (name) specify the profile to use
-        strict: true,      // <boolean> fail if there are any undefined or pending steps
-        tags: [],           // <string[]> (expression) only execute the features or scenarios with tags matching the expression
-        timeout: 60000,     // <number> timeout for step definitions
-        ignoreUndefinedDefinitions: false, // <boolean> Enable this config to treat undefined definitions as warnings.
+        colors: true, // <boolean> disable colors in formatter output
+        snippets: false, // <boolean> hide step definition snippets for pending steps
+        source: true, // <boolean> hide source uris
+        profile: [], // <string[]> (name) specify the profile to use
+        strict: true, // <boolean> fail if there are any undefined or pending steps
+        tags: [], // <string[]> (expression) only execute the features or scenarios with tags matching the expression
+        timeout: 60000, // <number> timeout for step definitions
+        ignoreUndefinedDefinitions: false // <boolean> Enable this config to treat undefined definitions as warnings.
     },
 
     // =====
@@ -101,8 +101,8 @@ exports.config = {
     //
     // Gets executed once before all workers get launched.
     onPrepare: function (config, capabilities) {
-        let prettyConfig = util.inspect(config, {depth: null, colors: true});
-        let prettyCapabilities = util.inspect(capabilities, {depth: null, colors: true});
+        const prettyConfig = util.inspect(config, {depth: null, colors: true});
+        const prettyCapabilities = util.inspect(capabilities, {depth: null, colors: true});
         winston.info(`Running tests with configuration: \nCapabilities: ${prettyCapabilities}}\n\nConfiguration:${prettyConfig}`);
     },
 
@@ -111,16 +111,16 @@ exports.config = {
     // variables, such as `browser`. It is the perfect place to define custom commands.
     before: function (capabilities, specs) {
         // Setup the Chai assertion framework
-        let chai = require('chai');
+        const chai = require('chai');
 
         global.expect = chai.expect;
         global.assert = chai.assert;
         global.should = chai.should();
 
         // reference to configuration object
-        let cfg = this;
+        const cfg = this;
         // reference to the current session identifier
-        let testSessionId = browser.session().sessionId;
+        const testSessionId = browser.session().sessionId;
 
         // Set up project specific timeout configuration settings
         browser.timeouts('implicit', cfg._projectConfiguration.implicitTimeout);
@@ -137,7 +137,7 @@ exports.config = {
             try {
                 return browser.isExisting(selector);
             } catch (e) {
-                winston.warn("Ignoring exception thrown on isExisting call.");
+                winston.warn('Ignoring exception thrown on isExisting call.');
                 return false;
             }
         });
@@ -145,11 +145,11 @@ exports.config = {
         /**
          * Preload files into the session using wdio async
          */
-        browser.addCommand('preloadFiles', function async(files) {
+        browser.addCommand('preloadFiles', function async (files) {
             /**
              * Preload files directly into a data returns frontend preload session (files uploaded from test runner rather than from client browser)
              */
-            let preloadSession = new DataReturnsUserSession(browser.options.baseUrl + '/file/preload');
+            const preloadSession = new DataReturnsUserSession(browser.options.baseUrl + '/file/preload');
             let filenames = Array.isArray(files) ? files : [files];
             filenames = filenames.map(filename => `features/support/files/${filename}`);
             return preloadSession.upload(filenames)
@@ -159,29 +159,28 @@ exports.config = {
                 });
         });
 
-
         /**
          * Configure winston logging
          */
         winston.configure({
             transports: [
                 new (winston.transports.Console)({
-                    "level": cfg._projectConfiguration.winstonLogLevel || "info",
-                    "colorize": true,
-                    "silent": false,
-                    "timestamp": true,
-                    "json": false,
-                    "showLevel": true,
-                    "handleExceptions": false,
-                    "humanReadableUnhandledException": false
-                }),
+                    'level': cfg._projectConfiguration.winstonLogLevel || 'info',
+                    'colorize': true,
+                    'silent': false,
+                    'timestamp': true,
+                    'json': false,
+                    'showLevel': true,
+                    'handleExceptions': false,
+                    'humanReadableUnhandledException': false
+                })
             ],
             filters: [
                 function (level, msg, meta) {
-                    let sessionTxt = testSessionId ? testSessionId + ": " : "";
-                    let cap = browser.desiredCapabilities;
+                    const sessionTxt = testSessionId ? testSessionId + ': ' : '';
+                    const cap = browser.desiredCapabilities;
                     // let env = `${cap.os} ${cap.os_version} ${cap.browserName} ${cap.browser_version}`;
-                    let env = `${cap.browserName || "Unknown"} ${cap.browser_version || ""}`;
+                    const env = `${cap.browserName || 'Unknown'} ${cap.browser_version || ''}`;
 
                     return `[0;35m[${sessionTxt}${env}][0;39m ${msg}`;
                 }
@@ -236,11 +235,10 @@ exports.config = {
     // Cucumber specific hooks
     beforeFeature: function (feature) {
         winston.info(`Running feature: ${feature.getName()}`);
-
     },
     beforeScenario: function (scenario) {
         winston.info(`Running scenario: ${scenario.getName()}`);
-    },
+    }
     // beforeStep: function (step) {
     // },
     // afterStep: function (stepResult) {

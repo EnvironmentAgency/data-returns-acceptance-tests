@@ -1,8 +1,8 @@
 'use strict';
-const lodash = require("lodash");
-let commonConfig = require("./common.conf").config;
+const lodash = require('lodash');
+const commonConfig = require('./common.conf').config;
 
-let localConfig = {
+const localConfig = {
     // ============
     // Capabilities
     // ============
