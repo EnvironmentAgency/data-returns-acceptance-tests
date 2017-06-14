@@ -1,40 +1,39 @@
 'use strict';
-let Page = require('./page');
+const Page = require('./page');
 class PinPage extends Page {
-    get url() {
-        return "/pin"
+    get url () {
+        return '/pin';
     }
 
-    enterPin(pin) {
-        let pinInput = browser.element('#validation_code');
+    enterPin (pin) {
+        const pinInput = browser.element('#validation_code');
         if (pin) {
             pinInput.setValue(pin);
         } else {
             pinInput.clearElement();
         }
-
     }
 
-    submitPin(pin) {
+    submitPin (pin) {
         this.enterPin(pin);
         this.continue();
     }
 
-    isPinFieldAvailable() {
+    isPinFieldAvailable () {
         return browser.isExistingSafe('#validation_code');
     }
 
-    assertBlocked() {
+    assertBlocked () {
         // Initial check
-        let foundErrorCode = browser.getAttribute("#error_code", "value");
-        foundErrorCode.should.equal("DR2280");
-        this.isPinFieldAvailable().should.be.false;
+        const foundErrorCode = browser.getAttribute('#error_code', 'value');
+        foundErrorCode.should.equal('DR2280');
+        this.isPinFieldAvailable().should.be.false; // eslint-disable-line no-unused-expressions
 
         // Reload page (issue new GET request and recheck)
         this.open();
-        let foundErrorCodeAfterRefresh = browser.getAttribute("#error_code", "value");
-        foundErrorCodeAfterRefresh.should.equal("DR2280");
-        this.isPinFieldAvailable().should.be.false;
+        const foundErrorCodeAfterRefresh = browser.getAttribute('#error_code', 'value');
+        foundErrorCodeAfterRefresh.should.equal('DR2280');
+        this.isPinFieldAvailable().should.be.false; // eslint-disable-line no-unused-expressions
     }
 }
 module.exports = new PinPage();

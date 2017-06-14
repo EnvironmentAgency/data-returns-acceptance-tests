@@ -2,6 +2,7 @@
   "name": "data-returns-acceptance-tests",
   "version": "1.0.0",
   "description": "Acceptance tests for the Data Returns service",
+  "private": true,
   "main": "index.js",
   "scripts": {
     "test": "npm run-script lint && ./node_modules/.bin/wdio ./local.conf.js",
@@ -35,6 +36,11 @@
     "winston": "2.3.1"
   },
   "devDependencies": {
-    "eslint": "3.18.0"
+    "eslint": "^4.0.0",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-plugin-import": "^2.3.0",
+    "eslint-plugin-node": "^5.0.0",
+    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-standard": "^3.0.1"
   }
 }

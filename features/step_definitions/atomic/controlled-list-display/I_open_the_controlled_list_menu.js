@@ -1,7 +1,7 @@
 'use strict';
-let ControlledListMenuPage = require("../../../support/pages/controlled.list.menu.page");
+const ControlledListMenuPage = require('../../../support/pages/controlled.list.menu.page');
 module.exports = function () {
-    this.defineStep('I open the controlled list menu', function() {
+    this.defineStep('I open the controlled list menu', function () {
         ControlledListMenuPage.open();
     });
 };

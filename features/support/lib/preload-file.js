@@ -1,42 +1,41 @@
 'use strict';
-const winston = require("winston");
-const request = require("request");
-const fs = require("fs");
+const winston = require('winston');
+const request = require('request');
+const fs = require('fs');
 
 class DataReturnsUserSession {
-    constructor(endpoint) {
+    constructor (endpoint) {
         this.endpoint = endpoint;
         this.sessionData = null;
     }
 
-
-    createSession() {
-        let self = this;
+    createSession () {
+        const self = this;
         return new Promise(function (resolve, reject) {
-            let requestData = {
+            const requestData = {
                 url: self.endpoint,
                 gzip: true,
-                timeout: 60000, //ms 60 seconds
+                timeout: 60000, // ms 60 seconds
                 qs: {
-                    "createSession": "true"
+                    'createSession': 'true'
                 }
             };
             // Make REST call into the Data Exchange service, and handle the result.
             request.post(requestData, function (err, httpResponse, body) {
                 if (err || httpResponse.statusCode !== 200) {
-                    let error = err || new Error(`Server returned error code (${httpResponse.statusCode}) when establishing preload session.`);
+                    const error = err || new Error(`Server returned error code (${httpResponse.statusCode}) when establishing preload session.`);
                     console.log(err);
                     return reject(error);
                 }
-                let data = JSON.parse(body);
+                const data = JSON.parse(body);
                 self.sessionData = data;
                 return resolve(data);
             });
         });
     }
 
-    getSession() {
-        let self = this;
+    getSession () {
+        const self = this;
         return new Promise(function (resolve, reject) {
             if (self.sessionData) {
                 return resolve(self.sessionData);
@@ -46,8 +45,8 @@ class DataReturnsUserSession {
         });
     }
 
-    upload(filePaths) {
-        let self = this;
+    upload (filePaths) {
+        const self = this;
         return self.getSession()
             .then(() => Promise.all(filePaths.map(fp => self.uploadFile(fp))))
             .then((promises) => {
@@ -59,14 +58,14 @@ class DataReturnsUserSession {
             });
     }
 
-    uploadFile(filePath) {
-        let self = this;
+    uploadFile (filePath) {
+        const self = this;
         return new Promise(function (resolve, reject) {
             return self.getSession().then(function (sessionData) {
-                let requestData = {
+                const requestData = {
                     url: self.endpoint,
                     gzip: true,
-                    timeout: 60000, //ms 60 seconds
+                    timeout: 60000, // ms 60 seconds
                     qs: {
                         fineuploader: true, // This api emulates the fineuploader functionality
                         filename: filePath,
@@ -86,11 +85,11 @@ class DataReturnsUserSession {
                 // Make REST call into the Data Exchange service, and handle the result.
                 request.post(requestData, function (err, httpResponse, body) {
                     if (err || httpResponse.statusCode !== 200) {
-                        let error = err || new Error(`Unexpected response (${httpResponse.statusCode}) from server when attempting to preload files`);
-                        winston.error("Error encountered on session preload POST request", error);
+                        const error = err || new Error(`Unexpected response (${httpResponse.statusCode}) from server when attempting to preload files`);
+                        winston.error('Error encountered on session preload POST request', error);
                         return reject(error);
                     }
-                    let data = JSON.parse(body);
+                    const data = JSON.parse(body);
                     winston.info(`Successfully preloaded file ${data.files} into data-returns frontend preload session ${data.sessionId}`);
                     return resolve(data);
                 });

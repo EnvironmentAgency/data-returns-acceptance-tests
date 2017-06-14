@@ -1,22 +1,22 @@
 'use strict';
-const winston = require("winston");
+const winston = require('winston');
 const util = require('util');
 util.inspect.defaultOptions = {depth: null, colors: true};
 
 module.exports = function (action) {
     // Page Id element is embedded on each page by the frontend layout.html
-    let oldPageId = browser.isExistingSafe("#pgid") ? browser.getValue("#pgid") : "NO_OLD_PAGE_ID_FOUND";
+    const oldPageId = browser.isExistingSafe('#pgid') ? browser.getValue('#pgid') : 'NO_OLD_PAGE_ID_FOUND';
     let currentPageId = null;
     try {
         action();
         browser.waitUntil(function () {
             try {
-                currentPageId = browser.getValue("#pgid");
+                currentPageId = browser.getValue('#pgid');
             } catch (e) {
                 currentPageId = null;
             }
 
-            let hasChanged = (currentPageId !== null && currentPageId !== oldPageId);
+            const hasChanged = (currentPageId !== null && currentPageId !== oldPageId);
             if (!hasChanged) {
                 winston.info(`Waiting for page to load (loaded: ${hasChanged}).  [Old page id: ${util.inspect(oldPageId)}, current page id: ${util.inspect(currentPageId)}]`);
             }

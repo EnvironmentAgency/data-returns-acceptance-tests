@@ -1,24 +1,31 @@
-"use strict";
-let Page = require('./page');
+'use strict';
+const Page = require('./page');
 
-function checkEaIdRow(row, inputEaId, outputEaId) {
-    let inputIdSpan = row.element(".submittedUniqueIdentifier");
+/**
+ * Check for the appropriate substitution detail on a given row
+ *
+ * @param {object} row the row to rest
+ * @param {string} inputEaId the expected input EA_ID
+ * @param {string} outputEaId the expected output EA_ID
+ * @return {boolean} if the expectations pass, false otherwise
+ */
+function checkEaIdRow (row, inputEaId, outputEaId) {
+    const inputIdSpan = row.element('.submittedUniqueIdentifier');
     inputIdSpan.waitForExist(browser.options.waitforTimeout);
-    let outputIdSpan = row.element(".resolvedUniqueIdentifier");
+    const outputIdSpan = row.element('.resolvedUniqueIdentifier');
     outputIdSpan.waitForExist(browser.options.waitforTimeout);
     return (inputIdSpan.getText() === inputEaId && outputIdSpan.getText() === outputEaId);
 }
 
-
 class ConfirmPage extends Page {
-    get url() { return "/file/confirm" }
+    get url () { return '/file/confirm'; }
 
-    checkEaIdSubstituted(originalEaId, substitutedEaId) {
-        let eaIdOutputRows = browser.element("li.ea-id");
+    checkEaIdSubstituted (originalEaId, substitutedEaId) {
+        const eaIdOutputRows = browser.element('li.ea-id');
         let foundMatch = false;
 
         if (Array.isArray(eaIdOutputRows)) {
-            for (let row of eaIdOutputRows) {
+            for (const row of eaIdOutputRows) {
                 if (checkEaIdRow(row, originalEaId, substitutedEaId)) {
                     foundMatch = true;
                     break;
@@ -28,11 +35,11 @@ class ConfirmPage extends Page {
             foundMatch = checkEaIdRow(eaIdOutputRows, originalEaId, substitutedEaId);
         }
 
-        foundMatch.should.be.true;
+        foundMatch.should.be.true; // eslint-disable-line no-unused-expressions
     }
 
-    checkEaIdReported(eaId) {
-        let eaIdSpan = browser.element(".resolvedUniqueIdentifier");
+    checkEaIdReported (eaId) {
+        let eaIdSpan = browser.element('.resolvedUniqueIdentifier');
         if (Array.isArray(eaIdSpan)) eaIdSpan = eaIdSpan[0];
         eaIdSpan.getText().should.be.equal(eaId);
     }

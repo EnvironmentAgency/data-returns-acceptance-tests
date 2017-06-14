@@ -1,11 +1,11 @@
 'use strict';
-let automateUpload = require("../../../support/lib/automate-upload");
-let UploadPage = require("../../../support/pages/upload.page");
+const automateUpload = require('../../../support/lib/automate-upload');
+const UploadPage = require('../../../support/pages/upload.page');
 module.exports = function () {
     this.defineStep(/^I've chosen my data to return$/, function () {
-        let file = 'SUCCESS.csv';
+        const file = 'SUCCESS.csv';
         automateUpload([file]);
-        UploadPage.ensureFileStatusEqual(file, "READY TO SEND");
+        UploadPage.ensureFileStatusEqual(file, 'READY TO SEND');
         UploadPage.continue();
     });
 };

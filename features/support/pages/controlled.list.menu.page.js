@@ -1,13 +1,13 @@
-"use strict";
-let Page = require('./page');
+'use strict';
+const Page = require('./page');
 const waitForNav = require('../lib/wait-for-navigation-on-action');
 
 class ControlledListMenu extends Page {
-    get url() { return "/controlled-lists" }
+    get url () { return '/controlled-lists'; }
 
-    openControlledList(title) {
-        let link = browser.element(`=${title}`);
-        waitForNav(function() {
+    openControlledList (title) {
+        const link = browser.element(`=${title}`);
+        waitForNav(function () {
             link.click();
         });
     }

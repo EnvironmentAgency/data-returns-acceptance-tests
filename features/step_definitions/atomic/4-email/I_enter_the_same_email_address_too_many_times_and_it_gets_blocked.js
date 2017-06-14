@@ -1,5 +1,5 @@
 'use strict';
-let EmailPage = require("../../../support/pages/email.page");
+const EmailPage = require('../../../support/pages/email.page');
 const address = `willgetgblocked+${Math.round(Math.random() * 100000)}@example.com`;
 
 module.exports = function () {

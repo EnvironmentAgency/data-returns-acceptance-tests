@@ -1,5 +1,5 @@
 'use strict';
-const TestFile = require("../../support/lib/TestFile");
+const TestFile = require('../../support/lib/TestFile');
 
 module.exports = function () {
     /**
@@ -20,10 +20,10 @@ module.exports = function () {
      * | file2.csv  | FILE ERROR    |
      * | file3.csv  | DATA ERROR    |
      */
-    this.defineStep('I have the following files and expectations', function(dataTable) {
-        global.fileList = new Array();
-        for (let row of dataTable.hashes()) {
-            let testFile = new TestFile(row.Filename);
+    this.defineStep('I have the following files and expectations', function (dataTable) {
+        global.fileList = [];
+        for (const row of dataTable.hashes()) {
+            const testFile = new TestFile(row.Filename);
             testFile.expectedStatus = row.Status;
             // Extract only numeric portion of the error code
             testFile.errorCode = row.ErrorCode;
