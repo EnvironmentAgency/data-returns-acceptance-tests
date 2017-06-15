@@ -1,21 +1,10 @@
+dist: trusty
 sudo: false
-
 language: node_js
-
 node_js:
   - 6.11.0
-
-git:
-  depth: 3
-
-addons:
-  apt:
-    packages:
-      - libfontconfig
-
-before_script:
-  - export SERVICE_URL=https://dr-dev.envage.co.uk
-
+script:
+  - npm run lint
 # Have this option to stop travis-ci building twice. Currently we have travis set to build both
 # PR's and pushes. However this means when we push to a PR we have to wait for Travis to finish
 # 2 builds. If we unticked 'pushes' when the PR was finally merged that would not be built. The

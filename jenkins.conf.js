@@ -56,9 +56,6 @@ const localConfig = {
         // Without this, the Firefox driver will respond with BAD REQUEST to all calls.
         'webdriver_firefox_allowed_hosts': 'localhost,ip6-localhost,ip6-loopback'
     },
-
-    // Running Jenkins with older version of selenium as the 3.0.1 release does not integrate with firefox correcly
-    // Geckodriver firefox v48+ uses seems unreliable and needs more time to mature.
     seleniumArgs: {
         version: '3.4.0'
     },
