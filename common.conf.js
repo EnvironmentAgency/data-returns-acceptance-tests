@@ -5,6 +5,11 @@ const winston = require('winston');
 const fs = require('fs-extra');
 const DataReturnsUserSession = require('./features/support/lib/preload-file');
 
+// Selenium logging verbosity: silent | verbose | command | data | result | error
+const seleniumLogLevel = process.env.SELENIUM_LOG_LEVEL || 'error';
+// Winston log level (used by step definitions) (defaults to 'info', see winston for options)
+const winstonLogLevel = process.env.WINSTON_LOG_LEVEL || 'info';
+
 // Ensure logs folder exists
 const logDir = path.resolve(__dirname, 'logs');
 fs.ensureDirSync(logDir);
@@ -26,8 +31,8 @@ exports.config = {
     // ===================
     // By default WebdriverIO commands are executed in a synchronous way using the wdio-sync package.
     sync: true,
-    // Level of logging verbosity: silent | verbose | command | data | result | error
-    logLevel: 'error',
+    // Selenium logging verbosity: silent | verbose | command | data | result | error
+    logLevel: seleniumLogLevel,
     // Wdio debugging (use node inspector)
     debug: false,
     // Enables colors for log output.
@@ -49,7 +54,7 @@ exports.config = {
      */
     _projectConfiguration: {
         // Winston log level (used by step definitions) (defaults to 'info', see winston for options)
-        winstonLogLevel: 'info',
+        winstonLogLevel: winstonLogLevel,
         // timeout that specifies a time to wait for the implicit element location strategy when locating elements using the element or elements commands
         implicitTimeout: 0,
         // time to wait for the page loading to complete
