@@ -30,4 +30,6 @@ Feature: Successful submissions: Individual uploads
       | successful_submissions_OPT_Mon_Period_NULL_PASS.csv |
       | successful_submissions_OPT_Comments_NULL_PASS.csv   |
       | successful_submissions_OPT_Meth_Stand_NULL_PASS.csv |
-      | successful_submissions_OPT_CiC_NULL_PASS.csv        |
+
+# We do not support commercial in confidence at this time, removing from test.
+#      | successful_submissions_OPT_CiC_NULL_PASS.csv        |

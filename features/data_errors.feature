@@ -55,7 +55,6 @@ Feature: Data errors
       | DR9110_Site_Name_value_M_and_I.csv                              | DATA ERROR | DR9110    | EA_ID, Site_Name | Conflicting       |
       | DR9140_Comments.csv                                             | DATA ERROR | DR9140    | Comments         | Length            |
       | DR9140_Txt_Value_has_no_comment_FAIL.csv                        | DATA ERROR | DR9140    | Comments         | Missing           |
-      | DR9150_CiC.csv                                                  | DATA ERROR | DR9150    | CiC              | Length            |
     When I upload those files
     Then I am unable to continue
     And I expect each file's status to meet expectations
