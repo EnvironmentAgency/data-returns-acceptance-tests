@@ -75,6 +75,8 @@ class UploadPage extends Page {
         const fileStatusSelector = getUploadFileStatusSelector(filename);
         const expectedStatus = status.toUpperCase();
         let actualStatus = null;
+
+        // Wait for the file to finish checking.
         browser.waitUntil(function () {
             try {
                 actualStatus = browser.getText(fileStatusSelector).toUpperCase();
@@ -82,12 +84,16 @@ class UploadPage extends Page {
                 actualStatus = null;
             }
 
-            if (actualStatus !== null && actualStatus !== expectedStatus) {
-                winston.info(`Waiting for ${filename} file status ${actualStatus} to match expected status ${expectedStatus}`);
+            if (!actualStatus || actualStatus === 'CHECKING') {
+                winston.debug(`Waiting for ${filename} to finish CHECKING.`);
                 return false;
             }
             return true;
-        }, browser.options.waitforTimeout, `Unexpected file status.  Expected ${status} for file ${filename}`, browser.options.waitforInterval);
+        }, browser.options.waitforTimeout, `${filename} did not finish checking before the allowed timeout.`, browser.options.waitforInterval);
+
+        // Now check the file status matches expectations
+        actualStatus = browser.getText(fileStatusSelector).toUpperCase();
+        actualStatus.should.equal(expectedStatus);
     }
 
     openFileDetails (filename) {
