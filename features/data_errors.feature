@@ -5,14 +5,14 @@ Feature: Data errors
 
   Scenario: Check that the correct error messages are given for special cases
     Given I have the following files and expectations
-      | Filename                                                       | Status     | ErrorCode | ErrorField       | ErrorCategories | ErrorHeading        |
-      | DR9999_Text_Value_and_Value_and_unit_FAIL.csv                  | DATA ERROR | DR9999    | Value, Txt_Value | Conflicting     | Value and Txt_Value |
-      | DR9999_Text_Value_and_Value_no_unit_no_header_FAIL.csv         | DATA ERROR | DR9999    | Value, Txt_Value | Conflicting     | Value and Txt_Value |
-      | DR9999_Text_Value_and_Value_no_unit_header_FAIL.csv            | DATA ERROR | DR9999    | Value, Txt_Value | Conflicting     | Value and Txt_Value |
-      | DR9999_No_Text_Value_and_No_Value_no_headers_Units_FAIL.csv    | DATA ERROR | DR9999    | Value, Txt_Value | Missing         | Value and Txt_Value |
-      | DR9999_No_Text_Value_and_No_Value_no_headers_No_Units_FAIL.csv | DATA ERROR | DR9999    | Value, Txt_Value | Missing         | Value and Txt_Value |
-      | DR9999_Value_and_Txt_Value_Missing.csv                         | DATA ERROR | DR9999    | Value, Txt_Value | Missing         | Value and Txt_Value |
-      | DR9110_EA_ID_Site_name_mismatch.csv                            | DATA ERROR | DR9110    | EA_ID, Site_Name | Conflicting     | EA_ID and Site_Name |
+      | Filename                                                       | Status     | ErrorCode | ErrorField       | ErrorCategories |
+      | DR9999_Text_Value_and_Value_and_unit_FAIL.csv                  | DATA ERROR | DR9999    | Value, Txt_Value | Conflicting     |
+      | DR9999_Text_Value_and_Value_no_unit_no_header_FAIL.csv         | DATA ERROR | DR9999    | Value, Txt_Value | Conflicting     |
+      | DR9999_Text_Value_and_Value_no_unit_header_FAIL.csv            | DATA ERROR | DR9999    | Value, Txt_Value | Conflicting     |
+      | DR9999_No_Text_Value_and_No_Value_no_headers_Units_FAIL.csv    | DATA ERROR | DR9999    | Value, Txt_Value | Missing         |
+      | DR9999_No_Text_Value_and_No_Value_no_headers_No_Units_FAIL.csv | DATA ERROR | DR9999    | Value, Txt_Value | Missing         |
+      | DR9999_Value_and_Txt_Value_Missing.csv                         | DATA ERROR | DR9999    | Value, Txt_Value | Missing         |
+      | DR9110_EA_ID_Site_name_mismatch.csv                            | DATA ERROR | DR9110    | EA_ID, Site_Name | Conflicting     |
     When I upload those files
     Then I am unable to continue
     And I expect each file's status to meet expectations

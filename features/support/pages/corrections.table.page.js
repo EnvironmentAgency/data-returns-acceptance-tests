@@ -23,12 +23,14 @@ class CorrectionsTablePage extends Page {
         return browser.element(`#ERR_${errorCode}`);
     }
 
-    checkReportedFieldForErrorCode (errorCode, fieldName) {
-        winston.info(`Checking field heading ${fieldName} is displayed for error code ${errorCode}`);
+    checkReportedFieldForErrorCode (errorCode, errorFieldArray) {
+        winston.info(`Checking field heading(s) ${errorFieldArray} are displayed for error code ${errorCode}`);
         const row = CorrectionsTablePage.getRowForErrorCode(errorCode);
         const heading = browser.getText(`#ERR_${errorCode} abbr`);
         row.should.not.be.null; // eslint-disable-line no-unused-expressions
-        heading.should.equal(fieldName);
+        for (const fieldName of errorFieldArray) {
+            heading.should.match(new RegExp(`\\b${fieldName}\\b`));
+        }
     }
 }
 module.exports = new CorrectionsTablePage();

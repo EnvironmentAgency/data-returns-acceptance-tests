@@ -41,12 +41,12 @@ class TestFile {
         this._errorField = errorField;
     }
 
-    get errorHeading () {
-        return this._errorHeading;
+    get errorFieldArray () {
+        return this._errorFieldArray;
     }
 
-    set errorHeading (errorHeading) {
-        this._errorHeading = errorHeading;
+    set errorFieldArray (errorFieldArray) {
+        this._errorFieldArray = errorFieldArray;
     }
 
     get errorCategories () {

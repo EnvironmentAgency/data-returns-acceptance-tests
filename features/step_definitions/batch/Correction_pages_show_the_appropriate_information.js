@@ -20,7 +20,7 @@ module.exports = function () {
             }
             UploadPage.openFileDetails(testFile.filename);
 
-            CorrectionsTablePage.checkReportedFieldForErrorCode(testFile.errorCode, testFile.errorField);
+            CorrectionsTablePage.checkReportedFieldForErrorCode(testFile.errorCode, testFile.errorFieldArray);
 
             winston.debug('Opening corrections detail');
             CorrectionsTablePage.openCorrectionsDetail(testFile.errorCode);

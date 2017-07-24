@@ -14,7 +14,6 @@ class CorrectionsDetailPage extends Page {
     checkErrorTypes (errorCode, errorTypes) {
         // First check the error code we want is displayed
         this.checkErrorCodeIncluded(errorCode);
-
         const expectedErrorTypes = errorTypes.split(',');
         winston.debug(`Checking for expected error types: ${expectedErrorTypes}`);
 

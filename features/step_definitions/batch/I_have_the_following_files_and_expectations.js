@@ -28,7 +28,7 @@ module.exports = function () {
             // Extract only numeric portion of the error code
             testFile.errorCode = row.ErrorCode;
             testFile.errorField = row.ErrorField;
-            testFile.errorHeading = row.ErrorHeading || row.ErrorField;
+            testFile.errorFieldArray = row.ErrorField ? row.ErrorField.split(/\W+/) : [];
             testFile.errorCategories = row.ErrorCategories;
             global.fileList.push(testFile);
         }
